@@ -1,0 +1,133 @@
+==== CRASH START ====
+06-10 20:47:40.557 E/AndroidRuntime( 8867): FATAL EXCEPTION: Instr: androidx.test.runner.AndroidJUnitRunner
+06-10 20:47:40.557 E/AndroidRuntime( 8867): Process: io.appium.uiautomator2.server, PID: 8867
+06-10 20:47:40.557 E/AndroidRuntime( 8867): java.lang.IllegalStateException: UiAutomation not connected, UiAutomation@8f5f607[id=-1, flags=0]
+06-10 20:47:40.557 E/AndroidRuntime( 8867): 	at android.app.UiAutomation.throwIfNotConnectedLocked(UiAutomation.java:1239)
+06-10 20:47:40.557 E/AndroidRuntime( 8867): 	at android.app.UiAutomation.disconnect(UiAutomation.java:296)
+06-10 20:47:40.557 E/AndroidRuntime( 8867): 	at android.app.Instrumentation.finish(Instrumentation.java:249)
+06-10 20:47:40.557 E/AndroidRuntime( 8867): 	at androidx.test.runner.MonitoringInstrumentation.finish(MonitoringInstrumentation.java:409)
+06-10 20:47:40.557 E/AndroidRuntime( 8867): 	at androidx.test.runner.AndroidJUnitRunner.onStart(AndroidJUnitRunner.java:474)
+06-10 20:47:40.557 E/AndroidRuntime( 8867): 	at android.app.Instrumentation$InstrumentationThread.run(Instrumentation.java:2205)
+06-10 20:47:40.563 I/ActivityManager(  627): Notify Jio SDK Service on crash event
+06-10 20:47:40.565 I/DropBoxManagerService(  627): add tag=data_app_crash isTagEnabled=true flags=0x2
+06-10 20:47:40.613 W/ContextImpl( 1438): Calling a method in the system process without a qualified user: android.app.ContextImpl.bindService:1748 android.content.ContextWrapper.bindService:756 com.jio.adc.core.b.d:56 com.jio.adc.core.b.b:13 com.jio.adc.core.b$c.run:7 
+06-10 20:47:40.705 I/ActivityManager(  627): Process io.appium.uiautomator2.server (pid 8867) has died: fg  FGS 
+06-10 20:47:40.707 W/ActivityManager(  627): Crash of app io.appium.uiautomator2.server running instrumentation ComponentInfo{io.appium.uiautomator2.server.test/androidx.test.runner.AndroidJUnitRunner}
+06-10 20:47:40.710 W/ActivityManager(  627): Error shutting down UiAutomationConnection
+06-10 20:47:40.711 I/[ 2246.776422@3]  binder(    0): 627:660 transaction failed 29189/-22, size 88-0 line 2705
+==== CRASH END ====
+
+==== CRASH START ====
+06-10 21:10:52.168 E/AndroidRuntime(14401): FATAL EXCEPTION: Instr: androidx.test.runner.AndroidJUnitRunner
+06-10 21:10:52.168 E/AndroidRuntime(14401): Process: io.appium.uiautomator2.server, PID: 14401
+06-10 21:10:52.168 E/AndroidRuntime(14401): java.lang.IllegalStateException: UiAutomation not connected, UiAutomation@8f5f607[id=-1, flags=0]
+06-10 21:10:52.168 E/AndroidRuntime(14401): 	at android.app.UiAutomation.throwIfNotConnectedLocked(UiAutomation.java:1239)
+06-10 21:10:52.168 E/AndroidRuntime(14401): 	at android.app.UiAutomation.disconnect(UiAutomation.java:296)
+06-10 21:10:52.168 E/AndroidRuntime(14401): 	at android.app.Instrumentation.finish(Instrumentation.java:249)
+06-10 21:10:52.168 E/AndroidRuntime(14401): 	at androidx.test.runner.MonitoringInstrumentation.finish(MonitoringInstrumentation.java:409)
+06-10 21:10:52.168 E/AndroidRuntime(14401): 	at androidx.test.runner.AndroidJUnitRunner.onStart(AndroidJUnitRunner.java:474)
+06-10 21:10:52.168 E/AndroidRuntime(14401): 	at android.app.Instrumentation$InstrumentationThread.run(Instrumentation.java:2205)
+06-10 21:10:52.175 I/ActivityManager(  627): Notify Jio SDK Service on crash event
+06-10 21:10:52.175 I/DropBoxManagerService(  627): add tag=data_app_crash isTagEnabled=true flags=0x2
+06-10 21:10:52.358 I/ActivityManager(  627): Process io.appium.uiautomator2.server (pid 14401) has died: fg  FGS 
+06-10 21:10:52.365 W/ActivityManager(  627): Crash of app io.appium.uiautomator2.server running instrumentation ComponentInfo{io.appium.uiautomator2.server.test/androidx.test.runner.AndroidJUnitRunner}
+06-10 21:10:52.366 I/ActivityManager(  627): Force stopping io.appium.uiautomator2.server appid=10096 user=0: finished inst
+06-10 21:10:52.367 W/ActivityManager(  627): Error shutting down UiAutomationConnection
+06-10 21:10:52.371 I/[ 3638.432890@3]  binder(    0): 627:660 transaction failed 29189/-22, size 88-0 line 2705
+==== CRASH END ====
+
+==== CRASH START ====
+06-10 22:11:07.689 E/AndroidRuntime(20143): FATAL EXCEPTION: Instr: androidx.test.runner.AndroidJUnitRunner
+06-10 22:11:07.689 E/AndroidRuntime(20143): Process: io.appium.uiautomator2.server, PID: 20143
+06-10 22:11:07.689 E/AndroidRuntime(20143): java.lang.IllegalStateException: UiAutomation not connected, UiAutomation@8f5f607[id=-1, flags=0]
+06-10 22:11:07.689 E/AndroidRuntime(20143): 	at android.app.UiAutomation.throwIfNotConnectedLocked(UiAutomation.java:1239)
+06-10 22:11:07.689 E/AndroidRuntime(20143): 	at android.app.UiAutomation.disconnect(UiAutomation.java:296)
+06-10 22:11:07.689 E/AndroidRuntime(20143): 	at android.app.Instrumentation.finish(Instrumentation.java:249)
+06-10 22:11:07.689 E/AndroidRuntime(20143): 	at androidx.test.runner.MonitoringInstrumentation.finish(MonitoringInstrumentation.java:409)
+06-10 22:11:07.689 E/AndroidRuntime(20143): 	at androidx.test.runner.AndroidJUnitRunner.onStart(AndroidJUnitRunner.java:474)
+06-10 22:11:07.689 E/AndroidRuntime(20143): 	at android.app.Instrumentation$InstrumentationThread.run(Instrumentation.java:2205)
+06-10 22:11:07.695 I/ActivityManager(  627): Notify Jio SDK Service on crash event
+06-10 22:11:07.695 I/DropBoxManagerService(  627): add tag=data_app_crash isTagEnabled=true flags=0x2
+06-10 22:11:07.726 W/ContextImpl( 1438): Calling a method in the system process without a qualified user: android.app.ContextImpl.bindService:1748 android.content.ContextWrapper.bindService:756 com.jio.adc.core.b.d:56 com.jio.adc.core.b.b:13 com.jio.adc.core.b$c.run:7 
+06-10 22:11:07.818 I/ActivityManager(  627): Process io.appium.uiautomator2.server (pid 20143) has died: fg  FGS 
+06-10 22:11:07.823 W/ActivityManager(  627): Crash of app io.appium.uiautomator2.server running instrumentation ComponentInfo{io.appium.uiautomator2.server.test/androidx.test.runner.AndroidJUnitRunner}
+06-10 22:11:07.826 I/[ 7253.890965@0]  binder(    0): 627:3370 transaction failed 29189/-22, size 340-0 line 2705
+06-10 22:11:07.826 I/[ 7253.891584@1]  binder(    0): 627:660 transaction failed 29189/-22, size 88-0 line 2705
+==== CRASH END ====
+
+==== CRASH START ====
+06-10 22:14:58.391 E/AndroidRuntime( 3449): FATAL EXCEPTION: Instr: androidx.test.runner.AndroidJUnitRunner
+06-10 22:14:58.391 E/AndroidRuntime( 3449): Process: io.appium.uiautomator2.server, PID: 3449
+06-10 22:14:58.391 E/AndroidRuntime( 3449): java.lang.IllegalStateException: UiAutomation not connected, UiAutomation@8f5f607[id=-1, flags=0]
+06-10 22:14:58.391 E/AndroidRuntime( 3449): 	at android.app.UiAutomation.throwIfNotConnectedLocked(UiAutomation.java:1239)
+06-10 22:14:58.391 E/AndroidRuntime( 3449): 	at android.app.UiAutomation.disconnect(UiAutomation.java:296)
+06-10 22:14:58.391 E/AndroidRuntime( 3449): 	at android.app.Instrumentation.finish(Instrumentation.java:249)
+06-10 22:14:58.391 E/AndroidRuntime( 3449): 	at androidx.test.runner.MonitoringInstrumentation.finish(MonitoringInstrumentation.java:409)
+06-10 22:14:58.391 E/AndroidRuntime( 3449): 	at androidx.test.runner.AndroidJUnitRunner.onStart(AndroidJUnitRunner.java:474)
+06-10 22:14:58.391 E/AndroidRuntime( 3449): 	at android.app.Instrumentation$InstrumentationThread.run(Instrumentation.java:2205)
+06-10 22:14:58.398 I/ActivityManager(  627): Notify Jio SDK Service on crash event
+06-10 22:14:58.400 I/chatty  ( 1322): uid=1000(system) com.jio.sdk expire 19 lines
+06-10 22:14:58.401 I/DropBoxManagerService(  627): add tag=data_app_crash isTagEnabled=true flags=0x2
+06-10 22:14:58.405 I/chatty  ( 1322): uid=1000(system) CriticalEventHa expire 39 lines
+06-10 22:14:58.407 I/chatty  (  627): uid=1000(system) Binder:627_3 expire 1 line
+06-10 22:14:58.408 I/chatty  ( 1438): uid=1000(system) DefaultDispatch expire 19 lines
+06-10 22:14:58.428 D/[ 7484.488810@0]  logd(    0): Skipping 256 entries from slow reader, pid 4735, from LogBuffer::kickMe()
+==== CRASH END ====
+
+==== CRASH START ====
+06-10 22:21:36.273 E/AndroidRuntime( 4836): FATAL EXCEPTION: Instr: androidx.test.runner.AndroidJUnitRunner
+06-10 22:21:36.273 E/AndroidRuntime( 4836): Process: io.appium.uiautomator2.server, PID: 4836
+06-10 22:21:36.273 E/AndroidRuntime( 4836): java.lang.IllegalStateException: UiAutomation not connected, UiAutomation@8f5f607[id=-1, flags=0]
+06-10 22:21:36.273 E/AndroidRuntime( 4836): 	at android.app.UiAutomation.throwIfNotConnectedLocked(UiAutomation.java:1239)
+06-10 22:21:36.273 E/AndroidRuntime( 4836): 	at android.app.UiAutomation.disconnect(UiAutomation.java:296)
+06-10 22:21:36.273 E/AndroidRuntime( 4836): 	at android.app.Instrumentation.finish(Instrumentation.java:249)
+06-10 22:21:36.273 E/AndroidRuntime( 4836): 	at androidx.test.runner.MonitoringInstrumentation.finish(MonitoringInstrumentation.java:409)
+06-10 22:21:36.273 E/AndroidRuntime( 4836): 	at androidx.test.runner.AndroidJUnitRunner.onStart(AndroidJUnitRunner.java:474)
+06-10 22:21:36.273 E/AndroidRuntime( 4836): 	at android.app.Instrumentation$InstrumentationThread.run(Instrumentation.java:2205)
+06-10 22:21:36.277 I/Process ( 4836): Sending signal. PID: 4836 SIG: 9
+06-10 22:21:36.279 D/Glide   ( 7624): Finished loading Bitmap from LOCAL for com.bumptech.glide.gifdecoder.StandardGifDecoder@4b02798 with size [314x176] in 11.095666999999999 ms
+06-10 22:21:36.282 I/ActivityManager(  627): Notify Jio SDK Service on crash event
+06-10 22:21:36.284 I/JioSDK_CriticalEventReceiver( 1322): onReceive(): com.jio.sdk.action.CRITICAL_EVENT_INFO
+06-10 22:21:36.284 I/DropBoxManagerService(  627): add tag=data_app_crash isTagEnabled=true flags=0x2
+06-10 22:21:36.284 D/JioSDK_CriticalEventReceiver( 1322): checkCrashSubType. Received new crash stack trace.
+06-10 22:21:36.284 D/JioSDK_CriticalEventReceiver( 1322): Received crash type : Other subtype of crash
+==== CRASH END ====
+
+==== CRASH START ====
+06-10 22:21:36.288 D/JioSDK_CriticalEventReceiver( 1322):  processInfo: FATAL EXCEPTION 
+06-10 22:21:36.288 D/JioSDK_CriticalEventReceiver( 1322): Process: io.appium.uiautomator2.server
+06-10 22:21:36.288 D/JioSDK_CriticalEventReceiver( 1322): PID: 4836
+06-10 22:21:36.288 D/JioSDK_CriticalEventReceiver( 1322): UID: 10096
+06-10 22:21:36.288 D/JioSDK_CriticalEventReceiver( 1322): Flags: 0x30a8be46
+06-10 22:21:36.288 D/JioSDK_CriticalEventReceiver( 1322): Package: io.appium.uiautomator2.server v215 (7.5.2)
+06-10 22:21:36.288 D/JioSDK_CriticalEventReceiver( 1322): Foreground: No
+06-10 22:21:36.288 D/JioSDK_CriticalEventReceiver( 1322): Process-Runtime: 396720
+06-10 22:21:36.288 D/JioSDK_CriticalEventReceiver( 1322): Build: Jio/4KOTTSTB/MSTB:11/22.1.09/43:userdebug/release-keys
+06-10 22:21:36.288 D/JioSDK_CriticalEventReceiver( 1322): 
+06-10 22:21:36.288 D/JioSDK_CriticalEventReceiver( 1322): processVersion: 7.5.2
+06-10 22:21:36.288 D/JioSDK_CriticalEventReceiver( 1322): isProcessForeground: No
+06-10 22:21:36.288 I/JioSDK_CriticalEventReceiver( 1322): Crash happend for process : io.appium.uiautomator2.server
+06-10 22:21:36.288 V/ActivityManager(  627): Failure notification to TR069 module
+06-10 22:21:36.289 D/JioSDK_CriticalEventReceiver( 1322): checkCrashSubType. Received new crash stack trace.
+06-10 22:21:36.289 D/JioSDK_CriticalEventReceiver( 1322): Received crash type : Other subtype of crash
+==== CRASH END ====
+
+==== CRASH START ====
+06-10 22:21:36.289 D/JioSDK_JioSDKServiceInterfaceImpl( 1322): Response Object is: JioSDK{status='success', token='122bec79b7ae3bf915cefadc776321a7a6c955c3', api='null', event='event-crash', module='events', transactionId='-1', argsObj={"code":0,"response":{"type":"crash","value":{"crash-type":"Other subtype of crash","process-name":"io.appium.uiautomator2.server","stack-trace":"java.lang.IllegalStateException: UiAutomation not connected, UiAutomation@8f5f607[id=-1, flags=0]\n\tat android.app.UiAutomation.throwIfNotConnectedLocked(UiAutomation.java:1239)\n\tat android.app.UiAutomation.disconnect(UiAutomation.java:296)\n\tat android.app.Instrumentation.finish(Instrumentation.java:249)\n\tat androidx.test.runner.MonitoringInstrumentation.finish(MonitoringInstrumentation.java:409)\n\tat androidx.test.runner.AndroidJUnitRunner.onStart(AndroidJUnitRunner.java:474)\n\tat android.app.Instrumentation$InstrumentationThread.run(Instrumentation.java:2205)\n","process-info":"FATAL EXCEPTION \nProcess: io.appium.uiautomator2.server\nPID: 4836\nUID: 10096\nFlags: 0x30a8be46\nPackage: io.appium.uiautomator2.server v215 (7.5.2)\nForeground: No\nProcess-Runtime: 396720\nBuild: Jio\/4KOTTSTB\/MSTB:11\/22.1.09\/43:userdebug\/release-keys\n\n","is-foreground-process":"No"}}}}
+06-10 22:21:36.289 D/JioSDK_JioSDKServiceInterfaceImpl( 1322): response while returning is :{"code":0,"response":{"type":"crash","value":{"crash-type":"Other subtype of crash","process-name":"io.appium.uiautomator2.server","stack-trace":"java.lang.IllegalStateException: UiAutomation not connected, UiAutomation@8f5f607[id=-1, flags=0]\n\tat android.app.UiAutomation.throwIfNotConnectedLocked(UiAutomation.java:1239)\n\tat android.app.UiAutomation.disconnect(UiAutomation.java:296)\n\tat android.app.Instrumentation.finish(Instrumentation.java:249)\n\tat androidx.test.runner.MonitoringInstrumentation.finish(MonitoringInstrumentation.java:409)\n\tat androidx.test.runner.AndroidJUnitRunner.onStart(AndroidJUnitRunner.java:474)\n\tat android.app.Instrumentation$InstrumentationThread.run(Instrumentation.java:2205)\n","process-info":"FATAL EXCEPTION \nProcess: io.appium.uiautomator2.server\nPID: 4836\nUID: 10096\nFlags: 0x30a8be46\nPackage: io.appium.uiautomator2.server v215 (7.5.2)\nForeground: No\nProcess-Runtime: 396720\nBuild: Jio\/4KOTTSTB\/MSTB:11\/22.1.09\/43:userdebug\/release-keys\n\n","is-foreground-process":"No"}}}
+06-10 22:21:36.289 D/JioSDK_JioSDKServiceInterfaceImpl( 1322): Notifying to client: com.jio.tr069client, Callback: com.jio.sdk.aidl.IJioSDKServiceCallback$Stub$Proxy@ff50082
+06-10 22:21:36.289 D/JioSDK_JioSDKServiceInterfaceImpl( 1322): Event: {"status":"success","module":"events","event":"event-crash","transaction-id":"-1","details":{"code":0,"response":{"type":"crash","value":{"crash-type":"Other subtype of crash","process-name":"io.appium.uiautomator2.server","stack-trace":"java.lang.IllegalStateException: UiAutomation not connected, UiAutomation@8f5f607[id=-1, flags=0]\n\tat android.app.UiAutomation.throwIfNotConnectedLocked(UiAutomation.java:1239)\n\tat android.app.UiAutomation.disconnect(UiAutomation.java:296)\n\tat android.app.Instrumentation.finish(Instrumentation.java:249)\n\tat androidx.test.runner.MonitoringInstrumentation.finish(MonitoringInstrumentation.java:409)\n\tat androidx.test.runner.AndroidJUnitRunner.onStart(AndroidJUnitRunner.java:474)\n\tat android.app.Instrumentation$InstrumentationThread.run(Instrumentation.java:2205)\n","process-info":"FATAL EXCEPTION \nProcess: io.appium.uiautomator2.server\nPID: 4836\nUID: 10096\nFlags: 0x30a8be46\nPackage: io.appium.uiautomator2.server v215 (7.5.2)\nForeground: No\nProcess-Runtime: 396720\nBuild: Jio\/4KOTTSTB\/MSTB:11\/22.1.09\/43:userdebug\/release-keys\n\n","is-foreground-process":"No"}}}}
+06-10 22:21:36.290 I/JioSDK_CriticalLog( 1322): Creating critical logs
+06-10 22:21:36.290 D/JioSDK_AdvanceLogHelper( 1322): createDirectory --> /storage/emulated/0/.tr069/log/CriticalLog/ permissions --> rwxrwxr--
+06-10 22:21:36.290 D/JIO_TR069-( 1438): JioSDkEventCallBackResponce:----{"status":"success","module":"events","event":"event-crash","transaction-id":"-1","details":{"code":0,"response":{"type":"crash","value":{"crash-type":"Other subtype of crash","process-name":"io.appium.uiautomator2.server","stack-trace":"java.lang.IllegalStateException: UiAutomation not connected, UiAutomation@8f5f607[id=-1, flags=0]\n\tat android.app.UiAutomation.throwIfNotConnectedLocked(UiAutomation.java:1239)\n\tat android.app.UiAutomation.disconnect(UiAutomation.java:296)\n\tat android.app.Instrumentation.finish(Instrumentation.java:249)\n\tat androidx.test.runner.MonitoringInstrumentation.finish(MonitoringInstrumentation.java:409)\n\tat androidx.test.runner.AndroidJUnitRunner.onStart(AndroidJUnitRunner.java:474)\n\tat android.app.Instrumentation$InstrumentationThread.run(Instrumentation.java:2205)\n","process-info":"FATAL EXCEPTION \nProcess: io.appium.uiautomator2.server\nPID: 4836\nUID: 10096\nFlags: 0x30a8be46\nPackage: io.appium.uiautomator2.server v215 (7.5.2)\nForeground: No\nProcess-Runtime: 396720\nBuild: Jio\/4KOTTSTB\/MSTB:11\/22.1.09\/43:userdebug\/release-keys\n\n","is-foreground-process":"No"}}}}
+06-10 22:21:36.291 D/JIO_TR069-( 1438): jiosdkresponse  ...  {"status":"success","module":"events","event":"event-crash","transaction-id":"-1","details":{"code":0,"response":{"type":"crash","value":{"crash-type":"Other subtype of crash","process-name":"io.appium.uiautomator2.server","stack-trace":"java.lang.IllegalStateException: UiAutomation not connected, UiAutomation@8f5f607[id=-1, flags=0]\n\tat android.app.UiAutomation.throwIfNotConnectedLocked(UiAutomation.java:1239)\n\tat android.app.UiAutomation.disconnect(UiAutomation.java:296)\n\tat android.app.Instrumentation.finish(Instrumentation.java:249)\n\tat androidx.test.runner.MonitoringInstrumentation.finish(MonitoringInstrumentation.java:409)\n\tat androidx.test.runner.AndroidJUnitRunner.onStart(AndroidJUnitRunner.java:474)\n\tat android.app.Instrumentation$InstrumentationThread.run(Instrumentation.java:2205)\n","process-info":"FATAL EXCEPTION \nProcess: io.appium.uiautomator2.server\nPID: 4836\nUID: 10096\nFlags: 0x30a8be46\nPackage: io.appium.uiautomator2.server v215 (7.5.2)\nForeground: No\nProcess-Runtime: 396720\nBuild: Jio\/4KOTTSTB\/MSTB:11\/22.1.09\/43:userdebug\/release-keys\n\n","is-foreground-process":"No"}}}}
+06-10 22:21:36.292 D/JIO_TR069-Crash ANR data: ( 1438): {"status":"success","module":"events","event":"event-crash","transaction-id":"-1","details":{"code":0,"response":{"type":"crash","value":{"crash-type":"Other subtype of crash","process-name":"io.appium.uiautomator2.server","stack-trace":"java.lang.IllegalStateException: UiAutomation not connected, UiAutomation@8f5f607[id=-1, flags=0]\n\tat android.app.UiAutomation.throwIfNotConnectedLocked(UiAutomation.java:1239)\n\tat android.app.UiAutomation.disconnect(UiAutomation.java:296)\n\tat android.app.Instrumentation.finish(Instrumentation.java:249)\n\tat androidx.test.runner.MonitoringInstrumentation.finish(MonitoringInstrumentation.java:409)\n\tat androidx.test.runner.AndroidJUnitRunner.onStart(AndroidJUnitRunner.java:474)\n\tat android.app.Instrumentation$InstrumentationThread.run(Instrumentation.java:2205)\n","process-info":"FATAL EXCEPTION \nProcess: io.appium.uiautomator2.server\nPID: 4836\nUID: 10096\nFlags: 0x30a8be46\nPackage: io.appium.uiautomator2.server v215 (7.5.2)\nForeground: No\nProcess-Runtime: 396720\nBuild: Jio\/4KOTTSTB\/MSTB:11\/22.1.09\/43:userdebug\/release-keys\n\n","is-foreground-process":"No"}}}}
+06-10 22:21:36.292 D/JioSDK_AdvanceLogHelper( 1322): Directory /storage/emulated/0/.tr069/log/CriticalLog already exists!
+06-10 22:21:36.312 D/JioSDK_CriticalLog( 1322): Writing new Critical Log to: /storage/emulated/0/.tr069/log/CriticalLog/STB-RKISBFJ60000097_JMSB200A_10_Jun_2025_22-21-36_CriticalLog.txt
+06-10 22:21:36.312 D/Glide   ( 7624): Finished loading Bitmap from LOCAL for com.bumptech.glide.gifdecoder.StandardGifDecoder@4b02798 with size [314x176] in 3.994125 ms
+06-10 22:21:36.315 D/JioSDK_SDKNativeService( 1322): performTask(), Module Id: 1
+06-10 22:21:36.316 D/Jio_tr069 DCClient( 1438): crash_happened_event -> {"type":"event-crash","value":{"code":0,"response":{"type":"crash","value":{"crash-type":"Other subtype of crash","process-name":"io.appium.uiautomator2.server","stack-trace":"java.lang.IllegalStateException: UiAutomation not connected, UiAutomation@8f5f607[id=-1, flags=0]\n\tat android.app.UiAutomation.throwIfNotConnectedLocked(UiAutomation.java:1239)\n\tat android.app.UiAutomation.disconnect(UiAutomation.java:296)\n\tat android.app.Instrumentation.finish(Instrumentation.java:249)\n\tat androidx.test.runner.MonitoringInstrumentation.finish(MonitoringInstrumentation.java:409)\n\tat androidx.test.runner.AndroidJUnitRunner.onStart(AndroidJUnitRunner.java:474)\n\tat android.app.Instrumentation$InstrumentationThread.run(Instrumentation.java:2205)\n","process-info":"FATAL EXCEPTION \nProcess: io.appium.uiautomator2.server\nPID: 4836\nUID: 10096\nFlags: 0x30a8be46\nPackage: io.appium.uiautomator2.server v215 (7.5.2)\nForeground: No\nProcess-Runtime: 396720\nBuild: Jio\/4KOTTSTB\/MSTB:11\/22.1.09\/43:userdebug\/release-keys\n\n","is-foreground-process":"No"}}}}
+06-10 22:21:36.318 D/JIO_TR069-excluded event( 1438): 
+06-10 22:21:36.321 D/JIO_TR069-( 1438): Error Receiver:event-crash : {"code":0,"response":{"type":"crash","value":{"crash-type":"Other subtype of crash","process-name":"io.appium.uiautomator2.server","stack-trace":"java.lang.IllegalStateException: UiAutomation not connected, UiAutomation@8f5f607[id=-1, flags=0]\n\tat android.app.UiAutomation.throwIfNotConnectedLocked(UiAutomation.java:1239)\n\tat android.app.UiAutomation.disconnect(UiAutomation.java:296)\n\tat android.app.Instrumentation.finish(Instrumentation.java:249)\n\tat androidx.test.runner.MonitoringInstrumentation.finish(MonitoringInstrumentation.java:409)\n\tat androidx.test.runner.AndroidJUnitRunner.onStart(AndroidJUnitRunner.java:474)\n\tat android.app.Instrumentation$InstrumentationThread.run(Instrumentation.java:2205)\n","process-info":"FATAL EXCEPTION \nProcess: io.appium.uiautomator2.server\nPID: 4836\nUID: 10096\nFlags: 0x30a8be46\nPackage: io.appium.uiautomator2.server v215 (7.5.2)\nForeground: No\nProcess-Runtime: 396720\nBuild: Jio\/4KOTTSTB\/MSTB:11\/22.1.09\/43:userdebug\/release-keys\n\n","is-foreground-process":"No"}}}
+==== CRASH END ====
+
