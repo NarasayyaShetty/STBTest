@@ -38,6 +38,7 @@ public class ExtentTestManager {
 	public static void logSkip(String skip) {
 		getTest().log(LogStatus.SKIP, skip);
 	}
+	
 
 	public static void endTest() {
 		extentReport.endTest(getTest());

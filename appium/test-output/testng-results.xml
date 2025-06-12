@@ -1,190 +1,94 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="5" passed="5" failed="0" skipped="0">
+<testng-results ignored="1" total="2" passed="1" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2025-06-10T22:21:39 IST" name="Default suite" finished-at="2025-06-10T22:31:35 IST" duration-ms="595744">
+  <suite started-at="2025-06-12T16:33:40 IST" name="Default suite" finished-at="2025-06-12T16:35:43 IST" duration-ms="123713">
     <groups>
     </groups>
-    <test started-at="2025-06-10T22:21:39 IST" name="Default test" finished-at="2025-06-10T22:31:35 IST" duration-ms="595744">
+    <test started-at="2025-06-12T16:33:40 IST" name="Default test" finished-at="2025-06-12T16:35:43 IST" duration-ms="123713">
       <class name="Tests.HotstarPlayerScreenOutputs">
-        <test-method is-config="true" signature="configTest()[pri:0, instance:Tests.HotstarPlayerScreenOutputs@303cf2ba]" started-at="2025-06-10T22:21:30 IST" name="configTest" finished-at="2025-06-10T22:21:39 IST" duration-ms="9698" status="PASS">
+        <test-method is-config="true" signature="configTest()[pri:0, instance:Tests.HotstarPlayerScreenOutputs@535779e4]" started-at="2025-06-12T16:33:24 IST" name="configTest" finished-at="2025-06-12T16:33:40 IST" duration-ms="16181" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- configTest -->
-        <test-method is-config="true" signature="setUp()[pri:0, instance:Tests.HotstarPlayerScreenOutputs@303cf2ba]" started-at="2025-06-10T22:21:39 IST" name="setUp" finished-at="2025-06-10T22:21:52 IST" duration-ms="12969" status="PASS">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:Tests.HotstarPlayerScreenOutputs@535779e4]" started-at="2025-06-12T16:33:40 IST" name="setUp" finished-at="2025-06-12T16:33:54 IST" duration-ms="14246" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method is-config="true" signature="beforeTestMethod(java.lang.reflect.Method)[pri:0, instance:Tests.HotstarPlayerScreenOutputs@303cf2ba]" started-at="2025-06-10T22:21:52 IST" name="beforeTestMethod" finished-at="2025-06-10T22:21:52 IST" duration-ms="76" status="PASS">
+        <test-method is-config="true" signature="beforeTestMethod(java.lang.reflect.Method)[pri:0, instance:Tests.HotstarPlayerScreenOutputs@535779e4]" started-at="2025-06-12T16:33:54 IST" name="beforeTestMethod" finished-at="2025-06-12T16:33:54 IST" duration-ms="72" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[public void Tests.HotstarPlayerScreenOutputs.jioHotstarPlayreResult(java.lang.String)]]>
+                <![CDATA[public void Tests.HotstarPlayerScreenOutputs.adScreen() throws java.lang.InterruptedException]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeTestMethod -->
-        <test-method signature="jioHotstarPlayreResult(java.lang.String)[pri:0, instance:Tests.HotstarPlayerScreenOutputs@303cf2ba]" started-at="2025-06-10T22:21:52 IST" name="jioHotstarPlayreResult" description="Playing multiple contents" data-provider="hotstarContentName" finished-at="2025-06-10T22:23:51 IST" duration-ms="118177" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[Salaar]]>
-              </value>
-            </param>
-          </params>
+        <test-method signature="adScreen()[pri:0, instance:Tests.HotstarPlayerScreenOutputs@535779e4]" started-at="2025-06-12T16:33:54 IST" name="adScreen" finished-at="2025-06-12T16:35:43 IST" duration-ms="109283" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- jioHotstarPlayreResult -->
-        <test-method is-config="true" signature="afterTestMethod(org.testng.ITestResult)[pri:0, instance:Tests.HotstarPlayerScreenOutputs@303cf2ba]" started-at="2025-06-10T22:23:51 IST" name="afterTestMethod" finished-at="2025-06-10T22:23:51 IST" duration-ms="1" status="PASS">
+        </test-method> <!-- adScreen -->
+        <test-method is-config="true" signature="afterTestMethod(org.testng.ITestResult)[pri:0, instance:Tests.HotstarPlayerScreenOutputs@535779e4]" started-at="2025-06-12T16:35:43 IST" name="afterTestMethod" finished-at="2025-06-12T16:35:43 IST" duration-ms="4" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=jioHotstarPlayreResult status=SUCCESS method=HotstarPlayerScreenOutputs.jioHotstarPlayreResult(java.lang.String)[pri:0, instance:Tests.HotstarPlayerScreenOutputs@303cf2ba] output={null}]]]>
+                <![CDATA[[TestResult name=adScreen status=SUCCESS method=HotstarPlayerScreenOutputs.adScreen()[pri:0, instance:Tests.HotstarPlayerScreenOutputs@535779e4] output={null}]]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterTestMethod -->
-        <test-method is-config="true" signature="beforeTestMethod(java.lang.reflect.Method)[pri:0, instance:Tests.HotstarPlayerScreenOutputs@303cf2ba]" started-at="2025-06-10T22:23:51 IST" name="beforeTestMethod" finished-at="2025-06-10T22:23:51 IST" duration-ms="1" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[public void Tests.HotstarPlayerScreenOutputs.jioHotstarPlayreResult(java.lang.String)]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- beforeTestMethod -->
-        <test-method signature="jioHotstarPlayreResult(java.lang.String)[pri:0, instance:Tests.HotstarPlayerScreenOutputs@303cf2ba]" started-at="2025-06-10T22:23:51 IST" name="jioHotstarPlayreResult" description="Playing multiple contents" data-provider="hotstarContentName" finished-at="2025-06-10T22:25:51 IST" duration-ms="120300" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[Bhagavanth Kesari]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- jioHotstarPlayreResult -->
-        <test-method is-config="true" signature="afterTestMethod(org.testng.ITestResult)[pri:0, instance:Tests.HotstarPlayerScreenOutputs@303cf2ba]" started-at="2025-06-10T22:25:51 IST" name="afterTestMethod" finished-at="2025-06-10T22:25:51 IST" duration-ms="1" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[[TestResult name=jioHotstarPlayreResult status=SUCCESS method=HotstarPlayerScreenOutputs.jioHotstarPlayreResult(java.lang.String)[pri:0, instance:Tests.HotstarPlayerScreenOutputs@303cf2ba] output={null}]]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- afterTestMethod -->
-        <test-method signature="jioHotstarPlayreResult(java.lang.String)[pri:0, instance:Tests.HotstarPlayerScreenOutputs@303cf2ba]" started-at="2025-06-10T22:25:51 IST" name="jioHotstarPlayreResult" description="Playing multiple contents" data-provider="hotstarContentName" finished-at="2025-06-10T22:27:43 IST" duration-ms="112129" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[Captain America Brave new world]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- jioHotstarPlayreResult -->
-        <test-method is-config="true" signature="beforeTestMethod(java.lang.reflect.Method)[pri:0, instance:Tests.HotstarPlayerScreenOutputs@303cf2ba]" started-at="2025-06-10T22:25:51 IST" name="beforeTestMethod" finished-at="2025-06-10T22:25:51 IST" duration-ms="0" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[public void Tests.HotstarPlayerScreenOutputs.jioHotstarPlayreResult(java.lang.String)]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- beforeTestMethod -->
-        <test-method is-config="true" signature="afterTestMethod(org.testng.ITestResult)[pri:0, instance:Tests.HotstarPlayerScreenOutputs@303cf2ba]" started-at="2025-06-10T22:27:43 IST" name="afterTestMethod" finished-at="2025-06-10T22:27:43 IST" duration-ms="0" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[[TestResult name=jioHotstarPlayreResult status=SUCCESS method=HotstarPlayerScreenOutputs.jioHotstarPlayreResult(java.lang.String)[pri:0, instance:Tests.HotstarPlayerScreenOutputs@303cf2ba] output={null}]]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- afterTestMethod -->
-        <test-method is-config="true" signature="beforeTestMethod(java.lang.reflect.Method)[pri:0, instance:Tests.HotstarPlayerScreenOutputs@303cf2ba]" started-at="2025-06-10T22:27:43 IST" name="beforeTestMethod" finished-at="2025-06-10T22:27:43 IST" duration-ms="1" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[public void Tests.HotstarPlayerScreenOutputs.jioHotstarPlayreResult(java.lang.String)]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- beforeTestMethod -->
-        <test-method signature="jioHotstarPlayreResult(java.lang.String)[pri:0, instance:Tests.HotstarPlayerScreenOutputs@303cf2ba]" started-at="2025-06-10T22:27:43 IST" name="jioHotstarPlayreResult" description="Playing multiple contents" data-provider="hotstarContentName" finished-at="2025-06-10T22:29:35 IST" duration-ms="111829" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[Tough me not]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- jioHotstarPlayreResult -->
-        <test-method is-config="true" signature="afterTestMethod(org.testng.ITestResult)[pri:0, instance:Tests.HotstarPlayerScreenOutputs@303cf2ba]" started-at="2025-06-10T22:29:35 IST" name="afterTestMethod" finished-at="2025-06-10T22:29:35 IST" duration-ms="1" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[[TestResult name=jioHotstarPlayreResult status=SUCCESS method=HotstarPlayerScreenOutputs.jioHotstarPlayreResult(java.lang.String)[pri:0, instance:Tests.HotstarPlayerScreenOutputs@303cf2ba] output={null}]]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- afterTestMethod -->
-        <test-method is-config="true" signature="beforeTestMethod(java.lang.reflect.Method)[pri:0, instance:Tests.HotstarPlayerScreenOutputs@303cf2ba]" started-at="2025-06-10T22:29:35 IST" name="beforeTestMethod" finished-at="2025-06-10T22:29:35 IST" duration-ms="1" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[public void Tests.HotstarPlayerScreenOutputs.jioHotstarPlayreResult(java.lang.String)]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- beforeTestMethod -->
-        <test-method signature="jioHotstarPlayreResult(java.lang.String)[pri:0, instance:Tests.HotstarPlayerScreenOutputs@303cf2ba]" started-at="2025-06-10T22:29:35 IST" name="jioHotstarPlayreResult" description="Playing multiple contents" data-provider="hotstarContentName" finished-at="2025-06-10T22:31:34 IST" duration-ms="119280" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[Anupama]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- jioHotstarPlayreResult -->
-        <test-method is-config="true" signature="afterTestMethod(org.testng.ITestResult)[pri:0, instance:Tests.HotstarPlayerScreenOutputs@303cf2ba]" started-at="2025-06-10T22:31:34 IST" name="afterTestMethod" finished-at="2025-06-10T22:31:34 IST" duration-ms="0" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[[TestResult name=jioHotstarPlayreResult status=SUCCESS method=HotstarPlayerScreenOutputs.jioHotstarPlayreResult(java.lang.String)[pri:0, instance:Tests.HotstarPlayerScreenOutputs@303cf2ba] output={null}]]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- afterTestMethod -->
-        <test-method is-config="true" signature="tearDownapp()[pri:0, instance:Tests.HotstarPlayerScreenOutputs@303cf2ba]" started-at="2025-06-10T22:31:34 IST" name="tearDownapp" finished-at="2025-06-10T22:31:35 IST" duration-ms="908" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- tearDownapp -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:Tests.HotstarPlayerScreenOutputs@303cf2ba]" started-at="2025-06-10T22:31:35 IST" name="tearDown" finished-at="2025-06-10T22:31:35 IST" duration-ms="305" status="PASS">
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:Tests.HotstarPlayerScreenOutputs@535779e4]" started-at="2025-06-12T16:35:43 IST" name="tearDown" finished-at="2025-06-12T16:35:44 IST" duration-ms="618" status="FAIL">
+          <exception class="org.openqa.selenium.NoSuchSessionException">
+            <message>
+              <![CDATA[Session ID is null. Using WebDriver after calling quit()?
+Build info: version: '4.33.0', revision: '2c6aaad03a'
+System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '11.0.2'
+Driver info: io.appium.java_client.android.AndroidDriver
+Command: [null, executeScript {script=mobile: pressKey, args=[{keycode=3}]}]
+Capabilities {appium:automationName: UIAutomator2, appium:databaseEnabled: false, appium:desired: {automationName: UIAutomator2, deviceName: 192.168.1.23:5555, mjpegServerPort: 0, platformName: ANDROID, udid: 192.168.1.23:5555}, appium:deviceApiLevel: 30, appium:deviceManufacturer: Jio, appium:deviceModel: JMSB200A, appium:deviceName: 192.168.1.23:5555, appium:deviceScreenDensity: 320, appium:deviceScreenSize: 1920x1080, appium:deviceUDID: 192.168.1.23:5555, appium:javascriptEnabled: true, appium:locationContextEnabled: false, appium:mjpegServerPort: 0, appium:networkConnectionEnabled: true, appium:pixelRatio: 2, appium:platformVersion: 11, appium:statBarHeight: 0, appium:takesScreenshot: true, appium:udid: 192.168.1.23:5555, appium:viewportRect: {height: 1080, left: 0, top: 0, width: 1920}, appium:warnings: {}, appium:webStorageEnabled: false, platformName: ANDROID}]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.NoSuchSessionException: Session ID is null. Using WebDriver after calling quit()?
+Build info: version: '4.33.0', revision: '2c6aaad03a'
+System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '11.0.2'
+Driver info: io.appium.java_client.android.AndroidDriver
+Command: [null, executeScript {script=mobile: pressKey, args=[{keycode=3}]}]
+Capabilities {appium:automationName: UIAutomator2, appium:databaseEnabled: false, appium:desired: {automationName: UIAutomator2, deviceName: 192.168.1.23:5555, mjpegServerPort: 0, platformName: ANDROID, udid: 192.168.1.23:5555}, appium:deviceApiLevel: 30, appium:deviceManufacturer: Jio, appium:deviceModel: JMSB200A, appium:deviceName: 192.168.1.23:5555, appium:deviceScreenDensity: 320, appium:deviceScreenSize: 1920x1080, appium:deviceUDID: 192.168.1.23:5555, appium:javascriptEnabled: true, appium:locationContextEnabled: false, appium:mjpegServerPort: 0, appium:networkConnectionEnabled: true, appium:pixelRatio: 2, appium:platformVersion: 11, appium:statBarHeight: 0, appium:takesScreenshot: true, appium:udid: 192.168.1.23:5555, appium:viewportRect: {height: 1080, left: 0, top: 0, width: 1920}, appium:warnings: {}, appium:webStorageEnabled: false, platformName: ANDROID}
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:176)
+at io.appium.java_client.remote.AppiumCommandExecutor.execute(AppiumCommandExecutor.java:237)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:544)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:617)
+at io.appium.java_client.AppiumDriver.execute(AppiumDriver.java:305)
+at io.appium.java_client.CommandExecutionHelper.execute(CommandExecutionHelper.java:36)
+at io.appium.java_client.CommandExecutionHelper.executeScript(CommandExecutionHelper.java:67)
+at io.appium.java_client.android.nativekey.PressesKey.pressKey(PressesKey.java:40)
+at Tests.BaseTest.tearDown(BaseTest.java:94)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:71)
+at org.testng.internal.invokers.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:400)
+at org.testng.internal.invokers.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:333)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:386)
+at org.testng.SuiteRunner.run(SuiteRunner.java:312)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
+at org.testng.TestNG.runSuites(TestNG.java:1112)
+at org.testng.TestNG.run(TestNG.java:1079)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.NoSuchSessionException -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->

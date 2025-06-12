@@ -17,6 +17,10 @@ import java.util.HashMap;
 import java.util.Map;
 import java.util.UUID;
 
+import io.appium.java_client.android.AndroidDriver;
+import io.appium.java_client.android.nativekey.AndroidKey;
+import io.appium.java_client.android.nativekey.KeyEvent;
+
 public class AdbCommendsClass {
 
 	// Step 1: Set device to TCP/IP mode
@@ -46,9 +50,17 @@ public class AdbCommendsClass {
 	// ","/sys/class/video_poll/primary_src_fmt");
 	// runAdbCommand("adb", "shell", "input", "keyevent", "3");
 
-	public static void currentFocus() {
+	public static void currentFocus(AndroidDriver driver) {
 		try {
-			runAdbCommand("abd", "shell", "dumpsys", "window", "|", "mCurrentFocus");
+			ArrayList<String> focusWindow=runAdbCommand("adb", "shell", "dumpsys", "window", "|", "grep","mCurrentFocus");
+			
+			for(String value:focusWindow) {
+				if(value.contains("com.jio.stb.screensaver/android.service.dreams.DreamActivity")) {
+					System.out.println("Current is screen page, pressing back key to disable the screensaver");
+					driver.pressKey(new KeyEvent(AndroidKey.BACK));
+					break;
+				}
+			}
 		} catch (Exception e) {
 			e.printStackTrace();
 		}
@@ -105,82 +117,98 @@ public class AdbCommendsClass {
 
 	// prints the logs
 	public static void logcatLogs(String appName) {
-		new Thread(() -> {
-			try {
-				// Date-based folder
-				SimpleDateFormat dateFormat = new SimpleDateFormat("ddMMyyyy");
-				String currentDate = dateFormat.format(Calendar.getInstance().getTime());
+	    new Thread(() -> {
+	        try {
+	            // Date-based folder
+	            SimpleDateFormat dateFormat = new SimpleDateFormat("ddMMyyyy");
+	            String currentDate = dateFormat.format(Calendar.getInstance().getTime());
 
-				// Timestamp for filenames
-				String timeStamp = new SimpleDateFormat("HHmmss").format(new Date());
+	            // Timestamp for filenames
+	            String timeStamp = new SimpleDateFormat("HHmmss").format(new Date());
 
-				String basePath = System.getProperty("user.dir") + File.separator + "Results" + File.separator
-						+ "LogcatLogs" + File.separator + currentDate;
-				File dir = new File(basePath);
-				if (!dir.exists())
-					dir.mkdirs();
+	            // Base path
+	            String basePath = System.getProperty("user.dir") + File.separator + "Results" + File.separator
+	                    + "LogcatLogs" + File.separator + currentDate;
+	            File dir = new File(basePath);
+	            if (!dir.exists())
+	                dir.mkdirs();
 
-				// Create files with timestamp
-				File crashLog = new File(dir, "CrashLogs_" + appName + "_" + timeStamp + ".txt");
-				File anrLog = new File(dir, "ANRLogs_" + appName + "_" + timeStamp + ".txt");
-				File fullLog = new File(dir, "FullLogs_" + appName + "_" + timeStamp + ".txt");
+	            // Full log is always created
+	            File fullLog = new File(dir, "FullLogs_" + appName + "_" + timeStamp + ".txt");
+	            BufferedWriter fullWriter = new BufferedWriter(new FileWriter(fullLog));
 
-				BufferedWriter crashWriter = new BufferedWriter(new FileWriter(crashLog));
-				BufferedWriter anrWriter = new BufferedWriter(new FileWriter(anrLog));
-				BufferedWriter fullWriter = new BufferedWriter(new FileWriter(fullLog));
+	            // For Crash/ANR: declare but delay creation
+	            BufferedWriter crashWriter = null;
+	            BufferedWriter anrWriter = null;
+	            boolean crashFileCreated = false;
+	            boolean anrFileCreated = false;
 
-				ProcessBuilder pb = new ProcessBuilder("adb", "logcat", "-v", "time");
-				Process process = pb.start();
-				BufferedReader reader = new BufferedReader(new InputStreamReader(process.getInputStream()));
+	            // Clear old logs
+	            Runtime.getRuntime().exec("adb logcat -c");
 
-				String line;
-				System.out.println("Collecting logs... Press Ctrl+C to stop.");
+	            // Start logcat
+	            ProcessBuilder pb = new ProcessBuilder("adb", "logcat", "-v", "time");
+	            Process process = pb.start();
+	            BufferedReader reader = new BufferedReader(new InputStreamReader(process.getInputStream()));
 
-				while ((line = reader.readLine()) != null) {
-					fullWriter.write(line);
-					fullWriter.newLine();
-					fullWriter.flush();
+	            String line;
+	            System.out.println("Collecting logs... Press Ctrl+C to stop.");
 
-					if (line.contains("FATAL EXCEPTION")) {
-						System.out.println("[Crash] " + line);
-						crashWriter.write("==== CRASH START ====\n");
-						crashWriter.write(line + "\n");
-						// Grab next 15 lines to capture stack trace
-						for (int i = 0; i < 15; i++) {
-							String next = reader.readLine();
-							if (next == null)
-								break;
-							crashWriter.write(next + "\n");
-						}
-						crashWriter.write("==== CRASH END ====\n\n");
-						crashWriter.flush();
-					} else if (line.contains("ANR in")) {
-						System.out.println("[ANR] " + line);
-						anrWriter.write("==== ANR START ====\n");
-						anrWriter.write(line + "\n");
-						// Grab next 10 lines to give context
-						for (int i = 0; i < 10; i++) {
-							String next = reader.readLine();
-							if (next == null)
-								break;
-							anrWriter.write(next + "\n");
-						}
-						anrWriter.write("==== ANR END ====\n\n");
-						anrWriter.flush();
-					}
-				}
+	            while ((line = reader.readLine()) != null) {
+	                fullWriter.write(line);
+	                fullWriter.newLine();
+	                fullWriter.flush();
 
-				// Cleanup
-				fullWriter.close();
-				crashWriter.close();
-				anrWriter.close();
-				reader.close();
-				process.destroy();
+	                // CRASH detection
+	                if (line.contains("FATAL EXCEPTION") && line.contains(appName)) {
+	                    if (!crashFileCreated) {
+	                        File crashLog = new File(dir, "CrashLogs_" + appName + "_" + timeStamp + ".txt");
+	                        crashWriter = new BufferedWriter(new FileWriter(crashLog));
+	                        crashFileCreated = true;
+	                    }
+	                    System.out.println("[Crash] " + line);
+	                    crashWriter.write("==== CRASH START ====\n");
+	                    crashWriter.write(line + "\n");
+	                    for (int i = 0; i < 15; i++) {
+	                        String next = reader.readLine();
+	                        if (next == null) break;
+	                        crashWriter.write(next + "\n");
+	                    }
+	                    crashWriter.write("==== CRASH END ====\n\n");
+	                    crashWriter.flush();
+	                }
 
-			} catch (IOException e) {
-				e.printStackTrace();
-			}
-		}).start();
+	                // ANR detection
+	                else if (line.contains("ANR in") && line.contains(appName)) {
+	                    if (!anrFileCreated) {
+	                        File anrLog = new File(dir, "ANRLogs_" + appName + "_" + timeStamp + ".txt");
+	                        anrWriter = new BufferedWriter(new FileWriter(anrLog));
+	                        anrFileCreated = true;
+	                    }
+	                    System.out.println("[ANR] " + line);
+	                    anrWriter.write("==== ANR START ====\n");
+	                    anrWriter.write(line + "\n");
+	                    for (int i = 0; i < 10; i++) {
+	                        String next = reader.readLine();
+	                        if (next == null) break;
+	                        anrWriter.write(next + "\n");
+	                    }
+	                    anrWriter.write("==== ANR END ====\n\n");
+	                    anrWriter.flush();
+	                }
+	            }
+
+	            // Cleanup
+	            fullWriter.close();
+	            if (crashWriter != null) crashWriter.close();
+	            if (anrWriter != null) anrWriter.close();
+	            reader.close();
+	            process.destroy();
+
+	        } catch (IOException e) {
+	            e.printStackTrace();
+	        }
+	    }).start();
 	}
 
 	// performs the root
@@ -189,6 +217,18 @@ public class AdbCommendsClass {
 			runAdbCommand("adb", "root");
 		} catch (Exception e) {
 			System.out.println("Exception occureed");
+			e.printStackTrace();
+		}
+	}
+	
+	public static void startServer() {
+		try {
+			runAdbCommand("adb","kill-server");
+			Thread.sleep(2000);
+			runAdbCommand("adb","start-server");
+		}
+		catch(Exception e) {
+			System.err.println("Exception occureed");
 			e.printStackTrace();
 		}
 	}
@@ -258,6 +298,7 @@ public class AdbCommendsClass {
 	public static void connectStb(String deviceIp) {
 		try {
 			disConnect();
+			startServer();
 			runAdbCommand("adb", "connect", deviceIp);
 			root();
 			remount();
@@ -300,5 +341,6 @@ public class AdbCommendsClass {
 
 		return list;
 	}
-
+	
+	
 }

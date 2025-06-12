@@ -10,7 +10,7 @@ public class PlayerCommends {
 	public static String getAudioOutput() {
 		String latestFormat = "";
 		try {
-			ArrayList<String> audio = runAdbCommand("adb", "shell", "dumpsys", "media.audio_flinger");
+			ArrayList<String> audio = runAdbCommand("adb","shell","dumpsys","media.audio_flinger","|","grep","-i","Format");
 			for (String line : audio) {
 				if (line.contains("[AML_HAL]")) {
 					break; // Stop at HAL info
@@ -33,26 +33,31 @@ public class PlayerCommends {
 	}
 
 	public static String mapAudioFormatToUserFriendly(String hexCode) {
-		switch (hexCode.toLowerCase()) {
-		case "0x1":
-		case "0x2":
-			return "PCM";
-		case "0x40000001": // AC3
-		case "0x40000002": // E-AC3
-		case "0x5":
-		case "0x6":
-		case "0x7":
-			return "Dolby";
-		case "0xa000001": // E-AC3 JOC (Dolby Atmos)
-		case "0x80000000": // TrueHD (Atmos container)
-		case "0x5f000000":
-		case "0x5f000001":
-		case "0x5f000002":
-			return "Atmos";
-		default:
-			return "Unknown (" + hexCode + ")";
-		}
+	    switch (hexCode.toLowerCase()) {
+	        case "0x1":
+	        case "0x2":
+	            return "PCM";
+
+	        case "0x40000001": // AC3
+	        case "0x40000002": // E-AC3
+	        case "0xa000000":  // E-AC3 (usually 5.1, not Atmos by default)
+	        case "0x5":
+	        case "0x6":
+	        case "0x7":
+	            return "Dolby";
+
+	        case "0xa000001": // E-AC3 JOC (Dolby Atmos)
+	        case "0x80000000": // TrueHD (Atmos container)
+	        case "0x5f000000":
+	        case "0x5f000001":
+	        case "0x5f000002":
+	            return "Atmos";
+
+	        default:
+	            return "Unknown (" + hexCode + ")";
+	    }
 	}
+
 
 	public static String getVisionOutput() {
 		String s = "";

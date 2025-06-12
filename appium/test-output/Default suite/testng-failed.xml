@@ -3,16 +3,16 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="Tests.TestCase2">
+      <class name="Tests.HotstarPlayerScreenOutputs">
         <methods>
           <include name="configTest"/>
-          <include name="testCase02"/>
+          <include name="setUp"/>
           <include name="beforeTestMethod"/>
           <include name="tearDown"/>
+          <include name="adScreen"/>
           <include name="afterTestMethod"/>
-          <include name="testCase01"/>
         </methods>
-      </class> <!-- Tests.TestCase2 -->
+      </class> <!-- Tests.HotstarPlayerScreenOutputs -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

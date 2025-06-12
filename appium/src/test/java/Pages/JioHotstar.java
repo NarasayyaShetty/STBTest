@@ -3,6 +3,7 @@ package Pages;
 import java.time.Duration;
 import java.util.List;
 
+import org.openqa.selenium.NoSuchElementException;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
@@ -67,38 +68,13 @@ public class JioHotstar {
 	public boolean sendkeysOnSearchField(String contentName) throws InterruptedException {
 
 		try {
+			// Navigates to search bar
 			WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(10));
 			WebElement searchBox = wait.until(ExpectedConditions.visibilityOfElementLocated(
 					AppiumBy.xpath("//android.widget.EditText[@resource-id='in.startv.hotstar:id/search_bar']")));
 			searchBox.click();
 			searchBox.sendKeys(contentName);
 			driver.pressKey(new KeyEvent(AndroidKey.BACK));
-			WebElement searchResult = wait.until(ExpectedConditions.visibilityOfElementLocated(
-					AppiumBy.xpath("//android.widget.ImageView[@resource-id='in.startv.hotstar:id/hero_img']")));
-			searchResult.click();
-			driver.pressKey(new KeyEvent(AndroidKey.ENTER));
-			Thread.sleep(3000);
-//		try {
-//		List<WebElement> languages=wait.until(ExpectedConditions.visibilityOfAllElementsLocatedBy(AppiumBy.xpath("//android.widget.TextView[@resource-id='in.startv.hotstar:id/tv_label']")));
-//		for(WebElement language:languages) {
-//			
-//			if(language.getText().contains("Original")) {
-//				
-//				language.click();
-//				driver.pressKey(new KeyEvent(AndroidKey.DPAD_RIGHT));
-//				Thread.sleep(1000);
-//				driver.pressKey(new KeyEvent(AndroidKey.DPAD_DOWN));
-//				break;
-//			}
-//		}
-//		}catch(Exception e) {
-//			
-//			driver.pressKey(new KeyEvent(AndroidKey.ENTER));
-//			Thread.sleep(100000);
-//			return true;
-//		}
-			driver.pressKey(new KeyEvent(AndroidKey.ENTER));
-			safeStaticWait(driver, 90000, 15000);
 
 		} catch (Exception e) {
 			e.printStackTrace();
@@ -106,6 +82,51 @@ public class JioHotstar {
 		}
 		return true;
 	}
+
+	public void selectSearchedContent(String contentName) throws InterruptedException {
+		WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(5));
+		try {
+			// First it will wait for single content thumbnail if not found it navigates to
+			// catch block and finds the content
+			// itrates through each content name, if match content founds then click on the
+			// content
+			WebElement searchResult = wait.until(ExpectedConditions.visibilityOfElementLocated(
+					AppiumBy.xpath("//android.widget.ImageView[@resource-id='in.startv.hotstar:id/hero_img']")));
+			searchResult.click();
+			driver.pressKey(new KeyEvent(AndroidKey.ENTER));
+			Thread.sleep(3000);
+			driver.pressKey(new KeyEvent(AndroidKey.ENTER));
+			safeStaticWait(driver, 45000, 15000);
+			selectAudioOption(driver);
+		} catch (NoSuchElementException e) {
+			List<WebElement> allContents = wait.until(ExpectedConditions.visibilityOfAllElementsLocatedBy(AppiumBy
+					.xpath("//android.widget.TextView[@resource-id='in.startv.hotstar:id/search_horizontal_title']")));
+			for (WebElement content : allContents) {
+				if (content.getText().contains(contentName)) {
+					System.out.println(content.getText());
+					content.click();
+					break;
+				}
+			}
+			driver.pressKey(new KeyEvent(AndroidKey.ENTER));
+			safeStaticWait(driver, 45000, 15000);
+			selectAudioOption(driver);
+		} catch (Exception e) {
+			List<WebElement> contents = wait.until(ExpectedConditions.visibilityOfAllElementsLocatedBy(AppiumBy
+					.xpath("//android.widget.ImageView[@resource-id='in.startv.hotstar:id/search_vertical_img']")));
+			for (WebElement content : contents) {
+				contents.get(0).click();
+				driver.pressKey(new KeyEvent(AndroidKey.DPAD_CENTER));
+				break;
+			}
+			driver.pressKey(new KeyEvent(AndroidKey.DPAD_CENTER));
+			safeStaticWait(driver, 45000, 15000);
+			selectAudioOption(driver);
+		}
+
+	}
+
+	// it performs the back navigation from palyerscreen to search section
 
 	public void backNavigattionFromPlayerScreen() throws InterruptedException {
 		driver.pressKey(new KeyEvent(AndroidKey.BACK));
@@ -118,6 +139,41 @@ public class JioHotstar {
 			}
 		} catch (Exception e) {
 			e.printStackTrace();
+		}
+	}
+
+	public void selectQuality(AndroidDriver driver) {
+		//// android.widget.TextView[@resource-id="in.startv.hotstar:id/label"]
+
+		driver.pressKey(new KeyEvent(AndroidKey.DPAD_CENTER));
+		driver.pressKey(new KeyEvent(AndroidKey.DPAD_UP));
+		driver.pressKey(new KeyEvent(AndroidKey.DPAD_CENTER));
+
+	}
+
+	public void selectAudioOption(AndroidDriver driver) {
+
+		driver.pressKey(new KeyEvent(AndroidKey.DPAD_CENTER));
+		driver.pressKey(new KeyEvent(AndroidKey.DPAD_UP));
+		driver.pressKey(new KeyEvent(AndroidKey.DPAD_RIGHT));
+		driver.pressKey(new KeyEvent(AndroidKey.DPAD_CENTER));
+		try {
+			//// android.widget.ImageView[@resource-id="in.startv.hotstar:id/atmosBadge"]
+			WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(10));
+			///// android.view.ViewGroup[@resource-id="in.startv.hotstar:id/sheet_button"]
+			List<WebElement> audios = wait.until(ExpectedConditions.presenceOfAllElementsLocatedBy(
+					AppiumBy.xpath("//android.view.ViewGroup[@resource-id='in.startv.hotstar:id/sheet_button']")));
+			for (WebElement audio : audios) {
+				if(audio.getText().equalsIgnoreCase("original")){
+				driver.pressKey(new KeyEvent(AndroidKey.DPAD_CENTER));
+				break;
+				}else {
+					driver.pressKey(new KeyEvent(AndroidKey.DPAD_DOWN));
+				}
+			}
+		} catch (Exception e) {
+			System.err.println("Exception occured");
+			driver.pressKey(new KeyEvent(AndroidKey.DPAD_LEFT));
 		}
 	}
 

@@ -5,6 +5,7 @@ import static AppsTesting.AdbCommendsClass.*;
 import static Pages.LauncherScreen.launchApp;
 import static Utilities.ExcelDataWrite.excelWrite;
 
+import org.testng.annotations.AfterClass;
 import org.testng.annotations.BeforeClass;
 import org.testng.annotations.Test;
 
@@ -57,5 +58,13 @@ public class SonyLivPlayerScreenOutputs extends BaseTest {
 			e.printStackTrace();
 		}
 	}
+	
+	@AfterClass
+	public void navigateToHome() {
+		driver.pressKey(new KeyEvent(AndroidKey.HOME));
+	}
+	
+	
+
 
 }

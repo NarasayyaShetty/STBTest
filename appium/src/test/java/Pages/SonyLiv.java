@@ -50,7 +50,6 @@ public class SonyLiv {
 			driver.pressKey(new KeyEvent(AndroidKey.BUTTON_1));
 			driver.pressKey(new KeyEvent(AndroidKey.BUTTON_1));
 			driver.pressKey(new KeyEvent(AndroidKey.BUTTON_1));
-			Thread.sleep(1000);
 			driver.pressKey(new KeyEvent(AndroidKey.ENTER));
 			selctMenuOption(optionName);
 		}

@@ -7,14 +7,14 @@ import java.util.ArrayList;
 public class AdbCommends {
 	public static void main(String[] args) {
 
-		String deviceIp = "192.168.1.16"; // ✅ Replace with your device's actual IP
+		String deviceIp = "192.168.1.23"; // ✅ Replace with your device's actual IP
 //	         String packageName="in.startv.hotstar";
 
 		// Step 1: Set device to TCP/IP mode
 		// runAdbCommand("adb", "tcpip", "5555");
 
 		// Step 2: Connect over Wi-Fi
-		// ArrayList<String> list=runAdbCommand("adb", "connect", deviceIp + ":5555");
+		 ArrayList<String> list=runAdbCommand("adb", "connect", deviceIp + ":5555");
 //	        for(String value:list) {
 //	        	System.out.println("Value is :"+value);
 //	        }
@@ -28,7 +28,11 @@ public class AdbCommends {
 		// runAdbCommand("adb", "shell", "am",
 		// "start","-n","com.netflix.ninja/.MainActivity");
 		// adb shell dumpsys window | find "mCurrentFocus"
-		// runAdbCommand("adb","shell","dumpsys","window","|","find","mCurrentFocus");
+		// runAdbCommand("adb","shell","dumpsys","window","|","grep","mCurrentFocus");
+		 runAdbCommand("adb","kill-server");
+		 runAdbCommand("adb","start-server");
+		 //Home screen: mCurrentFocus=Window{fca8f21 u0 in.startv.hotstar/com.hotstar.MainActivity}
+		 
 		// runAdbCommand("adb", "shell", "dumpsys", "window"
 		// ,"|","find","mCurrentFocus");
 
@@ -49,7 +53,7 @@ public class AdbCommends {
 		// runAdbCommand("adb","remount");
 		// runAdbCommand("adb","shell","input","keyevent","KEYCODE_F8");
 		// runAdbCommand("adb", "shell", "getprop", "ro.product.model");
-		runAdbCommand("adb", "shell", "dumpsys", "package", "in.startv.hotstar", "|", "grep", "version");
+		//runAdbCommand("adb", "shell", "dumpsys", "package", "in.startv.hotstar", "|", "grep", "version");
 		// ArrayList<String> list=runAdbCommand( "adb", "shell", "getprop",
 		// "ro.build.fingerprint");
 //	      String fingerPrint=list.get(0);

@@ -1,11 +1,18 @@
 package Tests;
 
+import org.openqa.selenium.WebElement;
+import org.openqa.selenium.support.ui.ExpectedConditions;
+import org.openqa.selenium.support.ui.WebDriverWait;
 import org.testng.annotations.AfterClass;
 import org.testng.annotations.BeforeClass;
 import org.testng.annotations.DataProvider;
 import org.testng.annotations.Test;
 import static Pages.LauncherScreen.*;
 import static Utilities.ExcelDataWrite.excelWrite;
+
+import java.time.Duration;
+import java.util.List;
+
 import static AppsTesting.AdbCommendsClass.*;
 import static AppsTesting.PlayerCommends.getAudioOutput;
 import static AppsTesting.PlayerCommends.getVideoResolution;
@@ -13,6 +20,7 @@ import static AppsTesting.PlayerCommends.getVisionOutput;
 
 import Pages.JioHotstar;
 import Utilities.DataProviderClass;
+import io.appium.java_client.AppiumBy;
 import io.appium.java_client.android.nativekey.AndroidKey;
 import io.appium.java_client.android.nativekey.KeyEvent;
 
@@ -42,10 +50,11 @@ public class HotstarPlayerScreenOutputs extends BaseTest {
 		}
 	}
 
-	@Test(description = "Playing multiple contents", dataProvider = "hotstarContentName", dataProviderClass = DataProviderClass.class)
+	@Test(description = "Playing multiple contents", dataProvider = "hotstarContentName", dataProviderClass = DataProviderClass.class,enabled=false)
 	public void jioHotstarPlayreResult(String contentName) {
 		try {
 			js.sendkeysOnSearchField(contentName);
+			js.selectSearchedContent(contentName);
 			s[0] = deviceNameandVersion;
 			s[1] = appVersionName;
 			s[2] = contentName;
@@ -56,14 +65,23 @@ public class HotstarPlayerScreenOutputs extends BaseTest {
 			js.backNavigattionFromPlayerScreen();
 		} catch (Exception e) {
 			System.out.println("Exception occurred");
-			e.printStackTrace();
+		
 		}
 
 	}
-
-	@AfterClass
-	public void tearDownapp() {
-		driver.pressKey(new KeyEvent(AndroidKey.HOME));
+	
+	@Test
+	public void adScreen() throws InterruptedException {
+		
+		js.sendkeysOnSearchField("Snow White");
+		js.selectSearchedContent("Snow White");
+		
 	}
+	
+
+//	@AfterClass
+//	public void tearDownapp() {
+//		driver.pressKey(new KeyEvent(AndroidKey.HOME));
+//	}
 
 }

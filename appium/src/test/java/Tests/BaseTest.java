@@ -30,7 +30,7 @@ public class BaseTest {
 	public AndroidDriver driver;
 
 	@BeforeSuite(alwaysRun = true)
-	public void configTest() throws URISyntaxException, IOException {
+	public void configTest() throws URISyntaxException, IOException, InterruptedException {
 		// code to automate the service
 
 		connectStb("192.168.1.23");
@@ -48,10 +48,25 @@ public class BaseTest {
 		// options.setUdid("emulator-5554");
 		options.setDeviceName("192.168.1.23:5555");
 		options.setUdid("192.168.1.23:5555");
+		options.setAutomationName("UIAutomator2");
+		// Disable MJPEG streaming to avoid port 8200 issues
+		options.setMjpegServerPort(0);
+
 		// options.setApp("C:\\Users\\User\\eclipse-workspace\\appium\\src\\test\\java\\resources\\ApiDemos-debug.apk");
 
-		driver = new AndroidDriver(new URI("http://127.0.0.1:4723").toURL(), options);
-		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(10));
+		int retry = 0;
+		while (retry < 3) {
+			try {
+
+				driver = new AndroidDriver(new URI("http://127.0.0.1:4723").toURL(), options);
+				break;
+			} catch (Exception e) {
+				retry++;
+				Thread.sleep(2000);
+			}
+		}
+		
+		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(20));
 
 	}
 
@@ -74,9 +89,9 @@ public class BaseTest {
 
 	@AfterSuite(alwaysRun = true)
 	public void tearDown() {
-		// driver.quit();
-		// service.stop();
-		// driver.pressKey(new KeyEvent(AndroidKey.HOME));
+		 driver.quit();
+		 service.stop();
+		 driver.pressKey(new KeyEvent(AndroidKey.HOME));
 		endTest();
 	}
 
