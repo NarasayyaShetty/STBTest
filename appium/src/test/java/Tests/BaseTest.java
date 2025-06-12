@@ -92,7 +92,6 @@ public class BaseTest {
 		 driver.quit();
 		 service.stop();
 		 driver.pressKey(new KeyEvent(AndroidKey.HOME));
-		endTest();
 	}
 
 }

@@ -82,7 +82,7 @@ public class JioHotstar {
 			Thread.sleep(20000);
 			status=false;
 		}
-		return status;
+		return false;//defined false just to check screenshot captured ot not 
 	}
 
 	public boolean selectSearchedContent(String contentName) throws InterruptedException {
