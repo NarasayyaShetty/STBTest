@@ -85,7 +85,8 @@ public class JioHotstar {
 		return status;
 	}
 
-	public void selectSearchedContent(String contentName) throws InterruptedException {
+	public boolean selectSearchedContent(String contentName) throws InterruptedException {
+		boolean status=false;
 		WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(5));
 		try {
 			// First it will wait for single content thumbnail if not found it navigates to
@@ -100,6 +101,7 @@ public class JioHotstar {
 			driver.pressKey(new KeyEvent(AndroidKey.ENTER));
 			safeStaticWait(driver, 45000, 15000);
 			selectAudioOption(driver);
+			status=true;
 		} catch (NoSuchElementException e) {
 			List<WebElement> allContents = wait.until(ExpectedConditions.visibilityOfAllElementsLocatedBy(AppiumBy
 					.xpath("//android.widget.TextView[@resource-id='in.startv.hotstar:id/search_horizontal_title']")));
@@ -113,7 +115,7 @@ public class JioHotstar {
 			driver.pressKey(new KeyEvent(AndroidKey.ENTER));
 			safeStaticWait(driver, 45000, 15000);
 			selectAudioOption(driver);
-		} catch (Exception e) {
+			status=true;
 			List<WebElement> contents = wait.until(ExpectedConditions.visibilityOfAllElementsLocatedBy(AppiumBy
 					.xpath("//android.widget.ImageView[@resource-id='in.startv.hotstar:id/search_vertical_img']")));
 			for (WebElement content : contents) {
@@ -124,7 +126,10 @@ public class JioHotstar {
 			driver.pressKey(new KeyEvent(AndroidKey.DPAD_CENTER));
 			safeStaticWait(driver, 45000, 15000);
 			selectAudioOption(driver);
+			status=true;
 		}
+		
+		return status;
 
 	}
 
