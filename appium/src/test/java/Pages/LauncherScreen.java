@@ -5,8 +5,9 @@ import static AppsTesting.AdbCommendsClass.*;
 
 public class LauncherScreen {
 
-	public static void launchApp(String appName) {
+	public static boolean launchApp(String appName) {
 		appName = appName.toLowerCase();
+		boolean status=false;
 		try {
 
 			Map<String, String> map = Map.of("discoveryplus",
@@ -29,6 +30,7 @@ public class LauncherScreen {
 					activityName = packageN;
 					System.out.println(activityName);
 					runAdbCommand("adb", "shell", "am", "start", "-n", activityName);
+					status=true;
 					break;
 				}
 			}
@@ -36,7 +38,9 @@ public class LauncherScreen {
 		} catch (Exception e) {
 			System.out.println("Exception is occureed while launching the app");
 			e.printStackTrace();
+			
 		}
+		return status;
 	}
 
 }

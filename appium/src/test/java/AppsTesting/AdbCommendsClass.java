@@ -95,6 +95,32 @@ public class AdbCommendsClass {
 		}
 		return appNameAndVersion;
 	}
+	//PrintPackahe name
+	public static String getPackageName(String appName) {
+		appName = appName.toLowerCase();
+		String packageName= "";
+		try {
+			Map<String, String> map = Map.of("discoveryplus", "com.discoveryplus.tv.jiotv", "docubay",
+					"com.epic.docubay", "hoichoi", "com.hoichoi.mitv", "jiohotstar", "in.startv.hotstar", "primevideo",
+					"com.amazon.amazonvideo.livingroom", "sonyliv", "com.jiotv.sonyliv", "sunnxt", "com.suntv.sunnxt",
+					"youtube", "com.jio.yt", "zee5", "com.zee5.aosp", "netflix", "com.netflix.ninja");
+
+			for (Map.Entry<String, String> entry : map.entrySet()) {
+				String key = entry.getKey();
+				String value = entry.getValue();
+				if (key.contains(appName)) {
+					 packageName=value;
+					 break;
+				}
+			}
+		}catch(Exception e) {
+			e.printStackTrace();
+		}
+		return packageName;
+	}
+					
+					
+	
 
 	// prints the device name with version
 	public static String deviceName() {

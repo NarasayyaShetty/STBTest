@@ -70,22 +70,22 @@ public class BaseTest {
 
 	}
 
-	@BeforeMethod(alwaysRun = true)
-	public void beforeTestMethod(Method m) {
-		startTests(m.getName());
-	}
-
-	@AfterMethod(alwaysRun = true)
-	public void afterTestMethod(ITestResult iTestResult) {
-		if (iTestResult.getStatus() == ITestResult.SUCCESS) {
-			logPass("Step is Passed");
-		} else if (iTestResult.getStatus() == ITestResult.FAILURE) {
-			String path = capture(driver, "Step Failed");
-			logFail(getTest().addScreenCapture(path));
-		} else {
-			logSkip("Test is skiped");
-		}
-	}
+//	@BeforeMethod(alwaysRun = true)
+//	public void beforeTestMethod(Method m) {
+//		startTests(m.getName());
+//	}
+//
+//	@AfterMethod(alwaysRun = true)
+//	public void afterTestMethod(ITestResult iTestResult) {
+//		if (iTestResult.getStatus() == ITestResult.SUCCESS) {
+//			logPass("Step is Passed");
+//		} else if (iTestResult.getStatus() == ITestResult.FAILURE) {
+//			String path = capture(driver, "Step Failed");
+//			logFail(getTest().addScreenCapture(path));
+//		} else {
+//			logSkip("Test is skiped");
+//		}
+//	}
 
 	@AfterSuite(alwaysRun = true)
 	public void tearDown() {

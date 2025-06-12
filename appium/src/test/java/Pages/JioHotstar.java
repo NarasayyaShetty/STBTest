@@ -66,7 +66,7 @@ public class JioHotstar {
 	}
 
 	public boolean sendkeysOnSearchField(String contentName) throws InterruptedException {
-
+        boolean status=false;
 		try {
 			// Navigates to search bar
 			WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(10));
@@ -75,12 +75,14 @@ public class JioHotstar {
 			searchBox.click();
 			searchBox.sendKeys(contentName);
 			driver.pressKey(new KeyEvent(AndroidKey.BACK));
+			status=true;
 
 		} catch (Exception e) {
 			e.printStackTrace();
 			Thread.sleep(20000);
+			status=false;
 		}
-		return true;
+		return status;
 	}
 
 	public void selectSearchedContent(String contentName) throws InterruptedException {

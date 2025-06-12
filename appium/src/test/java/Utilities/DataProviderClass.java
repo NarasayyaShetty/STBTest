@@ -7,7 +7,7 @@ public class DataProviderClass {
 	//adding applications names
 	@DataProvider(name="appName")
 	public Object[][] appName(){
-		return new Object[][]{{"hotstar"},{"Netflix"},{"primevideo"},{"youtube"},{"zee5"},
+		return new Object[][]{{"hotstar"},{"JioTV+"},{"Netflix"},{"primevideo"},{"youtube"},{"zee5"},
 			{"sonyLiv"},{"sunNxt"},{"docubay"},{"hoichoi"},{"discoveryplus"}};
 	}
 	//Adding hotstar contents names

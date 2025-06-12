@@ -3,6 +3,7 @@ package Tests;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
+import org.testng.Assert;
 import org.testng.annotations.AfterClass;
 import org.testng.annotations.BeforeClass;
 import org.testng.annotations.DataProvider;
@@ -72,9 +73,12 @@ public class HotstarPlayerScreenOutputs extends BaseTest {
 	
 	@Test
 	public void adScreen() throws InterruptedException {
+		boolean status;
 		
-		js.sendkeysOnSearchField("Snow White");
-		js.selectSearchedContent("Snow White");
+		 status=js.sendkeysOnSearchField("Snow White");
+		 Assert.assertTrue(status,"Unable to search the content");
+		 status=js.selectSearchedContent("Snow White");
+		 Assert.assertTrue(status,"Unable to select the searched content");
 		
 	}
 	

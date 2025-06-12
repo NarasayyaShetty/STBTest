@@ -9,25 +9,31 @@
 <table>
 <tr><th>Test</th><th># Passed</th><th># Skipped</th><th># Retried</th><th># Failed</th><th>Time (ms)</th><th>Included Groups</th><th>Excluded Groups</th></tr>
 <tr><th colspan="8">Default suite</th></tr>
-<tr><td><a href="#t0">Default test</a></td><td class="num">1</td><td class="num">0</td><td class="num">0</td><td class="num">0</td><td class="num">123,713</td><td></td><td></td></tr>
+<tr><td><a href="#t0">Default test</a></td><td class="num">10</td><td class="num">0</td><td class="num">0</td><td class="num attn">1</td><td class="num">110,922</td><td></td><td></td></tr>
 </table>
-<table id='summary'><thead><tr><th>Class</th><th>Method</th><th>Start</th><th>Time (ms)</th></tr></thead><tbody><tr><th colspan="4">Default suite</th></tr></tbody><tbody id="t0"><tr><th colspan="4">Default test &#8212; failed (configuration methods)</th></tr><tr class="failedeven"><td rowspan="1">Tests.HotstarPlayerScreenOutputs</td><td><a href="#m0">tearDown</a></td><td rowspan="1">1749726343979</td><td rowspan="1">618</td></tr><tr><th colspan="4">Default test &#8212; passed</th></tr><tr class="passedeven"><td rowspan="1">Tests.HotstarPlayerScreenOutputs</td><td><a href="#m1">adScreen</a></td><td rowspan="1">1749726234614</td><td rowspan="1">109283</td></tr></tbody>
+<table id='summary'><thead><tr><th>Class</th><th>Method</th><th>Start</th><th>Time (ms)</th></tr></thead><tbody><tr><th colspan="4">Default suite</th></tr></tbody><tbody id="t0"><tr><th colspan="4">Default test &#8212; failed (configuration methods)</th></tr><tr class="failedeven"><td rowspan="1">Tests.TestCase1</td><td><a href="#m0">tearDown</a></td><td rowspan="1">1749747883845</td><td rowspan="1">25</td></tr><tr><th colspan="4">Default test &#8212; failed</th></tr><tr class="failedeven"><td rowspan="1">Tests.TestCase1</td><td><a href="#m1">allAppLaunch</a></td><td rowspan="1">1749747785664</td><td rowspan="1">375</td></tr><tr><th colspan="4">Default test &#8212; passed</th></tr><tr class="passedeven"><td rowspan="10">Tests.TestCase1</td><td><a href="#m2">allAppLaunch</a></td><td rowspan="10">1749747851237</td><td rowspan="10">10529</td></tr><tr class="passedeven"><td><a href="#m3">allAppLaunch</a></td></tr><tr class="passedeven"><td><a href="#m4">allAppLaunch</a></td></tr><tr class="passedeven"><td><a href="#m5">allAppLaunch</a></td></tr><tr class="passedeven"><td><a href="#m6">allAppLaunch</a></td></tr><tr class="passedeven"><td><a href="#m7">allAppLaunch</a></td></tr><tr class="passedeven"><td><a href="#m8">allAppLaunch</a></td></tr><tr class="passedeven"><td><a href="#m9">allAppLaunch</a></td></tr><tr class="passedeven"><td><a href="#m10">allAppLaunch</a></td></tr><tr class="passedeven"><td><a href="#m11">allAppLaunch</a></td></tr></tbody>
 </table>
-<h2>Default test</h2><h3 id="m0">Tests.HotstarPlayerScreenOutputs#tearDown</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">org.openqa.selenium.NoSuchSessionException: Session ID is null. Using WebDriver after calling quit()?
+<h2>Default test</h2><h3 id="m0">Tests.TestCase1#tearDown</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">org.openqa.selenium.NoSuchSessionException: A session is either terminated or not started
 Build info: version: &apos;4.33.0&apos;, revision: &apos;2c6aaad03a&apos;
 System info: os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;11.0.2&apos;
 Driver info: io.appium.java_client.android.AndroidDriver
-Command: [null, executeScript {script=mobile: pressKey, args=[{keycode=3}]}]
+Command: [f4d0837e-3730-4e98-a2f4-b76617342ba0, quit {}]
 Capabilities {appium:automationName: UIAutomator2, appium:databaseEnabled: false, appium:desired: {automationName: UIAutomator2, deviceName: 192.168.1.23:5555, mjpegServerPort: 0, platformName: ANDROID, udid: 192.168.1.23:5555}, appium:deviceApiLevel: 30, appium:deviceManufacturer: Jio, appium:deviceModel: JMSB200A, appium:deviceName: 192.168.1.23:5555, appium:deviceScreenDensity: 320, appium:deviceScreenSize: 1920x1080, appium:deviceUDID: 192.168.1.23:5555, appium:javascriptEnabled: true, appium:locationContextEnabled: false, appium:mjpegServerPort: 0, appium:networkConnectionEnabled: true, appium:pixelRatio: 2, appium:platformVersion: 11, appium:statBarHeight: 0, appium:takesScreenshot: true, appium:udid: 192.168.1.23:5555, appium:viewportRect: {height: 1080, left: 0, top: 0, width: 1920}, appium:warnings: {}, appium:webStorageEnabled: false, platformName: ANDROID}
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:176)
+Session ID: f4d0837e-3730-4e98-a2f4-b76617342ba0
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:490)
+	at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:215)
 	at io.appium.java_client.remote.AppiumCommandExecutor.execute(AppiumCommandExecutor.java:237)
 	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:544)
 	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:617)
-	at io.appium.java_client.AppiumDriver.execute(AppiumDriver.java:305)
-	at io.appium.java_client.CommandExecutionHelper.execute(CommandExecutionHelper.java:36)
-	at io.appium.java_client.CommandExecutionHelper.executeScript(CommandExecutionHelper.java:67)
-	at io.appium.java_client.android.nativekey.PressesKey.pressKey(PressesKey.java:40)
-	at Tests.BaseTest.tearDown(BaseTest.java:94)
+	at io.appium.java_client.AppiumDriver.execute(AppiumDriver.java:310)
+	at org.openqa.selenium.remote.RemoteWebDriver.quit(RemoteWebDriver.java:445)
+	at Tests.BaseTest.tearDown(BaseTest.java:92)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
 	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -48,6 +54,49 @@ Capabilities {appium:automationName: UIAutomator2, appium:databaseEnabled: false
 	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
 	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
 </div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m1">Tests.HotstarPlayerScreenOutputs#adScreen</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m1">Tests.TestCase1#allAppLaunch</h3><table class="result"><tr class="param"><th>Parameter #1</th></tr><tr class="param stripe"><td>JioTV+</td></tr><tr><th>Exception</th></tr><tr><td><div class="stacktrace">java.lang.AssertionError: Application is not launched, either app is not available in our list expected [true] but found [false]
+	at org.testng.Assert.fail(Assert.java:111)
+	at org.testng.Assert.failNotEquals(Assert.java:1590)
+	at org.testng.Assert.assertTrue(Assert.java:57)
+	at Tests.TestCase1.allAppLaunch(TestCase1.java:34)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:687)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:995)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1540)
+	at org.testng.TestRunner.privateRun(TestRunner.java:741)
+	at org.testng.TestRunner.run(TestRunner.java:616)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:312)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
+	at org.testng.TestNG.runSuites(TestNG.java:1112)
+	at org.testng.TestNG.run(TestNG.java:1079)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
+</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m2">Tests.TestCase1#allAppLaunch</h3><table class="result"><tr class="param"><th>Parameter #1</th></tr><tr class="param stripe"><td>docubay</td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m3">Tests.TestCase1#allAppLaunch</h3><table class="result"><tr class="param"><th>Parameter #1</th></tr><tr class="param stripe"><td>hotstar</td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m4">Tests.TestCase1#allAppLaunch</h3><table class="result"><tr class="param"><th>Parameter #1</th></tr><tr class="param stripe"><td>primevideo</td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m5">Tests.TestCase1#allAppLaunch</h3><table class="result"><tr class="param"><th>Parameter #1</th></tr><tr class="param stripe"><td>hoichoi</td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m6">Tests.TestCase1#allAppLaunch</h3><table class="result"><tr class="param"><th>Parameter #1</th></tr><tr class="param stripe"><td>sunNxt</td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m7">Tests.TestCase1#allAppLaunch</h3><table class="result"><tr class="param"><th>Parameter #1</th></tr><tr class="param stripe"><td>Netflix</td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m8">Tests.TestCase1#allAppLaunch</h3><table class="result"><tr class="param"><th>Parameter #1</th></tr><tr class="param stripe"><td>discoveryplus</td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m9">Tests.TestCase1#allAppLaunch</h3><table class="result"><tr class="param"><th>Parameter #1</th></tr><tr class="param stripe"><td>zee5</td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m10">Tests.TestCase1#allAppLaunch</h3><table class="result"><tr class="param"><th>Parameter #1</th></tr><tr class="param stripe"><td>youtube</td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m11">Tests.TestCase1#allAppLaunch</h3><table class="result"><tr class="param"><th>Parameter #1</th></tr><tr class="param stripe"><td>sonyLiv</td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
 </body>
 </html>
