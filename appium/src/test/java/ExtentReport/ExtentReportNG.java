@@ -25,8 +25,8 @@ public static ExtentReports extent;
 		report.config().setDocumentTitle("VOD app content results");
 		report.config().setReportName("Player results");
 		
-		extent =new ExtentReports();
-		extent.attachReporter(report);
+		extent =new ExtentReports(); 
+		extent.attachReporter(report) ;
 		extent.setSystemInfo("Tester","Narasayya");
 		String deviceName=deviceName();
 		extent.setSystemInfo("Device details", deviceName);
