@@ -1,0 +1,677 @@
+--------- beginning of kernel
+06-12 15:36:54.523 D/[ 2889.879567@3]  logd(    0): logdr: UID=0 GID=0 PID=19282 b tail=0 logMask=99 pid=0 start=0ns timeout=0ns
+06-12 15:36:54.524 D/[ 2889.880700@2]  logd(    0): Skipping 4294967295 entries from slow reader, pid 19282, from LogBuffer::kickMe()
+06-12 15:36:56.223 W/[ 2891.578797@2]  RTW(    0): fill_default_txdesc(wlan0): SP Packet(0x0806) rate=0x4 SeqNum = 3420
+--------- beginning of crash
+06-12 15:36:57.313 F/linker  (19327): CANNOT LINK EXECUTABLE "/system/bin/smartcable/smartCableSTBApp": library "libmosquitto.so" not found: needed by main executable
+06-12 15:36:58.928 W/[ 2894.282583@2]  audit(    0): audit_lost=3067 audit_rate_limit=5 audit_backlog_limit=64
+06-12 15:36:58.928 E/[ 2894.282593@2]  audit(    0): rate limit exceeded
+06-12 15:37:00.159 W/[ 2895.515320@2]  audit(    0): audit_lost=3181 audit_rate_limit=5 audit_backlog_limit=64
+06-12 15:37:00.160 E/[ 2895.515331@2]  audit(    0): rate limit exceeded
+06-12 15:37:00.739 W/[ 2896.092744@0]  RTW(    0): fill_default_txdesc(wlan0): SP Packet(0x0806) rate=0x4 SeqNum = 193
+06-12 15:37:01.335 W/[ 2896.689709@2]  RTW(    0): fill_default_txdesc(wlan0): SP Packet(0x0806) rate=0x4 SeqNum = 399
+06-12 15:37:02.337 F/linker  (19347): CANNOT LINK EXECUTABLE "/system/bin/smartcable/smartCableSTBApp": library "libmosquitto.so" not found: needed by main executable
+06-12 15:37:06.380 W/[ 2901.735859@0]  RTW(    0): fill_default_txdesc(wlan0): SP Packet(0x0806) rate=0x4 SeqNum = 1719
+06-12 15:37:07.322 F/linker  (19388): CANNOT LINK EXECUTABLE "/system/bin/smartcable/smartCableSTBApp": library "libmosquitto.so" not found: needed by main executable
+06-12 15:37:11.495 W/[ 2906.851027@0]  RTW(    0): fill_default_txdesc(wlan0): SP Packet(0x0806) rate=0x4 SeqNum = 2849
+06-12 15:37:12.355 F/linker  (19457): CANNOT LINK EXECUTABLE "/system/bin/smartcable/smartCableSTBApp": library "libmosquitto.so" not found: needed by main executable
+06-12 15:37:16.423 W/[ 2911.778832@1]  RTW(    0): fill_default_txdesc(wlan0): SP Packet(0x0806) rate=0x4 SeqNum = 3639
+06-12 15:37:17.330 F/linker  (19517): CANNOT LINK EXECUTABLE "/system/bin/smartcable/smartCableSTBApp": library "libmosquitto.so" not found: needed by main executable
+06-12 15:37:21.736 W/[ 2917.088902@0]  RTW(    0): fill_default_txdesc(wlan0): SP Packet(0x0806) rate=0x4 SeqNum = 332
+06-12 15:37:22.335 F/linker  (19566): CANNOT LINK EXECUTABLE "/system/bin/smartcable/smartCableSTBApp": library "libmosquitto.so" not found: needed by main executable
+06-12 15:37:23.013 W/[ 2918.364763@1]  RTW(    0): fill_default_txdesc(wlan0): SP Packet(0x0806) rate=0x4 SeqNum = 533
+06-12 15:37:26.607 W/[ 2921.962935@2]  RTW(    0): fill_default_txdesc(wlan0): SP Packet(0x0806) rate=0x4 SeqNum = 1147
+06-12 15:37:27.343 F/linker  (19639): CANNOT LINK EXECUTABLE "/system/bin/smartcable/smartCableSTBApp": library "libmosquitto.so" not found: needed by main executable
+06-12 15:37:31.747 W/[ 2927.101216@0]  RTW(    0): fill_default_txdesc(wlan0): SP Packet(0x0806) rate=0x4 SeqNum = 2122
+06-12 15:37:32.346 F/linker  (19676): CANNOT LINK EXECUTABLE "/system/bin/smartcable/smartCableSTBApp": library "libmosquitto.so" not found: needed by main executable
+06-12 15:37:36.347 W/[ 2931.702046@2]  RTW(    0): fill_default_txdesc(wlan0): SP Packet(0x0806) rate=0x4 SeqNum = 2953
+06-12 15:37:37.352 F/linker  (19714): CANNOT LINK EXECUTABLE "/system/bin/smartcable/smartCableSTBApp": library "libmosquitto.so" not found: needed by main executable
+06-12 15:37:39.871 W/[ 2935.227875@2]  audit(    0): audit_lost=3186 audit_rate_limit=5 audit_backlog_limit=64
+06-12 15:37:39.872 E/[ 2935.227886@2]  audit(    0): rate limit exceeded
+06-12 15:37:41.155 W/[ 2936.509222@2]  RTW(    0): fill_default_txdesc(wlan0): SP Packet(0x0806) rate=0x4 SeqNum = 3641
+06-12 15:37:42.360 F/linker  (19725): CANNOT LINK EXECUTABLE "/system/bin/smartcable/smartCableSTBApp": library "libmosquitto.so" not found: needed by main executable
+06-12 15:37:43.723 I/[ 2939.080564@3]  resman(    0): 59 appname:OMX-39, type=0
+06-12 15:37:43.772 I/[ 2939.128001@0]  resman(    0): 59 acquire [decoder], preempt yes
+06-12 15:37:43.772 I/[ 2939.128014@0]  resman(    0): 59 acquire [decoder] success
+06-12 15:37:43.772 I/[ 2939.128086@0]  resman(    0): 59 acquire [codec_mm], preempt yes
+06-12 15:37:43.772 I/[ 2939.128097@0]  resman(    0): 59 score 60 secure no
+06-12 15:37:43.772 I/[ 2939.128103@0]  resman(    0): 59 acquire [codec_mm] success
+06-12 15:37:43.792 I/[ 2939.148088@3]  [amlv4l](    0): [35]: DW:10, TW:0, Margin:5
+06-12 15:37:43.792 D/[ 2939.148819@3]  [amlcom](    0): vdec_create instance 000000008ad8f594, total 1, PM: power-domain
+06-12 15:37:43.792 D/[ 2939.148949@3]  [media_clock](    0): vdec mux clock is 799999988 Hz
+06-12 15:37:43.797 I/[ 2939.149125@3]  [amlcom](    0): vdec_init, dev_name:ammvdec_h264_v4l, vdec_type=VDEC_TYPE_FRAME_BLOCK, format: 2, total: 1
+06-12 15:37:43.802 D/[ 2939.150722@3]  [h264](    0): 0: pdata->config=parm_v4l_codec_enable:1;mh264_double_write_mode:16;parm_v4l_buffer_margin:5;parm_v4l_canvas_mem_mode:0;parm_v4l_canvas_mem_endian:0;parm_v4l_low_latency_mode:0;parm_v4l_metadata_config_flag:49154;parm_v4l_duration:3840;
+06-12 15:37:43.802 D/[ 2939.150770@3]  [h264](    0): ammvdec_h264_mmu_init tvp = 0x0
+06-12 15:37:43.802 D/[ 2939.154663@3]  [media_clock](    0): vdec mux clock is 799999988 Hz
+06-12 15:37:43.802 D/[ 2939.155498@3]  [h264](    0): vh264_init, phy_addr=57429000 vaddr=0000000058bbc496
+06-12 15:37:43.892 D/[ 2939.246052@0]  [h264](    0): 0: vmh264_get_ps_info mmu_enable 0 double_write_mode 0x10
+06-12 15:37:43.892 I/[ 2939.246077@0]  [amlv4l](    0): [35]: Parse from ucode, visible(1920 x 1080), coded(1920 x 1088), scan:P, bitdepth(0), dw(10)
+06-12 15:37:43.892 I/[ 2939.246159@0]  [amlv4l](    0): [35]: Picture buffer count: dec:5, vpp:0, ge2d:0, margin:5, total:10
+06-12 15:37:43.892 D/[ 2939.246171@0]  [amlv4l](    0): [35]: Post event: res chg
+06-12 15:37:43.912 I/[ 2939.256348@0]  dim(    0): reg:use[3]ms
+06-12 15:37:43.912 I/[ 2939.256478@0]  dim(    0): create:ch[2],tmode[3]
+06-12 15:37:43.912 I/[ 2939.256485@0]  dim(    0): out:0x80000000
+06-12 15:37:43.912 D/[ 2939.258122@0]  [h264](    0): 0: restriction_flag=0, max_dec_frame_buffering=4, dec_dpb_size=5 num_reorder_frames 2 used_reorder_dpb_size_margin 5
+06-12 15:37:43.924 D/[ 2939.276925@0]  [h264](    0): 0: decoder duration change old: 0 new: 3840
+06-12 15:37:43.924 I/[ 2939.277045@2]  dim(    0): value reg:ch[2]:fix_buf:0;ponly <0,0>
+06-12 15:37:43.924 I/[ 2939.277059@2]  dim(    0): di_cnt_i_buf1:tvp:0
+06-12 15:37:43.924 I/[ 2939.277070@2]  dim(    0): buf large::0x4fb000, 0x5a1000
+06-12 15:37:43.924 I/[ 2939.277106@2]  vpu(    0): vpu: vpu_dev_clk_gate_on: unsupport vpu mod: 72
+06-12 15:37:43.924 I/[ 2939.278020@2]  dim(    0): ch[2]:reg:mem cfg[0][0][0]
+06-12 15:37:44.003 I/[ 2939.357142@3]  VID(    0): VD1 off
+06-12 15:37:44.004 I/[ 2939.357298@3]  vc(    0): [0]vc: set enable index=0, val=1
+06-12 15:37:44.004 I/        (    0): [ 2939.357320@3]  dev->index =0, val=2
+06-12 15:37:44.004 I/[ 2939.357324@3]  VID(    0): VD1 off
+06-12 15:37:44.004 I/[ 2939.357328@3]  VID(    0): VD1 set global output as 1
+06-12 15:37:44.004 I/[ 2939.357356@3]  VID(    0): store VD0 path_id changed -1->2
+06-12 15:37:44.004 I/[ 2939.357431@0]  vc(    0): [0]sideband_type =-1
+06-12 15:37:44.292 W/[ 2939.644971@0]  RTW(    0): Turbo EDCA =0xa42b
+06-12 15:37:44.936 E/[ 2940.289533@2]  selinux(    0): SELinux:  Could not stat /sys/kernel/dmabuf/buffers/688553/attachments: No such file or directory.
+06-12 15:37:44.936 E/[ 2940.289551@2]  selinux(    0):  
+06-12 15:37:44.936 E/[ 2940.289917@2]  selinux(    0): SELinux: Could not get canonical path for /sys/kernel/dmabuf/buffers/688554/attachments restorecon: No such file or directory.
+06-12 15:37:44.936 E/[ 2940.289932@2]  selinux(    0):  
+06-12 15:37:44.936 E/[ 2940.290068@2]  ueventd(    0): selinux_android_restorecon(/sys/kernel/dmabuf/buffers/688554/attachments) failed: No such file or directory
+06-12 15:37:44.984 E/[ 2940.338861@2]  selinux(    0): SELinux:  Could not stat /sys/kernel/dmabuf/buffers/685895/attachments: No such file or directory.
+06-12 15:37:44.984 E/[ 2940.338879@2]  selinux(    0):  
+06-12 15:37:46.304 W/[ 2941.657151@2]  RTW(    0): fill_default_txdesc(wlan0): SP Packet(0x0806) rate=0x4 SeqNum = 1888
+06-12 15:37:47.366 F/linker  (19787): CANNOT LINK EXECUTABLE "/system/bin/smartcable/smartCableSTBApp": library "libmosquitto.so" not found: needed by main executable
+06-12 15:37:50.337 W/[ 2945.692799@0]  RTW(    0): Turbo EDCA =0x5ea42b
+06-12 15:37:51.391 W/[ 2946.748198@2]  RTW(    0): fill_default_txdesc(wlan0): SP Packet(0x0806) rate=0x4 SeqNum = 3614
+06-12 15:37:52.378 F/linker  (19803): CANNOT LINK EXECUTABLE "/system/bin/smartcable/smartCableSTBApp": library "libmosquitto.so" not found: needed by main executable
+06-12 15:37:56.544 W/[ 2951.899191@0]  RTW(    0): fill_default_txdesc(wlan0): SP Packet(0x0806) rate=0x4 SeqNum = 606
+06-12 15:37:57.376 F/linker  (19814): CANNOT LINK EXECUTABLE "/system/bin/smartcable/smartCableSTBApp": library "libmosquitto.so" not found: needed by main executable
+06-12 15:37:58.779 I/[ 2954.135390@1]  dim(    0): ch[2] in eos p-other
+06-12 15:37:58.779 D/[ 2954.135591@1]  [amlv4l](    0): [35]: Post event: eos
+06-12 15:37:58.784 I/[ 2954.137418@3]  [amlv4l](    0): [35]: reset mode: 1, es frames buffering: 0
+06-12 15:37:58.788 I/[ 2954.144124@3]  [amlv4l](    0): [35]: reset mode: 1, es frames buffering: 0
+06-12 15:37:58.811 I/[ 2954.164654@2]  dim(    0): unreg:2keep[0], msk:[0x0,0x0]
+06-12 15:37:58.819 I/[ 2954.174741@2]  vpu(    0): vpu: vpu_dev_clk_gate_off: unsupport vpu mod: 72
+06-12 15:37:58.820 I/[ 2954.175749@0]  dim(    0): unreg:use[26]ms
+06-12 15:37:58.820 I/[ 2954.175762@0]  dim(    0): di_destroy_instance:ch[2]:end
+06-12 15:37:58.820 I/[ 2954.176342@0]  dim(    0): reg:use[1]ms
+06-12 15:37:58.820 I/[ 2954.176354@0]  dim(    0): create:ch[2],tmode[3]
+06-12 15:37:58.820 I/[ 2954.176358@0]  dim(    0): out:0x80000000
+06-12 15:37:59.111 I/[ 2954.466651@2]  [amlv4l](    0): [35]: reset mode: 1, es frames buffering: 0
+06-12 15:37:59.116 I/[ 2954.472182@1]  [amlv4l](    0): [35]: reset mode: 1, es frames buffering: 0
+06-12 15:37:59.139 I/[ 2954.494012@3]  [amlv4l](    0): [35]: reset mode: 1, es frames buffering: 0
+06-12 15:37:59.143 D/[ 2954.500115@0]  [amlcom](    0): vdec_release instance 000000008ad8f594, total 1
+06-12 15:37:59.148 D/[ 2954.501024@0]  [media_clock](    0): the clk_vdec_mux    clock off, ref cnt: 0
+06-12 15:37:59.148 I/[ 2954.501736@0]  dim(    0): unreg:use[0]ms
+06-12 15:37:59.148 I/[ 2954.501748@0]  dim(    0): di_destroy_instance:ch[2]:end
+06-12 15:37:59.148 I/[ 2954.502915@1]  resman(    0): 59 release [decoder]
+06-12 15:37:59.148 I/[ 2954.502929@1]  resman(    0): 59 release [codec_mm]
+06-12 15:37:59.148 E/        (    0): [ 2954.505118@3]  disalbe fastplay
+06-12 15:37:59.159 I/[ 2954.514560@3]  resman(    0): 60 appname:OMX-40, type=0
+06-12 15:37:59.183 I/[ 2954.540309@2]  resman(    0): 62 appname:secmem, type=3
+06-12 15:37:59.187 I/[ 2954.542462@2]  resman(    0): 62 acquire [tvp], preempt yes
+06-12 15:37:59.295 I/        (    0): [ 2954.648997@0]  protect tvp 0 7 ret 0 5b380000 a740000
+06-12 15:37:59.295 I/        (    0): [ 2954.649010@0]  enable tvp for 1
+06-12 15:37:59.296 I/        (    0): [ 2954.649014@0]  tvp_user_count is 1
+06-12 15:37:59.296 I/[ 2954.649020@0]  resman(    0): 62 acquire [tvp] success
+06-12 15:37:59.319 I/[ 2954.675880@0]  resman(    0): 60 acquire [decoder], preempt yes
+06-12 15:37:59.320 I/[ 2954.675891@0]  resman(    0): 60 acquire [decoder] success
+06-12 15:37:59.320 I/[ 2954.675928@0]  resman(    0): 60 acquire [codec_mm], preempt yes
+06-12 15:37:59.320 I/[ 2954.675937@0]  resman(    0): 60 score 60 secure yes
+06-12 15:37:59.320 I/[ 2954.675943@0]  resman(    0): 60 acquire [codec_mm] success
+06-12 15:37:59.335 I/[ 2954.690815@2]  [amlv4l](    0): [37]: set DRM mode: 1
+06-12 15:37:59.336 I/[ 2954.690979@2]  [amlv4l](    0): [37]: DW:3, TW:0, Margin:5
+06-12 15:37:59.336 D/[ 2954.691431@2]  [amlcom](    0): vdec_create instance 000000005f50999f, total 1, PM: power-domain
+06-12 15:37:59.344 D/[ 2954.694001@2]  [media_clock](    0): hevc mux clock is 499999992 Hz
+06-12 15:37:59.344 D/[ 2954.694937@2]  [media_clock](    0): hevc back mux clock is 499999992 Hz
+06-12 15:37:59.344 I/[ 2954.695124@2]  [amlcom](    0): vdec_init, dev_name:ammvdec_h265_v4l, vdec_type=VDEC_TYPE_FRAME_BLOCK, format: 11, total: 1
+06-12 15:37:59.344 D/[ 2954.695721@2]  [h265](    0): [0]pdata->config=parm_v4l_codec_enable:1;parm_v4l_buffer_margin:5;hevc_double_write_mode:3;hevc_triple_write_mode:0;hevc_buf_width:4096;hevc_buf_height:2304;save_buffer_mode:0;parm_v4l_canvas_mem_mode:0;parm_v4l_canvas_mem_endian:0;parm_v4l_low_latency_mode:0;parm_v4l_metadata_config_flag:49154;parm_v4l_duration:4000;dv_profile:0;
+06-12 15:37:59.344 D/[ 2954.695784@2]  [h265](    0): [0]discard dv data
+06-12 15:37:59.344 D/[ 2954.695794@2]  [h265](    0): [0]dv_profile: 0
+06-12 15:37:59.344 D/[ 2954.696237@2]  [h265](    0): [0]dynamic_buf_num_margin=5
+06-12 15:37:59.344 D/[ 2954.696246@2]  [h265](    0): [0]double_write_mode=3
+06-12 15:37:59.344 D/[ 2954.696250@2]  [h265](    0): [0]nal_skip_policy=2
+06-12 15:37:59.344 D/[ 2954.696258@2]  [h265](    0): [0]h265:pts_unstable=0
+06-12 15:37:59.344 D/[ 2954.696263@2]  [h265](    0): [0]h265: ver (201602101,0) decinfo: 0x0 rate=4000
+06-12 15:37:59.354 D/[ 2954.702956@2]  [h265](    0): ucode version 4.138, swap enable 1
+06-12 15:37:59.354 D/[ 2954.703284@2]  [media_clock](    0): hevc mux clock is 799999988 Hz
+06-12 15:37:59.354 D/[ 2954.704551@2]  [media_clock](    0): hevc back mux clock is 799999988 Hz
+06-12 15:37:59.354 D/[ 2954.704563@2]  [amlcom](    0): hevc video changed to 3840 x 2160 60 fps clk->800MHZ
+06-12 15:37:59.377 D/[ 2954.730328@3]  [h265](    0): [0]vh265 cached=0  need_size=16384 speed= 36 ms
+06-12 15:37:59.377 D/[ 2954.730788@0]  [h265](    0): set ucode parse
+06-12 15:37:59.377 W/        (    0): [ 2954.730802@0]  hevc get comp info: 64 65536 797
+06-12 15:37:59.377 D/[ 2954.730807@0]  [h265](    0): margin = 5, sps_max_dec_pic_buffering_minus1_0 = 5
+06-12 15:37:59.377 I/[ 2954.730822@0]  [amlv4l](    0): [37]: Parse from ucode, visible(1920 x 1080), coded(1920 x 1088), scan:P, bitdepth(8), DW/TW(3, 0)
+06-12 15:37:59.377 D/[ 2954.731822@0]  [h265](    0): [0]hevc->performance_profile 0
+06-12 15:37:59.377 D/[ 2954.731844@0]  [h265](    0): [0]set pic_list_init_flag 1
+06-12 15:37:59.377 D/[ 2954.731983@2]  [h265](    0): [0]init_buf_spec2 1920 1080
+06-12 15:37:59.377 D/[ 2954.731992@2]  [h265](    0): [0]set pic_list_init_flag to 2
+06-12 15:37:59.377 D/[ 2954.732044@0]  [h265](    0): [0]set pic_list_init_flag to 3
+06-12 15:37:59.377 D/[ 2954.732049@0]  [h265](    0): [vdec_kpi][vh265_isr_thread_fn] First I frame coming.
+06-12 15:37:59.377 I/[ 2954.732643@3]  [amlv4l](    0): [37]: Picture buffer count: dec:7, vpp:0, ge2d:0, margin:5, total:12
+06-12 15:37:59.377 D/[ 2954.732657@3]  [amlv4l](    0): [37]: Post event: res chg
+06-12 15:37:59.390 I/[ 2954.741402@3]  dim(    0): reg:use[1]ms
+06-12 15:37:59.390 I/[ 2954.741414@3]  dim(    0): create:ch[2],tmode[3]
+06-12 15:37:59.390 I/[ 2954.741638@3]  dim(    0): out:0xa0000000
+06-12 15:37:59.398 D/[ 2954.753670@0]  [h265](    0): [0]VH265: output first frame poc 0
+06-12 15:37:59.399 D/[ 2954.753693@0]  [h265](    0): [0]decoder duration change old: 0 new: 4000
+06-12 15:37:59.399 D/[ 2954.753708@0]  [h265](    0): [vdec_kpi][post_video_frame] First I frame decoded.
+06-12 15:37:59.399 I/[ 2954.753810@0]  dim(    0): value reg:ch[2]:fix_buf:0;ponly <0,0>
+06-12 15:37:59.399 I/[ 2954.753823@0]  dim(    0): di_cnt_i_buf1:tvp:1
+06-12 15:37:59.399 I/[ 2954.753833@0]  dim(    0): buf large::0x4fb000, 0x5a1000
+06-12 15:37:59.399 I/[ 2954.753873@0]  vpu(    0): vpu: vpu_dev_clk_gate_on: unsupport vpu mod: 72
+06-12 15:37:59.399 I/[ 2954.754785@0]  dim(    0): ch[2]:reg:mem cfg[0][0][0]
+06-12 15:38:01.671 W/[ 2957.028029@0]  RTW(    0): fill_default_txdesc(wlan0): SP Packet(0x0806) rate=0x4 SeqNum = 2028
+06-12 15:38:02.386 F/linker  (19851): CANNOT LINK EXECUTABLE "/system/bin/smartcable/smartCableSTBApp": library "libmosquitto.so" not found: needed by main executable
+06-12 15:38:06.796 W/[ 2962.151597@0]  RTW(    0): fill_default_txdesc(wlan0): SP Packet(0x0806) rate=0x4 SeqNum = 2610
+06-12 15:38:07.382 F/linker  (19862): CANNOT LINK EXECUTABLE "/system/bin/smartcable/smartCableSTBApp": library "libmosquitto.so" not found: needed by main executable
+06-12 15:38:11.947 W/[ 2967.301132@3]  RTW(    0): fill_default_txdesc(wlan0): SP Packet(0x0806) rate=0x4 SeqNum = 3166
+06-12 15:38:12.391 F/linker  (19877): CANNOT LINK EXECUTABLE "/system/bin/smartcable/smartCableSTBApp": library "libmosquitto.so" not found: needed by main executable
+06-12 15:38:17.062 W/[ 2972.418246@0]  RTW(    0): fill_default_txdesc(wlan0): SP Packet(0x0806) rate=0x4 SeqNum = 3848
+06-12 15:38:17.399 F/linker  (19890): CANNOT LINK EXECUTABLE "/system/bin/smartcable/smartCableSTBApp": library "libmosquitto.so" not found: needed by main executable
+06-12 15:38:21.311 W/[ 2976.666604@3]  RTW(    0): fill_default_txdesc(wlan0): SP Packet(0x0806) rate=0x4 SeqNum = 230
+06-12 15:38:22.404 F/linker  (19905): CANNOT LINK EXECUTABLE "/system/bin/smartcable/smartCableSTBApp": library "libmosquitto.so" not found: needed by main executable
+06-12 15:38:26.243 W/[ 2981.596770@0]  RTW(    0): fill_default_txdesc(wlan0): SP Packet(0x0806) rate=0x4 SeqNum = 703
+06-12 15:38:26.251 W/[ 2981.605464@2]  RTW(    0): fill_default_txdesc(wlan0): SP Packet(0x0806) rate=0x4 SeqNum = 709
+06-12 15:38:26.627 W/[ 2981.980800@3]  RTW(    0): Turbo EDCA =0xa42b
+06-12 15:38:27.412 F/linker  (19915): CANNOT LINK EXECUTABLE "/system/bin/smartcable/smartCableSTBApp": library "libmosquitto.so" not found: needed by main executable
+06-12 15:38:31.375 W/[ 2986.729384@2]  RTW(    0): fill_default_txdesc(wlan0): SP Packet(0x0806) rate=0x4 SeqNum = 2216
+06-12 15:38:32.417 F/linker  (19928): CANNOT LINK EXECUTABLE "/system/bin/smartcable/smartCableSTBApp": library "libmosquitto.so" not found: needed by main executable
+06-12 15:38:32.675 W/[ 2988.028750@1]  RTW(    0): Turbo EDCA =0x5ea42b
+06-12 15:38:36.511 W/[ 2991.868486@0]  RTW(    0): fill_default_txdesc(wlan0): SP Packet(0x0806) rate=0x4 SeqNum = 2687
+06-12 15:38:37.416 F/linker  (19948): CANNOT LINK EXECUTABLE "/system/bin/smartcable/smartCableSTBApp": library "libmosquitto.so" not found: needed by main executable
+06-12 15:38:39.872 W/[ 2995.226425@0]  audit(    0): audit_lost=3189 audit_rate_limit=5 audit_backlog_limit=64
+06-12 15:38:39.872 E/[ 2995.226442@0]  audit(    0): rate limit exceeded
+06-12 15:38:41.636 W/[ 2996.989128@2]  RTW(    0): fill_default_txdesc(wlan0): SP Packet(0x0806) rate=0x4 SeqNum = 3217
+06-12 15:38:42.421 F/linker  (19959): CANNOT LINK EXECUTABLE "/system/bin/smartcable/smartCableSTBApp": library "libmosquitto.so" not found: needed by main executable
+06-12 15:38:46.763 W/[ 3002.117280@1]  RTW(    0): fill_default_txdesc(wlan0): SP Packet(0x0806) rate=0x4 SeqNum = 3643
+06-12 15:38:47.427 F/linker  (19977): CANNOT LINK EXECUTABLE "/system/bin/smartcable/smartCableSTBApp": library "libmosquitto.so" not found: needed by main executable
+06-12 15:38:47.748 W/[ 3003.100921@1]  RTW(    0): fill_default_txdesc(wlan0): SP Packet(0x0806) rate=0x4 SeqNum = 3764
+06-12 15:38:51.855 W/[ 3007.209566@1]  RTW(    0): fill_default_txdesc(wlan0): SP Packet(0x0806) rate=0x4 SeqNum = 69
+06-12 15:38:52.431 F/linker  (19988): CANNOT LINK EXECUTABLE "/system/bin/smartcable/smartCableSTBApp": library "libmosquitto.so" not found: needed by main executable
+06-12 15:38:56.951 W/[ 3012.308169@0]  RTW(    0): fill_default_txdesc(wlan0): SP Packet(0x0806) rate=0x4 SeqNum = 520
+06-12 15:38:57.442 F/linker  (20002): CANNOT LINK EXECUTABLE "/system/bin/smartcable/smartCableSTBApp": library "libmosquitto.so" not found: needed by main executable
+06-12 15:39:00.231 W/[ 3015.585308@2]  audit(    0): audit_lost=3192 audit_rate_limit=5 audit_backlog_limit=64
+06-12 15:39:00.232 E/[ 3015.585317@2]  audit(    0): rate limit exceeded
+06-12 15:39:01.331 W/[ 3016.684966@2]  audit(    0): audit_lost=3310 audit_rate_limit=5 audit_backlog_limit=64
+06-12 15:39:01.332 E/[ 3016.684976@2]  audit(    0): rate limit exceeded
+06-12 15:39:02.055 W/[ 3017.408649@2]  RTW(    0): fill_default_txdesc(wlan0): SP Packet(0x0806) rate=0x4 SeqNum = 1003
+06-12 15:39:02.443 F/linker  (20012): CANNOT LINK EXECUTABLE "/system/bin/smartcable/smartCableSTBApp": library "libmosquitto.so" not found: needed by main executable
+06-12 15:39:06.155 W/[ 3021.508910@0]  RTW(    0): fill_default_txdesc(wlan0): SP Packet(0x0806) rate=0x4 SeqNum = 1337
+06-12 15:39:07.449 F/linker  (20027): CANNOT LINK EXECUTABLE "/system/bin/smartcable/smartCableSTBApp": library "libmosquitto.so" not found: needed by main executable
+06-12 15:39:11.227 W/[ 3026.581952@3]  RTW(    0): fill_default_txdesc(wlan0): SP Packet(0x0806) rate=0x4 SeqNum = 1809
+06-12 15:39:12.455 F/linker  (20039): CANNOT LINK EXECUTABLE "/system/bin/smartcable/smartCableSTBApp": library "libmosquitto.so" not found: needed by main executable
+06-12 15:39:16.140 W/[ 3031.495462@2]  RTW(    0): cfg80211_rtw_scan(wlan0)
+06-12 15:39:16.140 W/[ 3031.495485@2]  RTW(    0): cfg80211_rtw_scan (wlan0) tx:81, rx:40, bi:121 kbps, disallow(0)
+06-12 15:39:16.147 W/[ 3031.502946@2]  RTW(    0): [HW_VAR_CHECK_TXBUF] Empty in 4 ms
+06-12 15:39:16.148 W/[ 3031.503045@2]  RTW(    0): wlan0 sleep m0=0x00000003, ori reg_0x4d4=0x00000000
+06-12 15:39:17.149 W/[ 3032.504794@0]  RTW(    0): LeaveAllPowerSaveModeDirect.....
+06-12 15:39:17.149 W/[ 3032.504808@0]  RTW(    0): LeaveAllPowerSaveModeDirect: Driver Already Leave LPS
+06-12 15:39:17.149 W/[ 3032.504816@0]  RTW(    0): rtw_hal_set_macaddr_port wlan0- hw port(0) mac_addr =a8:71:16:66:28:c6
+06-12 15:39:17.149 W/[ 3032.504949@0]  RTW(    0): wlan0- hw port(0) mac_addr =a8:71:16:66:28:c6
+06-12 15:39:17.150 W/[ 3032.505007@0]  RTW(    0): p2p0- hw port(1) mac_addr =aa:71:16:66:28:c6
+06-12 15:39:17.158 W/[ 3032.513093@2]  RTW(    0): wlan0 wakeup m0=0x00000003, ori reg_0x4d4=0x00000003
+06-12 15:39:17.158 W/[ 3032.513924@3]  RTW(    0): survey done event(53) band:0 for wlan0
+06-12 15:39:17.159 W/        (    0): [ 3032.513952@3]  ========== ACS (VER-3) ==========
+06-12 15:39:17.159 W/        (    0): [ 3032.513960@3]  Best 24G Channel:13
+06-12 15:39:17.160 W/        (    0): [ 3032.513967@3]  Best 5G Channel:52
+06-12 15:39:17.160 W/        (    0): [ 3032.513967@3]
+06-12 15:39:17.160 W/[ 3032.514137@3]  RTW(    0): rtw_indicate_scan_done(wlan0)
+06-12 15:39:17.160 W/[ 3032.514232@0]  RTW(    0): fill_default_txdesc(wlan0): SP Packet(0x0806) rate=0x4 SeqNum = 2184
+06-12 15:39:17.466 F/linker  (20063): CANNOT LINK EXECUTABLE "/system/bin/smartcable/smartCableSTBApp": library "libmosquitto.so" not found: needed by main executable
+06-12 15:39:21.215 W/[ 3036.570972@1]  RTW(    0): fill_default_txdesc(wlan0): SP Packet(0x0806) rate=0x4 SeqNum = 2441
+06-12 15:39:22.464 F/linker  (20076): CANNOT LINK EXECUTABLE "/system/bin/smartcable/smartCableSTBApp": library "libmosquitto.so" not found: needed by main executable
+06-12 15:39:26.267 W/[ 3041.622538@1]  RTW(    0): fill_default_txdesc(wlan0): SP Packet(0x0806) rate=0x4 SeqNum = 2720
+06-12 15:39:27.471 F/linker  (20086): CANNOT LINK EXECUTABLE "/system/bin/smartcable/smartCableSTBApp": library "libmosquitto.so" not found: needed by main executable
+06-12 15:39:29.219 W/[ 3044.572803@0]  RTW(    0): fill_default_txdesc(wlan0): SP Packet(0x0806) rate=0x4 SeqNum = 2868
+06-12 15:39:31.535 W/[ 3046.888903@1]  RTW(    0): fill_default_txdesc(wlan0): SP Packet(0x0806) rate=0x4 SeqNum = 3017
+06-12 15:39:32.478 F/linker  (20101): CANNOT LINK EXECUTABLE "/system/bin/smartcable/smartCableSTBApp": library "libmosquitto.so" not found: needed by main executable
+06-12 15:39:36.827 W/[ 3052.181435@0]  RTW(    0): fill_default_txdesc(wlan0): SP Packet(0x0806) rate=0x4 SeqNum = 3287
+06-12 15:39:37.480 F/linker  (20116): CANNOT LINK EXECUTABLE "/system/bin/smartcable/smartCableSTBApp": library "libmosquitto.so" not found: needed by main executable
+06-12 15:39:39.875 W/[ 3055.229768@3]  audit(    0): audit_lost=3318 audit_rate_limit=5 audit_backlog_limit=64
+06-12 15:39:39.876 E/[ 3055.229778@3]  audit(    0): rate limit exceeded
+06-12 15:39:41.931 W/[ 3057.288002@2]  RTW(    0): fill_default_txdesc(wlan0): SP Packet(0x0806) rate=0x4 SeqNum = 3605
+06-12 15:39:42.485 F/linker  (20133): CANNOT LINK EXECUTABLE "/system/bin/smartcable/smartCableSTBApp": library "libmosquitto.so" not found: needed by main executable
+06-12 15:39:47.036 W/[ 3062.391752@1]  RTW(    0): fill_default_txdesc(wlan0): SP Packet(0x0806) rate=0x4 SeqNum = 3858
+06-12 15:39:47.491 F/linker  (20144): CANNOT LINK EXECUTABLE "/system/bin/smartcable/smartCableSTBApp": library "libmosquitto.so" not found: needed by main executable
+06-12 15:39:49.956 W/[ 3065.308797@3]  RTW(    0): fill_default_txdesc(wlan0): SP Packet(0x0806) rate=0x4 SeqNum = 4029
+06-12 15:39:51.155 W/[ 3066.509929@0]  RTW(    0): fill_default_txdesc(wlan0): SP Packet(0x0806) rate=0x4 SeqNum = 32
+06-12 15:39:52.284 I/[ 3067.638202@3]  [amlv4l](    0): [37]: reset mode: 1, es frames buffering: 16
+06-12 15:39:52.290 D/[ 3067.638296@3]  [h265](    0): [0]h265:pts_unstable=0
+06-12 15:39:52.290 D/[ 3067.638302@3]  [h265](    0): [0]h265: ver (201602101,0) decinfo: 0x0 rate=4000
+06-12 15:39:52.292 I/[ 3067.647937@2]  [amlv4l](    0): [37]: reset mode: 1, es frames buffering: 0
+06-12 15:39:52.292 D/[ 3067.648018@2]  [h265](    0): [0]h265:pts_unstable=0
+06-12 15:39:52.292 D/[ 3067.648023@2]  [h265](    0): [0]h265: ver (201602101,0) decinfo: 0x0 rate=4000
+06-12 15:39:52.335 I/[ 3067.688668@1]  dim(    0): unreg:2keep[0], msk:[0x0,0x0]
+06-12 15:39:52.348 I/[ 3067.698754@1]  vpu(    0): vpu: vpu_dev_clk_gate_off: unsupport vpu mod: 72
+06-12 15:39:52.348 I/[ 3067.698948@3]  dim(    0): unreg:use[28]ms
+06-12 15:39:52.348 I/[ 3067.698956@3]  dim(    0): di_destroy_instance:ch[2]:end
+06-12 15:39:52.348 I/[ 3067.699589@3]  dim(    0): reg:use[1]ms
+06-12 15:39:52.348 I/[ 3067.699602@3]  dim(    0): create:ch[2],tmode[3]
+06-12 15:39:52.348 I/[ 3067.699606@3]  dim(    0): out:0xa0000000
+06-12 15:39:52.356 I/[ 3067.708880@3]  [amlv4l](    0): [37]: reset mode: 1, es frames buffering: 0
+06-12 15:39:52.356 D/[ 3067.708964@3]  [h265](    0): [0]h265:pts_unstable=0
+06-12 15:39:52.356 D/[ 3067.708969@3]  [h265](    0): [0]h265: ver (201602101,0) decinfo: 0x0 rate=4000
+06-12 15:39:52.376 I/[ 3067.729562@3]  [amlv4l](    0): [37]: reset mode: 1, es frames buffering: 0
+06-12 15:39:52.376 D/[ 3067.729628@3]  [h265](    0): [0]h265:pts_unstable=0
+06-12 15:39:52.377 D/[ 3067.729633@3]  [h265](    0): [0]h265: ver (201602101,0) decinfo: 0x0 rate=4000
+06-12 15:39:52.412 I/[ 3067.764743@2]  [amlv4l](    0): [37]: reset mode: 1, es frames buffering: 0
+06-12 15:39:52.412 D/[ 3067.764821@2]  [h265](    0): [0]h265:pts_unstable=0
+06-12 15:39:52.412 D/[ 3067.764827@2]  [h265](    0): [0]h265: ver (201602101,0) decinfo: 0x0 rate=4000
+06-12 15:39:52.416 D/[ 3067.770531@2]  [amlcom](    0): vdec_release instance 000000005f50999f, total 1
+06-12 15:39:52.416 D/[ 3067.770598@2]  [media_clock](    0): the clk_hevcf_mux   clock off, ref cnt: 0
+06-12 15:39:52.416 D/[ 3067.770606@2]  [media_clock](    0): the clk_hevcb_mux   clock off, ref cnt: 0
+06-12 15:39:52.416 I/[ 3067.771470@2]  dim(    0): unreg:use[1]ms
+06-12 15:39:52.416 I/[ 3067.771480@2]  dim(    0): di_destroy_instance:ch[2]:end
+06-12 15:39:52.416 I/[ 3067.772274@2]  resman(    0): 60 release [decoder]
+06-12 15:39:52.416 I/[ 3067.772286@2]  resman(    0): 60 release [codec_mm]
+06-12 15:39:52.420 E/        (    0): [ 3067.773705@3]  disalbe fastplay
+06-12 15:39:52.434 E/[ 3067.789613@3]  Warn(    0): TVP pool will release later.
+06-12 15:39:52.435 I/        (    0): [ 3067.789637@3]  tvp_user_count is 0
+06-12 15:39:52.435 I/[ 3067.789643@3]  resman(    0): 62 release [tvp]
+06-12 15:39:52.496 F/linker  (20169): CANNOT LINK EXECUTABLE "/system/bin/smartcable/smartCableSTBApp": library "libmosquitto.so" not found: needed by main executable
+06-12 15:39:52.670 E/[ 3068.017919@0]  Warn(    0): TVP pool will release later.
+06-12 15:39:52.670 E/[ 3068.018138@0]  Warn(    0): TVP pool will release later.
+06-12 15:39:52.670 E/[ 3068.018280@0]  Warn(    0): TVP pool will release later.
+06-12 15:39:52.670 E/[ 3068.018403@0]  Warn(    0): TVP pool will release later.
+06-12 15:39:52.670 E/[ 3068.018497@0]  Warn(    0): TVP pool will release later.
+06-12 15:39:52.670 E/[ 3068.018587@0]  Warn(    0): TVP pool will release later.
+06-12 15:39:52.670 E/[ 3068.018678@0]  Warn(    0): TVP pool will release later.
+06-12 15:39:52.670 E/[ 3068.018769@0]  Warn(    0): TVP pool will release later.
+06-12 15:39:52.670 E/[ 3068.018864@0]  Warn(    0): TVP pool will release later.
+06-12 15:39:52.670 E/[ 3068.018964@0]  Warn(    0): TVP pool will release later.
+06-12 15:39:52.670 E/[ 3068.019304@2]  Warn(    0): TVP pool will release later.
+06-12 15:39:52.670 E/[ 3068.019315@2]  Warn(    0): TVP pool will release later.
+06-12 15:39:52.670 E/[ 3068.019321@2]  Warn(    0): TVP pool will release later.
+06-12 15:39:52.670 E/[ 3068.019327@2]  Warn(    0): TVP pool will release later.
+06-12 15:39:52.670 E/[ 3068.019332@2]  Warn(    0): TVP pool will release later.
+06-12 15:39:52.670 E/[ 3068.019336@2]  Warn(    0): TVP pool will release later.
+06-12 15:39:52.670 E/[ 3068.019341@2]  Warn(    0): TVP pool will release later.
+06-12 15:39:52.670 E/[ 3068.019346@2]  Warn(    0): TVP pool will release later.
+06-12 15:39:52.670 E/[ 3068.019352@2]  Warn(    0): TVP pool will release later.
+06-12 15:39:52.670 E/[ 3068.019358@2]  Warn(    0): TVP pool will release later.
+06-12 15:39:52.670 I/[ 3068.021089@0]  vc(    0): [0]vc: set enable index=0, val=0
+06-12 15:39:52.670 I/[ 3068.021117@0]  VID(    0): store VD0 path_id changed 2->-1
+06-12 15:39:52.670 I/        (    0): [ 3068.021120@0]  dev->index =0, val=1
+06-12 15:39:52.670 I/[ 3068.021124@0]  VID(    0): VD1 off
+06-12 15:39:52.671 I/[ 3068.021129@0]  VID(    0): VD1 set global output as 0
+06-12 15:39:52.671 I/        (    0): [ 3068.021151@0]  common_vf_unreg_provider video_render.0: vd1 used: true, vd2 used: false, vd3 used: false, black_out:0, cur_buf:000000000d37ac90
+06-12 15:39:52.688 E/[ 3068.044164@2]  Warn(    0): TVP pool will release later.
+06-12 15:39:52.696 E/[ 3068.051741@2]  Warn(    0): TVP pool will release later.
+06-12 15:39:52.775 E/[ 3068.128673@2]  Warn(    0): TVP pool will release later.
+06-12 15:39:52.787 E/[ 3068.140734@0]  Warn(    0): TVP pool will release later.
+06-12 15:39:52.788 E/[ 3068.140750@0]  Warn(    0): TVP pool will release later.
+06-12 15:39:52.788 I/        (    0): [ 3068.140806@0]  unprotect tvp 0 handle is 7
+06-12 15:39:52.788 I/        (    0): [ 3068.142313@0]  disalbe tvp
+06-12 15:39:56.291 W/[ 3071.648510@0]  RTW(    0): fill_default_txdesc(wlan0): SP Packet(0x0806) rate=0x4 SeqNum = 964
+06-12 15:39:57.502 F/linker  (20219): CANNOT LINK EXECUTABLE "/system/bin/smartcable/smartCableSTBApp": library "libmosquitto.so" not found: needed by main executable
+06-12 15:40:01.395 W/[ 3076.748692@1]  RTW(    0): fill_default_txdesc(wlan0): SP Packet(0x0806) rate=0x4 SeqNum = 1604
+06-12 15:40:02.502 F/linker  (20234): CANNOT LINK EXECUTABLE "/system/bin/smartcable/smartCableSTBApp": library "libmosquitto.so" not found: needed by main executable
+06-12 15:40:06.327 W/[ 3081.682103@3]  RTW(    0): fill_default_txdesc(wlan0): SP Packet(0x0806) rate=0x4 SeqNum = 2152
+06-12 15:40:07.508 F/linker  (20244): CANNOT LINK EXECUTABLE "/system/bin/smartcable/smartCableSTBApp": library "libmosquitto.so" not found: needed by main executable
+06-12 15:40:11.663 W/[ 3087.018518@1]  RTW(    0): fill_default_txdesc(wlan0): SP Packet(0x0806) rate=0x4 SeqNum = 2765
+06-12 15:40:12.512 F/linker  (20256): CANNOT LINK EXECUTABLE "/system/bin/smartcable/smartCableSTBApp": library "libmosquitto.so" not found: needed by main executable
+06-12 15:40:16.767 W/[ 3092.121746@2]  RTW(    0): fill_default_txdesc(wlan0): SP Packet(0x0806) rate=0x4 SeqNum = 3209
+06-12 15:40:17.512 F/linker  (20269): CANNOT LINK EXECUTABLE "/system/bin/smartcable/smartCableSTBApp": library "libmosquitto.so" not found: needed by main executable
+06-12 15:40:20.051 I/        (    0): [ 3095.407268@1]  EXT4-fs (mmcblk0p17): re-mounted. Opts: (null)
+06-12 15:40:21.867 W/[ 3097.222031@1]  RTW(    0): fill_default_txdesc(wlan0): SP Packet(0x0806) rate=0x4 SeqNum = 3247
+06-12 15:40:22.514 F/linker  (20285): CANNOT LINK EXECUTABLE "/system/bin/smartcable/smartCableSTBApp": library "libmosquitto.so" not found: needed by main executable
+06-12 15:40:23.640 D/[ 3098.996201@3]  logd(    0): logdr: UID=0 GID=0 PID=20317 b tail=0 logMask=99 pid=0 start=0ns timeout=0ns
+06-12 15:40:24.221 I/[ 3099.575876@2]  binder(    0): 19232:19253 transaction failed 29189/-22, size 616-0 line 2705
+06-12 15:40:24.254 E/AndroidRuntime(19232): FATAL EXCEPTION: Instr: androidx.test.runner.AndroidJUnitRunner
+06-12 15:40:24.254 E/AndroidRuntime(19232): Process: io.appium.uiautomator2.server, PID: 19232
+06-12 15:40:24.254 E/AndroidRuntime(19232): java.lang.IllegalStateException: UiAutomation not connected, UiAutomation@30745d0[id=-1, flags=0]
+06-12 15:40:24.254 E/AndroidRuntime(19232): 	at android.app.UiAutomation.throwIfNotConnectedLocked(UiAutomation.java:1239)
+06-12 15:40:24.254 E/AndroidRuntime(19232): 	at android.app.UiAutomation.disconnect(UiAutomation.java:296)
+06-12 15:40:24.254 E/AndroidRuntime(19232): 	at android.app.Instrumentation.finish(Instrumentation.java:249)
+06-12 15:40:24.254 E/AndroidRuntime(19232): 	at androidx.test.runner.MonitoringInstrumentation.finish(MonitoringInstrumentation.java:409)
+06-12 15:40:24.254 E/AndroidRuntime(19232): 	at androidx.test.runner.AndroidJUnitRunner.onStart(AndroidJUnitRunner.java:474)
+06-12 15:40:24.254 E/AndroidRuntime(19232): 	at android.app.Instrumentation$InstrumentationThread.run(Instrumentation.java:2205)
+06-12 15:40:24.308 I/[ 3099.662979@2]  binder(    0): 632:20360 transaction failed 29189/-22, size 340-0 line 2705
+06-12 15:40:24.308 I/[ 3099.664573@1]  binder(    0): 632:665 transaction failed 29189/-22, size 88-0 line 2705
+--------- beginning of main
+06-12 15:40:25.577 D/Glide   ( 1781): Finished loading Bitmap from LOCAL for com.bumptech.glide.gifdecoder.StandardGifDecoder@fb55452 with size [314x176] in 14.595792 ms
+06-12 15:40:25.589 I/tomator2.serve(20403): The ClassLoaderContext is a special shared library.
+06-12 15:40:25.591 I/lowmemorykiller(  233): medium memory pressure event is triggered for new strategy
+06-12 15:40:25.591 D/lowmemorykiller(  233): LMKD mp_event_psi kill_reasons available are PRESSURE_AFTER_KILL, NOT_RESPONDING, LOW_SWAP_AND_THRASHING, LOW_MEM_AND_SWAP, LOW_MEM_AND_THRASHING, DIRECT_RECL_AND_THRASHING
+06-12 15:40:25.591 D/lowmemorykiller(  233): LMKD mp_event_psi kill_reason received= -1
+06-12 15:40:25.594 I/tomator2.serve(20403): The ClassLoaderContext is a special shared library.
+06-12 15:40:25.597 I/tomator2.serve(20403): The ClassLoaderContext is a special shared library.
+06-12 15:40:25.601 W/tomator2.serve(20403): ClassLoaderContext classpath size mismatch. expected=0, found=3 (PCL[]{PCL[/system/framework/android.test.base.jar*3223074991]#PCL[/system/framework/android.test.mock.jar*3465107378]{PCL[/system/framework/android.test.base.jar*3223074991]}#PCL[/system/framework/android.test.runner.jar*1831602180]{PCL[/system/framework/android.test.base.jar*3223074991]#PCL[/system/framework/android.test.mock.jar*3465107378]{PCL[/system/framework/android.test.base.jar*3223074991]}}} | PCL[/system/framework/android.test.runner.jar*1831602180:/system/framework/android.test.mock.jar*3465107378:/system/framework/android.test.base.jar*3223074991])
+06-12 15:40:25.609 W/tomator2.serve(20403): ClassLoaderContext classpath size mismatch. expected=0, found=7 (PCL[] | PCL[/system/framework/android.test.runner.jar*1831602180:/system/framework/android.test.mock.jar*3465107378:/system/framework/android.test.base.jar*3223074991:/data/app/~~vz-LI613mzCW1_tI8sJdSA==/io.appium.uiautomator2.server.test-pndtPeicsSbNz5ltJNtTXA==/base.apk*2370577946:/data/app/~~vz-LI613mzCW1_tI8sJdSA==/io.appium.uiautomator2.server.test-pndtPeicsSbNz5ltJNtTXA==/base.apk!classes2.dex*3874714895:/data/app/~~vz-LI613mzCW1_tI8sJdSA==/io.appium.uiautomator2.server.test-pndtPeicsSbNz5ltJNtTXA==/base.apk!classes3.dex*1176165195:/data/app/~~vz-LI613mzCW1_tI8sJdSA==/io.appium.uiautomator2.server.test-pndtPeicsSbNz5ltJNtTXA==/base.apk!classes4.dex*2511881386])
+06-12 15:40:25.611 D/Glide   ( 1781): Finished loading Bitmap from LOCAL for com.bumptech.glide.gifdecoder.StandardGifDecoder@fb55452 with size [314x176] in 8.127167 ms
+06-12 15:40:25.625 W/tomator2.serve(20403): Found duplicate classes, falling back to extracting from APK : /data/app/~~ERS2Vb0_Lr3atThE734KvA==/io.appium.uiautomator2.server-qXkfZw9LtZYC0ZeR2vvERg==/base.apk
+06-12 15:40:25.625 W/tomator2.serve(20403): NOTE: This wastes RAM and hurts startup performance.
+06-12 15:40:25.625 W/tomator2.serve(20403): Found duplicated class when checking oat files: 'Ljunit/framework/Assert;' in /system/framework/android.test.base.jar and /data/app/~~ERS2Vb0_Lr3atThE734KvA==/io.appium.uiautomator2.server-qXkfZw9LtZYC0ZeR2vvERg==/base.apk
+06-12 15:40:25.648 D/stbdpc  (  405): STB_DPGetNumPaths[570]: num_paths: 1
+06-12 15:40:25.661 D/Glide   ( 1781): Finished loading Bitmap from LOCAL for com.bumptech.glide.gifdecoder.StandardGifDecoder@fb55452 with size [314x176] in 17.621375 ms
+06-12 15:40:25.661 E/WifiVendorHal(  632): getWifiLinkLayerStats_1_3_Internal(l.973) failed {.code = ERROR_UNKNOWN, .description = unknown error}
+06-12 15:40:25.691 I/lowmemorykiller(  233): medium memory pressure event is triggered for new strategy
+06-12 15:40:25.692 D/lowmemorykiller(  233): LMKD mp_event_psi kill_reasons available are PRESSURE_AFTER_KILL, NOT_RESPONDING, LOW_SWAP_AND_THRASHING, LOW_MEM_AND_SWAP, LOW_MEM_AND_THRASHING, DIRECT_RECL_AND_THRASHING
+06-12 15:40:25.692 D/lowmemorykiller(  233): LMKD mp_event_psi kill_reason received= -1
+06-12 15:40:25.694 D/Glide   ( 1781): Finished loading Bitmap from LOCAL for com.bumptech.glide.gifdecoder.StandardGifDecoder@fb55452 with size [314x176] in 10.515334 ms
+06-12 15:40:25.701 E/adbd    ( 7938): failed to connect to socket 'tcp:6790': Connection refused
+06-12 15:40:25.727 D/Glide   ( 1781): Finished loading Bitmap from LOCAL for com.bumptech.glide.gifdecoder.StandardGifDecoder@fb55452 with size [314x176] in 3.676625 ms
+06-12 15:40:25.748 D/stbdpc  (  405): STB_DPGetNumPaths[570]: num_paths: 1
+06-12 15:40:25.778 D/Glide   ( 1781): Finished loading Bitmap from LOCAL for com.bumptech.glide.gifdecoder.StandardGifDecoder@fb55452 with size [314x176] in 12.820375 ms
+06-12 15:40:25.792 I/lowmemorykiller(  233): medium memory pressure event is triggered for new strategy
+06-12 15:40:25.792 D/lowmemorykiller(  233): LMKD mp_event_psi kill_reasons available are PRESSURE_AFTER_KILL, NOT_RESPONDING, LOW_SWAP_AND_THRASHING, LOW_MEM_AND_SWAP, LOW_MEM_AND_THRASHING, DIRECT_RECL_AND_THRASHING
+06-12 15:40:25.792 D/lowmemorykiller(  233): LMKD mp_event_psi kill_reason received= -1
+06-12 15:40:25.811 D/Glide   ( 1781): Finished loading Bitmap from LOCAL for com.bumptech.glide.gifdecoder.StandardGifDecoder@fb55452 with size [314x176] in 5.366582999999999 ms
+06-12 15:40:25.848 D/stbdpc  (  405): STB_DPGetNumPaths[570]: num_paths: 1
+06-12 15:40:25.861 D/Glide   ( 1781): Finished loading Bitmap from LOCAL for com.bumptech.glide.gifdecoder.StandardGifDecoder@fb55452 with size [314x176] in 15.671875 ms
+06-12 15:40:25.892 I/lowmemorykiller(  233): medium memory pressure event is triggered for new strategy
+06-12 15:40:25.892 D/lowmemorykiller(  233): LMKD mp_event_psi kill_reasons available are PRESSURE_AFTER_KILL, NOT_RESPONDING, LOW_SWAP_AND_THRASHING, LOW_MEM_AND_SWAP, LOW_MEM_AND_THRASHING, DIRECT_RECL_AND_THRASHING
+06-12 15:40:25.892 D/lowmemorykiller(  233): LMKD mp_event_psi kill_reason received= -1
+06-12 15:40:25.894 D/Glide   ( 1781): Finished loading Bitmap from LOCAL for com.bumptech.glide.gifdecoder.StandardGifDecoder@fb55452 with size [314x176] in 9.020208 ms
+06-12 15:40:25.928 D/Glide   ( 1781): Finished loading Bitmap from LOCAL for com.bumptech.glide.gifdecoder.StandardGifDecoder@fb55452 with size [314x176] in 1.760333 ms
+06-12 15:40:25.931 D/dvb_iptv(  405): ReadEmmNetworkTask[1537]: EMM Select Timeout Occured 11
+06-12 15:40:25.949 D/stbdpc  (  405): STB_DPGetNumPaths[570]: num_paths: 1
+06-12 15:40:25.977 D/Glide   ( 1781): Finished loading Bitmap from LOCAL for com.bumptech.glide.gifdecoder.StandardGifDecoder@fb55452 with size [314x176] in 11.358625 ms
+06-12 15:40:25.992 I/lowmemorykiller(  233): medium memory pressure event is triggered for new strategy
+06-12 15:40:25.993 D/lowmemorykiller(  233): LMKD mp_event_psi kill_reasons available are PRESSURE_AFTER_KILL, NOT_RESPONDING, LOW_SWAP_AND_THRASHING, LOW_MEM_AND_SWAP, LOW_MEM_AND_THRASHING, DIRECT_RECL_AND_THRASHING
+06-12 15:40:25.993 D/lowmemorykiller(  233): LMKD mp_event_psi kill_reason received= -1
+06-12 15:40:26.002 D/JioLauncher( 1781): overlay status check for wifi and bt remote false false
+06-12 15:40:26.003 D/JioLauncher( 1781): diagnosis-fragment-onConnectivityChanged
+06-12 15:40:26.004 D/Match code1( 1449): 2
+06-12 15:40:26.004 D/JIO_TR069-( 1449): Predefined List [com.jio.stb.catv, com.rjil.jiostbsetting, com.iwedia.ui.rjio.launcher.reliance, com.jio.stb.hotellauncher, com.jio.media.oberoi, com.jio.ott]
+06-12 15:40:26.006 D/JIO_TR069-( 1449): Caller Package com.iwedia.ui.rjio.launcher.reliance
+06-12 15:40:26.006 D/JIO_TR069-( 1449): White Listed Apps []
+06-12 15:40:26.006 D/JIO_TR069-( 1449): Final White Listed Apps [com.jio.stb.catv, com.rjil.jiostbsetting, com.iwedia.ui.rjio.launcher.reliance, com.jio.stb.hotellauncher, com.jio.media.oberoi, com.jio.ott, ]
+06-12 15:40:26.010 D/JioLauncher( 1781): network-type-------NonJioNetwork
+06-12 15:40:26.013 D/JioLauncher( 1781): live-tv-previousIp-[/fe80::1%wlan0, /192.168.1.1]-newHost-[/fe80::1%wlan0, /192.168.1.1]
+06-12 15:40:26.016 D/JioLauncher( 1781): diagnosis-network-1
+06-12 15:40:26.023 D/JioLauncher( 1781): ThreadCount-159
+06-12 15:40:26.023 D/JioLauncher( 1781): isInactivityPopupDisplaying-{"inactivity_status_modified_time":1420050611833,"inactivity_status":false,"inactivity_window_timeout":120000}
+06-12 15:40:26.023 D/JioLauncher( 1781): inactivity_status-false- result-false
+06-12 15:40:26.023 D/JioLauncher( 1781): overlay-removing-type-JIO_BLOCK_ALERT_TYPE  -isInactivityPopupDisplaying-false
+06-12 15:40:26.023 D/JioLauncher( 1781): ThreadCount-159
+06-12 15:40:26.023 D/JioLauncher( 1781): isInactivityPopupDisplaying-{"inactivity_status_modified_time":1420050611833,"inactivity_status":false,"inactivity_window_timeout":120000}
+06-12 15:40:26.023 D/JioLauncher( 1781): inactivity_status-false- result-false
+06-12 15:40:26.023 D/JioLauncher( 1781): block-apps 1 null false
+06-12 15:40:26.023 D/JioLauncher( 1781): global-key-unblock-all-key
+06-12 15:40:26.024 D/ApplicationLoaders(20403): Returning zygote-cached class loader: /system/framework/android.test.base.jar
+06-12 15:40:26.024 D/ApplicationLoaders(20403): Returning zygote-cached class loader: /system/framework/android.test.base.jar
+06-12 15:40:26.025 D/JioLauncher( 1781): block-apps -1 null false
+06-12 15:40:26.025 D/JioLauncher( 1781): global-key-block-all-key--others
+06-12 15:40:26.026 D/JioLauncher( 1781): diagnosis-block-false
+06-12 15:40:26.028 I/tomator2.serve(20403): The ClassLoaderContext is a special shared library.
+06-12 15:40:26.031 D/Glide   ( 1781): Finished loading Bitmap from LOCAL for com.bumptech.glide.gifdecoder.StandardGifDecoder@fb55452 with size [314x176] in 5.00375 ms
+06-12 15:40:26.032 D/ApplicationLoaders(20403): Returning zygote-cached class loader: /system/framework/android.test.base.jar
+06-12 15:40:26.032 D/ApplicationLoaders(20403): Returning zygote-cached class loader: /system/framework/android.test.base.jar
+06-12 15:40:26.036 I/tomator2.serve(20403): The ClassLoaderContext is a special shared library.
+06-12 15:40:26.046 I/chatty  (20403): uid=10096(io.appium.uiautomator2.server) identical 2 lines
+06-12 15:40:26.049 I/tomator2.serve(20403): The ClassLoaderContext is a special shared library.
+06-12 15:40:26.049 D/stbdpc  (  405): STB_DPGetNumPaths[570]: num_paths: 1
+06-12 15:40:26.052 W/tomator2.serve(20403): ClassLoaderContext classpath size mismatch. expected=0, found=3 (PCL[]{PCL[/system/framework/android.test.base.jar*3223074991]#PCL[/system/framework/android.test.mock.jar*3465107378]{PCL[/system/framework/android.test.base.jar*3223074991]}#PCL[/system/framework/android.test.runner.jar*1831602180]{PCL[/system/framework/android.test.base.jar*3223074991]#PCL[/system/framework/android.test.mock.jar*3465107378]{PCL[/system/framework/android.test.base.jar*3223074991]}}} | PCL[/system/framework/android.test.runner.jar*1831602180:/system/framework/android.test.mock.jar*3465107378:/system/framework/android.test.base.jar*3223074991]{PCL[/system/framework/android.test.base.jar*3223074991]#PCL[/system/framework/android.test.mock.jar*3465107378]{PCL[/system/framework/android.test.base.jar*3223074991]}#PCL[/system/framework/android.test.runner.jar*1831602180]{PCL[/system/framework/android.test.base.jar*3223074991]#PCL[/system/framework/android.test.mock.jar*3465107378]{PCL[/system/framework/android.test.base.jar*3223074991]}}};PCL[/system/framework/android.test.runner.jar*1831602180:/system/framework/android.test.mock.jar*3465107378:/system/framework/android.test.base.jar*3223074991:/data/app/~~vz-LI613mzCW1_tI8sJdSA==/io.appium.uiautomator2.server.test-pndtPeicsSbNz5ltJNtTXA==/base.apk*2370577946:/data/app/~~vz-LI613mzCW1_tI8sJdSA==/io.appium.uiautomator2.server.test-pndtPeicsSbNz5ltJNtTXA==/base.apk!classes2.dex*3874714895:/data/app/~~vz-LI613mzCW1_tI8sJdSA==/io.appium.uiautomator2.server.test-pndtPeicsSbNz5ltJNtTXA==/base.apk!classes3.dex*1176165195:/data/app/~~vz-LI613mzCW1_tI8sJdSA==/io.appium.uiautomator2.server.test-pndtPeicsSbNz5ltJNtTXA==/base.apk!classes4.dex*2511881386:/data/app/~~ERS2Vb0_Lr3atThE734KvA==/io.appium.uiautomator2.server-qXkfZw9LtZYC0ZeR2vvERg==/base.apk*4034737733:/data/app/~~ERS2Vb0_Lr3atThE734KvA==/io.appium.uiautomator2.server-qXkfZw9LtZYC0ZeR2vvERg==/base.apk!classes2.dex*2790048942:/data/app/~~ERS2Vb0_Lr3atThE734KvA==/io.appium.uiautomator2.server-qXkfZw9LtZYC0ZeR2vvERg==/base.apk!classes3.dex*1634705335:/data/app/~~ERS2Vb0_Lr3atThE734KvA==/io.appium.uiautomator2.server-qXkfZw9LtZYC0ZeR2vvERg==/base.apk!classes4.dex*45356349:/data/app/~~ERS2Vb0_Lr3atThE734KvA==/io.appium.uiautomator2.server-qXkfZw9LtZYC0ZeR2vvERg==/base.apk!classes5.dex*2419862292:/data/app/~~ERS2Vb0_Lr3atThE734KvA==/io.appium.uiautomator2.server-qXkfZw9LtZYC0ZeR2vvERg==/base.apk!classes6.dex*3944827479:/data/app/~~ERS2Vb0_Lr3atThE734KvA==/io.appium.uiautomator2.server-qXkfZw9LtZYC0ZeR2vvERg==/base.apk!classes7.dex*3145060491:/data/app/~~ERS2Vb0_Lr3atThE734KvA==/io.appium.uiautomator2.server-qXkfZw9LtZYC0ZeR2vvERg==/base.apk!classes8.dex*2034454731:/data/app/~~ERS2Vb0_Lr3atThE734KvA==/io.appium.uiautomator2.server-qXkfZw9LtZYC0ZeR2vvERg==/base.apk!classes9.dex*1613375383:/data/app/~~ERS2Vb0_Lr3atThE734KvA==/io.appium.uiautomator2.server-qXkfZw9LtZYC0ZeR2vvERg==/base.apk!classes10.dex*1483611213:/data/app/~~ERS2Vb0_Lr3atThE734KvA==/io.appium.uiautomator2.server-qXkfZw9LtZYC0ZeR2vvERg==/base.apk!classes11.dex*2888641764:/data/app/~~ERS2Vb0_Lr3atThE734KvA==/io.appium.uiautomator2.server-qXkfZw9LtZYC0ZeR2vvERg==/base.apk!classes12.dex*1711778771:/data/app/~~ERS2Vb0_Lr3atThE734KvA==/io.appium.uiautomator2.server-qXkfZw9LtZYC0ZeR2vvERg==/base.apk!classes13.dex*2108421983:/data/app/~~ERS2Vb0_Lr3atThE734KvA==/io.appium.uiautomator2.server-qXkfZw9LtZYC0ZeR2vvERg==/base.apk!classes14.dex*2618393034:/data/app/~~ERS2Vb0_Lr3atThE734KvA==/io.appium.uiautomator2.server-qXkfZw9LtZYC0ZeR2vvERg==/base.apk!classes15.dex*3152272110:/data/app/~~ERS2Vb0_Lr3atThE734KvA==/io.appium.uiautomator2.server-qXkfZw9LtZYC0ZeR2vvERg==/base.apk!classes16.dex*898502560])
+06-12 15:40:26.056 W/tomator2.serve(20403): Found duplicate classes, falling back to extracting from APK : /data/app/~~vz-LI613mzCW1_tI8sJdSA==/io.appium.uiautomator2.server.test-pndtPeicsSbNz5ltJNtTXA==/base.apk
+06-12 15:40:26.056 W/tomator2.serve(20403): NOTE: This wastes RAM and hurts startup performance.
+06-12 15:40:26.056 W/tomator2.serve(20403): Found duplicated class when checking oat files: 'Lcom/squareup/okhttp/Address;' in /data/app/~~vz-LI613mzCW1_tI8sJdSA==/io.appium.uiautomator2.server.test-pndtPeicsSbNz5ltJNtTXA==/base.apk and /data/app/~~vz-LI613mzCW1_tI8sJdSA==/io.appium.uiautomator2.server.test-pndtPeicsSbNz5ltJNtTXA==/base.apk
+06-12 15:40:26.072 W/tomator2.serve(20403): ClassLoaderContext classpath size mismatch. expected=0, found=7 (PCL[] | PCL[/system/framework/android.test.runner.jar*1831602180:/system/framework/android.test.mock.jar*3465107378:/system/framework/android.test.base.jar*3223074991:/data/app/~~vz-LI613mzCW1_tI8sJdSA==/io.appium.uiautomator2.server.test-pndtPeicsSbNz5ltJNtTXA==/base.apk*2370577946:/data/app/~~vz-LI613mzCW1_tI8sJdSA==/io.appium.uiautomator2.server.test-pndtPeicsSbNz5ltJNtTXA==/base.apk!classes2.dex*3874714895:/data/app/~~vz-LI613mzCW1_tI8sJdSA==/io.appium.uiautomator2.server.test-pndtPeicsSbNz5ltJNtTXA==/base.apk!classes3.dex*1176165195:/data/app/~~vz-LI613mzCW1_tI8sJdSA==/io.appium.uiautomator2.server.test-pndtPeicsSbNz5ltJNtTXA==/base.apk!classes4.dex*2511881386]{PCL[/system/framework/android.test.base.jar*3223074991]#PCL[/system/framework/android.test.mock.jar*3465107378]{PCL[/system/framework/android.test.base.jar*3223074991]}#PCL[/system/framework/android.test.runner.jar*1831602180]{PCL[/system/framework/android.test.base.jar*3223074991]#PCL[/system/framework/android.test.mock.jar*3465107378]{PCL[/system/framework/android.test.base.jar*3223074991]}}};PCL[/system/framework/android.test.runner.jar*1831602180:/system/framework/android.test.mock.jar*3465107378:/system/framework/android.test.base.jar*3223074991:/data/app/~~vz-LI613mzCW1_tI8sJdSA==/io.appium.uiautomator2.server.test-pndtPeicsSbNz5ltJNtTXA==/base.apk*2370577946:/data/app/~~vz-LI613mzCW1_tI8sJdSA==/io.appium.uiautomator2.server.test-pndtPeicsSbNz5ltJNtTXA==/base.apk!classes2.dex*3874714895:/data/app/~~vz-LI613mzCW1_tI8sJdSA==/io.appium.uiautomator2.server.test-pndtPeicsSbNz5ltJNtTXA==/base.apk!classes3.dex*1176165195:/data/app/~~vz-LI613mzCW1_tI8sJdSA==/io.appium.uiautomator2.server.test-pndtPeicsSbNz5ltJNtTXA==/base.apk!classes4.dex*2511881386:/data/app/~~ERS2Vb0_Lr3atThE734KvA==/io.appium.uiautomator2.server-qXkfZw9LtZYC0ZeR2vvERg==/base.apk*4034737733:/data/app/~~ERS2Vb0_Lr3atThE734KvA==/io.appium.uiautomator2.server-qXkfZw9LtZYC0ZeR2vvERg==/base.apk!classes2.dex*2790048942:/data/app/~~ERS2Vb0_Lr3atThE734KvA==/io.appium.uiautomator2.server-qXkfZw9LtZYC0ZeR2vvERg==/base.apk!classes3.dex*1634705335:/data/app/~~ERS2Vb0_Lr3atThE734KvA==/io.appium.uiautomator2.server-qXkfZw9LtZYC0ZeR2vvERg==/base.apk!classes4.dex*45356349:/data/app/~~ERS2Vb0_Lr3atThE734KvA==/io.appium.uiautomator2.server-qXkfZw9LtZYC0ZeR2vvERg==/base.apk!classes5.dex*2419862292:/data/app/~~ERS2Vb0_Lr3atThE734KvA==/io.appium.uiautomator2.server-qXkfZw9LtZYC0ZeR2vvERg==/base.apk!classes6.dex*3944827479:/data/app/~~ERS2Vb0_Lr3atThE734KvA==/io.appium.uiautomator2.server-qXkfZw9LtZYC0ZeR2vvERg==/base.apk!classes7.dex*3145060491:/data/app/~~ERS2Vb0_Lr3atThE734KvA==/io.appium.uiautomator2.server-qXkfZw9LtZYC0ZeR2vvERg==/base.apk!classes8.dex*2034454731:/data/app/~~ERS2Vb0_Lr3atThE734KvA==/io.appium.uiautomator2.server-qXkfZw9LtZYC0ZeR2vvERg==/base.apk!classes9.dex*1613375383:/data/app/~~ERS2Vb0_Lr3atThE734KvA==/io.appium.uiautomator2.server-qXkfZw9LtZYC0ZeR2vvERg==/base.apk!classes10.dex*1483611213:/data/app/~~ERS2Vb0_Lr3atThE734KvA==/io.appium.uiautomator2.server-qXkfZw9LtZYC0ZeR2vvERg==/base.apk!classes11.dex*2888641764:/data/app/~~ERS2Vb0_Lr3atThE734KvA==/io.appium.uiautomator2.server-qXkfZw9LtZYC0ZeR2vvERg==/base.apk!classes12.dex*1711778771:/data/app/~~ERS2Vb0_Lr3atThE734KvA==/io.appium.uiautomator2.server-qXkfZw9LtZYC0ZeR2vvERg==/base.apk!classes13.dex*2108421983:/data/app/~~ERS2Vb0_Lr3atThE734KvA==/io.appium.uiautomator2.server-qXkfZw9LtZYC0ZeR2vvERg==/base.apk!classes14.dex*2618393034:/data/app/~~ERS2Vb0_Lr3atThE734KvA==/io.appium.uiautomator2.server-qXkfZw9LtZYC0ZeR2vvERg==/base.apk!classes15.dex*3152272110:/data/app/~~ERS2Vb0_Lr3atThE734KvA==/io.appium.uiautomator2.server-qXkfZw9LtZYC0ZeR2vvERg==/base.apk!classes16.dex*898502560])
+06-12 15:40:26.073 W/tomator2.serve(20403): Found duplicate classes, falling back to extracting from APK : /data/app/~~ERS2Vb0_Lr3atThE734KvA==/io.appium.uiautomator2.server-qXkfZw9LtZYC0ZeR2vvERg==/base.apk
+06-12 15:40:26.073 W/tomator2.serve(20403): NOTE: This wastes RAM and hurts startup performance.
+06-12 15:40:26.073 W/tomator2.serve(20403): Found duplicated class when checking oat files: 'L_COROUTINE/ArtificialStackFrames;' in /data/app/~~ERS2Vb0_Lr3atThE734KvA==/io.appium.uiautomator2.server-qXkfZw9LtZYC0ZeR2vvERg==/base.apk and /data/app/~~ERS2Vb0_Lr3atThE734KvA==/io.appium.uiautomator2.server-qXkfZw9LtZYC0ZeR2vvERg==/base.apk
+06-12 15:40:26.078 D/Glide   ( 1781): Finished loading Bitmap from LOCAL for com.bumptech.glide.gifdecoder.StandardGifDecoder@fb55452 with size [314x176] in 11.354834 ms
+06-12 15:40:26.091 E/ocessService0:( 2273): failed to create Unix domain socket: Operation not permitted
+06-12 15:40:26.093 I/lowmemorykiller(  233): medium memory pressure event is triggered for new strategy
+06-12 15:40:26.093 D/lowmemorykiller(  233): LMKD mp_event_psi kill_reasons available are PRESSURE_AFTER_KILL, NOT_RESPONDING, LOW_SWAP_AND_THRASHING, LOW_MEM_AND_SWAP, LOW_MEM_AND_THRASHING, DIRECT_RECL_AND_THRASHING
+06-12 15:40:26.093 D/lowmemorykiller(  233): LMKD mp_event_psi kill_reason received= -1
+06-12 15:40:26.111 D/Glide   ( 1781): Finished loading Bitmap from LOCAL for com.bumptech.glide.gifdecoder.StandardGifDecoder@fb55452 with size [314x176] in 4.004708 ms
+06-12 15:40:26.149 D/stbdpc  (  405): STB_DPGetNumPaths[570]: num_paths: 1
+06-12 15:40:26.161 D/Glide   ( 1781): Finished loading Bitmap from LOCAL for com.bumptech.glide.gifdecoder.StandardGifDecoder@fb55452 with size [314x176] in 14.044917 ms
+06-12 15:40:26.193 I/lowmemorykiller(  233): medium memory pressure event is triggered for new strategy
+06-12 15:40:26.195 D/Glide   ( 1781): Finished loading Bitmap from LOCAL for com.bumptech.glide.gifdecoder.StandardGifDecoder@fb55452 with size [314x176] in 7.1583749999999995 ms
+06-12 15:40:26.245 D/Glide   ( 1781): Finished loading Bitmap from LOCAL for com.bumptech.glide.gifdecoder.StandardGifDecoder@fb55452 with size [314x176] in 16.2675 ms
+06-12 15:40:26.249 D/stbdpc  (  405): STB_DPGetNumPaths[570]: num_paths: 1
+06-12 15:40:26.278 D/Glide   ( 1781): Finished loading Bitmap from LOCAL for com.bumptech.glide.gifdecoder.StandardGifDecoder@fb55452 with size [314x176] in 9.643041 ms
+06-12 15:40:26.294 I/lowmemorykiller(  233): medium memory pressure event is triggered for new strategy
+06-12 15:40:26.311 D/Glide   ( 1781): Finished loading Bitmap from LOCAL for com.bumptech.glide.gifdecoder.StandardGifDecoder@fb55452 with size [314x176] in 2.7741249999999997 ms
+06-12 15:40:26.337 D/rtk_heartbeat(  351): heartbeat_timed_out: heartbeatCmdCount = 3078, expected nextSeqNum = 3078
+06-12 15:40:26.338 D/rtk_heartbeat(  351): rtkbt_heartbeat_cmpl_cback: Current SeqNum = 3078,should SeqNum=3078, status = 0
+06-12 15:40:26.349 D/stbdpc  (  405): STB_DPGetNumPaths[570]: num_paths: 1
+06-12 15:40:26.361 D/Glide   ( 1781): Finished loading Bitmap from LOCAL for com.bumptech.glide.gifdecoder.StandardGifDecoder@fb55452 with size [314x176] in 12.544666 ms
+06-12 15:40:26.394 I/lowmemorykiller(  233): medium memory pressure event is triggered for new strategy
+06-12 15:40:26.395 D/Glide   ( 1781): Finished loading Bitmap from LOCAL for com.bumptech.glide.gifdecoder.StandardGifDecoder@fb55452 with size [314x176] in 4.696166 ms
+06-12 15:40:26.422 W/tomator2.serve(20403): Accessing hidden method Landroid/app/Instrumentation;->execStartActivity(Landroid/content/Context;Landroid/os/IBinder;Landroid/os/IBinder;Landroid/app/Activity;Landroid/content/Intent;ILandroid/os/Bundle;)Landroid/app/Instrumentation$ActivityResult; (greylist, linking, allowed)
+06-12 15:40:26.423 W/tomator2.serve(20403): Accessing hidden method Landroid/app/Instrumentation;->execStartActivity(Landroid/content/Context;Landroid/os/IBinder;Landroid/os/IBinder;Ljava/lang/String;Landroid/content/Intent;ILandroid/os/Bundle;)Landroid/app/Instrumentation$ActivityResult; (greylist, linking, allowed)
+06-12 15:40:26.432 D/dvb_iptv(  405): ReadEmmNetworkTask[1537]: EMM Select Timeout Occured 12
+06-12 15:40:26.439 D/NetworkSecurityConfig(20403): No Network Security Config specified, using platform default
+06-12 15:40:26.441 D/NetworkSecurityConfig(20403): No Network Security Config specified, using platform default
+06-12 15:40:26.441 I/AndroidJUnitRunner(20403): newApplication android.app.Application
+06-12 15:40:26.445 D/Glide   ( 1781): Finished loading Bitmap from LOCAL for com.bumptech.glide.gifdecoder.StandardGifDecoder@fb55452 with size [314x176] in 14.710666 ms
+06-12 15:40:26.448 I/AndroidJUnitRunner(20403): onCreate Bundle[mParcelledData.dataSize=64]
+06-12 15:40:26.450 D/stbdpc  (  405): STB_DPGetNumPaths[570]: num_paths: 1
+06-12 15:40:26.452 D/AndroidJUnitRunner(20403): Use the raw file system for managing file I/O.
+06-12 15:40:26.478 D/Glide   ( 1781): Finished loading Bitmap from LOCAL for com.bumptech.glide.gifdecoder.StandardGifDecoder@fb55452 with size [314x176] in 7.229832999999999 ms
+06-12 15:40:26.479 V/TestEventClient(20403): No service name argument was given (testDiscoveryService, testRunEventService or orchestratorService)
+06-12 15:40:26.480 D/AndroidJUnitRunner(20403): onStart is called.
+06-12 15:40:26.491 D/JioStbInactivityTimer(  933): Timer: count 30 warningTimeout:10680 timeout:10800
+06-12 15:40:26.491 D/JioStbInactivityTimer(  933): isUserActive: Curr:3069843 Prev:3069843
+06-12 15:40:26.494 I/lowmemorykiller(  233): medium memory pressure event is triggered for new strategy
+06-12 15:40:26.495 D/lowmemorykiller(  233): LMKD mp_event_psi kill_reasons available are PRESSURE_AFTER_KILL, NOT_RESPONDING, LOW_SWAP_AND_THRASHING, LOW_MEM_AND_SWAP, LOW_MEM_AND_THRASHING, DIRECT_RECL_AND_THRASHING
+06-12 15:40:26.495 D/lowmemorykiller(  233): LMKD mp_event_psi kill_reason received= -1
+06-12 15:40:26.507 D/TestRequestBuilder(20403): Using class path scanning to discover tests
+06-12 15:40:26.508 I/TestRequestBuilder(20403): Scanning classpath to find tests in paths [/data/app/~~vz-LI613mzCW1_tI8sJdSA==/io.appium.uiautomator2.server.test-pndtPeicsSbNz5ltJNtTXA==/base.apk]
+06-12 15:40:26.513 W/tomator2.serve(20403): Opening an oat file without a class loader. Are you using the deprecated DexFile APIs?
+06-12 15:40:26.528 D/Glide   ( 1781): Finished loading Bitmap from LOCAL for com.bumptech.glide.gifdecoder.StandardGifDecoder@fb55452 with size [314x176] in 16.607875 ms
+06-12 15:40:26.550 D/stbdpc  (  405): STB_DPGetNumPaths[570]: num_paths: 1
+06-12 15:40:26.561 D/Glide   ( 1781): Finished loading Bitmap from LOCAL for com.bumptech.glide.gifdecoder.StandardGifDecoder@fb55452 with size [314x176] in 9.485624999999999 ms
+06-12 15:40:26.596 D/Glide   ( 1781): Finished loading Bitmap from LOCAL for com.bumptech.glide.gifdecoder.StandardGifDecoder@fb55452 with size [314x176] in 4.144 ms
+06-12 15:40:26.645 D/Glide   ( 1781): Finished loading Bitmap from LOCAL for com.bumptech.glide.gifdecoder.StandardGifDecoder@fb55452 with size [314x176] in 12.320082999999999 ms
+06-12 15:40:26.650 D/stbdpc  (  405): STB_DPGetNumPaths[570]: num_paths: 1
+06-12 15:40:26.678 D/Glide   ( 1781): Finished loading Bitmap from LOCAL for com.bumptech.glide.gifdecoder.StandardGifDecoder@fb55452 with size [314x176] in 4.513209 ms
+06-12 15:40:26.722 I/TestRunner(20403): run started: 1 tests
+06-12 15:40:26.723 E/adbd    ( 7938): failed to connect to socket 'tcp:6790': Connection refused
+06-12 15:40:26.726 I/TestRunner(20403): started: startServer(io.appium.uiautomator2.server.test.AppiumUiAutomator2Server)
+06-12 15:40:26.729 D/Glide   ( 1781): Finished loading Bitmap from LOCAL for com.bumptech.glide.gifdecoder.StandardGifDecoder@fb55452 with size [314x176] in 13.971874999999999 ms
+06-12 15:40:26.735 I/appium  (20403): >>>Entry point start<<<
+06-12 15:40:26.740 I/appium  (20403): Starting ServerInstrumentation
+06-12 15:40:26.750 D/stbdpc  (  405): STB_DPGetNumPaths[570]: num_paths: 1
+06-12 15:40:26.762 D/Glide   ( 1781): Finished loading Bitmap from LOCAL for com.bumptech.glide.gifdecoder.StandardGifDecoder@fb55452 with size [314x176] in 6.393 ms
+06-12 15:40:26.797 I/appium  (20403): buildConfig: {"VERSION_NAME":"7.5.2","APPLICATION_ID":"io.appium.uiautomator2.server","BUILD_TYPE":"debug","VERSION_CODE":215,"BUILD_TIME":"1745524365546","DEBUG":true,"FLAVOR":"server"}
+06-12 15:40:26.807 I/UiDevice(20403): Creating a new instance, old instance exists: false
+06-12 15:40:26.812 D/Glide   ( 1781): Finished loading Bitmap from LOCAL for com.bumptech.glide.gifdecoder.StandardGifDecoder@fb55452 with size [314x176] in 16.779792 ms
+06-12 15:40:26.823 V/UiAutomation(20403): Init UiAutomation@30745d0[id=8, flags=0]
+06-12 15:40:26.826 D/UiDevice(20403): Setting accessibility service flags: 65618
+06-12 15:40:26.838 D/UiDevice(20403): Turning on screen.
+06-12 15:40:26.847 D/Glide   ( 1781): Finished loading Bitmap from LOCAL for com.bumptech.glide.gifdecoder.StandardGifDecoder@fb55452 with size [314x176] in 11.257375 ms
+06-12 15:40:26.850 D/stbdpc  (  405): STB_DPGetNumPaths[570]: num_paths: 1
+06-12 15:40:26.876 I/appium  (20403): AndroidServer created on port 6790
+06-12 15:40:26.877 I/appium  (20403): Starting MJPEG Server
+06-12 15:40:26.879 D/Glide   ( 1781): Finished loading Bitmap from LOCAL for com.bumptech.glide.gifdecoder.StandardGifDecoder@fb55452 with size [314x176] in 3.7668329999999997 ms
+06-12 15:40:26.879 I/uncher.relianc( 1781): oneway function results will be dropped but finished with status OK and parcel size 4
+06-12 15:40:26.880 I/appium  (20403): MJPEG Server started
+06-12 15:40:26.880 I/appium  (20403): ServerInstrumentation started
+06-12 15:40:26.884 I/appium  (20403): ServerSocket created on port 7810
+06-12 15:40:26.884 I/e.swalekh.abct( 1336): oneway function results will be dropped but finished with status OK and parcel size 4
+06-12 15:40:26.896 D/JioSTBMRServer-SERVICE( 3304): InetSocketAddress(InetAddress.getByName(inetAddress.hostAddress)-/192.168.1.255
+06-12 15:40:26.896 D/JioSTBMRServer-SERVICE( 3304): #beacon:RKISBFJ60000097:0:false:0:1:SV=181024 , 192.168.1.255
+06-12 15:40:26.900 D/JioSTBMRServer-SERVICE( 3304): InetSocketAddress(InetAddress.getByName(inetAddress.hostAddress)-/192.168.1.255
+06-12 15:40:26.900 D/JioSTBMRServer-SERVICE( 3304): #broadcast IP:192.168.1.255
+06-12 15:40:26.929 D/Glide   ( 1781): Finished loading Bitmap from LOCAL for com.bumptech.glide.gifdecoder.StandardGifDecoder@fb55452 with size [314x176] in 12.843833 ms
+06-12 15:40:26.932 D/dvb_iptv(  405): ReadEmmNetworkTask[1537]: EMM Select Timeout Occured 13
+06-12 15:40:26.950 D/stbdpc  (  405): STB_DPGetNumPaths[570]: num_paths: 1
+06-12 15:40:26.962 D/Glide   ( 1781): Finished loading Bitmap from LOCAL for com.bumptech.glide.gifdecoder.StandardGifDecoder@fb55452 with size [314x176] in 5.668417 ms
+06-12 15:40:26.975 W/[ 3102.330251@0]  RTW(    0): fill_default_txdesc(wlan0): SP Packet(0x0806) rate=0x4 SeqNum = 1118
+06-12 15:40:27.012 D/Glide   ( 1781): Finished loading Bitmap from LOCAL for com.bumptech.glide.gifdecoder.StandardGifDecoder@fb55452 with size [314x176] in 15.395582999999998 ms
+06-12 15:40:27.045 D/Glide   ( 1781): Finished loading Bitmap from LOCAL for com.bumptech.glide.gifdecoder.StandardGifDecoder@fb55452 with size [314x176] in 8.794084 ms
+06-12 15:40:27.051 D/stbdpc  (  405): STB_DPGetNumPaths[570]: num_paths: 1
+06-12 15:40:27.066 W/tomator2.serve(20403): Accessing hidden method Lsun/misc/VM;->maxDirectMemory()J (greylist, reflection, allowed)
+06-12 15:40:27.069 I/PlatformDependent(20403): Your platform does not provide complete low-level API for accessing direct buffers reliably. Unless explicitly requested, heap buffer will always be preferred to avoid potential system instability.
+06-12 15:40:27.080 D/Glide   ( 1781): Finished loading Bitmap from LOCAL for com.bumptech.glide.gifdecoder.StandardGifDecoder@fb55452 with size [314x176] in 2.7028339999999997 ms
+06-12 15:40:27.081 W/tomator2.serve(20403): Accessing hidden field Lsun/nio/ch/SelectorImpl;->selectedKeys:Ljava/util/Set; (greylist, reflection, allowed)
+06-12 15:40:27.081 W/tomator2.serve(20403): Accessing hidden field Lsun/nio/ch/SelectorImpl;->publicSelectedKeys:Ljava/util/Set; (greylist, reflection, allowed)
+06-12 15:40:27.129 D/Glide   ( 1781): Finished loading Bitmap from LOCAL for com.bumptech.glide.gifdecoder.StandardGifDecoder@fb55452 with size [314x176] in 11.708874999999999 ms
+06-12 15:40:27.124 W/Thread-5(20403): type=1400 audit(0.0:3972): avc: denied { read } for name="somaxconn" dev="proc" ino=719901 scontext=u:r:untrusted_app:s0:c96,c256,c512,c768 tcontext=u:object_r:proc_net:s0 tclass=file permissive=0 app=io.appium.uiautomator2.server
+06-12 15:40:27.142 W/MacAddressUtil(20403): Failed to find a usable hardware address from the network interfaces; using random bytes: b0:e7:fe:d1:aa:11:a7:5b
+06-12 15:40:27.150 D/ltts_ip_emm(  405): LTTS_IP_DMXStartEMM[381]: parse_emm_cat_status failed
+06-12 15:40:27.151 D/stbdpc  (  405): STB_DPGetNumPaths[570]: num_paths: 1
+06-12 15:40:27.162 D/Glide   ( 1781): Finished loading Bitmap from LOCAL for com.bumptech.glide.gifdecoder.StandardGifDecoder@fb55452 with size [314x176] in 4.603542 ms
+06-12 15:40:27.212 D/Glide   ( 1781): Finished loading Bitmap from LOCAL for com.bumptech.glide.gifdecoder.StandardGifDecoder@fb55452 with size [314x176] in 14.697833 ms
+06-12 15:40:27.234 W/ServerBootstrap(20403): Unknown channel option 'SO_KEEPALIVE' for channel '[id: 0xe292fc75]'
+06-12 15:40:27.236 W/ServerBootstrap(20403): Unknown channel option 'TCP_NODELAY' for channel '[id: 0xe292fc75]'
+06-12 15:40:27.245 D/Glide   ( 1781): Finished loading Bitmap from LOCAL for com.bumptech.glide.gifdecoder.StandardGifDecoder@fb55452 with size [314x176] in 7.722417 ms
+06-12 15:40:27.251 D/stbdpc  (  405): STB_DPGetNumPaths[570]: num_paths: 1
+06-12 15:40:27.296 D/Glide   ( 1781): Finished loading Bitmap from LOCAL for com.bumptech.glide.gifdecoder.StandardGifDecoder@fb55452 with size [314x176] in 17.463583 ms
+06-12 15:40:27.304 I/ThermalService(  986): CPU temperatures: [64.4]
+06-12 15:40:27.330 D/Glide   ( 1781): Finished loading Bitmap from LOCAL for com.bumptech.glide.gifdecoder.StandardGifDecoder@fb55452 with size [314x176] in 11.186290999999999 ms
+06-12 15:40:27.338 D/rtk_heartbeat(  351): heartbeat_timed_out: heartbeatCmdCount = 3079, expected nextSeqNum = 3079
+06-12 15:40:27.339 D/rtk_heartbeat(  351): rtkbt_heartbeat_cmpl_cback: Current SeqNum = 3079,should SeqNum=3079, status = 0
+06-12 15:40:27.351 D/stbdpc  (  405): STB_DPGetNumPaths[570]: num_paths: 1
+06-12 15:40:27.363 D/Glide   ( 1781): Finished loading Bitmap from LOCAL for com.bumptech.glide.gifdecoder.StandardGifDecoder@fb55452 with size [314x176] in 4.6848339999999995 ms
+06-12 15:40:27.413 D/Glide   ( 1781): Finished loading Bitmap from LOCAL for com.bumptech.glide.gifdecoder.StandardGifDecoder@fb55452 with size [314x176] in 14.285084 ms
+06-12 15:40:27.432 D/dvb_iptv(  405): ReadEmmNetworkTask[1537]: EMM Select Timeout Occured 14
+06-12 15:40:27.446 D/Glide   ( 1781): Finished loading Bitmap from LOCAL for com.bumptech.glide.gifdecoder.StandardGifDecoder@fb55452 with size [314x176] in 6.394792 ms
+06-12 15:40:27.451 D/stbdpc  (  405): STB_DPGetNumPaths[570]: num_paths: 1
+06-12 15:40:27.491 D/JioStbInactivityTimer(  933): Timer: count 31 warningTimeout:10680 timeout:10800
+06-12 15:40:27.492 D/JioStbInactivityTimer(  933): isUserActive: Curr:3069843 Prev:3069843
+06-12 15:40:27.496 D/Glide   ( 1781): Finished loading Bitmap from LOCAL for com.bumptech.glide.gifdecoder.StandardGifDecoder@fb55452 with size [314x176] in 15.814834 ms
+06-12 15:40:27.522 F/linker  (20436): CANNOT LINK EXECUTABLE "/system/bin/smartcable/smartCableSTBApp": library "libmosquitto.so" not found: needed by main executable
+06-12 15:40:27.530 D/Glide   ( 1781): Finished loading Bitmap from LOCAL for com.bumptech.glide.gifdecoder.StandardGifDecoder@fb55452 with size [314x176] in 8.954167 ms
+06-12 15:40:27.551 D/stbdpc  (  405): STB_DPGetNumPaths[570]: num_paths: 1
+06-12 15:40:27.579 D/Glide   ( 1781): Finished loading Bitmap from LOCAL for com.bumptech.glide.gifdecoder.StandardGifDecoder@fb55452 with size [314x176] in 17.545583 ms
+06-12 15:40:27.613 D/Glide   ( 1781): Finished loading Bitmap from LOCAL for com.bumptech.glide.gifdecoder.StandardGifDecoder@fb55452 with size [314x176] in 9.886917 ms
+06-12 15:40:27.646 D/Glide   ( 1781): Finished loading Bitmap from LOCAL for com.bumptech.glide.gifdecoder.StandardGifDecoder@fb55452 with size [314x176] in 3.070416 ms
+06-12 15:40:27.652 D/stbdpc  (  405): STB_DPGetNumPaths[570]: num_paths: 1
+06-12 15:40:27.697 D/Glide   ( 1781): Finished loading Bitmap from LOCAL for com.bumptech.glide.gifdecoder.StandardGifDecoder@fb55452 with size [314x176] in 13.017166999999999 ms
+06-12 15:40:27.730 D/Glide   ( 1781): Finished loading Bitmap from LOCAL for com.bumptech.glide.gifdecoder.StandardGifDecoder@fb55452 with size [314x176] in 5.937374999999999 ms
+06-12 15:40:27.752 D/stbdpc  (  405): STB_DPGetNumPaths[570]: num_paths: 1
+06-12 15:40:27.779 D/Glide   ( 1781): Finished loading Bitmap from LOCAL for com.bumptech.glide.gifdecoder.StandardGifDecoder@fb55452 with size [314x176] in 15.485083999999999 ms
+06-12 15:40:27.813 D/Glide   ( 1781): Finished loading Bitmap from LOCAL for com.bumptech.glide.gifdecoder.StandardGifDecoder@fb55452 with size [314x176] in 8.806125 ms
+06-12 15:40:27.846 D/Glide   ( 1781): Finished loading Bitmap from LOCAL for com.bumptech.glide.gifdecoder.StandardGifDecoder@fb55452 with size [314x176] in 2.209208 ms
+06-12 15:40:27.852 D/stbdpc  (  405): STB_DPGetNumPaths[570]: num_paths: 1
+06-12 15:40:27.857 I/appium  (20403): channel read: GET /status
+06-12 15:40:27.860 I/appium  (20403): Status command
+06-12 15:40:27.869 I/appium  (20403): AppiumResponse: {"sessionId":"None","value":{"message":"UiAutomator2 Server is ready to accept commands","ready":true}}
+06-12 15:40:27.896 D/Glide   ( 1781): Finished loading Bitmap from LOCAL for com.bumptech.glide.gifdecoder.StandardGifDecoder@fb55452 with size [314x176] in 12.53525 ms
+06-12 15:40:27.898 I/appium  (20403): channel read: POST /session
+06-12 15:40:27.900 I/appium  (20403): NewSession command
+06-12 15:40:27.924 W/tomator2.serve(20403): Accessing hidden field Landroid/app/UiAutomation;->mOnAccessibilityEventListener:Landroid/app/UiAutomation$OnAccessibilityEventListener; (greylist-max-o, reflection, allowed)
+06-12 15:40:27.929 D/Glide   ( 1781): Finished loading Bitmap from LOCAL for com.bumptech.glide.gifdecoder.StandardGifDecoder@fb55452 with size [314x176] in 5.233874999999999 ms
+06-12 15:40:27.932 D/dvb_iptv(  405): ReadEmmNetworkTask[1537]: EMM Select Timeout Occured 15
+06-12 15:40:27.936 E/appium  (20403): Unable to update the setting mjpegServerPort
+06-12 15:40:27.936 E/appium  (20403): io.appium.uiautomator2.common.exceptions.InvalidArgumentException: Invalid mjpegServerPort value specified, must be in range 1024..65535. 0 was given
+06-12 15:40:27.936 E/appium  (20403): 	at io.appium.uiautomator2.model.settings.MjpegServerPort.apply(MjpegServerPort.java:55)
+06-12 15:40:27.936 E/appium  (20403): 	at io.appium.uiautomator2.model.settings.MjpegServerPort.apply(MjpegServerPort.java:29)
+06-12 15:40:27.936 E/appium  (20403): 	at io.appium.uiautomator2.model.settings.AbstractSetting.update(AbstractSetting.java:38)
+06-12 15:40:27.936 E/appium  (20403): 	at io.appium.uiautomator2.model.Session.<init>(Session.java:47)
+06-12 15:40:27.936 E/appium  (20403): 	at io.appium.uiautomator2.model.AppiumUIA2Driver.initializeSession(AppiumUIA2Driver.java:42)
+06-12 15:40:27.936 E/appium  (20403): 	at io.appium.uiautomator2.handler.NewSession.safeHandle(NewSession.java:53)
+06-12 15:40:27.936 E/appium  (20403): 	at io.appium.uiautomator2.handler.request.SafeRequestHandler.handle(SafeRequestHandler.java:59)
+06-12 15:40:27.936 E/appium  (20403): 	at io.appium.uiautomator2.server.AppiumServlet.handleRequest(AppiumServlet.java:259)
+06-12 15:40:27.936 E/appium  (20403): 	at io.appium.uiautomator2.server.AppiumServlet.handleHttpRequest(AppiumServlet.java:253)
+06-12 15:40:27.936 E/appium  (20403): 	at io.appium.uiautomator2.http.ServerHandler.channelRead(ServerHandler.java:77)
+06-12 15:40:27.936 E/appium  (20403): 	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:374)
+06-12 15:40:27.936 E/appium  (20403): 	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:360)
+06-12 15:40:27.936 E/appium  (20403): 	at io.netty.channel.AbstractChannelHandlerContext.fireChannelRead(AbstractChannelHandlerContext.java:352)
+06-12 15:40:27.936 E/appium  (20403): 	at io.netty.handler.codec.MessageToMessageDecoder.channelRead(MessageToMessageDecoder.java:102)
+06-12 15:40:27.936 E/appium  (20403): 	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:374)
+06-12 15:40:27.936 E/appium  (20403): 	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:360)
+06-12 15:40:27.936 E/appium  (20403): 	at io.netty.channel.AbstractChannelHandlerContext.fireChannelRead(AbstractChannelHandlerContext.java:352)
+06-12 15:40:27.936 E/appium  (20403): 	at io.netty.channel.CombinedChannelDuplexHandler$DelegatingChannelHandlerContext.fireChannelRead(CombinedChannelDuplexHandler.java:438)
+06-12 15:40:27.936 E/appium  (20403): 	at io.netty.handler.codec.ByteToMessageDecoder.fireChannelRead(ByteToMessageDecoder.java:328)
+06-12 15:40:27.936 E/appium  (20403): 	at io.netty.handler.codec.ByteToMessageDecoder.channelRead(ByteToMessageDecoder.java:302)
+06-12 15:40:27.936 E/appium  (20403): 	at io.netty.channel.CombinedChannelDuplexHandler.channelRead(CombinedChannelDuplexHandler.java:253)
+06-12 15:40:27.936 E/appium  (20403): 	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:374)
+06-12 15:40:27.936 E/appium  (20403): 	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:360)
+06-12 15:40:27.936 E/appium  (20403): 	at io.netty.channel.AbstractChannelHandlerContext.fireChannelRead(AbstractChannelHandlerContext.java:352)
+06-12 15:40:27.936 E/appium  (20403): 	at io.netty.handler.timeout.IdleStateHandler.channelRead(IdleStateHandler.java:287)
+06-12 15:40:27.936 E/appium  (20403): 	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:374)
+06-12 15:40:27.936 E/appium  (20403): 	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:360)
+06-12 15:40:27.936 E/appium  (20403): 	at io.netty.channel.AbstractChannelHandlerContext.fireChannelRead(AbstractChannelHandlerContext.java:352)
+06-12 15:40:27.936 E/appium  (20403): 	at io.netty.channel.DefaultChannelPipeline$HeadContext.channelRead(DefaultChannelPipeline.java:1422)
+06-12 15:40:27.936 E/appium  (20403): 	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:374)
+06-12 15:40:27.936 E/appium  (20403): 	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:360)
+06-12 15:40:27.936 E/appium  (20403): 	at io.netty.channel.DefaultChannelPipeline.fireChannelRead(DefaultChannelPipeline.java:931)
+06-12 15:40:27.936 E/appium  (20403): 	at io.netty.channel.nio.AbstractNioByteChannel$NioByteUnsafe.read(AbstractNioByteChannel.java:163)
+06-12 15:40:27.936 E/appium  (20403): 	at io.netty.channel.nio.NioEventLoop.processSelectedKey(NioEventLoop.java:700)
+06-12 15:40:27.936 E/appium  (20403): 	at io.netty.channel.nio.NioEventLoop.processSelectedKeysOptimized(NioEventLoop.java:635)
+06-12 15:40:27.936 E/appium  (20403): 	at io.netty.channel.nio.NioEventLoop.processSelectedKeys(NioEventLoop.java:552)
+06-12 15:40:27.936 E/appium  (20403): 	at io.netty.channel.nio.NioEventLoop.run(NioEventLoop.java:514)
+06-12 15:40:27.936 E/appium  (20403): 	at io.netty.util.concurrent.SingleThreadEventExecutor$6.run(SingleThreadEventExecutor.java:1044)
+06-12 15:40:27.936 E/appium  (20403): 	at io.netty.util.internal.ThreadExecutorMap$2.run(ThreadExecutorMap.java:74)
+06-12 15:40:27.936 E/appium  (20403): 	at io.netty.util.concurrent.FastThreadLocalRunnable.run(FastThreadLocalRunnable.java:30)
+06-12 15:40:27.936 E/appium  (20403): 	at java.lang.Thread.run(Thread.java:923)
+06-12 15:40:27.939 I/appium  (20403): Created the new session with id 2c24a3f8-ec6a-4272-b40b-861ffbc568c9 and capabilities {networkConnectionEnabled=true, warnings={}, databaseEnabled=false, deviceName=192.168.1.23:5555, platform=LINUX, deviceUDID=192.168.1.23:5555, desired={platformName=ANDROID, udid=192.168.1.23:5555, mjpegServerPort=0.0, deviceName=192.168.1.23:5555, automationName=UIAutomator2}, automationName=UIAutomator2, webStorageEnabled=false, locationContextEnabled=false, takesScreenshot=true, javascriptEnabled=true, platformName=ANDROID, udid=192.168.1.23:5555}
+06-12 15:40:27.952 D/stbdpc  (  405): STB_DPGetNumPaths[570]: num_paths: 1
+06-12 15:40:27.953 I/appium  (20403): AppiumResponse: {"sessionId":"2c24a3f8-ec6a-4272-b40b-861ffbc568c9","value":{"capabilities":{"firstMatch":[{"platformName":"ANDROID","udid":"192.168.1.23:5555","mjpegServerPort":0.0,"deviceName":"192.168.1.23:5555","automationName":"UIAutomator2","platform":"LINUX","webStorageEnabled":false,"takesScreenshot":true,"…
+06-12 15:40:27.979 D/Glide   ( 1781): Finished loading Bitmap from LOCAL for com.bumptech.glide.gifdecoder.StandardGifDecoder@fb55452 with size [314x176] in 14.568207999999998 ms
+06-12 15:40:28.000 I/appium  (20403): channel read: GET /session/2c24a3f8-ec6a-4272-b40b-861ffbc568c9/appium/device/pixel_ratio
+06-12 15:40:28.002 I/appium  (20403): GetDevicePixelRatio command
+06-12 15:40:28.008 I/appium  (20403): AppiumResponse: {"sessionId":"2c24a3f8-ec6a-4272-b40b-861ffbc568c9","value":2.0}
+06-12 15:40:28.013 D/Glide   ( 1781): Finished loading Bitmap from LOCAL for com.bumptech.glide.gifdecoder.StandardGifDecoder@fb55452 with size [314x176] in 8.11925 ms
+06-12 15:40:28.016 I/appium  (20403): channel read: GET /session/2c24a3f8-ec6a-4272-b40b-861ffbc568c9/window/current/size
+06-12 15:40:28.018 I/appium  (20403): GetDeviceSize command
+06-12 15:40:28.018 I/appium  (20403): Get window size of the device
+06-12 15:40:28.018 I/appium  (20403): channel read: GET /session/2c24a3f8-ec6a-4272-b40b-861ffbc568c9/appium/device/system_bars
+06-12 15:40:28.020 I/appium  (20403): GetSystemBars command
+06-12 15:40:28.022 I/appium  (20403): AppiumResponse: {"sessionId":"2c24a3f8-ec6a-4272-b40b-861ffbc568c9","value":{"height":1080,"width":1920}}
+06-12 15:40:28.023 I/appium  (20403): AppiumResponse: {"sessionId":"2c24a3f8-ec6a-4272-b40b-861ffbc568c9","value":{"statusBar":0}}
+06-12 15:40:28.028 I/appium  (20403): channel read: GET /session/2c24a3f8-ec6a-4272-b40b-861ffbc568c9/appium/device/info
+06-12 15:40:28.030 I/appium  (20403): GetDeviceInfo command
+06-12 15:40:28.035 I/TetheringManager(20403): registerTetheringEventCallback:io.appium.uiautomator2.server
+06-12 15:40:28.052 D/stbdpc  (  405): STB_DPGetNumPaths[570]: num_paths: 1
+06-12 15:40:28.057 W/tomator2.serve(20403): Accessing hidden field Landroid/net/NetworkCapabilities;->mSignalStrength:I (greylist-max-p, reflection, allowed)
+06-12 15:40:28.057 W/tomator2.serve(20403): Accessing hidden field Landroid/net/NetworkCapabilities;->mSSID:Ljava/lang/String; (greylist-max-o, reflection, allowed)
+06-12 15:40:28.063 D/Glide   ( 1781): Finished loading Bitmap from LOCAL for com.bumptech.glide.gifdecoder.StandardGifDecoder@fb55452 with size [314x176] in 17.654415999999998 ms
+06-12 15:40:28.091 E/ocessService0:( 2273): failed to create Unix domain socket: Operation not permitted
+06-12 15:40:28.097 D/Glide   ( 1781): Finished loading Bitmap from LOCAL for com.bumptech.glide.gifdecoder.StandardGifDecoder@fb55452 with size [314x176] in 10.146374999999999 ms
+06-12 15:40:28.100 I/appium  (20403): AppiumResponse: {"sessionId":"2c24a3f8-ec6a-4272-b40b-861ffbc568c9","value":{"androidId":"407ddcfd393d8270","apiVersion":"30","bluetooth":{"state":"ON"},"brand":"Jio","carrierName":"","displayDensity":320,"locale":"en_IN","manufacturer":"Jio","model":"JMSB200A","networks":[{"capabilities":{"SSID":null,"linkDownBand…
+06-12 15:40:28.131 D/Glide   ( 1781): Finished loading Bitmap from LOCAL for com.bumptech.glide.gifdecoder.StandardGifDecoder@fb55452 with size [314x176] in 3.382459 ms
+06-12 15:40:28.152 D/stbdpc  (  405): STB_DPGetNumPaths[570]: num_paths: 1
+06-12 15:40:28.180 D/Glide   ( 1781): Finished loading Bitmap from LOCAL for com.bumptech.glide.gifdecoder.StandardGifDecoder@fb55452 with size [314x176] in 11.148209 ms
+06-12 15:40:28.213 D/Glide   ( 1781): Finished loading Bitmap from LOCAL for com.bumptech.glide.gifdecoder.StandardGifDecoder@fb55452 with size [314x176] in 3.963125 ms
+06-12 15:40:28.237 D/JioAppOptimizer( 1699): AppOptimizerService :: handleMessage()
+06-12 15:40:28.239 D/JioAppOptimizer( 1699): AppOptimizerService :: handleMessage() : Foreground Package=com.iwedia.ui.rjio.launcher.reliance
+06-12 15:40:28.239 D/JioAppOptimizer( 1699): AppOptimizerService :: handleMessage() : Free memory available in MB : 649.48046875
+06-12 15:40:28.239 D/JioAppOptimizer( 1699): AppOptimizerService :: handleMessage() : checkAndRemoveBackgroundApps()
+06-12 15:40:28.239 D/JioAppOptimizer( 1699): AppOptimizerService :: checkAndRemoveBackgroundApps()
+06-12 15:40:28.253 D/stbdpc  (  405): STB_DPGetNumPaths[570]: num_paths: 1
+06-12 15:40:28.263 D/Glide   ( 1781): Finished loading Bitmap from LOCAL for com.bumptech.glide.gifdecoder.StandardGifDecoder@fb55452 with size [314x176] in 13.379458 ms
+06-12 15:40:28.296 D/Glide   ( 1781): Finished loading Bitmap from LOCAL for com.bumptech.glide.gifdecoder.StandardGifDecoder@fb55452 with size [314x176] in 5.788125 ms
+06-12 15:40:28.338 D/rtk_heartbeat(  351): heartbeat_timed_out: heartbeatCmdCount = 3080, expected nextSeqNum = 3080
+06-12 15:40:28.339 D/rtk_heartbeat(  351): rtkbt_heartbeat_cmpl_cback: Current SeqNum = 3080,should SeqNum=3080, status = 0
+06-12 15:40:28.347 D/Glide   ( 1781): Finished loading Bitmap from LOCAL for com.bumptech.glide.gifdecoder.StandardGifDecoder@fb55452 with size [314x176] in 15.734207999999999 ms
+06-12 15:40:28.353 D/stbdpc  (  405): STB_DPGetNumPaths[570]: num_paths: 1
+06-12 15:40:28.380 D/Glide   ( 1781): Finished loading Bitmap from LOCAL for com.bumptech.glide.gifdecoder.StandardGifDecoder@fb55452 with size [314x176] in 8.895833 ms
+06-12 15:40:28.418 D/Glide   ( 1781): Finished loading Bitmap from LOCAL for com.bumptech.glide.gifdecoder.StandardGifDecoder@fb55452 with size [314x176] in 5.938917 ms
+06-12 15:40:28.432 D/dvb_iptv(  405): ReadEmmNetworkTask[1537]: EMM Select Timeout Occured 16
+06-12 15:40:28.444 I/thermal2(  370): Sending notification:  Type: CPU Name: soc_thermal CurrentValue: 63.6 ThrottlingStatus: NONE
+06-12 15:40:28.453 D/stbdpc  (  405): STB_DPGetNumPaths[570]: num_paths: 1
+06-12 15:40:28.464 D/Glide   ( 1781): Finished loading Bitmap from LOCAL for com.bumptech.glide.gifdecoder.StandardGifDecoder@fb55452 with size [314x176] in 11.459667 ms
+06-12 15:40:28.491 D/JioStbInactivityTimer(  933): Timer: count 32 warningTimeout:10680 timeout:10800
+06-12 15:40:28.491 D/JioStbInactivityTimer(  933): isUserActive: Curr:3069843 Prev:3069843
+06-12 15:40:28.497 D/Glide   ( 1781): Finished loading Bitmap from LOCAL for com.bumptech.glide.gifdecoder.StandardGifDecoder@fb55452 with size [314x176] in 4.393083 ms
+06-12 15:40:28.547 D/Glide   ( 1781): Finished loading Bitmap from LOCAL for com.bumptech.glide.gifdecoder.StandardGifDecoder@fb55452 with size [314x176] in 14.763833 ms
+06-12 15:40:28.553 D/stbdpc  (  405): STB_DPGetNumPaths[570]: num_paths: 1
+06-12 15:40:28.580 D/Glide   ( 1781): Finished loading Bitmap from LOCAL for com.bumptech.glide.gifdecoder.StandardGifDecoder@fb55452 with size [314x176] in 6.966374999999999 ms
+06-12 15:40:28.604 D/[ 3103.961187@1]  logd(    0): logdr: UID=0 GID=0 PID=20451 b tail=0 logMask=99 pid=0 start=0ns timeout=0ns
+06-12 15:40:28.608 D/[ 3103.962986@2]  logd(    0): Skipping 4294967295 entries from slow reader, pid 20451, from LogBuffer::kickMe()
+06-12 15:40:28.630 D/Glide   ( 1781): Finished loading Bitmap from LOCAL for com.bumptech.glide.gifdecoder.StandardGifDecoder@fb55452 with size [314x176] in 16.739 ms
+06-12 15:40:28.653 D/stbdpc  (  405): STB_DPGetNumPaths[570]: num_paths: 1
+06-12 15:40:28.664 D/Glide   ( 1781): Finished loading Bitmap from LOCAL for com.bumptech.glide.gifdecoder.StandardGifDecoder@fb55452 with size [314x176] in 9.498249999999999 ms
+06-12 15:40:28.674 E/WifiVendorHal(  632): getWifiLinkLayerStats_1_3_Internal(l.973) failed {.code = ERROR_UNKNOWN, .description = unknown error}
+06-12 15:40:28.698 D/Glide   ( 1781): Finished loading Bitmap from LOCAL for com.bumptech.glide.gifdecoder.StandardGifDecoder@fb55452 with size [314x176] in 3.7997919999999996 ms
+06-12 15:40:28.747 D/Glide   ( 1781): Finished loading Bitmap from LOCAL for com.bumptech.glide.gifdecoder.StandardGifDecoder@fb55452 with size [314x176] in 12.673542 ms
+06-12 15:40:28.753 D/stbdpc  (  405): STB_DPGetNumPaths[570]: num_paths: 1
+06-12 15:40:28.780 D/Glide   ( 1781): Finished loading Bitmap from LOCAL for com.bumptech.glide.gifdecoder.StandardGifDecoder@fb55452 with size [314x176] in 4.720459 ms
+06-12 15:40:28.831 D/Glide   ( 1781): Finished loading Bitmap from LOCAL for com.bumptech.glide.gifdecoder.StandardGifDecoder@fb55452 with size [314x176] in 14.7385 ms
+06-12 15:40:28.854 D/stbdpc  (  405): STB_DPGetNumPaths[570]: num_paths: 1
+06-12 15:40:28.863 D/Glide   ( 1781): Finished loading Bitmap from LOCAL for com.bumptech.glide.gifdecoder.StandardGifDecoder@fb55452 with size [314x176] in 6.9657919999999995 ms
+06-12 15:40:28.914 D/Glide   ( 1781): Finished loading Bitmap from LOCAL for com.bumptech.glide.gifdecoder.StandardGifDecoder@fb55452 with size [314x176] in 16.841749999999998 ms
+06-12 15:40:28.924 I/uncher.relianc( 1781): oneway function results will be dropped but finished with status OK and parcel size 4
+06-12 15:40:28.926 I/e.swalekh.abct( 1336): oneway function results will be dropped but finished with status OK and parcel size 4
+06-12 15:40:28.932 D/dvb_iptv(  405): ReadEmmNetworkTask[1537]: EMM Select Timeout Occured 17
+06-12 15:40:28.934 D/JioSTBMRServer-SERVICE( 3304): InetSocketAddress(InetAddress.getByName(inetAddress.hostAddress)-/192.168.1.255
+06-12 15:40:28.934 D/JioSTBMRServer-SERVICE( 3304): #beacon:RKISBFJ60000097:0:false:0:1:SV=181024 , 192.168.1.255
+06-12 15:40:28.936 D/JioSTBMRServer-SERVICE( 3304): InetSocketAddress(InetAddress.getByName(inetAddress.hostAddress)-/192.168.1.255
+06-12 15:40:28.937 D/JioSTBMRServer-SERVICE( 3304): #broadcast IP:192.168.1.255
+06-12 15:40:28.947 D/Glide   ( 1781): Finished loading Bitmap from LOCAL for com.bumptech.glide.gifdecoder.StandardGifDecoder@fb55452 with size [314x176] in 9.481166 ms
+06-12 15:40:28.954 D/stbdpc  (  405): STB_DPGetNumPaths[570]: num_paths: 1
+06-12 15:40:28.982 D/Glide   ( 1781): Finished loading Bitmap from LOCAL for com.bumptech.glide.gifdecoder.StandardGifDecoder@fb55452 with size [314x176] in 3.482542 ms
+06-12 15:40:29.031 D/Glide   ( 1781): Finished loading Bitmap from LOCAL for com.bumptech.glide.gifdecoder.StandardGifDecoder@fb55452 with size [314x176] in 12.367042 ms
+06-12 15:40:29.054 D/stbdpc  (  405): STB_DPGetNumPaths[570]: num_paths: 1
+06-12 15:40:29.064 D/Glide   ( 1781): Finished loading Bitmap from LOCAL for com.bumptech.glide.gifdecoder.StandardGifDecoder@fb55452 with size [314x176] in 5.599167 ms
+06-12 15:40:29.114 D/Glide   ( 1781): Finished loading Bitmap from LOCAL for com.bumptech.glide.gifdecoder.StandardGifDecoder@fb55452 with size [314x176] in 15.847833 ms
+06-12 15:40:29.135 I/JioBackgroundSchedulerService( 2785): Check schedule  
+06-12 15:40:29.148 D/Glide   ( 1781): Finished loading Bitmap from LOCAL for com.bumptech.glide.gifdecoder.StandardGifDecoder@fb55452 with size [314x176] in 10.317166 ms
+06-12 15:40:29.150 D/ltts_ip_emm(  405): LTTS_IP_DMXStartEMM[381]: parse_emm_cat_status failed
+06-12 15:40:29.154 D/stbdpc  (  405): STB_DPGetNumPaths[570]: num_paths: 1
+06-12 15:40:29.181 D/Glide   ( 1781): Finished loading Bitmap from LOCAL for com.bumptech.glide.gifdecoder.StandardGifDecoder@fb55452 with size [314x176] in 2.768084 ms
+06-12 15:40:29.232 D/Glide   ( 1781): Finished loading Bitmap from LOCAL for com.bumptech.glide.gifdecoder.StandardGifDecoder@fb55452 with size [314x176] in 13.605291999999999 ms
+06-12 15:40:29.254 D/stbdpc  (  405): STB_DPGetNumPaths[570]: num_paths: 1
+06-12 15:40:29.265 D/Glide   ( 1781): Finished loading Bitmap from LOCAL for com.bumptech.glide.gifdecoder.StandardGifDecoder@fb55452 with size [314x176] in 6.28025 ms

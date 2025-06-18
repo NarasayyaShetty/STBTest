@@ -1,0 +1,19 @@
+==== CRASH START ====
+06-18 10:58:02.777 E/AndroidRuntime(11369): FATAL EXCEPTION: Instr: androidx.test.runner.AndroidJUnitRunner
+06-18 10:58:02.777 E/AndroidRuntime(11369): Process: io.appium.uiautomator2.server, PID: 11369
+06-18 10:58:02.777 E/AndroidRuntime(11369): java.lang.IllegalStateException: UiAutomation not connected, UiAutomation@7fa8a48[id=-1, flags=0]
+06-18 10:58:02.777 E/AndroidRuntime(11369): 	at android.app.UiAutomation.throwIfNotConnectedLocked(UiAutomation.java:1239)
+06-18 10:58:02.777 E/AndroidRuntime(11369): 	at android.app.UiAutomation.disconnect(UiAutomation.java:296)
+06-18 10:58:02.777 E/AndroidRuntime(11369): 	at android.app.Instrumentation.finish(Instrumentation.java:249)
+06-18 10:58:02.777 E/AndroidRuntime(11369): 	at androidx.test.runner.MonitoringInstrumentation.finish(MonitoringInstrumentation.java:409)
+06-18 10:58:02.777 E/AndroidRuntime(11369): 	at androidx.test.runner.AndroidJUnitRunner.onStart(AndroidJUnitRunner.java:474)
+06-18 10:58:02.777 E/AndroidRuntime(11369): 	at android.app.Instrumentation$InstrumentationThread.run(Instrumentation.java:2205)
+06-18 10:58:02.794 I/DropBoxManagerService( 3829): add tag=data_app_crash isTagEnabled=true flags=0x2
+06-18 10:58:02.860 D/ActivityManager( 3829): Killed process: io.appium.uiautomator2.server
+06-18 10:58:02.860 I/ActivityManager( 3829): Process io.appium.uiautomator2.server (pid 11369) has died: fg  FGS 
+06-18 10:58:02.863 W/ActivityManager( 3829): Crash of app io.appium.uiautomator2.server running instrumentation ComponentInfo{io.appium.uiautomator2.server.test/androidx.test.runner.AndroidJUnitRunner}
+06-18 10:58:02.877 I/ActivityManager( 3829): Force stopping io.appium.uiautomator2.server appid=10075 user=0: finished inst
+06-18 10:58:02.879 I/[  548.427508@1]- binder(    0): 3829:3866 transaction failed 29189/-22, size 88-0 line 3120
+06-18 10:58:02.878 W/ActivityManager( 3829): Error shutting down UiAutomationConnection
+==== CRASH END ====
+

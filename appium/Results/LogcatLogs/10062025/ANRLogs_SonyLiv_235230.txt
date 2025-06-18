@@ -1,0 +1,14 @@
+==== ANR START ====
+06-10 22:11:26.403 E/ActivityManager(  627): ANR in in.startv.hotstar (in.startv.hotstar/com.hotstar.MainActivity)
+06-10 22:11:26.403 E/ActivityManager(  627): PID: 3582
+06-10 22:11:26.403 E/ActivityManager(  627): Reason: Input dispatching timed out (8e39747 in.startv.hotstar/com.hotstar.MainActivity (server) is not responding. Waited 5002ms for FocusEvent(hasFocus=true))
+06-10 22:11:26.403 E/ActivityManager(  627): Parent: in.startv.hotstar/com.hotstar.MainActivity
+06-10 22:11:26.403 E/ActivityManager(  627): Load: 4.17 / 4.47 / 4.69
+06-10 22:11:26.403 E/ActivityManager(  627): ----- Output from /proc/pressure/memory -----
+06-10 22:11:26.403 E/ActivityManager(  627): some avg10=0.56 avg60=0.23 avg300=0.05 total=13432121
+06-10 22:11:26.403 E/ActivityManager(  627): full avg10=0.00 avg60=0.00 avg300=0.00 total=6006962
+06-10 22:11:26.403 E/ActivityManager(  627): ----- End output from /proc/pressure/memory -----
+06-10 22:11:26.403 E/ActivityManager(  627): 
+06-10 22:11:26.403 E/ActivityManager(  627): CPU usage from 0ms to 8211ms later (2025-06-10 22:11:18.165 to 2025-06-10 22:11:26.377):
+==== ANR END ====
+

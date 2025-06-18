@@ -1,0 +1,14 @@
+==== ANR START ====
+06-18 17:44:42.247 E/ActivityManager(  512): ANR in in.startv.hotstar
+06-18 17:44:42.247 E/ActivityManager(  512): PID: 16271
+06-18 17:44:42.247 E/ActivityManager(  512): Reason: executing service in.startv.hotstar/com.google.android.datatransport.runtime.scheduling.jobscheduling.JobInfoSchedulerService
+06-18 17:44:42.247 E/ActivityManager(  512): Load: 4.16 / 4.3 / 4.42
+06-18 17:44:42.247 E/ActivityManager(  512): ----- Output from /proc/pressure/memory -----
+06-18 17:44:42.247 E/ActivityManager(  512): some avg10=0.01 avg60=0.06 avg300=0.04 total=7093323
+06-18 17:44:42.247 E/ActivityManager(  512): full avg10=0.00 avg60=0.00 avg300=0.00 total=2140251
+06-18 17:44:42.247 E/ActivityManager(  512): ----- End output from /proc/pressure/memory -----
+06-18 17:44:42.247 E/ActivityManager(  512): 
+06-18 17:44:42.247 E/ActivityManager(  512): CPU usage from 0ms to 7114ms later (2025-06-18 17:44:35.072 to 2025-06-18 17:44:42.185):
+06-18 17:44:42.247 E/ActivityManager(  512):   56% 16271/in.startv.hotstar: 47% user + 8.5% kernel / faults: 23317 minor 103 major
+==== ANR END ====
+

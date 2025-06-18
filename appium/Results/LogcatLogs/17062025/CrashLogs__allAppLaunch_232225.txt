@@ -1,0 +1,57 @@
+==== CRASH START ====
+06-17 22:43:43.378 E/AndroidRuntime(29318): FATAL EXCEPTION: Instr: androidx.test.runner.AndroidJUnitRunner
+06-17 22:43:43.378 E/AndroidRuntime(29318): Process: io.appium.uiautomator2.server, PID: 29318
+06-17 22:43:43.378 E/AndroidRuntime(29318): java.lang.IllegalStateException: UiAutomation not connected, UiAutomation@a0af297[id=-1, flags=0]
+06-17 22:43:43.378 E/AndroidRuntime(29318): 	at android.app.UiAutomation.throwIfNotConnectedLocked(UiAutomation.java:1239)
+06-17 22:43:43.378 E/AndroidRuntime(29318): 	at android.app.UiAutomation.disconnect(UiAutomation.java:296)
+06-17 22:43:43.378 E/AndroidRuntime(29318): 	at android.app.Instrumentation.finish(Instrumentation.java:249)
+06-17 22:43:43.378 E/AndroidRuntime(29318): 	at androidx.test.runner.MonitoringInstrumentation.finish(MonitoringInstrumentation.java:409)
+06-17 22:43:43.378 E/AndroidRuntime(29318): 	at androidx.test.runner.AndroidJUnitRunner.onStart(AndroidJUnitRunner.java:474)
+06-17 22:43:43.378 E/AndroidRuntime(29318): 	at android.app.Instrumentation$InstrumentationThread.run(Instrumentation.java:2205)
+06-17 22:43:43.385 I/        (    0): [ 7283.427348@1]  [bluebank] [usb_dec_thread] usb2_status=1, usb3_status=1
+06-17 22:43:43.394 I/ActivityManager(  502): Notify Jio SDK Service on crash event
+06-17 22:43:43.395 I/DropBoxManagerService(  502): add tag=data_app_crash isTagEnabled=true flags=0x2
+06-17 22:43:43.439 D/ConditionProviders.SCP(  502): onReceive android.app.action.NEXT_ALARM_CLOCK_CHANGED
+06-17 22:43:43.439 D/ConditionProviders.SCP(  502): evaluateSubscriptionLocked cal=ScheduleCalendar[mDays={1, 2, 3, 4, 5, 6, 7}, mSchedule=ScheduleInfo{days=[1, 2, 3, 4, 5, 6, 7], startHour=22, startMinute=0, endHour=7, endMinute=0, exitAtAlarm=true, nextAlarm=Tue Jun 17 22:43:43 GMT+05:30 2025 (1750180423433)}], now=Tue Jun 17 22:43:43 GMT+05:30 2025 (1750180423439), nextUserAlarmTime=Wed Jun 18 02:06:35 GMT+05:30 2025 (1750192595815)
+06-17 22:43:43.440 D/ConditionProviders.SCP(  502): notifyCondition condition://android/schedule?days=1.2.3.4.5.6.7&start=22.0&end=7.0&exitAtAlarm=true STATE_FALSE reason=snoozed
+06-17 22:43:43.442 D/ConditionProviders.SCP(  502): Scheduling evaluate for Wed Jun 18 07:00:00 GMT+05:30 2025 (1750210200000), in +8h16m16s561ms, now=Tue Jun 17 22:43:43 GMT+05:30 2025 (1750180423439)
+==== CRASH END ====
+
+==== CRASH START ====
+06-17 22:50:26.843 E/AndroidRuntime(  356): FATAL EXCEPTION: Instr: androidx.test.runner.AndroidJUnitRunner
+06-17 22:50:26.843 E/AndroidRuntime(  356): Process: io.appium.uiautomator2.server, PID: 356
+06-17 22:50:26.843 E/AndroidRuntime(  356): java.lang.IllegalStateException: UiAutomation not connected, UiAutomation@a0af297[id=-1, flags=0]
+06-17 22:50:26.843 E/AndroidRuntime(  356): 	at android.app.UiAutomation.throwIfNotConnectedLocked(UiAutomation.java:1239)
+06-17 22:50:26.843 E/AndroidRuntime(  356): 	at android.app.UiAutomation.disconnect(UiAutomation.java:296)
+06-17 22:50:26.843 E/AndroidRuntime(  356): 	at android.app.Instrumentation.finish(Instrumentation.java:249)
+06-17 22:50:26.843 E/AndroidRuntime(  356): 	at androidx.test.runner.MonitoringInstrumentation.finish(MonitoringInstrumentation.java:409)
+06-17 22:50:26.843 E/AndroidRuntime(  356): 	at androidx.test.runner.AndroidJUnitRunner.onStart(AndroidJUnitRunner.java:474)
+06-17 22:50:26.843 E/AndroidRuntime(  356): 	at android.app.Instrumentation$InstrumentationThread.run(Instrumentation.java:2205)
+06-17 22:50:26.851 I/ActivityManager(  502): Notify Jio SDK Service on crash event
+06-17 22:50:26.855 I/DropBoxManagerService(  502): add tag=data_app_crash isTagEnabled=true flags=0x2
+06-17 22:50:26.905 W/ContextImpl( 1416): Calling a method in the system process without a qualified user: android.app.ContextImpl.bindService:1748 android.content.ContextWrapper.bindService:756 com.jio.adc.core.b.d:56 com.jio.adc.core.b.b:13 com.jio.adc.core.b$c.run:7 
+06-17 22:50:26.949 I/ActivityManager(  502): Process io.appium.uiautomator2.server (pid 356) has died: fg  FGS 
+06-17 22:50:26.953 W/ActivityManager(  502): Crash of app io.appium.uiautomator2.server running instrumentation ComponentInfo{io.appium.uiautomator2.server.test/androidx.test.runner.AndroidJUnitRunner}
+06-17 22:50:26.961 I/[ 7687.003607@2]  binder(    0): 502:649 transaction failed 29189/-22, size 88-0 line 2705
+06-17 22:50:26.956 I/ActivityManager(  502): Force stopping io.appium.uiautomator2.server appid=10097 user=0: finished inst
+==== CRASH END ====
+
+==== CRASH START ====
+06-17 22:53:05.855 E/AndroidRuntime( 3319): FATAL EXCEPTION: Instr: androidx.test.runner.AndroidJUnitRunner
+06-17 22:53:05.855 E/AndroidRuntime( 3319): Process: io.appium.uiautomator2.server, PID: 3319
+06-17 22:53:05.855 E/AndroidRuntime( 3319): java.lang.IllegalStateException: UiAutomation not connected, UiAutomation@a0af297[id=-1, flags=0]
+06-17 22:53:05.855 E/AndroidRuntime( 3319): 	at android.app.UiAutomation.throwIfNotConnectedLocked(UiAutomation.java:1239)
+06-17 22:53:05.855 E/AndroidRuntime( 3319): 	at android.app.UiAutomation.disconnect(UiAutomation.java:296)
+06-17 22:53:05.855 E/AndroidRuntime( 3319): 	at android.app.Instrumentation.finish(Instrumentation.java:249)
+06-17 22:53:05.855 E/AndroidRuntime( 3319): 	at androidx.test.runner.MonitoringInstrumentation.finish(MonitoringInstrumentation.java:409)
+06-17 22:53:05.855 E/AndroidRuntime( 3319): 	at androidx.test.runner.AndroidJUnitRunner.onStart(AndroidJUnitRunner.java:474)
+06-17 22:53:05.855 E/AndroidRuntime( 3319): 	at android.app.Instrumentation$InstrumentationThread.run(Instrumentation.java:2205)
+06-17 22:53:05.860 I/ActivityManager(  502): Notify Jio SDK Service on crash event
+06-17 22:53:05.862 I/DropBoxManagerService(  502): add tag=data_app_crash isTagEnabled=true flags=0x2
+06-17 22:53:06.015 I/ActivityManager(  502): Process io.appium.uiautomator2.server (pid 3319) has died: fg  FGS 
+06-17 22:53:06.025 W/ActivityManager(  502): Crash of app io.appium.uiautomator2.server running instrumentation ComponentInfo{io.appium.uiautomator2.server.test/androidx.test.runner.AndroidJUnitRunner}
+06-17 22:53:06.027 W/ActivityManager(  502): Error shutting down UiAutomationConnection
+06-17 22:53:06.027 I/ActivityManager(  502): Failure reporting to instrumentation watcher: comp=ComponentInfo{io.appium.uiautomator2.server.test/androidx.test.runner.AndroidJUnitRunner} results=Bundle[{shortMsg=Process crashed.}]
+06-17 22:53:06.028 W/ContextImpl( 1416): Calling a method in the system process without a qualified user: android.app.ContextImpl.bindService:1748 android.content.ContextWrapper.bindService:756 com.jio.adc.core.b.d:56 com.jio.adc.core.b.b:13 com.jio.adc.core.b$c.run:7 
+==== CRASH END ====
+

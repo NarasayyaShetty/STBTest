@@ -1,0 +1,28 @@
+==== ANR START ====
+06-18 17:44:42.247 E/ActivityManager(  512): ANR in in.startv.hotstar
+06-18 17:44:42.247 E/ActivityManager(  512): PID: 16271
+06-18 17:44:42.247 E/ActivityManager(  512): Reason: executing service in.startv.hotstar/com.google.android.datatransport.runtime.scheduling.jobscheduling.JobInfoSchedulerService
+06-18 17:44:42.247 E/ActivityManager(  512): Load: 4.16 / 4.3 / 4.42
+06-18 17:44:42.247 E/ActivityManager(  512): ----- Output from /proc/pressure/memory -----
+06-18 17:44:42.247 E/ActivityManager(  512): some avg10=0.01 avg60=0.06 avg300=0.04 total=7093323
+06-18 17:44:42.247 E/ActivityManager(  512): full avg10=0.00 avg60=0.00 avg300=0.00 total=2140251
+06-18 17:44:42.247 E/ActivityManager(  512): ----- End output from /proc/pressure/memory -----
+06-18 17:44:42.247 E/ActivityManager(  512): 
+06-18 17:44:42.247 E/ActivityManager(  512): CPU usage from 0ms to 7114ms later (2025-06-18 17:44:35.072 to 2025-06-18 17:44:42.185):
+06-18 17:44:42.247 E/ActivityManager(  512):   56% 16271/in.startv.hotstar: 47% user + 8.5% kernel / faults: 23317 minor 103 major
+==== ANR END ====
+
+==== ANR START ====
+06-18 18:13:02.026 E/ActivityManager(  512): ANR in in.startv.hotstar (in.startv.hotstar/com.hotstar.MainActivity)
+06-18 18:13:02.026 E/ActivityManager(  512): PID: 23505
+06-18 18:13:02.026 E/ActivityManager(  512): Reason: Input dispatching timed out (40b2947 in.startv.hotstar/com.hotstar.MainActivity (server) is not responding. Waited 5004ms for FocusEvent(hasFocus=true))
+06-18 18:13:02.026 E/ActivityManager(  512): Parent: in.startv.hotstar/com.hotstar.MainActivity
+06-18 18:13:02.026 E/ActivityManager(  512): Load: 4.55 / 4.66 / 4.8
+06-18 18:13:02.026 E/ActivityManager(  512): ----- Output from /proc/pressure/memory -----
+06-18 18:13:02.026 E/ActivityManager(  512): some avg10=4.00 avg60=1.06 avg300=0.31 total=11871379
+06-18 18:13:02.026 E/ActivityManager(  512): full avg10=2.05 avg60=0.51 avg300=0.10 total=3821834
+06-18 18:13:02.026 E/ActivityManager(  512): ----- End output from /proc/pressure/memory -----
+06-18 18:13:02.026 E/ActivityManager(  512): 
+06-18 18:13:02.026 E/ActivityManager(  512): CPU usage from 0ms to 7649ms later (2025-06-18 18:12:54.349 to 2025-06-18 18:13:01.998):
+==== ANR END ====
+

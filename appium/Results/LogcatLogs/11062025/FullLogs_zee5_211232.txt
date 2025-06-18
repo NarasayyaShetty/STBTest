@@ -1,0 +1,488 @@
+--------- beginning of main
+06-11 21:12:29.300 D/stbdpc  (  397): STB_DPGetNumPaths[570]: num_paths: 1
+06-11 21:12:29.600 I/chatty  (  397): uid=0(root) DK-SiCntrl identical 3 lines
+06-11 21:12:29.700 D/stbdpc  (  397): STB_DPGetNumPaths[570]: num_paths: 1
+06-11 21:12:29.703 D/dvb_iptv(  397): ReadEmmNetworkTask[1537]: EMM Select Timeout Occured 50
+06-11 21:12:29.755 E/WifiVendorHal(  633): getWifiLinkLayerStats_1_3_Internal(l.973) failed {.code = ERROR_UNKNOWN, .description = unknown error}
+06-11 21:12:29.801 D/stbdpc  (  397): STB_DPGetNumPaths[570]: num_paths: 1
+06-11 21:12:29.901 I/chatty  (  397): uid=0(root) DK-SiCntrl identical 1 line
+06-11 21:12:30.001 D/stbdpc  (  397): STB_DPGetNumPaths[570]: num_paths: 1
+06-11 21:12:30.012 D/rtk_heartbeat(  349): heartbeat_timed_out: heartbeatCmdCount = 2360, expected nextSeqNum = 2360
+06-11 21:12:30.014 D/rtk_heartbeat(  349): rtkbt_heartbeat_cmpl_cback: Current SeqNum = 2360,should SeqNum=2360, status = 0
+06-11 21:12:30.051 D/JioStbInactivityTimer(  926): Timer: count 954 warningTimeout:10680 timeout:10800
+06-11 21:12:30.051 D/JioStbInactivityTimer(  926): isUserActive: Curr:1425795 Prev:1425795
+06-11 21:12:30.101 D/stbdpc  (  397): STB_DPGetNumPaths[570]: num_paths: 1
+06-11 21:12:30.201 D/stbdpc  (  397): STB_DPGetNumPaths[570]: num_paths: 1
+06-11 21:12:30.204 D/dvb_iptv(  397): ReadEmmNetworkTask[1537]: EMM Select Timeout Occured 51
+06-11 21:12:30.300 E/starboard(13448): Failed to retrieve Advertising ID (IfA).
+06-11 21:12:30.301 D/stbdpc  (  397): STB_DPGetNumPaths[570]: num_paths: 1
+06-11 21:12:30.302 E/starboard(13448): Failed to retrieve Advertising ID (IfA).
+06-11 21:12:30.304 I/chatty  (13448): uid=10093(com.jio.yt) pool-2-thread-1 identical 1 line
+06-11 21:12:30.305 E/starboard(13448): Failed to retrieve Advertising ID (IfA).
+06-11 21:12:30.336 I/starboard_media(13448): MediaSession setPlaybackState: NONE, position: 0 ms, speed: 0.000000 x
+06-11 21:12:30.338 V/AvrcpMediaPlayerWrapper(  764): onPlaybackStateChanged(): com.jio.yt : PlaybackState {state=0, position=0, buffered position=0, speed=0.0, updated=2381489, actions=0, custom actions=[], active item id=-1, error=null}
+06-11 21:12:30.338 W/AvrcpMediaPlayerWrapper(  764): onPlaybackStateChanged(): com.jio.yt tried to update with no new data
+06-11 21:12:30.402 D/stbdpc  (  397): STB_DPGetNumPaths[570]: num_paths: 1
+06-11 21:12:30.427 I/ThermalService(  969): CPU temperatures: [57.600002]
+06-11 21:12:30.502 D/stbdpc  (  397): STB_DPGetNumPaths[570]: num_paths: 1
+06-11 21:12:30.602 D/stbdpc  (  397): STB_DPGetNumPaths[570]: num_paths: 1
+06-11 21:12:30.666 D/ltts_ip_emm(  397): LTTS_IP_DMXStartEMM[381]: parse_emm_cat_status failed
+06-11 21:12:30.702 D/stbdpc  (  397): STB_DPGetNumPaths[570]: num_paths: 1
+06-11 21:12:30.704 D/dvb_iptv(  397): ReadEmmNetworkTask[1537]: EMM Select Timeout Occured 52
+06-11 21:12:30.802 D/stbdpc  (  397): STB_DPGetNumPaths[570]: num_paths: 1
+--------- beginning of crash
+06-11 21:12:30.868 F/linker  (13553): CANNOT LINK EXECUTABLE "/system/bin/smartcable/smartCableSTBApp": library "libmosquitto.so" not found: needed by main executable
+06-11 21:12:30.903 I/chatty  (  397): uid=0(root) DK-SiCntrl identical 1 line
+06-11 21:12:31.003 D/stbdpc  (  397): STB_DPGetNumPaths[570]: num_paths: 1
+06-11 21:12:31.012 D/rtk_heartbeat(  349): heartbeat_timed_out: heartbeatCmdCount = 2361, expected nextSeqNum = 2361
+06-11 21:12:31.014 D/rtk_heartbeat(  349): rtkbt_heartbeat_cmpl_cback: Current SeqNum = 2361,should SeqNum=2361, status = 0
+06-11 21:12:31.052 D/JioStbInactivityTimer(  926): Timer: count 955 warningTimeout:10680 timeout:10800
+06-11 21:12:31.052 D/JioStbInactivityTimer(  926): isUserActive: Curr:1425795 Prev:1425795
+06-11 21:12:31.103 D/stbdpc  (  397): STB_DPGetNumPaths[570]: num_paths: 1
+06-11 21:12:31.203 D/stbdpc  (  397): STB_DPGetNumPaths[570]: num_paths: 1
+06-11 21:12:31.204 D/dvb_iptv(  397): ReadEmmNetworkTask[1537]: EMM Select Timeout Occured 53
+06-11 21:12:31.210 I/com.jio.yt(13448): oneway function results will be dropped but finished with status OK and parcel size 4
+06-11 21:12:31.220 I/e.swalekh.abct( 1359): oneway function results will be dropped but finished with status OK and parcel size 4
+06-11 21:12:31.247 D/JioSTBMRServer-SERVICE( 3589): InetSocketAddress(InetAddress.getByName(inetAddress.hostAddress)-/192.168.1.255
+06-11 21:12:31.247 D/JioSTBMRServer-SERVICE( 3589): #beacon:RKISBFJ60000097:0:false:0:1:SV=181024 , 192.168.1.255
+06-11 21:12:31.251 D/JioSTBMRServer-SERVICE( 3589): InetSocketAddress(InetAddress.getByName(inetAddress.hostAddress)-/192.168.1.255
+06-11 21:12:31.252 D/JioSTBMRServer-SERVICE( 3589): #broadcast IP:192.168.1.255
+06-11 21:12:31.303 D/stbdpc  (  397): STB_DPGetNumPaths[570]: num_paths: 1
+06-11 21:12:31.403 I/chatty  (  397): uid=0(root) DK-SiCntrl identical 1 line
+06-11 21:12:31.503 D/stbdpc  (  397): STB_DPGetNumPaths[570]: num_paths: 1
+06-11 21:12:31.526 I/DTVKit  (  397): request[114]: 'CmnNoti.onDvbIpPacketDetails' // '[]'
+06-11 21:12:31.527 D/stbresmgr(  397): STB_RESNumTuners[315]: num_tuners: 3
+06-11 21:12:31.527 E/dvb_iptv(  397): IPTV_GetDvbIpPacketDetails[684]: No valid ECM iptv_handle
+06-11 21:12:31.527 D/dvb_iptv(  397): IPTV_GetDvbIpPacketDetails[688]: EMM Pkt stat received_packets:0 lost_packets:0 recov_packets:0 
+06-11 21:12:31.527 E/CommonClientNotiCbUtilsIntf(  397): onDvbIpPacketDetails[97]: Failure of Getting DvbIpDetails
+06-11 21:12:31.527 D/CommonClientNotiCbUtilsImpl( 1624): Not Received Valid Info
+06-11 21:12:31.604 D/stbdpc  (  397): STB_DPGetNumPaths[570]: num_paths: 1
+06-11 21:12:31.704 D/stbdpc  (  397): STB_DPGetNumPaths[570]: num_paths: 1
+06-11 21:12:31.704 D/dvb_iptv(  397): ReadEmmNetworkTask[1537]: EMM Select Timeout Occured 54
+06-11 21:12:31.804 D/stbdpc  (  397): STB_DPGetNumPaths[570]: num_paths: 1
+06-11 21:12:31.904 I/chatty  (  397): uid=0(root) DK-SiCntrl identical 1 line
+06-11 21:12:32.004 D/stbdpc  (  397): STB_DPGetNumPaths[570]: num_paths: 1
+06-11 21:12:32.013 D/rtk_heartbeat(  349): heartbeat_timed_out: heartbeatCmdCount = 2362, expected nextSeqNum = 2362
+--------- beginning of kernel
+06-11 21:12:32.015 W/[ 2383.164718@3]  RTW(    0): Turbo EDCA =0x5ea42b
+06-11 21:12:32.014 D/rtk_heartbeat(  349): rtkbt_heartbeat_cmpl_cback: Current SeqNum = 2362,should SeqNum=2362, status = 0
+06-11 21:12:32.052 D/JioStbInactivityTimer(  926): Timer: count 956 warningTimeout:10680 timeout:10800
+06-11 21:12:32.053 D/JioStbInactivityTimer(  926): isUserActive: Curr:1425795 Prev:1425795
+06-11 21:12:32.060 W/APM::AudioPolicyEngine(  387): getDevicesForStrategy() unknown strategy: -1
+06-11 21:12:32.060 I/system_server(  633): oneway function results will be dropped but finished with status OK and parcel size 4
+06-11 21:12:32.105 D/stbdpc  (  397): STB_DPGetNumPaths[570]: num_paths: 1
+06-11 21:12:32.204 D/dvb_iptv(  397): ReadEmmNetworkTask[1537]: EMM Select Timeout Occured 55
+06-11 21:12:32.205 D/stbdpc  (  397): STB_DPGetNumPaths[570]: num_paths: 1
+06-11 21:12:32.287 D/[ 2383.437216@0]  logd(    0): logdr: UID=0 GID=0 PID=13567 b tail=0 logMask=99 pid=0 start=0ns timeout=0ns
+--------- beginning of system
+06-11 21:12:32.294 I/ActivityTaskManager(  633): START u0 {flg=0x10000000 cmp=com.zee5.aosp/com.zee5.android.launch.presentation.AppStartActivity} from uid 0
+06-11 21:12:32.294 D/ActivityStarter(  633):  
+06-11 21:12:32.294 D/ActivityStarter(  633): launchedPkgName :: com.zee5.aosp 
+06-11 21:12:32.294 D/ActivityStarter(  633): callingPackage :: com.android.shell 
+06-11 21:12:32.294 D/ActivityStarter(  633): callingUid :: 0 
+06-11 21:12:32.294 D/ActivityStarter(  633): callingPid :: 13569
+06-11 21:12:32.294 D/ActivityTaskManager(  633): OTHER app is launched
+06-11 21:12:32.305 D/stbdpc  (  397): STB_DPGetNumPaths[570]: num_paths: 1
+06-11 21:12:32.315 V/DigitalSignage(  633): Package Name: null
+06-11 21:12:32.315 V/DigitalSignage(  633): Left: 0
+06-11 21:12:32.315 V/DigitalSignage(  633): Right: 0
+06-11 21:12:32.315 V/DigitalSignage(  633): Top: 0
+06-11 21:12:32.315 V/DigitalSignage(  633): Bottom: 0
+06-11 21:12:32.315 D/DigitalSignage(  633): else - Package Name :: null left : 0 right :: 0 top :: 0 bottom :: 0 dfu-right :: 1920 dfu-bottom :: 1080
+06-11 21:12:32.321 D/CompatibilityChangeReporter(  633): Compat change id reported: 135634846; UID 10087; state: DISABLED
+06-11 21:12:32.322 D/CompatibilityChangeReporter(  633): Compat change id reported: 143937733; UID 10087; state: ENABLED
+06-11 21:12:32.326 W/starboard(13448): Do not start a MediaPlaybackService when the MediSsession is null or inactive.
+06-11 21:12:32.328 I/JTCLOG  ( 3612): JtcForegroundService ->RegisterApp()
+06-11 21:12:32.328 I/JTCLOG  ( 3612): JuicePresenter -> registerApp
+06-11 21:12:32.328 I/JTCLOG  ( 3612): InitState -> Register
+06-11 21:12:32.328 I/JTCLOG  ( 3612): InitState -> Juice Sys NOT Started so do both Start and Registration
+06-11 21:12:32.329 I/JTCLOG  ( 3612): JuiceModel -> Registering ...........
+06-11 21:12:32.332 I/cmd     (13569): oneway function results will be dropped but finished with status OK and parcel size 4
+06-11 21:12:32.332 E/JTCLOG  ( 3612): networkConnectionType = WIFI
+06-11 21:12:32.336 I/JTCLOG  ( 3612): JuiceModel -> SelfIp of type 2  = 2401:4900:1c16:396:bb79:e9b4:ce56:d79f
+06-11 21:12:32.336 E/JTCLOG  ( 3612): MacUniqueID: 23:fd:db:f3:4d:33
+06-11 21:12:32.336 I/JTCLOG  ( 3612): JuiceModel -> discover IDU services
+06-11 21:12:32.338 I/WifiService(  633): acquireMulticastLock uid=10083
+06-11 21:12:32.348 V/DigitalSignage(  633): Package Name: null
+06-11 21:12:32.348 V/DigitalSignage(  633): Left: 0
+06-11 21:12:32.348 V/DigitalSignage(  633): Right: 0
+06-11 21:12:32.348 V/DigitalSignage(  633): Top: 0
+06-11 21:12:32.348 V/DigitalSignage(  633): Bottom: 0
+06-11 21:12:32.348 D/DigitalSignage(  633): else - Package Name :: null left : 0 right :: 0 top :: 0 bottom :: 0 dfu-right :: 1920 dfu-bottom :: 1080
+06-11 21:12:32.370 D/Zygote  (  324): Forked child process 13574
+06-11 21:12:32.374 W/ActivityManager(  633): Slow operation: 53ms so far, now at startProcess: returned from zygote!
+06-11 21:12:32.378 W/ActivityManager(  633): Slow operation: 57ms so far, now at startProcess: done updating battery stats
+06-11 21:12:32.379 W/ActivityManager(  633): Slow operation: 58ms so far, now at startProcess: building log message
+06-11 21:12:32.379 I/ActivityManager(  633): Start proc 13574:com.zee5.aosp/u0a87 for pre-top-activity {com.zee5.aosp/com.zee5.android.launch.presentation.AppStartActivity}
+06-11 21:12:32.379 W/ActivityManager(  633): Slow operation: 58ms so far, now at startProcess: starting to update pids map
+06-11 21:12:32.380 W/ActivityManager(  633): Slow operation: 59ms so far, now at startProcess: done updating pids map
+06-11 21:12:32.382 D/memtrack_aml(  363): sysfs path
+06-11 21:12:32.388 V/DigitalSignage(  633): Package Name: null
+06-11 21:12:32.389 V/DigitalSignage(  633): Left: 0
+06-11 21:12:32.389 V/DigitalSignage(  633): Right: 0
+06-11 21:12:32.389 V/DigitalSignage(  633): Top: 0
+06-11 21:12:32.389 V/DigitalSignage(  633): Bottom: 0
+06-11 21:12:32.389 D/DigitalSignage(  633): else - Package Name :: null left : 0 right :: 0 top :: 0 bottom :: 0 dfu-right :: 1920 dfu-bottom :: 1080
+06-11 21:12:32.394 I/adbd    (12860): jdwp connection from 13574
+06-11 21:12:32.405 D/stbdpc  (  397): STB_DPGetNumPaths[570]: num_paths: 1
+06-11 21:12:32.420 D/ActivityTaskManager(  633): JioHomeManagerService :: ActivityRecord :: setState :: StateFrom :: INITIALIZING StateTo :: RESUMED 
+06-11 21:12:32.442 I/com.zee5.aosp(13574): The ClassLoaderContext is a special shared library.
+06-11 21:12:32.447 I/android.hardware.power-service.libperfmgr(  366): Power setBoost: INTERACTION duration: 0
+06-11 21:12:32.447 I/libperfmgr(  366): Do Powerhint: INTERACTION
+06-11 21:12:32.449 V/DigitalSignage(  633): Package Name: null
+06-11 21:12:32.449 V/DigitalSignage(  633): Left: 0
+06-11 21:12:32.449 V/DigitalSignage(  633): Right: 0
+06-11 21:12:32.449 V/DigitalSignage(  633): Top: 0
+06-11 21:12:32.449 V/DigitalSignage(  633): Bottom: 0
+06-11 21:12:32.449 D/DigitalSignage(  633): else - Package Name :: null left : 0 right :: 0 top :: 0 bottom :: 0 dfu-right :: 1920 dfu-bottom :: 1080
+06-11 21:12:32.452 I/ThermalService(  969): CPU temperatures: [59.600002]
+06-11 21:12:32.462 D/ActivityManager(  633): JioHomeManagerService :: StateFrom :: INITIALIZING StateTo :: RESUMED Activity :: com.zee5.aosp/com.zee5.android.launch.presentation.AppStartActivity Action :: com.jio.remote.action.applaunch
+06-11 21:12:32.462 V/DigitalSignage(  633): Package Name: null
+06-11 21:12:32.462 V/DigitalSignage(  633): Left: 0
+06-11 21:12:32.462 V/DigitalSignage(  633): Right: 0
+06-11 21:12:32.462 V/DigitalSignage(  633): Top: 0
+06-11 21:12:32.463 V/DigitalSignage(  633): Bottom: 0
+06-11 21:12:32.463 D/DigitalSignage(  633): else - Package Name :: null left : 0 right :: 0 top :: 0 bottom :: 0 dfu-right :: 1920 dfu-bottom :: 1080
+06-11 21:12:32.465 D/NetflixService(  969): onForegroundActivitiesChanged pid:13574,uid:10087,fg:true
+06-11 21:12:32.484 D/NetflixService(  969): processName:com.netflix.ninja,importance:300
+06-11 21:12:32.490 D/memtrack_aml(  363): sysfs path
+06-11 21:12:32.505 D/stbdpc  (  397): STB_DPGetNumPaths[570]: num_paths: 1
+06-11 21:12:32.508 D/memtrack_aml(  363): sysfs path
+06-11 21:12:32.508 D/memtrack_aml(  363): get task_name jio.tr069client
+06-11 21:12:32.523 D/memtrack_aml(  363): sysfs path
+06-11 21:12:32.551 D/NetworkSecurityConfig(13574): Using Network Security Config from resource network_security_config debugBuild: false
+06-11 21:12:32.555 D/NetworkSecurityConfig(13574): Using Network Security Config from resource network_security_config debugBuild: false
+06-11 21:12:32.606 D/stbdpc  (  397): STB_DPGetNumPaths[570]: num_paths: 1
+06-11 21:12:32.638 I/MultiDex(13574): VM with version 2.1.0 has multidex support
+06-11 21:12:32.638 I/MultiDex(13574): Installing application
+06-11 21:12:32.638 I/MultiDex(13574): VM has multidex support, MultiDex support library is disabled.
+06-11 21:12:32.667 D/ltts_ip_emm(  397): LTTS_IP_DMXStartEMM[381]: parse_emm_cat_status failed
+06-11 21:12:32.704 D/dvb_iptv(  397): ReadEmmNetworkTask[1537]: EMM Select Timeout Occured 56
+06-11 21:12:32.706 D/stbdpc  (  397): STB_DPGetNumPaths[570]: num_paths: 1
+06-11 21:12:32.714 I/lowmemorykiller(  231): medium memory pressure event is triggered for new strategy
+06-11 21:12:32.715 D/lowmemorykiller(  231): LMKD mp_event_psi kill_reasons available are PRESSURE_AFTER_KILL, NOT_RESPONDING, LOW_SWAP_AND_THRASHING, LOW_MEM_AND_SWAP, LOW_MEM_AND_THRASHING, DIRECT_RECL_AND_THRASHING
+06-11 21:12:32.715 D/lowmemorykiller(  231): LMKD mp_event_psi kill_reason received= -1
+06-11 21:12:32.762 E/WifiVendorHal(  633): getWifiLinkLayerStats_1_3_Internal(l.973) failed {.code = ERROR_UNKNOWN, .description = unknown error}
+06-11 21:12:32.790 I/FirebaseApp(13574): Device unlocked: initializing all Firebase APIs for app [DEFAULT]
+06-11 21:12:32.806 D/stbdpc  (  397): STB_DPGetNumPaths[570]: num_paths: 1
+06-11 21:12:32.815 I/lowmemorykiller(  231): medium memory pressure event is triggered for new strategy
+06-11 21:12:32.815 D/lowmemorykiller(  231): LMKD mp_event_psi kill_reasons available are PRESSURE_AFTER_KILL, NOT_RESPONDING, LOW_SWAP_AND_THRASHING, LOW_MEM_AND_SWAP, LOW_MEM_AND_THRASHING, DIRECT_RECL_AND_THRASHING
+06-11 21:12:32.815 D/lowmemorykiller(  231): LMKD mp_event_psi kill_reason received= -1
+06-11 21:12:32.825 E/DynamiteModule(13574): Invalid GmsCore APK, remote loading disabled.
+06-11 21:12:32.825 I/DynamiteModule(13574): Considering local module com.google.android.gms.measurement.dynamite:64 and remote module com.google.android.gms.measurement.dynamite:0
+06-11 21:12:32.825 I/DynamiteModule(13574): Selected local version of com.google.android.gms.measurement.dynamite
+06-11 21:12:32.834 E/DynamiteModule(13574): Invalid GmsCore APK, remote loading disabled.
+06-11 21:12:32.836 V/DigitalSignage(  633): Package Name: null
+06-11 21:12:32.836 V/DigitalSignage(  633): Left: 0
+06-11 21:12:32.836 V/DigitalSignage(  633): Right: 0
+06-11 21:12:32.836 V/DigitalSignage(  633): Top: 0
+06-11 21:12:32.836 V/DigitalSignage(  633): Bottom: 0
+06-11 21:12:32.836 D/DigitalSignage(  633): else - Package Name :: null left : 0 right :: 0 top :: 0 bottom :: 0 dfu-right :: 1920 dfu-bottom :: 1080
+06-11 21:12:32.839 V/DigitalSignage(  633): Package Name: null
+06-11 21:12:32.839 V/DigitalSignage(  633): Left: 0
+06-11 21:12:32.839 V/DigitalSignage(  633): Right: 0
+06-11 21:12:32.839 V/DigitalSignage(  633): Top: 0
+06-11 21:12:32.839 V/DigitalSignage(  633): Bottom: 0
+06-11 21:12:32.839 D/DigitalSignage(  633): else - Package Name :: null left : 0 right :: 0 top :: 0 bottom :: 0 dfu-right :: 1920 dfu-bottom :: 1080
+06-11 21:12:32.852 I/FirebaseCrashlytics(13574): Initializing Firebase Crashlytics 18.2.8 for com.zee5.aosp
+06-11 21:12:32.854 V/DigitalSignage(  633): Package Name: null
+06-11 21:12:32.854 V/DigitalSignage(  633): Left: 0
+06-11 21:12:32.854 V/DigitalSignage(  633): Right: 0
+06-11 21:12:32.854 V/DigitalSignage(  633): Top: 0
+06-11 21:12:32.854 V/DigitalSignage(  633): Bottom: 0
+06-11 21:12:32.855 D/DigitalSignage(  633): else - Package Name :: null left : 0 right :: 0 top :: 0 bottom :: 0 dfu-right :: 1920 dfu-bottom :: 1080
+06-11 21:12:32.870 E/FirebaseMessaging(13574): Google Play services missing or without correct permission.
+06-11 21:12:32.906 D/stbdpc  (  397): STB_DPGetNumPaths[570]: num_paths: 1
+06-11 21:12:32.915 W/[ 2384.067233@3]  RTW(    0): fill_default_txdesc(wlan0): SP Packet(0x0806) rate=0x4 SeqNum = 2956
+06-11 21:12:32.915 I/lowmemorykiller(  231): medium memory pressure event is triggered for new strategy
+06-11 21:12:32.916 D/lowmemorykiller(  231): LMKD mp_event_psi kill_reasons available are PRESSURE_AFTER_KILL, NOT_RESPONDING, LOW_SWAP_AND_THRASHING, LOW_MEM_AND_SWAP, LOW_MEM_AND_THRASHING, DIRECT_RECL_AND_THRASHING
+06-11 21:12:32.916 D/lowmemorykiller(  231): LMKD mp_event_psi kill_reason received= -1
+06-11 21:12:32.917 E/starboard(13448): Failed to retrieve Advertising ID (IfA).
+06-11 21:12:32.917 I/FirebaseInitProvider(13574): FirebaseApp initialization successful
+06-11 21:12:32.924 E/starboard(13448): Failed to retrieve Advertising ID (IfA).
+06-11 21:12:32.940 I/chatty  (13448): uid=10093(com.jio.yt) pool-2-thread-1 identical 1 line
+06-11 21:12:32.942 E/starboard(13448): Failed to retrieve Advertising ID (IfA).
+06-11 21:12:32.945 D/JioLauncher( 1773): overlay status check for wifi and bt remote false false
+06-11 21:12:32.955 D/Match code1( 1439): 2
+06-11 21:12:32.955 D/JIO_TR069-( 1439): Predefined List [com.jio.stb.catv, com.rjil.jiostbsetting, com.iwedia.ui.rjio.launcher.reliance, com.jio.stb.hotellauncher, com.jio.media.oberoi, com.jio.ott]
+06-11 21:12:32.963 D/JIO_TR069-( 1439): Caller Package com.iwedia.ui.rjio.launcher.reliance
+06-11 21:12:32.963 D/JIO_TR069-( 1439): White Listed Apps []
+06-11 21:12:32.963 D/JIO_TR069-( 1439): Final White Listed Apps [com.jio.stb.catv, com.rjil.jiostbsetting, com.iwedia.ui.rjio.launcher.reliance, com.jio.stb.hotellauncher, com.jio.media.oberoi, com.jio.ott, ]
+06-11 21:12:32.966 D/JioLauncher( 1773): network-type-------NonJioNetwork
+06-11 21:12:32.975 D/JioLauncher( 1773): live-tv-previousIp-[/fe80::1%wlan0, /192.168.1.1]-newHost-[/fe80::1%wlan0, /192.168.1.1]
+06-11 21:12:33.006 D/stbdpc  (  397): STB_DPGetNumPaths[570]: num_paths: 1
+06-11 21:12:33.013 D/rtk_heartbeat(  349): heartbeat_timed_out: heartbeatCmdCount = 2363, expected nextSeqNum = 2363
+06-11 21:12:33.016 I/lowmemorykiller(  231): medium memory pressure event is triggered for new strategy
+06-11 21:12:33.016 D/lowmemorykiller(  231): LMKD mp_event_psi kill_reasons available are PRESSURE_AFTER_KILL, NOT_RESPONDING, LOW_SWAP_AND_THRASHING, LOW_MEM_AND_SWAP, LOW_MEM_AND_THRASHING, DIRECT_RECL_AND_THRASHING
+06-11 21:12:33.016 D/lowmemorykiller(  231): LMKD mp_event_psi kill_reason received= -1
+06-11 21:12:33.017 D/rtk_heartbeat(  349): rtkbt_heartbeat_cmpl_cback: Current SeqNum = 2363,should SeqNum=2363, status = 0
+06-11 21:12:33.052 D/JioStbInactivityTimer(  926): Timer: count 957 warningTimeout:10680 timeout:10800
+06-11 21:12:33.052 D/JioStbInactivityTimer(  926): isUserActive: Curr:1425795 Prev:1425795
+06-11 21:12:33.055 I/TetheringManager(13574): registerTetheringEventCallback:com.zee5.aosp
+06-11 21:12:33.059 D/ConnectivityService(  633): requestNetwork for uid/pid:10087/13574 NetworkRequest [ REQUEST id=32, [ Capabilities: INTERNET&NOT_RESTRICTED&TRUSTED&NOT_VPN Uid: 10087 AdministratorUids: [] RequestorUid: 10087 RequestorPackageName: com.zee5.aosp] ]
+06-11 21:12:33.059 D/ConnectivityService(  633): NetReassign [32 : null → 100]
+06-11 21:12:33.060 D/WifiNetworkFactory(  633): got request NetworkRequest [ REQUEST id=32, [ Capabilities: INTERNET&NOT_RESTRICTED&TRUSTED&NOT_VPN Uid: 10087 AdministratorUids: [] RequestorUid: 10087 RequestorPackageName: com.zee5.aosp] ] with score 60 and providerId 2
+06-11 21:12:33.060 D/Ethernet(  633): got request NetworkRequest [ REQUEST id=32, [ Capabilities: INTERNET&NOT_RESTRICTED&TRUSTED&NOT_VPN Uid: 10087 AdministratorUids: [] RequestorUid: 10087 RequestorPackageName: com.zee5.aosp] ] with score 60 and providerId 2
+06-11 21:12:33.061 D/EthernetNetworkFactory(  633): acceptRequest, request: NetworkRequest [ REQUEST id=32, [ Capabilities: INTERNET&NOT_RESTRICTED&TRUSTED&NOT_VPN Uid: 10087 AdministratorUids: [] RequestorUid: 10087 RequestorPackageName: com.zee5.aosp] ], score: 60
+06-11 21:12:33.061 I/EthernetNetworkFactory(  633): networkForRequest, request: NetworkRequest [ REQUEST id=32, [ Capabilities: INTERNET&NOT_RESTRICTED&TRUSTED&NOT_VPN Uid: 10087 AdministratorUids: [] RequestorUid: 10087 RequestorPackageName: com.zee5.aosp] ], network: null
+06-11 21:12:33.061 D/UntrustedWifiNetworkFactory(  633): got request NetworkRequest [ REQUEST id=32, [ Capabilities: INTERNET&NOT_RESTRICTED&TRUSTED&NOT_VPN Uid: 10087 AdministratorUids: [] RequestorUid: 10087 RequestorPackageName: com.zee5.aosp] ] with score 60 and providerId 2
+06-11 21:12:33.075 I/FA      (13574): App measurement initialized, version: 55005
+06-11 21:12:33.076 I/FA      (13574): To enable debug logging run: adb shell setprop log.tag.FA VERBOSE
+06-11 21:12:33.078 I/FA      (13574): To enable faster debug mode event logging run:
+06-11 21:12:33.078 I/FA      (13574):   adb shell setprop debug.firebase.analytics.app com.zee5.aosp
+06-11 21:12:33.106 D/stbdpc  (  397): STB_DPGetNumPaths[570]: num_paths: 1
+06-11 21:12:33.116 I/lowmemorykiller(  231): medium memory pressure event is triggered for new strategy
+06-11 21:12:33.116 D/lowmemorykiller(  231): LMKD mp_event_psi kill_reasons available are PRESSURE_AFTER_KILL, NOT_RESPONDING, LOW_SWAP_AND_THRASHING, LOW_MEM_AND_SWAP, LOW_MEM_AND_THRASHING, DIRECT_RECL_AND_THRASHING
+06-11 21:12:33.116 D/lowmemorykiller(  231): LMKD mp_event_psi kill_reason received= -1
+06-11 21:12:33.205 D/dvb_iptv(  397): ReadEmmNetworkTask[1537]: EMM Select Timeout Occured 57
+06-11 21:12:33.207 D/stbdpc  (  397): STB_DPGetNumPaths[570]: num_paths: 1
+06-11 21:12:33.217 I/lowmemorykiller(  231): medium memory pressure event is triggered for new strategy
+06-11 21:12:33.217 D/lowmemorykiller(  231): LMKD mp_event_psi kill_reasons available are PRESSURE_AFTER_KILL, NOT_RESPONDING, LOW_SWAP_AND_THRASHING, LOW_MEM_AND_SWAP, LOW_MEM_AND_THRASHING, DIRECT_RECL_AND_THRASHING
+06-11 21:12:33.217 D/lowmemorykiller(  231): LMKD mp_event_psi kill_reason received= -1
+06-11 21:12:33.257 E/BufferQueueProducer(  393): [com.jio.yt/dev.cobalt.app.MainActivity#0](id:18900000020,api:0,p:-1,c:393) disconnect: not connected (req=1)
+06-11 21:12:33.257 W/libEGL  (13448): EGLNativeWindowType 0xf4585808 disconnect failed
+06-11 21:12:33.295 I/com.jio.yt(13448): oneway function results will be dropped but finished with status OK and parcel size 4
+06-11 21:12:33.302 I/e.swalekh.abct( 1359): oneway function results will be dropped but finished with status OK and parcel size 4
+06-11 21:12:33.304 I/CleverTap(13574): CleverTap SDK initialized with accountId: RKW-4R7-785Z accountToken: a24-032 accountRegion: null
+06-11 21:12:33.307 D/stbdpc  (  397): STB_DPGetNumPaths[570]: num_paths: 1
+06-11 21:12:33.313 E/DynamiteModule(13574): Invalid GmsCore APK, remote loading disabled.
+06-11 21:12:33.313 I/DynamiteModule(13574): Considering local module com.google.android.gms.cast_tv_dynamite:1 and remote module com.google.android.gms.cast_tv_dynamite:0
+06-11 21:12:33.313 I/DynamiteModule(13574): Selected local version of com.google.android.gms.cast_tv_dynamite
+06-11 21:12:33.314 D/JioSTBMRServer-SERVICE( 3589): InetSocketAddress(InetAddress.getByName(inetAddress.hostAddress)-/192.168.1.255
+06-11 21:12:33.314 D/JioSTBMRServer-SERVICE( 3589): #beacon:RKISBFJ60000097:0:false:0:1:SV=181024 , 192.168.1.255
+06-11 21:12:33.317 I/lowmemorykiller(  231): medium memory pressure event is triggered for new strategy
+06-11 21:12:33.317 D/lowmemorykiller(  231): LMKD mp_event_psi kill_reasons available are PRESSURE_AFTER_KILL, NOT_RESPONDING, LOW_SWAP_AND_THRASHING, LOW_MEM_AND_SWAP, LOW_MEM_AND_THRASHING, DIRECT_RECL_AND_THRASHING
+06-11 21:12:33.317 D/lowmemorykiller(  231): LMKD mp_event_psi kill_reason received= -1
+06-11 21:12:33.318 D/JioSTBMRServer-SERVICE( 3589): InetSocketAddress(InetAddress.getByName(inetAddress.hostAddress)-/192.168.1.255
+06-11 21:12:33.318 D/JioSTBMRServer-SERVICE( 3589): #broadcast IP:192.168.1.255
+06-11 21:12:33.337 W/FA      (13574): Service invalid
+06-11 21:12:33.407 D/stbdpc  (  397): STB_DPGetNumPaths[570]: num_paths: 1
+06-11 21:12:33.417 I/lowmemorykiller(  231): medium memory pressure event is triggered for new strategy
+06-11 21:12:33.418 D/lowmemorykiller(  231): LMKD mp_event_psi kill_reasons available are PRESSURE_AFTER_KILL, NOT_RESPONDING, LOW_SWAP_AND_THRASHING, LOW_MEM_AND_SWAP, LOW_MEM_AND_THRASHING, DIRECT_RECL_AND_THRASHING
+06-11 21:12:33.418 D/lowmemorykiller(  231): LMKD mp_event_psi kill_reason received= -1
+06-11 21:12:33.428 W/PlayCore(13574): UID: [10087]  PID: [13574] PhoneskyVerificationUtils : Play Store package is not found.
+06-11 21:12:33.435 I/FA      (13574): Tag Manager is not found and thus will not be used
+06-11 21:12:33.507 D/stbdpc  (  397): STB_DPGetNumPaths[570]: num_paths: 1
+06-11 21:12:33.518 I/lowmemorykiller(  231): medium memory pressure event is triggered for new strategy
+06-11 21:12:33.518 D/lowmemorykiller(  231): LMKD mp_event_psi kill_reasons available are PRESSURE_AFTER_KILL, NOT_RESPONDING, LOW_SWAP_AND_THRASHING, LOW_MEM_AND_SWAP, LOW_MEM_AND_THRASHING, DIRECT_RECL_AND_THRASHING
+06-11 21:12:33.518 D/lowmemorykiller(  231): LMKD mp_event_psi kill_reason received= -1
+06-11 21:12:33.607 D/stbdpc  (  397): STB_DPGetNumPaths[570]: num_paths: 1
+06-11 21:12:33.618 I/lowmemorykiller(  231): medium memory pressure event is triggered for new strategy
+06-11 21:12:33.619 D/lowmemorykiller(  231): LMKD mp_event_psi kill_reasons available are PRESSURE_AFTER_KILL, NOT_RESPONDING, LOW_SWAP_AND_THRASHING, LOW_MEM_AND_SWAP, LOW_MEM_AND_THRASHING, DIRECT_RECL_AND_THRASHING
+06-11 21:12:33.619 D/lowmemorykiller(  231): LMKD mp_event_psi kill_reason received= -1
+06-11 21:12:33.705 D/dvb_iptv(  397): ReadEmmNetworkTask[1537]: EMM Select Timeout Occured 58
+06-11 21:12:33.707 D/stbdpc  (  397): STB_DPGetNumPaths[570]: num_paths: 1
+06-11 21:12:33.716 E/ReceiverMediaUtils(13574): The load intent doesn't have the load request data extra
+06-11 21:12:33.719 I/lowmemorykiller(  231): medium memory pressure event is triggered for new strategy
+06-11 21:12:33.719 D/lowmemorykiller(  231): LMKD mp_event_psi kill_reasons available are PRESSURE_AFTER_KILL, NOT_RESPONDING, LOW_SWAP_AND_THRASHING, LOW_MEM_AND_SWAP, LOW_MEM_AND_THRASHING, DIRECT_RECL_AND_THRASHING
+06-11 21:12:33.719 D/lowmemorykiller(  231): LMKD mp_event_psi kill_reason received= -1
+06-11 21:12:33.762 I/Choreographer(13574): Skipped 47 frames!  The application may be doing too much work on its main thread.
+06-11 21:12:33.770 V/DigitalSignage(  633): Package Name: null
+06-11 21:12:33.770 V/DigitalSignage(  633): Left: 0
+06-11 21:12:33.770 V/DigitalSignage(  633): Right: 0
+06-11 21:12:33.770 V/DigitalSignage(  633): Top: 0
+06-11 21:12:33.770 V/DigitalSignage(  633): Bottom: 0
+06-11 21:12:33.771 D/DigitalSignage(  633): else - Package Name :: null left : 0 right :: 0 top :: 0 bottom :: 0 dfu-right :: 1920 dfu-bottom :: 1080
+06-11 21:12:33.771 V/DigitalSignage(  633): Package Name: null
+06-11 21:12:33.771 V/DigitalSignage(  633): Left: 0
+06-11 21:12:33.771 V/DigitalSignage(  633): Right: 0
+06-11 21:12:33.771 V/DigitalSignage(  633): Top: 0
+06-11 21:12:33.771 V/DigitalSignage(  633): Bottom: 0
+06-11 21:12:33.771 D/DigitalSignage(  633): else - Package Name :: null left : 0 right :: 0 top :: 0 bottom :: 0 dfu-right :: 1920 dfu-bottom :: 1080
+06-11 21:12:33.785 I/hwservicemanager(  233): getTransport: Cannot find entry android.hardware.configstore@1.0::ISurfaceFlingerConfigs/default in either framework or device manifest.
+06-11 21:12:33.804 D/BluetoothAdapter( 3050): isLeEnabled(): ON
+06-11 21:12:33.808 D/stbdpc  (  397): STB_DPGetNumPaths[570]: num_paths: 1
+06-11 21:12:33.814 D/BluetoothAdapter( 3050): isLeEnabled(): ON
+06-11 21:12:33.825 D/BluetoothAdapterService(  764): getAdapterService() - returning com.android.bluetooth.btservice.AdapterService@cf08a1b
+06-11 21:12:33.898 I/lowmemorykiller(  231): medium memory pressure event is triggered for new strategy
+06-11 21:12:33.899 D/lowmemorykiller(  231): LMKD mp_event_psi kill_reasons available are PRESSURE_AFTER_KILL, NOT_RESPONDING, LOW_SWAP_AND_THRASHING, LOW_MEM_AND_SWAP, LOW_MEM_AND_THRASHING, DIRECT_RECL_AND_THRASHING
+06-11 21:12:33.899 D/lowmemorykiller(  231): LMKD mp_event_psi kill_reason received= -1
+06-11 21:12:33.908 D/stbdpc  (  397): STB_DPGetNumPaths[570]: num_paths: 1
+06-11 21:12:33.932 I/OpenGLRenderer(13574): Davey! duration=959ms; Flags=1, IntendedVsync=2384115928805, Vsync=2384900045456, OldestInputEvent=9223372036854775807, NewestInputEvent=0, HandleInputStart=2384915318344, AnimationStart=2384915321760, PerformTraversalsStart=2384915637302, DrawStart=2384964941635, SyncQueued=2384966417969, SyncStart=2384975608802, IssueDrawCommandsStart=2384975723344, SwapBuffers=2385083182969, FrameCompleted=2385085111219, DequeueBufferDuration=1720500, QueueBufferDuration=694292, GpuCompleted=0, 
+06-11 21:12:33.933 V/DigitalSignage(  633): Package Name: null
+06-11 21:12:33.933 V/DigitalSignage(  633): Left: 0
+06-11 21:12:33.933 V/DigitalSignage(  633): Right: 0
+06-11 21:12:33.933 V/DigitalSignage(  633): Top: 0
+06-11 21:12:33.933 V/DigitalSignage(  633): Bottom: 0
+06-11 21:12:33.934 D/DigitalSignage(  633): else - Package Name :: null left : 0 right :: 0 top :: 0 bottom :: 0 dfu-right :: 1920 dfu-bottom :: 1080
+06-11 21:12:33.934 V/DigitalSignage(  633): Package Name: null
+06-11 21:12:33.934 V/DigitalSignage(  633): Left: 0
+06-11 21:12:33.934 V/DigitalSignage(  633): Right: 0
+06-11 21:12:33.934 V/DigitalSignage(  633): Top: 0
+06-11 21:12:33.934 V/DigitalSignage(  633): Bottom: 0
+06-11 21:12:33.934 D/DigitalSignage(  633): else - Package Name :: null left : 0 right :: 0 top :: 0 bottom :: 0 dfu-right :: 1920 dfu-bottom :: 1080
+06-11 21:12:33.937 V/DigitalSignage(  633): Package Name: null
+06-11 21:12:33.937 V/DigitalSignage(  633): Left: 0
+06-11 21:12:33.937 V/DigitalSignage(  633): Right: 0
+06-11 21:12:33.937 V/DigitalSignage(  633): Top: 0
+06-11 21:12:33.937 V/DigitalSignage(  633): Bottom: 0
+06-11 21:12:33.937 D/DigitalSignage(  633): else - Package Name :: null left : 0 right :: 0 top :: 0 bottom :: 0 dfu-right :: 1920 dfu-bottom :: 1080
+06-11 21:12:33.938 V/DigitalSignage(  633): Package Name: null
+06-11 21:12:33.938 V/DigitalSignage(  633): Left: 0
+06-11 21:12:33.938 V/DigitalSignage(  633): Right: 0
+06-11 21:12:33.938 V/DigitalSignage(  633): Top: 0
+06-11 21:12:33.938 V/DigitalSignage(  633): Bottom: 0
+06-11 21:12:33.938 D/DigitalSignage(  633): else - Package Name :: null left : 0 right :: 0 top :: 0 bottom :: 0 dfu-right :: 1920 dfu-bottom :: 1080
+06-11 21:12:33.963 V/DigitalSignage(  633): Package Name: null
+06-11 21:12:33.963 V/DigitalSignage(  633): Left: 0
+06-11 21:12:33.963 V/DigitalSignage(  633): Right: 0
+06-11 21:12:33.963 V/DigitalSignage(  633): Top: 0
+06-11 21:12:33.963 V/DigitalSignage(  633): Bottom: 0
+06-11 21:12:33.963 D/DigitalSignage(  633): else - Package Name :: null left : 0 right :: 0 top :: 0 bottom :: 0 dfu-right :: 1920 dfu-bottom :: 1080
+06-11 21:12:33.963 V/DigitalSignage(  633): Package Name: null
+06-11 21:12:33.963 V/DigitalSignage(  633): Left: 0
+06-11 21:12:33.963 V/DigitalSignage(  633): Right: 0
+06-11 21:12:33.963 V/DigitalSignage(  633): Top: 0
+06-11 21:12:33.963 V/DigitalSignage(  633): Bottom: 0
+06-11 21:12:33.964 D/DigitalSignage(  633): else - Package Name :: null left : 0 right :: 0 top :: 0 bottom :: 0 dfu-right :: 1920 dfu-bottom :: 1080
+06-11 21:12:33.966 I/android.hardware.power-service.libperfmgr(  366): Power setBoost: INTERACTION duration: 0
+06-11 21:12:33.967 I/libperfmgr(  366): Do Powerhint: INTERACTION
+06-11 21:12:33.975 E/libc    (13574): Access denied finding property "ro.serialno"
+06-11 21:12:33.999 I/lowmemorykiller(  231): medium memory pressure event is triggered for new strategy
+06-11 21:12:33.999 D/lowmemorykiller(  231): LMKD mp_event_psi kill_reasons available are PRESSURE_AFTER_KILL, NOT_RESPONDING, LOW_SWAP_AND_THRASHING, LOW_MEM_AND_SWAP, LOW_MEM_AND_THRASHING, DIRECT_RECL_AND_THRASHING
+06-11 21:12:33.999 D/lowmemorykiller(  231): LMKD mp_event_psi kill_reason received= -1
+06-11 21:12:33.967 W/DefaultDispatch(13574): type=1400 audit(0.0:2948): avc: denied { read } for name="u:object_r:serialno_prop:s0" dev="tmpfs" ino=373 scontext=u:r:untrusted_app:s0:c87,c256,c512,c768 tcontext=u:object_r:serialno_prop:s0 tclass=file permissive=0 app=com.zee5.aosp
+06-11 21:12:34.008 D/stbdpc  (  397): STB_DPGetNumPaths[570]: num_paths: 1
+06-11 21:12:34.012 W/ServiceManager(  393): Permission failure: android.permission.ACCESS_SURFACE_FLINGER from uid=10087 pid=13574
+06-11 21:12:34.012 D/PermissionCache(  393): checking android.permission.ACCESS_SURFACE_FLINGER for uid=10087 => denied (1650 us)
+06-11 21:12:34.014 D/rtk_heartbeat(  349): heartbeat_timed_out: heartbeatCmdCount = 2364, expected nextSeqNum = 2364
+06-11 21:12:34.017 D/rtk_heartbeat(  349): rtkbt_heartbeat_cmpl_cback: Current SeqNum = 2364,should SeqNum=2364, status = 0
+06-11 21:12:34.023 I/ActivityTaskManager(  633): Displayed com.zee5.aosp/com.zee5.android.launch.presentation.AppStartActivity: +1s645ms
+06-11 21:12:34.052 D/JioStbInactivityTimer(  926): Timer: count 958 warningTimeout:10680 timeout:10800
+06-11 21:12:34.053 D/JioStbInactivityTimer(  926): isUserActive: Curr:1425795 Prev:1425795
+06-11 21:12:34.064 D/NetflixService(  969): onForegroundActivitiesChanged pid:13448,uid:10093,fg:false
+06-11 21:12:34.070 D/NetflixService(  969): processName:com.netflix.ninja,importance:300
+06-11 21:12:34.099 I/lowmemorykiller(  231): medium memory pressure event is triggered for new strategy
+06-11 21:12:34.099 D/lowmemorykiller(  231): LMKD mp_event_psi kill_reasons available are PRESSURE_AFTER_KILL, NOT_RESPONDING, LOW_SWAP_AND_THRASHING, LOW_MEM_AND_SWAP, LOW_MEM_AND_THRASHING, DIRECT_RECL_AND_THRASHING
+06-11 21:12:34.099 D/lowmemorykiller(  231): LMKD mp_event_psi kill_reason received= -1
+06-11 21:12:34.108 D/stbdpc  (  397): STB_DPGetNumPaths[570]: num_paths: 1
+06-11 21:12:34.111 D/CompatibilityChangeReporter(  633): Compat change id reported: 136274596; UID 10087; state: ENABLED
+06-11 21:12:34.116 V/DigitalSignage(  633): Package Name: null
+06-11 21:12:34.116 V/DigitalSignage(  633): Left: 0
+06-11 21:12:34.116 V/DigitalSignage(  633): Right: 0
+06-11 21:12:34.116 V/DigitalSignage(  633): Top: 0
+06-11 21:12:34.116 V/DigitalSignage(  633): Bottom: 0
+06-11 21:12:34.116 D/DigitalSignage(  633): else - Package Name :: null left : 0 right :: 0 top :: 0 bottom :: 0 dfu-right :: 1920 dfu-bottom :: 1080
+06-11 21:12:34.133 V/DigitalSignage(  633): Package Name: null
+06-11 21:12:34.133 V/DigitalSignage(  633): Left: 0
+06-11 21:12:34.133 V/DigitalSignage(  633): Right: 0
+06-11 21:12:34.133 V/DigitalSignage(  633): Top: 0
+06-11 21:12:34.133 V/DigitalSignage(  633): Bottom: 0
+06-11 21:12:34.134 D/DigitalSignage(  633): else - Package Name :: null left : 0 right :: 0 top :: 0 bottom :: 0 dfu-right :: 1920 dfu-bottom :: 1080
+06-11 21:12:34.200 I/lowmemorykiller(  231): medium memory pressure event is triggered for new strategy
+06-11 21:12:34.200 D/lowmemorykiller(  231): LMKD mp_event_psi kill_reasons available are PRESSURE_AFTER_KILL, NOT_RESPONDING, LOW_SWAP_AND_THRASHING, LOW_MEM_AND_SWAP, LOW_MEM_AND_THRASHING, DIRECT_RECL_AND_THRASHING
+06-11 21:12:34.200 D/lowmemorykiller(  231): LMKD mp_event_psi kill_reason received= -1
+06-11 21:12:34.205 D/dvb_iptv(  397): ReadEmmNetworkTask[1537]: EMM Select Timeout Occured 59
+06-11 21:12:34.208 D/[212   ] JioAccount-ADC( 2131): v2.a a> Event: XJSSOE3
+06-11 21:12:34.208 V/[212   ] JioAccount-ADC( 2131): v2.a a> XJSSOE3	PARAMETERS:
+06-11 21:12:34.208 D/stbdpc  (  397): STB_DPGetNumPaths[570]: num_paths: 1
+06-11 21:12:34.209 D/[257   ] JioAccount-ADC( 2131): com.jio.adc.core.b c> Getting ServiceInfo
+06-11 21:12:34.210 D/[257   ] JioAccount-ADC( 2131): com.jio.adc.core.b c> Starting Bind...
+06-11 21:12:34.213 D/[2     ] JioAccount-ADC( 2131): com.jio.adc.core.b$2 onServiceConnected> Connected
+06-11 21:12:34.214 D/[2     ] JioAccount-ADC( 2131): com.jio.adc.core.b$c$1 h> PROCESSING EVENT: XJSSOE3; TIME: 11-06-25 21:12:34:209; PARAMETERS: {"XJSSOP13":"com.zee5.aosp","XJSSOP14":true,"XJSSOP15":""}
+06-11 21:12:34.215 D/[257   ] JioAccount-ADC( 2131): com.jio.adc.core.b c> Binding...
+06-11 21:12:34.227 V/[2     ] JioAccount-ADC( 2131): com.jio.adc.core.b$c$1 h> Event Written: XJSSOE3; TIME: 11-06-25 21:12:34:209; PARAMETERS: {"XJSSOP13":"com.zee5.aosp","XJSSOP14":true,"XJSSOP15":""}
+06-11 21:12:34.301 I/lowmemorykiller(  231): medium memory pressure event is triggered for new strategy
+06-11 21:12:34.301 D/lowmemorykiller(  231): LMKD mp_event_psi kill_reasons available are PRESSURE_AFTER_KILL, NOT_RESPONDING, LOW_SWAP_AND_THRASHING, LOW_MEM_AND_SWAP, LOW_MEM_AND_THRASHING, DIRECT_RECL_AND_THRASHING
+06-11 21:12:34.301 D/lowmemorykiller(  231): LMKD mp_event_psi kill_reason received= -1
+06-11 21:12:34.309 D/stbdpc  (  397): STB_DPGetNumPaths[570]: num_paths: 1
+06-11 21:12:34.401 I/lowmemorykiller(  231): medium memory pressure event is triggered for new strategy
+06-11 21:12:34.401 D/lowmemorykiller(  231): LMKD mp_event_psi kill_reasons available are PRESSURE_AFTER_KILL, NOT_RESPONDING, LOW_SWAP_AND_THRASHING, LOW_MEM_AND_SWAP, LOW_MEM_AND_THRASHING, DIRECT_RECL_AND_THRASHING
+06-11 21:12:34.401 D/lowmemorykiller(  231): LMKD mp_event_psi kill_reason received= -1
+06-11 21:12:34.409 D/stbdpc  (  397): STB_DPGetNumPaths[570]: num_paths: 1
+06-11 21:12:34.471 I/ThermalService(  969): CPU temperatures: [61.9]
+06-11 21:12:34.501 I/lowmemorykiller(  231): medium memory pressure event is triggered for new strategy
+06-11 21:12:34.502 D/lowmemorykiller(  231): LMKD mp_event_psi kill_reasons available are PRESSURE_AFTER_KILL, NOT_RESPONDING, LOW_SWAP_AND_THRASHING, LOW_MEM_AND_SWAP, LOW_MEM_AND_THRASHING, DIRECT_RECL_AND_THRASHING
+06-11 21:12:34.502 D/lowmemorykiller(  231): LMKD mp_event_psi kill_reason received= -1
+06-11 21:12:34.509 D/stbdpc  (  397): STB_DPGetNumPaths[570]: num_paths: 1
+06-11 21:12:34.532 I/com.zee5.aosp(13574): Background concurrent copying GC freed 207045(12MB) AllocSpace objects, 127(6840KB) LOS objects, 49% free, 8167KB/15MB, paused 245us total 147.702ms
+06-11 21:12:34.558 W/FA      (13574): Callable skipped the worker queue.
+06-11 21:12:34.580 W/FA      (13574): Callable skipped the worker queue.
+06-11 21:12:34.602 I/lowmemorykiller(  231): medium memory pressure event is triggered for new strategy
+06-11 21:12:34.602 D/lowmemorykiller(  231): LMKD mp_event_psi kill_reasons available are PRESSURE_AFTER_KILL, NOT_RESPONDING, LOW_SWAP_AND_THRASHING, LOW_MEM_AND_SWAP, LOW_MEM_AND_THRASHING, DIRECT_RECL_AND_THRASHING
+06-11 21:12:34.602 D/lowmemorykiller(  231): LMKD mp_event_psi kill_reason received= -1
+06-11 21:12:34.609 D/stbdpc  (  397): STB_DPGetNumPaths[570]: num_paths: 1
+06-11 21:12:34.667 D/ltts_ip_emm(  397): LTTS_IP_DMXStartEMM[381]: parse_emm_cat_status failed
+06-11 21:12:34.702 I/lowmemorykiller(  231): medium memory pressure event is triggered for new strategy
+06-11 21:12:34.702 D/lowmemorykiller(  231): LMKD mp_event_psi kill_reasons available are PRESSURE_AFTER_KILL, NOT_RESPONDING, LOW_SWAP_AND_THRASHING, LOW_MEM_AND_SWAP, LOW_MEM_AND_THRASHING, DIRECT_RECL_AND_THRASHING
+06-11 21:12:34.702 D/lowmemorykiller(  231): LMKD mp_event_psi kill_reason received= -1
+06-11 21:12:34.705 D/dvb_iptv(  397): ReadEmmNetworkTask[1537]: EMM Select Timeout Occured 60
+06-11 21:12:34.705 D/stbresmgr(  397): STB_RESNumTuners[315]: num_tuners: 3
+06-11 21:12:34.705 E/dvb_iptv(  397): IPTV_GetDvbIpPacketDetails[684]: No valid ECM iptv_handle
+06-11 21:12:34.705 D/dvb_iptv(  397): IPTV_GetDvbIpPacketDetails[688]: EMM Pkt stat received_packets:0 lost_packets:0 recov_packets:0 
+06-11 21:12:34.705 D/dvb_iptv(  397): getPktDetailOnRetry[710]: Failed to fetch packet details
+06-11 21:12:34.705 D/dvb_iptv(  397): ReadEmmNetworkTask[1582]: signal emm restart thread
+06-11 21:12:34.705 D/dvb_iptv(  397): IPTV_Emm_Stop[2245]: IPTV_Emm_Stop called
+06-11 21:12:34.705 D/ltts_ip_emm(  397): CloseEmmCasSession[446]: EMM CAS CloseSession CASSession ID:f07c2c00
+06-11 21:12:34.705 I/Aml_MP  (  397): AmlVMXIptvCas_V2 dtor AmlVMXIptvCas_V2
+06-11 21:12:34.705 I/Aml_MP  (  397): AmCasLibWrapper [~AmCasLibWrapper:47] 
+06-11 21:12:34.705 D/am_cas_api(  397): [releaseAmCas/294]
+06-11 21:12:34.705 V/AVPIPTV (  397): [0] ~AmCasIPTVSC2 at # 707, class_instance_index=0
+06-11 21:12:34.705 I/Aml_MP  (  397): AmCasLibWrapper delete mCasObj
+06-11 21:12:34.705 I/Aml_MP  (  397): AmlCasBase [~AmlCasBase:89] 
+06-11 21:12:34.705 D/ltts_ip_emm(  397): CloseEmmCasSession[450]: Aml_MP_CAS_CloseSession_Emm | ret_Aml: 0
+06-11 21:12:34.709 D/stbdpc  (  397): STB_DPGetNumPaths[570]: num_paths: 1
+06-11 21:12:34.747 I/starboard(13448): Prepare to suspend
+06-11 21:12:34.748 I/starboard_media(13448): Suspend
+06-11 21:12:34.748 I/starboard_media(13448): Media focus: NONE
+06-11 21:12:34.748 D/ConnectivityService(  633): releasing NetworkRequest [ TRACK_DEFAULT id=31, [ Capabilities: INTERNET&NOT_RESTRICTED&TRUSTED Uid: 10093 AdministratorUids: [] RequestorUid: 10093 RequestorPackageName: com.jio.yt] ] (release request)
+06-11 21:12:34.749 I/starboard_media(13448): MediaSession setPlaybackState: NONE, position: -1 ms, speed: 0.000000 x
+06-11 21:12:34.751 V/AvrcpMediaPlayerWrapper(  764): onPlaybackStateChanged(): com.jio.yt : PlaybackState {state=0, position=-1, buffered position=0, speed=0.0, updated=2385902, actions=0, custom actions=[], active item id=-1, error=null}
+06-11 21:12:34.752 W/AvrcpMediaPlayerWrapper(  764): onPlaybackStateChanged(): com.jio.yt tried to update with no new data
+06-11 21:12:34.772 W/FA      (13574): Callable skipped the worker queue.
+06-11 21:12:34.803 I/lowmemorykiller(  231): medium memory pressure event is triggered for new strategy
+06-11 21:12:34.803 D/lowmemorykiller(  231): LMKD mp_event_psi kill_reasons available are PRESSURE_AFTER_KILL, NOT_RESPONDING, LOW_SWAP_AND_THRASHING, LOW_MEM_AND_SWAP, LOW_MEM_AND_THRASHING, DIRECT_RECL_AND_THRASHING
+06-11 21:12:34.803 D/lowmemorykiller(  231): LMKD mp_event_psi kill_reason received= -1
+06-11 21:12:34.809 D/stbdpc  (  397): STB_DPGetNumPaths[570]: num_paths: 1
+06-11 21:12:34.896 D/sub_mixing_factory(  348): [out_standby_subMixingPCM:1324] out_stream(0xee269000) usecase: PCM_NORMAL
+06-11 21:12:34.896 I/sub_mixing_factory(  348): [usecase_change_validate_l_sm:1170] cur dev masks:0x1, delete out usecase:PCM_NORMAL
+06-11 21:12:34.896 I/sub_mixing_factory(  348): [usecase_change_validate_l_sm:1180] standby unmask usecase PCM_NORMAL
+06-11 21:12:34.896 I/amlAudioMixer(  348): [delete_mixer_input_port:197] input port ID:0, type:PCM_SYSTEM, cur mask:0x1
+06-11 21:12:34.899 I/system_server(  633): oneway function results will be dropped but finished with status OK and parcel size 4
+06-11 21:12:34.903 I/lowmemorykiller(  231): medium memory pressure event is triggered for new strategy
+06-11 21:12:34.910 D/stbdpc  (  397): STB_DPGetNumPaths[570]: num_paths: 1
+06-11 21:12:35.010 D/stbdpc  (  397): STB_DPGetNumPaths[570]: num_paths: 1
+06-11 21:12:35.014 D/rtk_heartbeat(  349): heartbeat_timed_out: heartbeatCmdCount = 2365, expected nextSeqNum = 2365
+06-11 21:12:35.015 D/rtk_heartbeat(  349): rtkbt_heartbeat_cmpl_cback: Current SeqNum = 2365,should SeqNum=2365, status = 0
+06-11 21:12:35.052 D/JioStbInactivityTimer(  926): Timer: count 959 warningTimeout:10680 timeout:10800
+06-11 21:12:35.053 D/JioStbInactivityTimer(  926): isUserActive: Curr:1425795 Prev:1425795
+06-11 21:12:35.110 D/stbdpc  (  397): STB_DPGetNumPaths[570]: num_paths: 1
+06-11 21:12:35.205 D/dvb_iptv(  397): ReadEmmNetworkTask[1537]: EMM Select Timeout Occured 1
+06-11 21:12:35.206 D/stbhwnet(  397): STB_NWDropMembership[1331]: using IPV6 protocol in dropmembership
+06-11 21:12:35.206 D/stbhwnet(  397): STB_NWDropMembership[1335]: group_address: '232.24.3.241', source_address: '10.70.220.50'
+06-11 21:12:35.206 D/stbhwnet(  397): STB_NWDropMembership[1353]: src url SSM enabled
+06-11 21:12:35.207 D/stbhwnet(  397): get_any_multicast_interface[1061]: Found g_nw_interface wlan0, ifindex 8
+06-11 21:12:35.207 D/stbhwnet(  397): STB_NWDropMembership[1376]: sockopt_ret: 92 | Protocol not available
+06-11 21:12:35.207 D/stbhwnet(  397): STB_NWDropMembership[1377]: Adding source multicast group error
+06-11 21:12:35.207 D/stbhwnet(  397): STB_NWDropMembership[1331]: using IPV6 protocol in dropmembership
+06-11 21:12:35.207 D/stbhwnet(  397): STB_NWDropMembership[1335]: group_address: '232.24.3.241', source_address: '10.70.220.50'
+06-11 21:12:35.207 D/stbhwnet(  397): STB_NWDropMembership[1353]: src url SSM enabled
+06-11 21:12:35.207 D/stbhwnet(  397): get_any_multicast_interface[1061]: Found g_nw_interface wlan0, ifindex 8
+06-11 21:12:35.207 D/stbhwnet(  397): STB_NWDropMembership[1376]: sockopt_ret: 92 | Protocol not available
+06-11 21:12:35.207 D/stbhwnet(  397): STB_NWDropMembership[1377]: Adding source multicast group error
+06-11 21:12:35.207 D/stbhwnet(  397): STB_NWDropMembership[1331]: using IPV6 protocol in dropmembership
+06-11 21:12:35.207 D/stbhwnet(  397): STB_NWDropMembership[1335]: group_address: '232.24.3.241', source_address: '10.70.220.50'
+06-11 21:12:35.207 D/stbhwnet(  397): STB_NWDropMembership[1353]: src url SSM enabled
+06-11 21:12:35.208 D/stbhwnet(  397): get_any_multicast_interface[1061]: Found g_nw_interface wlan0, ifindex 8
+06-11 21:12:35.208 D/stbhwnet(  397): STB_NWDropMembership[1376]: sockopt_ret: 92 | Protocol not available
+06-11 21:12:35.208 D/stbhwnet(  397): STB_NWDropMembership[1377]: Adding source multicast group error
+06-11 21:12:35.208 D/stbhwnet(  397): STB_NWDropMembership[1331]: using IPV6 protocol in dropmembership
+06-11 21:12:35.208 D/stbhwnet(  397): STB_NWDropMembership[1335]: group_address: '232.24.3.241', source_address: '10.70.220.50'
+06-11 21:12:35.208 D/stbhwnet(  397): STB_NWDropMembership[1353]: src url SSM enabled
+06-11 21:12:35.209 D/stbhwnet(  397): get_any_multicast_interface[1061]: Found g_nw_interface wlan0, ifindex 8
+06-11 21:12:35.209 D/stbhwnet(  397): STB_NWDropMembership[1376]: sockopt_ret: 92 | Protocol not available
+06-11 21:12:35.209 D/stbhwnet(  397): STB_NWDropMembership[1377]: Adding source multicast group error
+06-11 21:12:35.209 E/DvbiInterface(  397): StopStartcurrentemmsession[1192]: sucessfully stop the emm session
+06-11 21:12:35.210 D/stbdpc  (  397): STB_DPGetNumPaths[570]: num_paths: 1
+06-11 21:12:35.310 D/stbdpc  (  397): STB_DPGetNumPaths[570]: num_paths: 1
+06-11 21:12:35.337 I/WifiService(  633): releaseMulticastLock uid=10083
+06-11 21:12:35.339 I/JTCLOG  ( 3612): JuiceModel ->  Discover Mesh ONT services started
+06-11 21:12:35.340 I/WifiService(  633): acquireMulticastLock uid=10083
+06-11 21:12:35.353 I/com.zee5.aosp(13574): oneway function results will be dropped but finished with status OK and parcel size 4
+06-11 21:12:35.356 I/e.swalekh.abct( 1359): oneway function results will be dropped but finished with status OK and parcel size 4
+06-11 21:12:35.362 D/JioSTBMRServer-SERVICE( 3589): InetSocketAddress(InetAddress.getByName(inetAddress.hostAddress)-/192.168.1.255
+06-11 21:12:35.362 D/JioSTBMRServer-SERVICE( 3589): #beacon:RKISBFJ60000097:0:false:0:1:SV=181024 , 192.168.1.255
+06-11 21:12:35.365 E/TaskPersister(  633): File error accessing recents directory (directory doesn't exist?).
+06-11 21:12:35.367 D/JioSTBMRServer-SERVICE( 3589): InetSocketAddress(InetAddress.getByName(inetAddress.hostAddress)-/192.168.1.255
+06-11 21:12:35.367 D/JioSTBMRServer-SERVICE( 3589): #broadcast IP:192.168.1.255
+06-11 21:12:35.410 D/stbdpc  (  397): STB_DPGetNumPaths[570]: num_paths: 1
