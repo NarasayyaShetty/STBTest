@@ -25,7 +25,7 @@ public class SonyLivPlayerScreenOutputs extends BaseTest {
 	String appVersionName;
 	boolean status;
 
-	@BeforeClass
+	@BeforeClass(alwaysRun=true)
 	public void setup() {
 		try {
 			s = new String[6];
@@ -43,7 +43,7 @@ public class SonyLivPlayerScreenOutputs extends BaseTest {
 		}
 	}
 
-	@Test(description = "Playing multiple contents", dataProvider = "sonyLivContentName", dataProviderClass = DataProviderClass.class, priority = 1,enabled=false)
+	@Test(description = "Playing multiple contents", dataProvider = "sonyLivContentName", dataProviderClass = DataProviderClass.class, priority = 1,enabled=true)
 	public void sonyLivePlayerResults(String contentName) {
 		try {
 			status=sl.searchAndPlay(contentName);
@@ -69,7 +69,7 @@ public class SonyLivPlayerScreenOutputs extends BaseTest {
 		Assert.assertFalse(true,"Intentionally failed testcase");
 	}
 	
-	@AfterClass
+	@AfterClass(alwaysRun=true)
 	public void navigateToHome() {
 		driver.pressKey(new KeyEvent(AndroidKey.HOME));
 	}

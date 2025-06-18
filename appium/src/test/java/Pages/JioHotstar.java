@@ -27,7 +27,7 @@ public class JioHotstar {
 
 	public void clickOnProfile() {
 		try {
-			WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(20));
+			WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(30));
 			WebElement profile = wait.until(ExpectedConditions.visibilityOfElementLocated(
 					AppiumBy.xpath("//android.widget.ImageView[@resource-id='in.startv.hotstar:id/iv_profile']")));
 			profile.click();
@@ -139,7 +139,7 @@ public class JioHotstar {
 		boolean status=false;
 		driver.pressKey(new KeyEvent(AndroidKey.BACK));
 		try {
-			WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(10));
+			WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(25));
 			WebElement watchMoreElement = wait.until(ExpectedConditions.visibilityOfElementLocated(AppiumBy.xpath(
 					"//android.widget.TextView[@resource-id='in.startv.hotstar:id/gtv_label' and @text='More Like This']")));
 			if (watchMoreElement.isDisplayed()) {

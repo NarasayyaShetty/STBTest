@@ -1,49 +1,97 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="11" passed="10" failed="1" skipped="0">
+<testng-results ignored="0" total="7" passed="6" failed="1" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2025-06-18T11:04:45 IST" name="Default suite" finished-at="2025-06-18T11:06:35 IST" duration-ms="110086">
+  <suite started-at="2025-06-18T13:12:39 IST" name="AllAppsTest" finished-at="2025-06-18T13:20:18 IST" duration-ms="459393">
     <groups>
     </groups>
-    <test started-at="2025-06-18T11:04:45 IST" name="Default test" finished-at="2025-06-18T11:06:35 IST" duration-ms="110086">
-      <class name="Tests.TestCase1">
-        <test-method is-config="true" signature="setUp()[pri:0, instance:Tests.TestCase1@273444fe]" started-at="2025-06-18T11:04:41 IST" name="setUp" finished-at="2025-06-18T11:04:45 IST" duration-ms="4551" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setUp -->
-        <test-method is-config="true" signature="configTest()[pri:0, instance:Tests.TestCase1@273444fe]" started-at="2025-06-18T11:04:45 IST" name="configTest" finished-at="2025-06-18T11:04:50 IST" duration-ms="5237" status="PASS">
+    <test started-at="2025-06-18T13:12:39 IST" name="Test" finished-at="2025-06-18T13:20:18 IST" duration-ms="459393">
+      <class name="Tests.HotstarPlayerScreenOutputs">
+        <test-method is-config="true" signature="configTest()[pri:0, instance:Tests.HotstarPlayerScreenOutputs@41d426b5]" started-at="2025-06-18T13:12:27 IST" name="configTest" finished-at="2025-06-18T13:12:39 IST" duration-ms="12237" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- configTest -->
-        <test-method signature="allAppLaunch(java.lang.String)[pri:0, instance:Tests.TestCase1@273444fe]" started-at="2025-06-18T11:04:50 IST" name="allAppLaunch" description="Launching all the apps one by one" data-provider="appName" finished-at="2025-06-18T11:05:01 IST" duration-ms="10380" status="PASS">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:Tests.HotstarPlayerScreenOutputs@41d426b5]" started-at="2025-06-18T13:12:39 IST" name="setUp" finished-at="2025-06-18T13:13:02 IST" duration-ms="23090" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="jioHotstarPlayreResult(java.lang.String)[pri:1, instance:Tests.HotstarPlayerScreenOutputs@41d426b5]" started-at="2025-06-18T13:13:02 IST" name="jioHotstarPlayreResult" description="Playing multiple contents" data-provider="hotstarContentName" finished-at="2025-06-18T13:14:23 IST" duration-ms="80550" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[hotstar]]>
+                <![CDATA[subham]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- allAppLaunch -->
-        <test-method signature="allAppLaunch(java.lang.String)[pri:0, instance:Tests.TestCase1@273444fe]" started-at="2025-06-18T11:05:01 IST" name="allAppLaunch" description="Launching all the apps one by one" data-provider="appName" finished-at="2025-06-18T11:05:01 IST" duration-ms="345" status="FAIL">
+        </test-method> <!-- jioHotstarPlayreResult -->
+        <test-method signature="jioHotstarPlayreResult(java.lang.String)[pri:1, instance:Tests.HotstarPlayerScreenOutputs@41d426b5]" started-at="2025-06-18T13:14:23 IST" name="jioHotstarPlayreResult" description="Playing multiple contents" data-provider="hotstarContentName" finished-at="2025-06-18T13:15:30 IST" duration-ms="67617" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[JioTV+]]>
+                <![CDATA[Salaar]]>
               </value>
             </param>
           </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- jioHotstarPlayreResult -->
+        <test-method signature="jioHotstarPlayreResult(java.lang.String)[pri:1, instance:Tests.HotstarPlayerScreenOutputs@41d426b5]" started-at="2025-06-18T13:15:30 IST" name="jioHotstarPlayreResult" description="Playing multiple contents" data-provider="hotstarContentName" finished-at="2025-06-18T13:16:45 IST" duration-ms="74719" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Bhagavanth Kesari]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- jioHotstarPlayreResult -->
+        <test-method signature="jioHotstarPlayreResult(java.lang.String)[pri:1, instance:Tests.HotstarPlayerScreenOutputs@41d426b5]" started-at="2025-06-18T13:16:45 IST" name="jioHotstarPlayreResult" description="Playing multiple contents" data-provider="hotstarContentName" finished-at="2025-06-18T13:17:52 IST" duration-ms="66911" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Captain America Brave new world]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- jioHotstarPlayreResult -->
+        <test-method signature="jioHotstarPlayreResult(java.lang.String)[pri:1, instance:Tests.HotstarPlayerScreenOutputs@41d426b5]" started-at="2025-06-18T13:17:52 IST" name="jioHotstarPlayreResult" description="Playing multiple contents" data-provider="hotstarContentName" finished-at="2025-06-18T13:19:03 IST" duration-ms="71102" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Tough me not]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- jioHotstarPlayreResult -->
+        <test-method signature="jioHotstarPlayreResult(java.lang.String)[pri:1, instance:Tests.HotstarPlayerScreenOutputs@41d426b5]" started-at="2025-06-18T13:19:03 IST" name="jioHotstarPlayreResult" description="Playing multiple contents" data-provider="hotstarContentName" finished-at="2025-06-18T13:20:11 IST" duration-ms="67921" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Anupama]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- jioHotstarPlayreResult -->
+        <test-method signature="adScreen()[pri:2, instance:Tests.HotstarPlayerScreenOutputs@41d426b5]" started-at="2025-06-18T13:20:11 IST" name="adScreen" finished-at="2025-06-18T13:20:15 IST" duration-ms="4102" status="FAIL">
           <exception class="java.lang.AssertionError">
             <message>
-              <![CDATA[Application is not launched, either app is not available in our list expected [true] but found [false]]]>
+              <![CDATA[Unable to search the content expected [false] but found [true]]]>
             </message>
             <full-stacktrace>
-              <![CDATA[java.lang.AssertionError: Application is not launched, either app is not available in our list expected [true] but found [false]
+              <![CDATA[java.lang.AssertionError: Unable to search the content expected [false] but found [true]
 at org.testng.Assert.fail(Assert.java:111)
 at org.testng.Assert.failNotEquals(Assert.java:1590)
-at org.testng.Assert.assertTrue(Assert.java:57)
-at Tests.TestCase1.allAppLaunch(TestCase1.java:30)
+at org.testng.Assert.assertFalse(Assert.java:79)
+at Tests.HotstarPlayerScreenOutputs.adScreen(HotstarPlayerScreenOutputs.java:88)
 at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
 at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -77,111 +125,16 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
           </exception> <!-- java.lang.AssertionError -->
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- allAppLaunch -->
-        <test-method signature="allAppLaunch(java.lang.String)[pri:0, instance:Tests.TestCase1@273444fe]" started-at="2025-06-18T11:05:01 IST" name="allAppLaunch" description="Launching all the apps one by one" data-provider="appName" finished-at="2025-06-18T11:05:12 IST" duration-ms="10478" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[Netflix]]>
-              </value>
-            </param>
-          </params>
+        </test-method> <!-- adScreen -->
+        <test-method is-config="true" signature="tearDownapp()[pri:0, instance:Tests.HotstarPlayerScreenOutputs@41d426b5]" started-at="2025-06-18T13:20:18 IST" name="tearDownapp" finished-at="2025-06-18T13:20:18 IST" duration-ms="70" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- allAppLaunch -->
-        <test-method signature="allAppLaunch(java.lang.String)[pri:0, instance:Tests.TestCase1@273444fe]" started-at="2025-06-18T11:05:12 IST" name="allAppLaunch" description="Launching all the apps one by one" data-provider="appName" finished-at="2025-06-18T11:05:22 IST" duration-ms="10459" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[primevideo]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- allAppLaunch -->
-        <test-method signature="allAppLaunch(java.lang.String)[pri:0, instance:Tests.TestCase1@273444fe]" started-at="2025-06-18T11:05:22 IST" name="allAppLaunch" description="Launching all the apps one by one" data-provider="appName" finished-at="2025-06-18T11:05:33 IST" duration-ms="10505" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[youtube]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- allAppLaunch -->
-        <test-method signature="allAppLaunch(java.lang.String)[pri:0, instance:Tests.TestCase1@273444fe]" started-at="2025-06-18T11:05:33 IST" name="allAppLaunch" description="Launching all the apps one by one" data-provider="appName" finished-at="2025-06-18T11:05:43 IST" duration-ms="10428" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[zee5]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- allAppLaunch -->
-        <test-method signature="allAppLaunch(java.lang.String)[pri:0, instance:Tests.TestCase1@273444fe]" started-at="2025-06-18T11:05:43 IST" name="allAppLaunch" description="Launching all the apps one by one" data-provider="appName" finished-at="2025-06-18T11:05:53 IST" duration-ms="10431" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[sonyLiv]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- allAppLaunch -->
-        <test-method signature="allAppLaunch(java.lang.String)[pri:0, instance:Tests.TestCase1@273444fe]" started-at="2025-06-18T11:05:53 IST" name="allAppLaunch" description="Launching all the apps one by one" data-provider="appName" finished-at="2025-06-18T11:06:04 IST" duration-ms="10471" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[sunNxt]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- allAppLaunch -->
-        <test-method signature="allAppLaunch(java.lang.String)[pri:0, instance:Tests.TestCase1@273444fe]" started-at="2025-06-18T11:06:04 IST" name="allAppLaunch" description="Launching all the apps one by one" data-provider="appName" finished-at="2025-06-18T11:06:14 IST" duration-ms="10479" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[docubay]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- allAppLaunch -->
-        <test-method signature="allAppLaunch(java.lang.String)[pri:0, instance:Tests.TestCase1@273444fe]" started-at="2025-06-18T11:06:14 IST" name="allAppLaunch" description="Launching all the apps one by one" data-provider="appName" finished-at="2025-06-18T11:06:25 IST" duration-ms="10399" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[hoichoi]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- allAppLaunch -->
-        <test-method signature="allAppLaunch(java.lang.String)[pri:0, instance:Tests.TestCase1@273444fe]" started-at="2025-06-18T11:06:25 IST" name="allAppLaunch" description="Launching all the apps one by one" data-provider="appName" finished-at="2025-06-18T11:06:35 IST" duration-ms="10414" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[discoveryplus]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- allAppLaunch -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:Tests.TestCase1@273444fe]" started-at="2025-06-18T11:06:35 IST" name="tearDown" finished-at="2025-06-18T11:06:35 IST" duration-ms="32" status="PASS">
+        </test-method> <!-- tearDownapp -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:Tests.HotstarPlayerScreenOutputs@41d426b5]" started-at="2025-06-18T13:20:19 IST" name="tearDown" finished-at="2025-06-18T13:20:21 IST" duration-ms="1515" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-      </class> <!-- Tests.TestCase1 -->
-    </test> <!-- Default test -->
-  </suite> <!-- Default suite -->
+      </class> <!-- Tests.HotstarPlayerScreenOutputs -->
+    </test> <!-- Test -->
+  </suite> <!-- AllAppsTest -->
 </testng-results>

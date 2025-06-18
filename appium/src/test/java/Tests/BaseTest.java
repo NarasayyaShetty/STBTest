@@ -15,6 +15,8 @@ import org.testng.annotations.BeforeClass;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.BeforeSuite;
 
+import PropertiesFiles.DataFromPropertiesFile;
+
 import static Utilities.AppiumUtils.*;
 import io.appium.java_client.android.AndroidDriver;
 import io.appium.java_client.android.nativekey.AndroidKey;
@@ -27,16 +29,16 @@ import static AppsTesting.AdbCommendsClass.*;
 public class BaseTest {
 	public AppiumDriverLocalService service;
 	public AndroidDriver driver;
-	String ip = "192.168.1.17";
+	String ip;
 	
-	@BeforeSuite(alwaysRun=true)
-	public void setUp(){
-		connectStb(ip);
-		
-	}
-
 	@BeforeClass(alwaysRun = true)
 	public void configTest() throws URISyntaxException, IOException, InterruptedException {
+		DataFromPropertiesFile dp=new DataFromPropertiesFile();
+		ip=System.getProperty("ipAddress")!=null?System.getProperty("ipAddress"):dp.getLocator("ip");
+		//ip=dp.getLocator("ip");
+		System.out.println(ip);
+		connectStb(ip);
+		
 		// code to automate the service
 		service = new AppiumServiceBuilder()
 				.withAppiumJS(
@@ -77,7 +79,7 @@ public class BaseTest {
 
 
 
-	@AfterSuite(alwaysRun = true)
+	@AfterClass(alwaysRun = true)
 	public void tearDown() {
 		try {
 			if (driver != null) {

@@ -5,9 +5,8 @@
     <classes>
       <class name="Tests.TestCase1">
         <methods>
-          <include name="configTest"/>
           <include name="allAppLaunch" invocation-numbers="1"/>
-          <include name="setUp"/>
+          <include name="configTest"/>
           <include name="tearDown"/>
         </methods>
       </class> <!-- Tests.TestCase1 -->

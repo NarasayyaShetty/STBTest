@@ -8,54 +8,20 @@
 <body>
 <table>
 <tr><th>Test</th><th># Passed</th><th># Skipped</th><th># Retried</th><th># Failed</th><th>Time (ms)</th><th>Included Groups</th><th>Excluded Groups</th></tr>
-<tr><th colspan="8">Default suite</th></tr>
-<tr><td><a href="#t0">Default test</a></td><td class="num">10</td><td class="num">0</td><td class="num">0</td><td class="num attn">1</td><td class="num">110,086</td><td></td><td></td></tr>
+<tr><th colspan="8">AllAppsTest</th></tr>
+<tr><td><a href="#t0">Test</a></td><td class="num">6</td><td class="num">0</td><td class="num">0</td><td class="num attn">1</td><td class="num">459,393</td><td></td><td></td></tr>
 </table>
-<table id='summary'><thead><tr><th>Class</th><th>Method</th><th>Start</th><th>Time (ms)</th></tr></thead><tbody><tr><th colspan="4">Default suite</th></tr></tbody><tbody id="t0"><tr><th colspan="4">Default test &#8212; failed</th></tr><tr class="failedeven"><td rowspan="1">Tests.TestCase1</td><td><a href="#m0">allAppLaunch</a></td><td rowspan="1">1750224901252</td><td rowspan="1">345</td></tr><tr><th colspan="4">Default test &#8212; passed</th></tr><tr class="passedeven"><td rowspan="10">Tests.TestCase1</td><td><a href="#m1">allAppLaunch</a></td><td rowspan="10">1750224943479</td><td rowspan="10">10431</td></tr><tr class="passedeven"><td><a href="#m2">allAppLaunch</a></td></tr><tr class="passedeven"><td><a href="#m3">allAppLaunch</a></td></tr><tr class="passedeven"><td><a href="#m4">allAppLaunch</a></td></tr><tr class="passedeven"><td><a href="#m5">allAppLaunch</a></td></tr><tr class="passedeven"><td><a href="#m6">allAppLaunch</a></td></tr><tr class="passedeven"><td><a href="#m7">allAppLaunch</a></td></tr><tr class="passedeven"><td><a href="#m8">allAppLaunch</a></td></tr><tr class="passedeven"><td><a href="#m9">allAppLaunch</a></td></tr><tr class="passedeven"><td><a href="#m10">allAppLaunch</a></td></tr></tbody>
+<table id='summary'><thead><tr><th>Class</th><th>Method</th><th>Start</th><th>Time (ms)</th></tr></thead><tbody><tr><th colspan="4">AllAppsTest</th></tr></tbody><tbody id="t0"><tr><th colspan="4">Test &#8212; failed</th></tr><tr class="failedeven"><td rowspan="1">Tests.HotstarPlayerScreenOutputs</td><td><a href="#m0">adScreen</a></td><td rowspan="1">1750233011612</td><td rowspan="1">4102</td></tr><tr><th colspan="4">Test &#8212; passed</th></tr><tr class="passedeven"><td rowspan="6">Tests.HotstarPlayerScreenOutputs</td><td><a href="#m1">jioHotstarPlayreResult</a></td><td rowspan="6">1750232943680</td><td rowspan="6">67921</td></tr><tr class="passedeven"><td><a href="#m2">jioHotstarPlayreResult</a></td></tr><tr class="passedeven"><td><a href="#m3">jioHotstarPlayreResult</a></td></tr><tr class="passedeven"><td><a href="#m4">jioHotstarPlayreResult</a></td></tr><tr class="passedeven"><td><a href="#m5">jioHotstarPlayreResult</a></td></tr><tr class="passedeven"><td><a href="#m6">jioHotstarPlayreResult</a></td></tr></tbody>
 </table>
-<h2>Default test</h2><h3 id="m0">Tests.TestCase1#allAppLaunch</h3><table class="result"><tr class="param"><th>Parameter #1</th></tr><tr class="param stripe"><td>JioTV+</td></tr><tr><th>Exception</th></tr><tr><td><div class="stacktrace">java.lang.AssertionError: Application is not launched, either app is not available in our list expected [true] but found [false]
-	at org.testng.Assert.fail(Assert.java:111)
-	at org.testng.Assert.failNotEquals(Assert.java:1590)
-	at org.testng.Assert.assertTrue(Assert.java:57)
-	at Tests.TestCase1.allAppLaunch(TestCase1.java:30)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
-	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
-	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
-	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:687)
-	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
-	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
-	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:995)
-	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
-	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
-	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+<h2>Test</h2><h3 id="m0">Tests.HotstarPlayerScreenOutputs#adScreen</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">java.lang.AssertionError: Unable to search the content expected [false] but found [true]
+	at Tests.HotstarPlayerScreenOutputs.adScreen(HotstarPlayerScreenOutputs.java:88)
 	at java.base/java.util.ArrayList.forEach(ArrayList.java:1540)
-	at org.testng.TestRunner.privateRun(TestRunner.java:741)
-	at org.testng.TestRunner.run(TestRunner.java:616)
-	at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
-	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
-	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
-	at org.testng.SuiteRunner.run(SuiteRunner.java:312)
-	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
-	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
-	at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
-	at org.testng.TestNG.runSuites(TestNG.java:1112)
-	at org.testng.TestNG.run(TestNG.java:1079)
-	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
-	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
-</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m1">Tests.TestCase1#allAppLaunch</h3><table class="result"><tr class="param"><th>Parameter #1</th></tr><tr class="param stripe"><td>sonyLiv</td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m2">Tests.TestCase1#allAppLaunch</h3><table class="result"><tr class="param"><th>Parameter #1</th></tr><tr class="param stripe"><td>zee5</td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m3">Tests.TestCase1#allAppLaunch</h3><table class="result"><tr class="param"><th>Parameter #1</th></tr><tr class="param stripe"><td>Netflix</td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m4">Tests.TestCase1#allAppLaunch</h3><table class="result"><tr class="param"><th>Parameter #1</th></tr><tr class="param stripe"><td>primevideo</td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m5">Tests.TestCase1#allAppLaunch</h3><table class="result"><tr class="param"><th>Parameter #1</th></tr><tr class="param stripe"><td>sunNxt</td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m6">Tests.TestCase1#allAppLaunch</h3><table class="result"><tr class="param"><th>Parameter #1</th></tr><tr class="param stripe"><td>youtube</td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m7">Tests.TestCase1#allAppLaunch</h3><table class="result"><tr class="param"><th>Parameter #1</th></tr><tr class="param stripe"><td>discoveryplus</td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m8">Tests.TestCase1#allAppLaunch</h3><table class="result"><tr class="param"><th>Parameter #1</th></tr><tr class="param stripe"><td>hotstar</td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m9">Tests.TestCase1#allAppLaunch</h3><table class="result"><tr class="param"><th>Parameter #1</th></tr><tr class="param stripe"><td>docubay</td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m10">Tests.TestCase1#allAppLaunch</h3><table class="result"><tr class="param"><th>Parameter #1</th></tr><tr class="param stripe"><td>hoichoi</td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+... Removed 30 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m1">Tests.HotstarPlayerScreenOutputs#jioHotstarPlayreResult</h3><table class="result"><tr class="param"><th>Parameter #1</th></tr><tr class="param stripe"><td>Anupama</td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m2">Tests.HotstarPlayerScreenOutputs#jioHotstarPlayreResult</h3><table class="result"><tr class="param"><th>Parameter #1</th></tr><tr class="param stripe"><td>Tough me not</td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m3">Tests.HotstarPlayerScreenOutputs#jioHotstarPlayreResult</h3><table class="result"><tr class="param"><th>Parameter #1</th></tr><tr class="param stripe"><td>Bhagavanth Kesari</td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m4">Tests.HotstarPlayerScreenOutputs#jioHotstarPlayreResult</h3><table class="result"><tr class="param"><th>Parameter #1</th></tr><tr class="param stripe"><td>Salaar</td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m5">Tests.HotstarPlayerScreenOutputs#jioHotstarPlayreResult</h3><table class="result"><tr class="param"><th>Parameter #1</th></tr><tr class="param stripe"><td>subham</td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m6">Tests.HotstarPlayerScreenOutputs#jioHotstarPlayreResult</h3><table class="result"><tr class="param"><th>Parameter #1</th></tr><tr class="param stripe"><td>Captain America Brave new world</td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
 </body>
 </html>
