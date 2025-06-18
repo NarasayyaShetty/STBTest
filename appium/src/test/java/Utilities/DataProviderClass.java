@@ -13,7 +13,7 @@ public class DataProviderClass {
 	//Adding hotstar contents names
 	@DataProvider(name="hotstarContentName")
 	public Object[][] JioHotstarContents(){
-		return new Object[][]{{"Salaar"},{"Bhagavanth Kesari"},{"Captain America Brave new world"},{"Tough me not"},{"Anupama"}};
+		return new Object[][]{{"subham"},{"Salaar"},{"Bhagavanth Kesari"},{"Captain America Brave new world"},{"Tough me not"},{"Anupama"}};
 	}
 	
 	@DataProvider(name="sonyLivContentName")

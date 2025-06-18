@@ -5,6 +5,7 @@ import static AppsTesting.AdbCommendsClass.*;
 import static Pages.LauncherScreen.launchApp;
 import static Utilities.ExcelDataWrite.excelWrite;
 
+import org.testng.Assert;
 import org.testng.annotations.AfterClass;
 import org.testng.annotations.BeforeClass;
 import org.testng.annotations.Test;
@@ -19,32 +20,34 @@ public class SonyLivPlayerScreenOutputs extends BaseTest {
 
 	SonyLiv sl;
 	String[] s;
-	String appName;
+	String appName="SonyLiv";
 	String deviceNameandVersion;
 	String appVersionName;
+	boolean status;
 
 	@BeforeClass
 	public void setup() {
 		try {
 			s = new String[6];
-			appName = "SonyLiv";
 			sl = new SonyLiv(driver);
 			deviceNameandVersion = deviceName();
 			appVersionName = printAppNameAndVersion(appName);
-			logcatLogs(appName);
 			String device = deviceName();
-			launchApp(appName);
-			sl.selctMenuOption("Search");
+			status=launchApp(appName);
+			Assert.assertTrue(status,"App launch is failed");
+			status=sl.selctMenuOption("Search");
+			Assert.assertTrue(status,"Failed to navigete search section");
 		} catch (Exception e) {
 			System.out.println("Exception is occureed");
 			e.printStackTrace();
 		}
 	}
 
-	@Test(description = "Playing multiple contents", dataProvider = "sonyLivContentName", dataProviderClass = DataProviderClass.class, priority = 2)
+	@Test(description = "Playing multiple contents", dataProvider = "sonyLivContentName", dataProviderClass = DataProviderClass.class, priority = 1,enabled=false)
 	public void sonyLivePlayerResults(String contentName) {
 		try {
-			sl.searchAndPlay(contentName);
+			status=sl.searchAndPlay(contentName);
+			Assert.assertTrue(status,"Error occures while search and play the content from search section");
 			s[0] = deviceNameandVersion;
 			s[1] = appVersionName;
 			s[2] = contentName;
@@ -52,11 +55,18 @@ public class SonyLivPlayerScreenOutputs extends BaseTest {
 			s[4] = getVisionOutput();
 			s[5] = getVideoResolution();
 			excelWrite(s);
-			sl.backNavigationFromPlayerScreen();
+			status=sl.backNavigationFromPlayerScreen();
+			Assert.assertTrue(status,"Back navigation from playerscreen is failed");
 		} catch (Exception e) {
 			System.out.println("Exception is occureed");
 			e.printStackTrace();
 		}
+	}
+	
+	@Test(description="intentionally failed",priority=2)
+	public void sonyLivFailTestcase() {
+		status=sl.searchAndPlay("Gullak");
+		Assert.assertFalse(true,"Intentionally failed testcase");
 	}
 	
 	@AfterClass

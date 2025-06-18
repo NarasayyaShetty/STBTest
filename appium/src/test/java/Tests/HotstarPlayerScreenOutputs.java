@@ -5,8 +5,10 @@ import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 import org.testng.Assert;
 import org.testng.annotations.AfterClass;
+import org.testng.annotations.AfterTest;
 import org.testng.annotations.BeforeClass;
 import org.testng.annotations.DataProvider;
+import org.testng.annotations.Listeners;
 import org.testng.annotations.Test;
 import static Pages.LauncherScreen.*;
 import static Utilities.ExcelDataWrite.excelWrite;
@@ -25,24 +27,27 @@ import io.appium.java_client.AppiumBy;
 import io.appium.java_client.android.nativekey.AndroidKey;
 import io.appium.java_client.android.nativekey.KeyEvent;
 
+
+
 public class HotstarPlayerScreenOutputs extends BaseTest {
 	JioHotstar js;
 	String[] s;
-	String appName;
+	String appName="JioHotstar";
 	String deviceNameandVersion;
 	String appVersionName;
-
+	boolean status;
 	// , dataProvider="hotstarContentName",dataProviderClass=DataProviderClass.class
 	@BeforeClass
 	public void setUp() {
 		try {
+			
+			//currentFocus(driver);
 			s = new String[6];
-			appName = "JioHotstar";
-			logcatLogs(appName);
 			deviceNameandVersion = deviceName();
 			appVersionName = printAppNameAndVersion(appName);
 			js = new JioHotstar(driver);
-			launchApp(appName);
+			status=launchApp(appName);
+			Assert.assertTrue(status,"App launch is failed");
 			js.clickOnProfile();
 			js.selectMenuOption("Search");
 		} catch (Exception e) {
@@ -51,11 +56,13 @@ public class HotstarPlayerScreenOutputs extends BaseTest {
 		}
 	}
 
-	@Test(description = "Playing multiple contents", dataProvider = "hotstarContentName", dataProviderClass = DataProviderClass.class,enabled=false)
+	@Test(description = "Playing multiple contents", dataProvider = "hotstarContentName", dataProviderClass = DataProviderClass.class,priority=1,enabled=true)
 	public void jioHotstarPlayreResult(String contentName) {
 		try {
-			js.sendkeysOnSearchField(contentName);
-			js.selectSearchedContent(contentName);
+			status=js.sendkeysOnSearchField(contentName);
+			Assert.assertTrue(status,"Unable to pass the content name on search field");
+			status=js.selectSearchedContent(contentName);
+			Assert.assertTrue(status,"Unable to select the searched content from search section");
 			s[0] = deviceNameandVersion;
 			s[1] = appVersionName;
 			s[2] = contentName;
@@ -63,7 +70,8 @@ public class HotstarPlayerScreenOutputs extends BaseTest {
 			s[4] = getVisionOutput();
 			s[5] = getVideoResolution();
 			excelWrite(s);
-			js.backNavigattionFromPlayerScreen();
+			status=js.backNavigattionFromPlayerScreen();
+			Assert.assertTrue(status,"Back navigation is failed from player screen");
 		} catch (Exception e) {
 			System.out.println("Exception occurred");
 		
@@ -71,21 +79,22 @@ public class HotstarPlayerScreenOutputs extends BaseTest {
 
 	}
 	
-	@Test
+	@Test(priority =2)
 	public void adScreen() throws InterruptedException {
 		boolean status;
 		
 		 status=js.sendkeysOnSearchField("Snow White");
-		 Assert.assertTrue(status,"Unable to search the content");
+		 //intentionally failing the testCase
+		 Assert.assertFalse(status,"Unable to search the content");
 		 status=js.selectSearchedContent("Snow White");
 		 Assert.assertTrue(status,"Unable to select the searched content");
 		
 	}
 	
 
-//	@AfterClass
-//	public void tearDownapp() {
-//		driver.pressKey(new KeyEvent(AndroidKey.HOME));
-//	}
+	@AfterClass
+	public void tearDownapp() {
+		driver.pressKey(new KeyEvent(AndroidKey.HOME));
+	}
 
 }

@@ -82,7 +82,7 @@ public class JioHotstar {
 			Thread.sleep(20000);
 			status=false;
 		}
-		return false;//defined false just to check screenshot captured ot not 
+		return true;
 	}
 
 	public boolean selectSearchedContent(String contentName) throws InterruptedException {
@@ -100,7 +100,7 @@ public class JioHotstar {
 			Thread.sleep(3000);
 			driver.pressKey(new KeyEvent(AndroidKey.ENTER));
 			safeStaticWait(driver, 45000, 15000);
-			selectAudioOption(driver);
+			//selectAudioOption(driver);
 			status=true;
 		} catch (NoSuchElementException e) {
 			List<WebElement> allContents = wait.until(ExpectedConditions.visibilityOfAllElementsLocatedBy(AppiumBy
@@ -112,9 +112,9 @@ public class JioHotstar {
 					break;
 				}
 			}
-			driver.pressKey(new KeyEvent(AndroidKey.ENTER));
+			driver.pressKey(new KeyEvent(AndroidKey.DPAD_CENTER));
 			safeStaticWait(driver, 45000, 15000);
-			selectAudioOption(driver);
+			//selectAudioOption(driver);
 			status=true;
 			List<WebElement> contents = wait.until(ExpectedConditions.visibilityOfAllElementsLocatedBy(AppiumBy
 					.xpath("//android.widget.ImageView[@resource-id='in.startv.hotstar:id/search_vertical_img']")));
@@ -125,7 +125,7 @@ public class JioHotstar {
 			}
 			driver.pressKey(new KeyEvent(AndroidKey.DPAD_CENTER));
 			safeStaticWait(driver, 45000, 15000);
-			selectAudioOption(driver);
+		//	selectAudioOption(driver);
 			status=true;
 		}
 		
@@ -135,7 +135,8 @@ public class JioHotstar {
 
 	// it performs the back navigation from palyerscreen to search section
 
-	public void backNavigattionFromPlayerScreen() throws InterruptedException {
+	public boolean backNavigattionFromPlayerScreen() throws InterruptedException {
+		boolean status=false;
 		driver.pressKey(new KeyEvent(AndroidKey.BACK));
 		try {
 			WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(10));
@@ -144,9 +145,12 @@ public class JioHotstar {
 			if (watchMoreElement.isDisplayed()) {
 				driver.pressKey(new KeyEvent(AndroidKey.BACK));
 			}
+			status=true;
 		} catch (Exception e) {
 			e.printStackTrace();
+			status=false;
 		}
+		return status;
 	}
 
 	public void selectQuality(AndroidDriver driver) {

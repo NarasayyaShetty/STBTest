@@ -7,6 +7,7 @@
         <methods>
           <include name="configTest"/>
           <include name="allAppLaunch" invocation-numbers="1"/>
+          <include name="setUp"/>
           <include name="tearDown"/>
         </methods>
       </class> <!-- Tests.TestCase1 -->

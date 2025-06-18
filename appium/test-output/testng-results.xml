@@ -2,16 +2,20 @@
 <testng-results ignored="0" total="11" passed="10" failed="1" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2025-06-12T22:32:52 IST" name="Default suite" finished-at="2025-06-12T22:34:43 IST" duration-ms="110922">
+  <suite started-at="2025-06-18T11:04:45 IST" name="Default suite" finished-at="2025-06-18T11:06:35 IST" duration-ms="110086">
     <groups>
     </groups>
-    <test started-at="2025-06-12T22:32:52 IST" name="Default test" finished-at="2025-06-12T22:34:43 IST" duration-ms="110922">
+    <test started-at="2025-06-18T11:04:45 IST" name="Default test" finished-at="2025-06-18T11:06:35 IST" duration-ms="110086">
       <class name="Tests.TestCase1">
-        <test-method is-config="true" signature="configTest()[pri:0, instance:Tests.TestCase1@5a1de7fb]" started-at="2025-06-12T22:32:37 IST" name="configTest" finished-at="2025-06-12T22:32:52 IST" duration-ms="15636" status="PASS">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:Tests.TestCase1@273444fe]" started-at="2025-06-18T11:04:41 IST" name="setUp" finished-at="2025-06-18T11:04:45 IST" duration-ms="4551" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method is-config="true" signature="configTest()[pri:0, instance:Tests.TestCase1@273444fe]" started-at="2025-06-18T11:04:45 IST" name="configTest" finished-at="2025-06-18T11:04:50 IST" duration-ms="5237" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- configTest -->
-        <test-method signature="allAppLaunch(java.lang.String)[pri:0, instance:Tests.TestCase1@5a1de7fb]" started-at="2025-06-12T22:32:52 IST" name="allAppLaunch" description="Launching all the apps one by one" data-provider="appName" finished-at="2025-06-12T22:33:03 IST" duration-ms="10405" status="PASS">
+        <test-method signature="allAppLaunch(java.lang.String)[pri:0, instance:Tests.TestCase1@273444fe]" started-at="2025-06-18T11:04:50 IST" name="allAppLaunch" description="Launching all the apps one by one" data-provider="appName" finished-at="2025-06-18T11:05:01 IST" duration-ms="10380" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -22,7 +26,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- allAppLaunch -->
-        <test-method signature="allAppLaunch(java.lang.String)[pri:0, instance:Tests.TestCase1@5a1de7fb]" started-at="2025-06-12T22:33:05 IST" name="allAppLaunch" description="Launching all the apps one by one" data-provider="appName" finished-at="2025-06-12T22:33:06 IST" duration-ms="375" status="FAIL">
+        <test-method signature="allAppLaunch(java.lang.String)[pri:0, instance:Tests.TestCase1@273444fe]" started-at="2025-06-18T11:05:01 IST" name="allAppLaunch" description="Launching all the apps one by one" data-provider="appName" finished-at="2025-06-18T11:05:01 IST" duration-ms="345" status="FAIL">
           <params>
             <param index="0">
               <value>
@@ -39,7 +43,7 @@
 at org.testng.Assert.fail(Assert.java:111)
 at org.testng.Assert.failNotEquals(Assert.java:1590)
 at org.testng.Assert.assertTrue(Assert.java:57)
-at Tests.TestCase1.allAppLaunch(TestCase1.java:34)
+at Tests.TestCase1.allAppLaunch(TestCase1.java:30)
 at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
 at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -74,7 +78,7 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- allAppLaunch -->
-        <test-method signature="allAppLaunch(java.lang.String)[pri:0, instance:Tests.TestCase1@5a1de7fb]" started-at="2025-06-12T22:33:07 IST" name="allAppLaunch" description="Launching all the apps one by one" data-provider="appName" finished-at="2025-06-12T22:33:17 IST" duration-ms="10353" status="PASS">
+        <test-method signature="allAppLaunch(java.lang.String)[pri:0, instance:Tests.TestCase1@273444fe]" started-at="2025-06-18T11:05:01 IST" name="allAppLaunch" description="Launching all the apps one by one" data-provider="appName" finished-at="2025-06-18T11:05:12 IST" duration-ms="10478" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -85,7 +89,7 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- allAppLaunch -->
-        <test-method signature="allAppLaunch(java.lang.String)[pri:0, instance:Tests.TestCase1@5a1de7fb]" started-at="2025-06-12T22:33:18 IST" name="allAppLaunch" description="Launching all the apps one by one" data-provider="appName" finished-at="2025-06-12T22:33:28 IST" duration-ms="10638" status="PASS">
+        <test-method signature="allAppLaunch(java.lang.String)[pri:0, instance:Tests.TestCase1@273444fe]" started-at="2025-06-18T11:05:12 IST" name="allAppLaunch" description="Launching all the apps one by one" data-provider="appName" finished-at="2025-06-18T11:05:22 IST" duration-ms="10459" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -96,7 +100,7 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- allAppLaunch -->
-        <test-method signature="allAppLaunch(java.lang.String)[pri:0, instance:Tests.TestCase1@5a1de7fb]" started-at="2025-06-12T22:33:28 IST" name="allAppLaunch" description="Launching all the apps one by one" data-provider="appName" finished-at="2025-06-12T22:33:39 IST" duration-ms="10373" status="PASS">
+        <test-method signature="allAppLaunch(java.lang.String)[pri:0, instance:Tests.TestCase1@273444fe]" started-at="2025-06-18T11:05:22 IST" name="allAppLaunch" description="Launching all the apps one by one" data-provider="appName" finished-at="2025-06-18T11:05:33 IST" duration-ms="10505" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -107,7 +111,7 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- allAppLaunch -->
-        <test-method signature="allAppLaunch(java.lang.String)[pri:0, instance:Tests.TestCase1@5a1de7fb]" started-at="2025-06-12T22:33:39 IST" name="allAppLaunch" description="Launching all the apps one by one" data-provider="appName" finished-at="2025-06-12T22:33:49 IST" duration-ms="10387" status="PASS">
+        <test-method signature="allAppLaunch(java.lang.String)[pri:0, instance:Tests.TestCase1@273444fe]" started-at="2025-06-18T11:05:33 IST" name="allAppLaunch" description="Launching all the apps one by one" data-provider="appName" finished-at="2025-06-18T11:05:43 IST" duration-ms="10428" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -118,7 +122,7 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- allAppLaunch -->
-        <test-method signature="allAppLaunch(java.lang.String)[pri:0, instance:Tests.TestCase1@5a1de7fb]" started-at="2025-06-12T22:33:50 IST" name="allAppLaunch" description="Launching all the apps one by one" data-provider="appName" finished-at="2025-06-12T22:34:00 IST" duration-ms="10432" status="PASS">
+        <test-method signature="allAppLaunch(java.lang.String)[pri:0, instance:Tests.TestCase1@273444fe]" started-at="2025-06-18T11:05:43 IST" name="allAppLaunch" description="Launching all the apps one by one" data-provider="appName" finished-at="2025-06-18T11:05:53 IST" duration-ms="10431" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -129,7 +133,7 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- allAppLaunch -->
-        <test-method signature="allAppLaunch(java.lang.String)[pri:0, instance:Tests.TestCase1@5a1de7fb]" started-at="2025-06-12T22:34:00 IST" name="allAppLaunch" description="Launching all the apps one by one" data-provider="appName" finished-at="2025-06-12T22:34:10 IST" duration-ms="10394" status="PASS">
+        <test-method signature="allAppLaunch(java.lang.String)[pri:0, instance:Tests.TestCase1@273444fe]" started-at="2025-06-18T11:05:53 IST" name="allAppLaunch" description="Launching all the apps one by one" data-provider="appName" finished-at="2025-06-18T11:06:04 IST" duration-ms="10471" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -140,7 +144,7 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- allAppLaunch -->
-        <test-method signature="allAppLaunch(java.lang.String)[pri:0, instance:Tests.TestCase1@5a1de7fb]" started-at="2025-06-12T22:34:11 IST" name="allAppLaunch" description="Launching all the apps one by one" data-provider="appName" finished-at="2025-06-12T22:34:21 IST" duration-ms="10529" status="PASS">
+        <test-method signature="allAppLaunch(java.lang.String)[pri:0, instance:Tests.TestCase1@273444fe]" started-at="2025-06-18T11:06:04 IST" name="allAppLaunch" description="Launching all the apps one by one" data-provider="appName" finished-at="2025-06-18T11:06:14 IST" duration-ms="10479" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -151,7 +155,7 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- allAppLaunch -->
-        <test-method signature="allAppLaunch(java.lang.String)[pri:0, instance:Tests.TestCase1@5a1de7fb]" started-at="2025-06-12T22:34:22 IST" name="allAppLaunch" description="Launching all the apps one by one" data-provider="appName" finished-at="2025-06-12T22:34:32 IST" duration-ms="10577" status="PASS">
+        <test-method signature="allAppLaunch(java.lang.String)[pri:0, instance:Tests.TestCase1@273444fe]" started-at="2025-06-18T11:06:14 IST" name="allAppLaunch" description="Launching all the apps one by one" data-provider="appName" finished-at="2025-06-18T11:06:25 IST" duration-ms="10399" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -162,7 +166,7 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- allAppLaunch -->
-        <test-method signature="allAppLaunch(java.lang.String)[pri:0, instance:Tests.TestCase1@5a1de7fb]" started-at="2025-06-12T22:34:33 IST" name="allAppLaunch" description="Launching all the apps one by one" data-provider="appName" finished-at="2025-06-12T22:34:43 IST" duration-ms="10522" status="PASS">
+        <test-method signature="allAppLaunch(java.lang.String)[pri:0, instance:Tests.TestCase1@273444fe]" started-at="2025-06-18T11:06:25 IST" name="allAppLaunch" description="Launching all the apps one by one" data-provider="appName" finished-at="2025-06-18T11:06:35 IST" duration-ms="10414" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -173,61 +177,7 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- allAppLaunch -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:Tests.TestCase1@5a1de7fb]" started-at="2025-06-12T22:34:43 IST" name="tearDown" finished-at="2025-06-12T22:34:43 IST" duration-ms="25" status="FAIL">
-          <exception class="org.openqa.selenium.NoSuchSessionException">
-            <message>
-              <![CDATA[A session is either terminated or not started
-Build info: version: '4.33.0', revision: '2c6aaad03a'
-System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '11.0.2'
-Driver info: io.appium.java_client.android.AndroidDriver
-Command: [f4d0837e-3730-4e98-a2f4-b76617342ba0, quit {}]
-Capabilities {appium:automationName: UIAutomator2, appium:databaseEnabled: false, appium:desired: {automationName: UIAutomator2, deviceName: 192.168.1.23:5555, mjpegServerPort: 0, platformName: ANDROID, udid: 192.168.1.23:5555}, appium:deviceApiLevel: 30, appium:deviceManufacturer: Jio, appium:deviceModel: JMSB200A, appium:deviceName: 192.168.1.23:5555, appium:deviceScreenDensity: 320, appium:deviceScreenSize: 1920x1080, appium:deviceUDID: 192.168.1.23:5555, appium:javascriptEnabled: true, appium:locationContextEnabled: false, appium:mjpegServerPort: 0, appium:networkConnectionEnabled: true, appium:pixelRatio: 2, appium:platformVersion: 11, appium:statBarHeight: 0, appium:takesScreenshot: true, appium:udid: 192.168.1.23:5555, appium:viewportRect: {height: 1080, left: 0, top: 0, width: 1920}, appium:warnings: {}, appium:webStorageEnabled: false, platformName: ANDROID}
-Session ID: f4d0837e-3730-4e98-a2f4-b76617342ba0]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[org.openqa.selenium.NoSuchSessionException: A session is either terminated or not started
-Build info: version: '4.33.0', revision: '2c6aaad03a'
-System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '11.0.2'
-Driver info: io.appium.java_client.android.AndroidDriver
-Command: [f4d0837e-3730-4e98-a2f4-b76617342ba0, quit {}]
-Capabilities {appium:automationName: UIAutomator2, appium:databaseEnabled: false, appium:desired: {automationName: UIAutomator2, deviceName: 192.168.1.23:5555, mjpegServerPort: 0, platformName: ANDROID, udid: 192.168.1.23:5555}, appium:deviceApiLevel: 30, appium:deviceManufacturer: Jio, appium:deviceModel: JMSB200A, appium:deviceName: 192.168.1.23:5555, appium:deviceScreenDensity: 320, appium:deviceScreenSize: 1920x1080, appium:deviceUDID: 192.168.1.23:5555, appium:javascriptEnabled: true, appium:locationContextEnabled: false, appium:mjpegServerPort: 0, appium:networkConnectionEnabled: true, appium:pixelRatio: 2, appium:platformVersion: 11, appium:statBarHeight: 0, appium:takesScreenshot: true, appium:udid: 192.168.1.23:5555, appium:viewportRect: {height: 1080, left: 0, top: 0, width: 1920}, appium:warnings: {}, appium:webStorageEnabled: false, platformName: ANDROID}
-Session ID: f4d0837e-3730-4e98-a2f4-b76617342ba0
-at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
-at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
-at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
-at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:490)
-at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
-at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
-at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
-at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:215)
-at io.appium.java_client.remote.AppiumCommandExecutor.execute(AppiumCommandExecutor.java:237)
-at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:544)
-at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:617)
-at io.appium.java_client.AppiumDriver.execute(AppiumDriver.java:310)
-at org.openqa.selenium.remote.RemoteWebDriver.quit(RemoteWebDriver.java:445)
-at Tests.BaseTest.tearDown(BaseTest.java:92)
-at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
-at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-at java.base/java.lang.reflect.Method.invoke(Method.java:566)
-at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
-at org.testng.internal.invokers.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:71)
-at org.testng.internal.invokers.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:400)
-at org.testng.internal.invokers.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:333)
-at org.testng.SuiteRunner.privateRun(SuiteRunner.java:386)
-at org.testng.SuiteRunner.run(SuiteRunner.java:312)
-at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
-at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
-at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
-at org.testng.TestNG.runSuites(TestNG.java:1112)
-at org.testng.TestNG.run(TestNG.java:1079)
-at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
-at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
-]]>
-            </full-stacktrace>
-          </exception> <!-- org.openqa.selenium.NoSuchSessionException -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:Tests.TestCase1@273444fe]" started-at="2025-06-18T11:06:35 IST" name="tearDown" finished-at="2025-06-18T11:06:35 IST" duration-ms="32" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->

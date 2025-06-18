@@ -12,10 +12,12 @@ import org.apache.commons.io.FileUtils;
 import org.openqa.selenium.NoSuchElementException;
 import org.openqa.selenium.OutputType;
 import org.openqa.selenium.TakesScreenshot;
+import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 
+import io.appium.java_client.AppiumDriver;
 import io.appium.java_client.android.AndroidDriver;
 import io.appium.java_client.android.nativekey.AndroidKey;
 import io.appium.java_client.android.nativekey.KeyEvent;
@@ -33,6 +35,7 @@ public class AppiumUtils {
 	}
 	public static void safeStaticWait(AndroidDriver driver, long totalWaitMillis, long heartbeatIntervalMillis) throws InterruptedException {
 	    long waited = 0;
+	    
 	    while (waited < totalWaitMillis) {
 	        Thread.sleep(heartbeatIntervalMillis);
 	        waited += heartbeatIntervalMillis;
@@ -92,5 +95,23 @@ public class AppiumUtils {
             e.printStackTrace();
         }
         return desPath;
+	}
+	
+	public static String getScreenshotPath(AndroidDriver driver,String testCaseName) {
+		Calendar calendar=Calendar.getInstance();
+        SimpleDateFormat sdf=new SimpleDateFormat("ddMMyyyy");
+        Date date=calendar.getTime();
+        String currentDate=sdf.format(date);
+		File source=driver.getScreenshotAs(OutputType.FILE);
+		String filepath=System.getProperty("user.dir") + File.separator + "Results" + File.separator +"Screenshot"+File.separator+currentDate+File.separator
+				+testCaseName+".png";
+		File desFile=new File(filepath);
+		try {
+			FileUtils.copyFile(source, desFile);
+		} catch (IOException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
+		return filepath;
 	}
 }

@@ -22,7 +22,8 @@ public class SonyLiv {
 		this.driver = driver;
 	}
 
-	public void selctMenuOption(String optionName) throws InterruptedException {
+	public boolean selctMenuOption(String optionName) throws InterruptedException {
+		boolean status=false;
 		WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(10));
 		try {
 			Thread.sleep(3000);
@@ -37,9 +38,11 @@ public class SonyLiv {
 				if (option.getText().equalsIgnoreCase(optionName)) {
 					System.out.println(option.getText());
 					option.click();
+					status=true;
 					break;
 				}
 			}
+			
 
 		} catch (Exception e) {
 			WebElement profile = wait.until(ExpectedConditions.visibilityOfElementLocated(
@@ -53,9 +56,11 @@ public class SonyLiv {
 			driver.pressKey(new KeyEvent(AndroidKey.ENTER));
 			selctMenuOption(optionName);
 		}
+		return status;
 	}
 
-	public void searchAndPlay(String contentName) {
+	public boolean searchAndPlay(String contentName) {
+		boolean status=false;
 		contentName = contentName.toLowerCase();
 		WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(10));
 		try {
@@ -79,15 +84,19 @@ public class SonyLiv {
 
 			Thread.sleep(2000);
 			driver.pressKey(new KeyEvent(AndroidKey.ENTER));
-			safeStaticWait(driver, 120000, 15000);
+			safeStaticWait(driver, 45000, 15000);
+			status=true;
 
 		} catch (Exception e) {
 			e.printStackTrace();
+			status=false;
 		}
+		return status;
 
 	}
 
-	public void backNavigationFromPlayerScreen() {
+	public boolean backNavigationFromPlayerScreen() {
+		boolean status=false;
 		try {
 			WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(10));
 			driver.pressKey(new KeyEvent(AndroidKey.BACK));
@@ -106,10 +115,14 @@ public class SonyLiv {
 			if (searchOption.isDisplayed()) {
 				driver.pressKey(new KeyEvent(AndroidKey.ENTER));
 			}
+			status=true;
 
 		} catch (Exception e) {
+			e.printStackTrace();
+			status=false;
 
 		}
+		return status;
 
 	}
 

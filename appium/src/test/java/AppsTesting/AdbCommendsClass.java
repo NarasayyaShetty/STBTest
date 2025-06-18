@@ -14,8 +14,10 @@ import java.util.ArrayList;
 import java.util.Calendar;
 import java.util.Date;
 import java.util.HashMap;
+import java.util.List;
 import java.util.Map;
 import java.util.UUID;
+import java.util.function.Consumer;
 
 import io.appium.java_client.android.AndroidDriver;
 import io.appium.java_client.android.nativekey.AndroidKey;
@@ -23,32 +25,7 @@ import io.appium.java_client.android.nativekey.KeyEvent;
 
 public class AdbCommendsClass {
 
-	// Step 1: Set device to TCP/IP mode
-	// runAdbCommand("adb", "tcpip", "5555");
-
-	// Step 2: Connect over Wi-Fi
-//	        ArrayList<String> list=runAdbCommand("adb", "connect", deviceIp + ":5555");
-//	        for(String value:list) {
-//	        	System.out.println("Value is :"+value);
-//	        }
-
-	// runAdbCommand("adb","reboot");
-	// runAdbCommand("adb","shell","pm","list","packages");
-//	        ArrayList<String> list=runAdbCommand("adb","devices");
-//	        for(String value:list) {
-//	        	System.out.println("Value is :"+value);
-//	        }
-
-	// runAdbCommand("adb","shell", "monkey", "-p", packageName, "-c",
-	// "android.intent.category.LAUNCHER", "1");
-	// runAdbCommand("adb","shell","dumpsys","media.audio_flinger","|","grep","-i","Format"
-	// );
-	// runAdbCommand("adb","disconnect");
-	// adb shell cat /sys/class/video/frame_width
-	// runAdbCommand("adb","shell","cat"," ","/sys/class/video/frame_width");
-	// runAdbCommand("adb","shell","cat","
-	// ","/sys/class/video_poll/primary_src_fmt");
-	// runAdbCommand("adb", "shell", "input", "keyevent", "3");
+	
 
 	public static void currentFocus(AndroidDriver driver) {
 		try {
@@ -143,6 +120,7 @@ public class AdbCommendsClass {
 
 	// prints the logs
 	public static void logcatLogs(String appName) {
+		
 	    new Thread(() -> {
 	        try {
 	            // Date-based folder
@@ -235,7 +213,88 @@ public class AdbCommendsClass {
 	            e.printStackTrace();
 	        }
 	    }).start();
+	    
 	}
+	
+	public static Map<String, String> collectLogs(String appName, String methodName) {
+	    Map<String, String> logFilePaths = new HashMap<>();
+	    String appPackage = getPackageName(appName);
+
+	    try {
+	        String date = new SimpleDateFormat("ddMMyyyy").format(new Date());
+	        String time = new SimpleDateFormat("HHmmss").format(new Date());
+
+	        String basePath = System.getProperty("user.dir") + File.separator + "Results" +
+	                File.separator + "LogcatLogs" + File.separator + date;
+	        File dir = new File(basePath);
+	        if (!dir.exists()) dir.mkdirs();
+
+	        File fullLog = new File(dir, "FullLogs_" + appPackage + "_" + methodName + "_" + time + ".txt");
+	        File crashLog = new File(dir, "CrashLogs_" + appPackage + "_" + methodName + "_" + time + ".txt");
+	        File anrLog = new File(dir, "ANRLogs_" + appPackage + "_" + methodName + "_" + time + ".txt");
+
+	        logFilePaths.put("full", fullLog.getAbsolutePath());
+
+	        BufferedWriter fullWriter = new BufferedWriter(new FileWriter(fullLog));
+	        BufferedWriter crashWriter = new BufferedWriter(new FileWriter(crashLog));
+	        BufferedWriter anrWriter = new BufferedWriter(new FileWriter(anrLog));
+
+	        boolean crashFound = false, anrFound = false;
+
+	        ProcessBuilder pb = new ProcessBuilder("adb", "logcat", "-d", "-v", "time");
+	        Process process = pb.start();
+	        BufferedReader reader = new BufferedReader(new InputStreamReader(process.getInputStream()));
+
+	        String line;
+	        while ((line = reader.readLine()) != null) {
+	            fullWriter.write(line);
+	            fullWriter.newLine();
+
+	            if (line.contains("FATAL EXCEPTION") && line.contains(appPackage)) {
+	                crashFound = true;
+	                crashWriter.write("==== CRASH START ====\n" + line + "\n");
+	                for (int i = 0; i < 15; i++) {
+	                    String next = reader.readLine();
+	                    if (next == null) break;
+	                    crashWriter.write(next + "\n");
+	                }
+	                crashWriter.write("==== CRASH END ====\n\n");
+	                logFilePaths.put("crash", crashLog.getAbsolutePath());
+	            }
+
+	            if (line.contains("ANR in") && line.contains(appPackage)) {
+	                anrFound = true;
+	                anrWriter.write("==== ANR START ====\n" + line + "\n");
+	                for (int i = 0; i < 10; i++) {
+	                    String next = reader.readLine();
+	                    if (next == null) break;
+	                    anrWriter.write(next + "\n");
+	                }
+	                anrWriter.write("==== ANR END ====\n\n");
+	                logFilePaths.put("anr", anrLog.getAbsolutePath());
+	            }
+
+	            fullWriter.flush();
+	        }
+
+	        fullWriter.close();
+	        crashWriter.close();
+	        anrWriter.close();
+	        reader.close();
+	        process.destroy();
+
+	        if (!crashFound) crashLog.delete();
+	        if (!anrFound) anrLog.delete();
+
+	    } catch (IOException e) {
+	        e.printStackTrace();
+	    }
+
+	    return logFilePaths;
+	}
+
+
+	
 
 	// performs the root
 	public static void root() {
@@ -323,7 +382,11 @@ public class AdbCommendsClass {
 	// remount
 	public static void connectStb(String deviceIp) {
 		try {
+			
+			//first disconnect all the connected devices
 			disConnect();
+			
+			//First it will kill the server then it will start the server
 			startServer();
 			runAdbCommand("adb", "connect", deviceIp);
 			root();
