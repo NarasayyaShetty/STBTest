@@ -28,8 +28,6 @@ public static ExtentReports extent;
 		extent =new ExtentReports(); 
 		extent.attachReporter(report) ;
 		extent.setSystemInfo("Tester","Narasayya");
-		String deviceName=deviceName();
-		extent.setSystemInfo("Device details", deviceName);
 		return extent;
 	}
 

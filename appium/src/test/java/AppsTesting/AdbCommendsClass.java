@@ -107,6 +107,8 @@ public class AdbCommendsClass {
 			deviceName += list.get(0);
 
 			ArrayList<String> list1 = runAdbCommand("adb", "shell", "getprop", "ro.build.fingerprint");
+			System.out.println(list1);
+			Thread.sleep(2000);
 			String fingerPrint = list1.get(0);
 			String[] str = fingerPrint.split("/");
 			deviceName += "_" + str[3];
