@@ -28,8 +28,12 @@ import static AppsTesting.AdbCommendsClass.*;
 
 public class BaseTest {
 	public AppiumDriverLocalService service;
-	public AndroidDriver driver;
+	private static ThreadLocal<AndroidDriver> driver = new ThreadLocal<>();
+	
 	String ip;
+	 public static AndroidDriver getDriver() {
+	        return driver.get();
+	    }
 	
 	@BeforeClass(alwaysRun=true)
 	public void configTest() throws URISyntaxException, IOException, InterruptedException {
@@ -63,16 +67,17 @@ public class BaseTest {
 		while (retry < 3) {
 			try {
 
-				driver = new AndroidDriver(new URI("http://127.0.0.1:4723").toURL(), options);
-				break;
+				AndroidDriver localDriver = new AndroidDriver(new URI("http://127.0.0.1:4723").toURL(), options);
+                driver.set(localDriver);
+                break;
 			} catch (Exception e) {
 				retry++;
 				Thread.sleep(2000);
 			}
 		}
 
-		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(20));
-		driver.pressKey(new KeyEvent(AndroidKey.BACK));
+		getDriver().manage().timeouts().implicitlyWait(Duration.ofSeconds(20));
+		getDriver().pressKey(new KeyEvent(AndroidKey.BACK));
 
 	}
 
@@ -81,9 +86,9 @@ public class BaseTest {
 	@AfterClass(alwaysRun = true)
 	public void tearDown() {
 		try {
-			if (driver != null) {
+			if (getDriver() != null) {
 				//driver.pressKey(new KeyEvent(AndroidKey.HOME));
-				driver.quit();
+				getDriver().quit();
 			}
 		} catch (Exception e) {
 			System.out.println("Driver may already be quit or crashed.");

@@ -45,7 +45,7 @@ public class HotstarPlayerScreenOutputs extends BaseTest {
 			s = new String[6];
 			deviceNameandVersion = deviceName();
 			appVersionName = printAppNameAndVersion(appName);
-			js = new JioHotstar(driver);
+			js = new JioHotstar();
 			status=launchApp(appName);
 			Assert.assertTrue(status,"App launch is failed");
 			js.clickOnProfile();
@@ -94,7 +94,7 @@ public class HotstarPlayerScreenOutputs extends BaseTest {
 
 	@AfterClass(alwaysRun=true)
 	public void tearDownapp() {
-		driver.pressKey(new KeyEvent(AndroidKey.HOME));
+		getDriver().pressKey(new KeyEvent(AndroidKey.HOME));
 	}
 
 }
