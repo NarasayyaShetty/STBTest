@@ -80,12 +80,12 @@ public class HotstarPlayerScreenOutputs extends BaseTest {
 	}
 	
 	@Test(priority =2)
-	public void adScreen() throws InterruptedException {
+	public void jioHotsterFailedTestCase() throws InterruptedException {
 		boolean status;
 		
 		 status=js.sendkeysOnSearchField("Snow White");
 		 //intentionally failing the testCase
-		 Assert.assertFalse(status,"Unable to search the content");
+		 Assert.assertFalse(status,"Intentionally failing the testcase");
 		 status=js.selectSearchedContent("Snow White");
 		 Assert.assertTrue(status,"Unable to select the searched content");
 		

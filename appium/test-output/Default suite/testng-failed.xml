@@ -3,13 +3,15 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="Tests.TestCase1">
+      <class name="Tests.SunNxtPlayerScreenOutputs">
         <methods>
-          <include name="allAppLaunch" invocation-numbers="1"/>
           <include name="configTest"/>
+          <include name="sunNxtFailTestcase"/>
           <include name="tearDown"/>
+          <include name="config"/>
+          <include name="navigateToHome"/>
         </methods>
-      </class> <!-- Tests.TestCase1 -->
+      </class> <!-- Tests.SunNxtPlayerScreenOutputs -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

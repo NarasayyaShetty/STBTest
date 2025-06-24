@@ -23,7 +23,7 @@ public class SonyLiv {
 	}
 
 	public boolean selctMenuOption(String optionName) throws InterruptedException {
-		boolean status=false;
+		boolean status = false;
 		WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(10));
 		try {
 			Thread.sleep(3000);
@@ -38,11 +38,10 @@ public class SonyLiv {
 				if (option.getText().equalsIgnoreCase(optionName)) {
 					System.out.println(option.getText());
 					option.click();
-					status=true;
+					status = true;
 					break;
 				}
 			}
-			
 
 		} catch (Exception e) {
 			WebElement profile = wait.until(ExpectedConditions.visibilityOfElementLocated(
@@ -60,24 +59,29 @@ public class SonyLiv {
 	}
 
 	public boolean searchAndPlay(String contentName) {
-		boolean status=false;
+		boolean status = false;
 		contentName = contentName.toLowerCase();
-		WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(10));
+		
 		try {
-			List<WebElement> keys = driver.findElements(AppiumBy.xpath("//android.widget.TextView"));
-			for (int i = 0; i < contentName.length(); i++) {
-				String temp = "" + contentName.charAt(i);
-
-				for (WebElement key : keys) {
-					if (key.getText().equalsIgnoreCase(temp)) {
-						System.out.println(key.getText());
-						Thread.sleep(1000);
-						key.click();
-						driver.pressKey(new KeyEvent(AndroidKey.ENTER));
-						break;
-					}
-				}
-			}
+			WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(10));
+			WebElement searchField = wait
+					.until(ExpectedConditions.visibilityOfElementLocated(AppiumBy.id("com.jiotv.sonyliv:id/editSearch")));
+			searchField.clear();
+			searchField.sendKeys(contentName);
+//			List<WebElement> keys = driver.findElements(AppiumBy.xpath("//android.widget.TextView"));
+//			for (int i = 0; i < contentName.length(); i++) {
+//				String temp = "" + contentName.charAt(i);
+//
+//				for (WebElement key : keys) {
+//					if (key.getText().equalsIgnoreCase(temp)) {
+//						System.out.println(key.getText());
+//						Thread.sleep(1000);
+//						key.click();
+//						driver.pressKey(new KeyEvent(AndroidKey.ENTER));
+//						break;
+//					}
+//				}
+//			}
 			WebElement searchResult = wait.until(ExpectedConditions.visibilityOfElementLocated(
 					AppiumBy.xpath("//android.view.ViewGroup[@resource-id='com.jiotv.sonyliv:id/main_layout']")));
 			searchResult.click();
@@ -85,18 +89,17 @@ public class SonyLiv {
 			Thread.sleep(2000);
 			driver.pressKey(new KeyEvent(AndroidKey.ENTER));
 			safeStaticWait(driver, 45000, 15000);
-			status=true;
+			status = true;
 
 		} catch (Exception e) {
 			e.printStackTrace();
-			status=false;
+			status = false;
 		}
 		return status;
-
 	}
 
 	public boolean backNavigationFromPlayerScreen() {
-		boolean status=false;
+		boolean status = false;
 		try {
 			WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(10));
 			driver.pressKey(new KeyEvent(AndroidKey.BACK));
@@ -115,11 +118,11 @@ public class SonyLiv {
 			if (searchOption.isDisplayed()) {
 				driver.pressKey(new KeyEvent(AndroidKey.ENTER));
 			}
-			status=true;
+			status = true;
 
 		} catch (Exception e) {
 			e.printStackTrace();
-			status=false;
+			status = false;
 
 		}
 		return status;

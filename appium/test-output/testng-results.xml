@@ -1,97 +1,86 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="7" passed="6" failed="1" skipped="0">
+<testng-results ignored="0" total="6" passed="5" failed="1" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2025-06-18T13:12:39 IST" name="AllAppsTest" finished-at="2025-06-18T13:20:18 IST" duration-ms="459393">
+  <suite started-at="2025-06-24T10:43:56 IST" name="Default suite" finished-at="2025-06-24T10:50:16 IST" duration-ms="379911">
     <groups>
     </groups>
-    <test started-at="2025-06-18T13:12:39 IST" name="Test" finished-at="2025-06-18T13:20:18 IST" duration-ms="459393">
-      <class name="Tests.HotstarPlayerScreenOutputs">
-        <test-method is-config="true" signature="configTest()[pri:0, instance:Tests.HotstarPlayerScreenOutputs@41d426b5]" started-at="2025-06-18T13:12:27 IST" name="configTest" finished-at="2025-06-18T13:12:39 IST" duration-ms="12237" status="PASS">
+    <test started-at="2025-06-24T10:43:56 IST" name="Default test" finished-at="2025-06-24T10:50:16 IST" duration-ms="379911">
+      <class name="Tests.SunNxtPlayerScreenOutputs">
+        <test-method is-config="true" signature="configTest()[pri:0, instance:Tests.SunNxtPlayerScreenOutputs@7d9d0818]" started-at="2025-06-24T10:43:56 IST" name="configTest" finished-at="2025-06-24T10:44:09 IST" duration-ms="12515" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- configTest -->
-        <test-method is-config="true" signature="setUp()[pri:0, instance:Tests.HotstarPlayerScreenOutputs@41d426b5]" started-at="2025-06-18T13:12:39 IST" name="setUp" finished-at="2025-06-18T13:13:02 IST" duration-ms="23090" status="PASS">
+        <test-method is-config="true" signature="config()[pri:0, instance:Tests.SunNxtPlayerScreenOutputs@7d9d0818]" started-at="2025-06-24T10:44:09 IST" name="config" finished-at="2025-06-24T10:44:24 IST" duration-ms="15248" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- setUp -->
-        <test-method signature="jioHotstarPlayreResult(java.lang.String)[pri:1, instance:Tests.HotstarPlayerScreenOutputs@41d426b5]" started-at="2025-06-18T13:13:02 IST" name="jioHotstarPlayreResult" description="Playing multiple contents" data-provider="hotstarContentName" finished-at="2025-06-18T13:14:23 IST" duration-ms="80550" status="PASS">
+        </test-method> <!-- config -->
+        <test-method signature="sunNxtPlayerResults(java.lang.String)[pri:1, instance:Tests.SunNxtPlayerScreenOutputs@7d9d0818]" started-at="2025-06-24T10:44:24 IST" name="sunNxtPlayerResults" description="SunNxt player results" data-provider="SunNxtContentName" finished-at="2025-06-24T10:45:24 IST" duration-ms="60499" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[subham]]>
+                <![CDATA[Petta]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- jioHotstarPlayreResult -->
-        <test-method signature="jioHotstarPlayreResult(java.lang.String)[pri:1, instance:Tests.HotstarPlayerScreenOutputs@41d426b5]" started-at="2025-06-18T13:14:23 IST" name="jioHotstarPlayreResult" description="Playing multiple contents" data-provider="hotstarContentName" finished-at="2025-06-18T13:15:30 IST" duration-ms="67617" status="PASS">
+        </test-method> <!-- sunNxtPlayerResults -->
+        <test-method signature="sunNxtPlayerResults(java.lang.String)[pri:1, instance:Tests.SunNxtPlayerScreenOutputs@7d9d0818]" started-at="2025-06-24T10:45:24 IST" name="sunNxtPlayerResults" description="SunNxt player results" data-provider="SunNxtContentName" finished-at="2025-06-24T10:46:34 IST" duration-ms="69155" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[Salaar]]>
+                <![CDATA[ET - Telugu]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- jioHotstarPlayreResult -->
-        <test-method signature="jioHotstarPlayreResult(java.lang.String)[pri:1, instance:Tests.HotstarPlayerScreenOutputs@41d426b5]" started-at="2025-06-18T13:15:30 IST" name="jioHotstarPlayreResult" description="Playing multiple contents" data-provider="hotstarContentName" finished-at="2025-06-18T13:16:45 IST" duration-ms="74719" status="PASS">
+        </test-method> <!-- sunNxtPlayerResults -->
+        <test-method signature="sunNxtPlayerResults(java.lang.String)[pri:1, instance:Tests.SunNxtPlayerScreenOutputs@7d9d0818]" started-at="2025-06-24T10:46:34 IST" name="sunNxtPlayerResults" description="SunNxt player results" data-provider="SunNxtContentName" finished-at="2025-06-24T10:47:31 IST" duration-ms="57454" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[Bhagavanth Kesari]]>
+                <![CDATA[35 chinna vishayam ila]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- jioHotstarPlayreResult -->
-        <test-method signature="jioHotstarPlayreResult(java.lang.String)[pri:1, instance:Tests.HotstarPlayerScreenOutputs@41d426b5]" started-at="2025-06-18T13:16:45 IST" name="jioHotstarPlayreResult" description="Playing multiple contents" data-provider="hotstarContentName" finished-at="2025-06-18T13:17:52 IST" duration-ms="66911" status="PASS">
+        </test-method> <!-- sunNxtPlayerResults -->
+        <test-method signature="sunNxtPlayerResults(java.lang.String)[pri:1, instance:Tests.SunNxtPlayerScreenOutputs@7d9d0818]" started-at="2025-06-24T10:47:31 IST" name="sunNxtPlayerResults" description="SunNxt player results" data-provider="SunNxtContentName" finished-at="2025-06-24T10:48:27 IST" duration-ms="56255" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[Captain America Brave new world]]>
+                <![CDATA[upadhyaksha]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- jioHotstarPlayreResult -->
-        <test-method signature="jioHotstarPlayreResult(java.lang.String)[pri:1, instance:Tests.HotstarPlayerScreenOutputs@41d426b5]" started-at="2025-06-18T13:17:52 IST" name="jioHotstarPlayreResult" description="Playing multiple contents" data-provider="hotstarContentName" finished-at="2025-06-18T13:19:03 IST" duration-ms="71102" status="PASS">
+        </test-method> <!-- sunNxtPlayerResults -->
+        <test-method signature="sunNxtPlayerResults(java.lang.String)[pri:1, instance:Tests.SunNxtPlayerScreenOutputs@7d9d0818]" started-at="2025-06-24T10:48:27 IST" name="sunNxtPlayerResults" description="SunNxt player results" data-provider="SunNxtContentName" finished-at="2025-06-24T10:49:24 IST" duration-ms="56756" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[Tough me not]]>
+                <![CDATA[ayalaan]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- jioHotstarPlayreResult -->
-        <test-method signature="jioHotstarPlayreResult(java.lang.String)[pri:1, instance:Tests.HotstarPlayerScreenOutputs@41d426b5]" started-at="2025-06-18T13:19:03 IST" name="jioHotstarPlayreResult" description="Playing multiple contents" data-provider="hotstarContentName" finished-at="2025-06-18T13:20:11 IST" duration-ms="67921" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[Anupama]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- jioHotstarPlayreResult -->
-        <test-method signature="adScreen()[pri:2, instance:Tests.HotstarPlayerScreenOutputs@41d426b5]" started-at="2025-06-18T13:20:11 IST" name="adScreen" finished-at="2025-06-18T13:20:15 IST" duration-ms="4102" status="FAIL">
+        </test-method> <!-- sunNxtPlayerResults -->
+        <test-method signature="sunNxtFailTestcase()[pri:2, instance:Tests.SunNxtPlayerScreenOutputs@7d9d0818]" started-at="2025-06-24T10:49:24 IST" name="sunNxtFailTestcase" description="intentionally failed" finished-at="2025-06-24T10:50:15 IST" duration-ms="51277" status="FAIL">
           <exception class="java.lang.AssertionError">
             <message>
-              <![CDATA[Unable to search the content expected [false] but found [true]]]>
+              <![CDATA[Intentionally failed testcase expected [false] but found [true]]]>
             </message>
             <full-stacktrace>
-              <![CDATA[java.lang.AssertionError: Unable to search the content expected [false] but found [true]
+              <![CDATA[java.lang.AssertionError: Intentionally failed testcase expected [false] but found [true]
 at org.testng.Assert.fail(Assert.java:111)
 at org.testng.Assert.failNotEquals(Assert.java:1590)
 at org.testng.Assert.assertFalse(Assert.java:79)
-at Tests.HotstarPlayerScreenOutputs.adScreen(HotstarPlayerScreenOutputs.java:88)
+at Tests.SunNxtPlayerScreenOutputs.sunNxtFailTestcase(SunNxtPlayerScreenOutputs.java:74)
 at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
 at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -125,16 +114,16 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
           </exception> <!-- java.lang.AssertionError -->
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- adScreen -->
-        <test-method is-config="true" signature="tearDownapp()[pri:0, instance:Tests.HotstarPlayerScreenOutputs@41d426b5]" started-at="2025-06-18T13:20:18 IST" name="tearDownapp" finished-at="2025-06-18T13:20:18 IST" duration-ms="70" status="PASS">
+        </test-method> <!-- sunNxtFailTestcase -->
+        <test-method is-config="true" signature="navigateToHome()[pri:0, instance:Tests.SunNxtPlayerScreenOutputs@7d9d0818]" started-at="2025-06-24T10:50:15 IST" name="navigateToHome" finished-at="2025-06-24T10:50:15 IST" duration-ms="84" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- tearDownapp -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:Tests.HotstarPlayerScreenOutputs@41d426b5]" started-at="2025-06-18T13:20:19 IST" name="tearDown" finished-at="2025-06-18T13:20:21 IST" duration-ms="1515" status="PASS">
+        </test-method> <!-- navigateToHome -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:Tests.SunNxtPlayerScreenOutputs@7d9d0818]" started-at="2025-06-24T10:50:15 IST" name="tearDown" finished-at="2025-06-24T10:50:16 IST" duration-ms="616" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-      </class> <!-- Tests.HotstarPlayerScreenOutputs -->
-    </test> <!-- Test -->
-  </suite> <!-- AllAppsTest -->
+      </class> <!-- Tests.SunNxtPlayerScreenOutputs -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
 </testng-results>

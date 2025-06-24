@@ -31,14 +31,13 @@ public class BaseTest {
 	public AndroidDriver driver;
 	String ip;
 	
-	@BeforeClass(alwaysRun = true)
+	@BeforeClass(alwaysRun=true)
 	public void configTest() throws URISyntaxException, IOException, InterruptedException {
 		DataFromPropertiesFile dp=new DataFromPropertiesFile();
 		ip=System.getProperty("ipAddress")!=null?System.getProperty("ipAddress"):dp.getLocator("ip");
 		//ip=dp.getLocator("ip");
 		System.out.println(ip);
 		connectStb(ip);
-		
 		// code to automate the service
 		service = new AppiumServiceBuilder()
 				.withAppiumJS(
@@ -83,7 +82,7 @@ public class BaseTest {
 	public void tearDown() {
 		try {
 			if (driver != null) {
-				driver.pressKey(new KeyEvent(AndroidKey.HOME));
+				//driver.pressKey(new KeyEvent(AndroidKey.HOME));
 				driver.quit();
 			}
 		} catch (Exception e) {

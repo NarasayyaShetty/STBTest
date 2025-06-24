@@ -9,23 +9,20 @@ import java.io.FileOutputStream;
 import java.io.IOException;
 import java.text.SimpleDateFormat;
 import java.util.Calendar;
-import java.util.Date;
 
 import static AppsTesting.AdbCommendsClass.deviceName;
 
 public class ExcelDataWrite {
 
     public static void excelWrite(String[] values) {
-        Workbook workbook;
+        Workbook workbook = null;
         Sheet sheet;
-        String deviceName = deviceName();  // Get device name dynamically
+        String device = deviceName();  // Get device name dynamically
 
         // Setup current date and output path
-        Calendar calendar = Calendar.getInstance();
-        SimpleDateFormat sdf = new SimpleDateFormat("ddMMyyyy");
-        String currentDate = sdf.format(calendar.getTime());
+        String currentDate = new SimpleDateFormat("ddMMyyyy").format(Calendar.getInstance().getTime());
+        String sheetName = device + "_" + currentDate;
 
-        String sheetName = deviceName + "_" + currentDate;
         String path = System.getProperty("user.dir") + File.separator + "Results" +
                       File.separator + "ExcelSheetsFolder" + File.separator + currentDate;
 
@@ -38,18 +35,20 @@ public class ExcelDataWrite {
 
         try {
             if (excelFile.exists()) {
-                FileInputStream fis = new FileInputStream(excelFile);
-                workbook = new XSSFWorkbook(fis);
-                sheet = workbook.getSheet(sheetName);
+                // Load existing workbook
+                try (FileInputStream fis = new FileInputStream(excelFile)) {
+                    workbook = new XSSFWorkbook(fis);
+                }
 
-                // If sheet is not found, create it with headers
+                // Check if the sheet already exists
+                sheet = workbook.getSheet(sheetName);
                 if (sheet == null) {
                     sheet = workbook.createSheet(sheetName);
                     createHeaderRow(sheet);
                 }
 
-                fis.close();
             } else {
+                // Create new workbook and sheet
                 workbook = new XSSFWorkbook();
                 sheet = workbook.createSheet(sheetName);
                 createHeaderRow(sheet);
@@ -70,11 +69,11 @@ public class ExcelDataWrite {
             }
 
             // Write to file
-            FileOutputStream fos = new FileOutputStream(excelFile);
-            workbook.write(fos);
-            workbook.close();
-            fos.close();
+            try (FileOutputStream fos = new FileOutputStream(excelFile)) {
+                workbook.write(fos);
+            }
 
+            workbook.close();
             System.out.println("Successfully appended data to Excel sheet.");
 
         } catch (IOException e) {
@@ -88,8 +87,8 @@ public class ExcelDataWrite {
         header.createCell(0).setCellValue("DeviceName");
         header.createCell(1).setCellValue("AppName");
         header.createCell(2).setCellValue("ContentName");
-        header.createCell(3).setCellValue("AudioOutput");
-        header.createCell(4).setCellValue("VisionOutput");
+        header.createCell(3).setCellValue("Audio-Type");
+        header.createCell(4).setCellValue("Vision-Type");
         header.createCell(5).setCellValue("VideoResolution");
     }
 }

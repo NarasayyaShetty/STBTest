@@ -20,5 +20,9 @@ public class DataProviderClass {
 	public Object[][] sonyLivContents(){
 		return new Object[][]{{"pani"},{"Kankhajura"},{"maharani"},{"marco"},{"piku"}};
 	}
+	@DataProvider(name="SunNxtContentName")
+	public Object[][] sunNxtContents(){
+		return new Object[][] {{"Petta"},{"ET - Telugu"},{"35 chinna vishayam ila"},{"upadhyaksha"},{"ayalaan"}};
+	}
 
 }

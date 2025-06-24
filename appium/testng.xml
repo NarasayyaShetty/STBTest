@@ -9,6 +9,8 @@
   <!--<class name="Tests.TestCase1"/> -->
     <class name="Tests.HotstarPlayerScreenOutputs"/> 
      <class name="Tests.SonyLivPlayerScreenOutputs"/>
+     <class name="Tests.SunNxtPlayerScreenOutputs"/>
+     
    
     </classes>
   </test> <!-- Test -->
