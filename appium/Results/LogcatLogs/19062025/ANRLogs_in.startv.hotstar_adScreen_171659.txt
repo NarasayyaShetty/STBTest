@@ -1,0 +1,28 @@
+==== ANR START ====
+06-19 17:00:34.110 E/ActivityManager(  655): ANR in in.startv.hotstar (in.startv.hotstar/com.hotstar.MainActivity)
+06-19 17:00:34.110 E/ActivityManager(  655): PID: 2230
+06-19 17:00:34.110 E/ActivityManager(  655): Reason: Input dispatching timed out (9297620 in.startv.hotstar/com.hotstar.MainActivity (server) is not responding. Waited 5002ms for FocusEvent(hasFocus=true))
+06-19 17:00:34.110 E/ActivityManager(  655): Parent: in.startv.hotstar/com.hotstar.MainActivity
+06-19 17:00:34.110 E/ActivityManager(  655): Load: 5.25 / 4.76 / 4.93
+06-19 17:00:34.110 E/ActivityManager(  655): ----- Output from /proc/pressure/memory -----
+06-19 17:00:34.110 E/ActivityManager(  655): some avg10=1.36 avg60=0.41 avg300=0.23 total=42052880
+06-19 17:00:34.110 E/ActivityManager(  655): full avg10=0.24 avg60=0.07 avg300=0.05 total=14759073
+06-19 17:00:34.110 E/ActivityManager(  655): ----- End output from /proc/pressure/memory -----
+06-19 17:00:34.110 E/ActivityManager(  655): 
+06-19 17:00:34.110 E/ActivityManager(  655): CPU usage from 0ms to 7803ms later (2025-06-19 17:00:26.277 to 2025-06-19 17:00:34.080):
+==== ANR END ====
+
+==== ANR START ====
+06-19 17:08:27.075 E/ActivityManager(  655): ANR in in.startv.hotstar (in.startv.hotstar/com.hotstar.MainActivity)
+06-19 17:08:27.075 E/ActivityManager(  655): PID: 4657
+06-19 17:08:27.075 E/ActivityManager(  655): Reason: Input dispatching timed out (2e05f32 in.startv.hotstar/com.hotstar.MainActivity (server) is not responding. Waited 5001ms for FocusEvent(hasFocus=true))
+06-19 17:08:27.075 E/ActivityManager(  655): Parent: in.startv.hotstar/com.hotstar.MainActivity
+06-19 17:08:27.075 E/ActivityManager(  655): Load: 6.74 / 4.94 / 4.86
+06-19 17:08:27.075 E/ActivityManager(  655): ----- Output from /proc/pressure/memory -----
+06-19 17:08:27.075 E/ActivityManager(  655): some avg10=1.76 avg60=0.55 avg300=0.16 total=42824517
+06-19 17:08:27.075 E/ActivityManager(  655): full avg10=0.06 avg60=0.02 avg300=0.00 total=14931457
+06-19 17:08:27.075 E/ActivityManager(  655): ----- End output from /proc/pressure/memory -----
+06-19 17:08:27.075 E/ActivityManager(  655): 
+06-19 17:08:27.075 E/ActivityManager(  655): CPU usage from 0ms to 10365ms later (2025-06-19 17:08:16.660 to 2025-06-19 17:08:27.025):
+==== ANR END ====
+
