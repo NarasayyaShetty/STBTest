@@ -8,6 +8,7 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 
+import Tests.BaseTest;
 import io.appium.java_client.AppiumBy;
 import io.appium.java_client.android.AndroidDriver;
 import io.appium.java_client.android.nativekey.AndroidKey;
@@ -16,11 +17,9 @@ import static Utilities.AppiumUtils.*;
 
 public class SonyLiv {
 
-	AndroidDriver driver;
+	AndroidDriver driver=BaseTest.getDriver();
 
-	public SonyLiv(AndroidDriver driver) {
-		this.driver = driver;
-	}
+	
 
 	public boolean selctMenuOption(String optionName) throws InterruptedException {
 		boolean status = false;

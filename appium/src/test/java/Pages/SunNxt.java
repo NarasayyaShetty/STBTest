@@ -10,17 +10,16 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 
+import Tests.BaseTest;
 import io.appium.java_client.AppiumBy;
 import io.appium.java_client.android.AndroidDriver;
 import io.appium.java_client.android.nativekey.AndroidKey;
 import io.appium.java_client.android.nativekey.KeyEvent;
 
 public class SunNxt {
-	AndroidDriver driver;
+	AndroidDriver driver=BaseTest.getDriver();
 
-	public SunNxt(AndroidDriver driver) {
-		this.driver = driver;
-	}
+	
 
 	public boolean selectMenuOption(String menuOption) {
 		boolean status = false;

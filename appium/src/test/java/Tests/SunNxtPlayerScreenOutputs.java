@@ -33,7 +33,7 @@ public class SunNxtPlayerScreenOutputs extends BaseTest{
 		s = new String[6];
 		deviceNameandVersion = deviceName();
 		appVersionName = printAppNameAndVersion(appName);
-		sn = new SunNxt(driver);
+		sn = new SunNxt();
 		status=launchApp(appName);
 		Assert.assertTrue(status,"App launch is failed");
 		
@@ -76,7 +76,7 @@ public class SunNxtPlayerScreenOutputs extends BaseTest{
 	
 	@AfterClass(alwaysRun=true)
 	public void navigateToHome() {
-		driver.pressKey(new KeyEvent(AndroidKey.HOME));
+		getDriver().pressKey(new KeyEvent(AndroidKey.HOME));
 	}
 
 }

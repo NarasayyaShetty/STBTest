@@ -20,9 +20,10 @@ public class TestCase1 extends BaseTest {
 	String appName;
 	
 	
+	
 	@Test(description="Launching all the apps one by one",dataProvider="appName", dataProviderClass=DataProviderClass.class)
 	public void allAppLaunch(String app) throws InterruptedException {
-	currentFocus(driver);	
+	currentFocus(getDriver());	
 	String device=deviceName();
 	appName=app;
 	System.out.println(device);

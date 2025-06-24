@@ -29,7 +29,7 @@ public class SonyLivPlayerScreenOutputs extends BaseTest {
 	public void setup() {
 		try {
 			s = new String[6];
-			sl = new SonyLiv(driver);
+			sl = new SonyLiv();
 			deviceNameandVersion = deviceName();
 			appVersionName = printAppNameAndVersion(appName);
 			status = launchApp(appName);
@@ -70,7 +70,7 @@ public class SonyLivPlayerScreenOutputs extends BaseTest {
 
 	@AfterClass(alwaysRun = true)
 	public void navigateToHome() {
-		driver.pressKey(new KeyEvent(AndroidKey.HOME));
+		getDriver().pressKey(new KeyEvent(AndroidKey.HOME));
 	}
 
 }
