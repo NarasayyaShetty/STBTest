@@ -20,14 +20,16 @@ public class Zee5 {
 
 	AndroidDriver driver = BaseTest.getDriver();
 
-	public boolean selectMenuOption(String menuName) {
+	public boolean selectMenuOption(String menuName) throws InterruptedException {
 		boolean status = false;
-		WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(25));
+		
 		try {
+			WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(25));
 			//com.zee5.aosp:id/collection_header_icon
 			WebElement menu = wait.until(ExpectedConditions
 					.visibilityOfElementLocated(AppiumBy.id("com.zee5.aosp:id/banner_image")));
 			driver.pressKey(new KeyEvent(AndroidKey.BACK));
+			//Thread.sleep(3000);
 			List<WebElement> menuOptions = wait.until(ExpectedConditions.visibilityOfAllElementsLocatedBy(AppiumBy
 					.xpath("//android.widget.TextView[@resource-id='com.zee5.aosp:id/collection_header_label']")));
 			for (WebElement option : menuOptions) {
@@ -42,9 +44,11 @@ public class Zee5 {
 			status = true;
 
 		} catch (Exception e) {
+			WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(15));
 			WebElement profile = wait
-					.until(ExpectedConditions.visibilityOfElementLocated(AppiumBy.id("com.zee5.aosp:id/watching")));
+					.until(ExpectedConditions.visibilityOfElementLocated(AppiumBy.xpath("//android.widget.TextView[@resource-id='com.zee5.aosp:id/profile_name']")));
 			driver.pressKey(new KeyEvent(AndroidKey.DPAD_CENTER));
+			Thread.sleep(4000);
 			selectMenuOption(menuName);
 		}
 
@@ -102,7 +106,7 @@ public class Zee5 {
 			wait.until(ExpectedConditions.visibilityOfElementLocated(
 					AppiumBy.xpath("//android.widget.ImageView[@resource-id='com.zee5.aosp:id/img_option']")));
 			driver.pressKey(new KeyEvent(AndroidKey.DPAD_CENTER));
-			safeStaticWait(driver, 45000, 15000);
+			safeStaticWait(driver);
 			status = true;
 
 		} catch (Exception e) {
@@ -115,7 +119,7 @@ public class Zee5 {
 	public boolean playLiveContent() {
 		boolean status = false;
 		try {
-			safeStaticWait(driver, 45000, 15000);
+			safeStaticWait(driver);
 			status = true;
 
 		} catch (Exception e) {

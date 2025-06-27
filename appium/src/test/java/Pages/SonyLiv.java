@@ -87,7 +87,7 @@ public class SonyLiv {
 
 			Thread.sleep(2000);
 			driver.pressKey(new KeyEvent(AndroidKey.ENTER));
-			safeStaticWait(driver, 45000, 15000);
+			safeStaticWait(driver);
 			status = true;
 
 		} catch (Exception e) {
@@ -102,8 +102,7 @@ public class SonyLiv {
 		try {
 			WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(10));
 			driver.pressKey(new KeyEvent(AndroidKey.BACK));
-			WebElement myListButton = wait.until(ExpectedConditions.visibilityOfElementLocated(AppiumBy.xpath(
-					"//android.widget.TextView[@resource-id='com.jiotv.sonyliv:id/btnText' and @text='My List']")));
+			WebElement myListButton = wait.until(ExpectedConditions.visibilityOfElementLocated(AppiumBy.id("com.jiotv.sonyliv:id/btnIcon")));
 			if (myListButton.isDisplayed()) {
 				driver.pressKey(new KeyEvent(AndroidKey.BACK));
 			}

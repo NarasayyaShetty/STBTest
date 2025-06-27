@@ -57,6 +57,7 @@ public class SunNxt {
 					AppiumBy.xpath("//android.widget.EditText[@resource-id='com.suntv.sunnxt:id/search_text']")));
 			searchField.clear();
 			searchField.sendKeys(contentName);
+			Thread.sleep(3000);
 			status = true;
 
 		} catch (Exception e) {
@@ -88,7 +89,7 @@ public class SunNxt {
 			WebElement playButton = wait.until(ExpectedConditions.visibilityOfElementLocated(
 					AppiumBy.id("com.suntv.sunnxt:id/playB_btton")));
 			playButton.click();
-			safeStaticWait(driver, 45000, 15000);
+			safeStaticWait(driver);
 			status = true;
 		} catch (Exception e) {
 			e.printStackTrace();

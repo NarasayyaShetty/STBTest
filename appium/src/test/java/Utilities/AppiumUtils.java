@@ -33,8 +33,10 @@ public class AppiumUtils {
 			e.printStackTrace();
 		}
 	}
-	public static void safeStaticWait(AndroidDriver driver, long totalWaitMillis, long heartbeatIntervalMillis) throws InterruptedException {
+	public static void safeStaticWait(AndroidDriver driver) throws InterruptedException {
 	    long waited = 0;
+	    long totalWaitMillis=60000;
+	    long heartbeatIntervalMillis=15000;
 	    
 	    while (waited < totalWaitMillis) {
 	        Thread.sleep(heartbeatIntervalMillis);

@@ -73,7 +73,7 @@ public class SunNxtPlayerScreenOutputs extends BaseTest{
 	@Test(description="intentionally failed",priority=2)
 	public void sunNxtFailTestcase() {
 		status=sn.searchContent("Petta");
-		Assert.assertTrue(status,"Unable to search the content");
+		Assert.assertTrue(false,"Unable to search the content");
 		status=sn.selectSearchedContentAndPlay("Petta");
 		Assert.assertFalse(true,"Intentionally failed testcase");
 	}

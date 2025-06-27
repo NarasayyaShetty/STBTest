@@ -32,7 +32,10 @@ public class JioHotstar {
 			Thread.sleep(2000);
 		} catch (Exception e) {
 			// TODO Auto-generated catch block
-			e.printStackTrace();
+			WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(10));
+			wait.until(ExpectedConditions.visibilityOfElementLocated(AppiumBy.accessibilityId("Continue")));
+			driver.pressKey(new KeyEvent(AndroidKey.DPAD_CENTER));
+			clickOnProfile();
 		}
 	}
 
@@ -96,7 +99,7 @@ public class JioHotstar {
 			driver.pressKey(new KeyEvent(AndroidKey.ENTER));
 			Thread.sleep(3000);
 			driver.pressKey(new KeyEvent(AndroidKey.ENTER));
-			safeStaticWait(driver, 45000, 15000);
+			safeStaticWait(driver);
 			//selectAudioOption(driver);
 			status=true;
 		} catch (NoSuchElementException e) {
@@ -110,7 +113,7 @@ public class JioHotstar {
 				}
 			}
 			driver.pressKey(new KeyEvent(AndroidKey.DPAD_CENTER));
-			safeStaticWait(driver, 45000, 15000);
+			safeStaticWait(driver);
 			//selectAudioOption(driver);
 			status=true;
 			List<WebElement> contents = wait.until(ExpectedConditions.visibilityOfAllElementsLocatedBy(AppiumBy
@@ -121,7 +124,7 @@ public class JioHotstar {
 				break;
 			}
 			driver.pressKey(new KeyEvent(AndroidKey.DPAD_CENTER));
-			safeStaticWait(driver, 45000, 15000);
+			safeStaticWait(driver);
 		//	selectAudioOption(driver);
 			status=true;
 		}

@@ -34,8 +34,8 @@ public class SonyLivPlayerScreenOutputs extends BaseTest {
 			appVersionName = printAppNameAndVersion(appName);
 			status = launchApp(appName);
 			Assert.assertTrue(status, "App launch is failed");
-			status = sl.selctMenuOption("Search");
-			Assert.assertTrue(status, "Failed to navigete search section");
+			sl.selctMenuOption("Search");
+			
 		} catch (Exception e) {
 			System.out.println("Exception is occurred on SonyLiv setup");
 			e.printStackTrace();

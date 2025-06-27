@@ -6,15 +6,43 @@
   </listeners>
   <test thread-count="5" name="Test(failed)">
     <classes>
-      <class name="Tests.HotstarPlayerScreenOutputs">
+      <class name="Tests.SunNxtPlayerScreenOutputs">
         <methods>
-          <include name="tearDownapp"/>
-          <include name="configTest"/>
           <include name="setUp"/>
-          <include name="jioHotsterFailedTestCase"/>
+          <include name="configTest"/>
+          <include name="sunNxtPlayerResults"/>
+          <include name="sunNxtFailTestcase"/>
+          <include name="tearDown"/>
+          <include name="navigateToHome"/>
+        </methods>
+      </class> <!-- Tests.SunNxtPlayerScreenOutputs -->
+      <class name="Tests.SonyLivPlayerScreenOutputs">
+        <methods>
+          <include name="sonyLivePlayerResults"/>
+          <include name="configTest"/>
+          <include name="setup"/>
+          <include name="sonyLivFailTestcase"/>
           <include name="tearDown"/>
         </methods>
+      </class> <!-- Tests.SonyLivPlayerScreenOutputs -->
+      <class name="Tests.HotstarPlayerScreenOutputs">
+        <methods>
+          <include name="configTest"/>
+          <include name="jioHotsterFailedTestCase"/>
+          <include name="setUp"/>
+          <include name="tearDown"/>
+          <include name="jioHotstarPlayreResult"/>
+        </methods>
       </class> <!-- Tests.HotstarPlayerScreenOutputs -->
+      <class name="Tests.Zee5PlayerScreenOutput">
+        <methods>
+          <include name="configTest"/>
+          <include name="setUp"/>
+          <include name="zee5PlayerResults"/>
+          <include name="tearDown"/>
+          <include name="zee5LiveChannelPlayerResults"/>
+        </methods>
+      </class> <!-- Tests.Zee5PlayerScreenOutput -->
     </classes>
   </test> <!-- Test(failed) -->
 </suite> <!-- Failed suite [AllAppsTest] -->

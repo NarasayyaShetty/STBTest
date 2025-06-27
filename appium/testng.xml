@@ -7,10 +7,11 @@
   <test thread-count="2" name="Test">
     <classes>
   <!--<class name="Tests.TestCase1"/> -->
-   <!-- <class name="Tests.HotstarPlayerScreenOutputs"/> 
+    <class name="Tests.Zee5PlayerScreenOutput"/>
+    <class name="Tests.HotstarPlayerScreenOutputs"/> 
     <class name="Tests.SonyLivPlayerScreenOutputs"/>
-     <class name="Tests.SunNxtPlayerScreenOutputs"/>-->
-     <class name="Tests.Zee5PlayerScreenOutput"/>
+     <class name="Tests.SunNxtPlayerScreenOutputs"/>
+    
     </classes>
   </test> <!-- Test -->
 </suite> <!-- AllAppsTest -->
