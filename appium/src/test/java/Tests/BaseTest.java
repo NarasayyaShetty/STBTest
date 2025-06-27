@@ -87,7 +87,7 @@ public class BaseTest {
 	public void tearDown() {
 		try {
 			if (getDriver() != null) {
-				//driver.pressKey(new KeyEvent(AndroidKey.HOME));
+				getDriver().pressKey(new KeyEvent(AndroidKey.HOME));
 				getDriver().quit();
 			}
 		} catch (Exception e) {

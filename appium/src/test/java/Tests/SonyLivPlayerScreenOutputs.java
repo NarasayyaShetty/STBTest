@@ -37,7 +37,7 @@ public class SonyLivPlayerScreenOutputs extends BaseTest {
 			status = sl.selctMenuOption("Search");
 			Assert.assertTrue(status, "Failed to navigete search section");
 		} catch (Exception e) {
-			System.out.println("Exception is occureed");
+			System.out.println("Exception is occurred on SonyLiv setup");
 			e.printStackTrace();
 		}
 	}
@@ -57,7 +57,7 @@ public class SonyLivPlayerScreenOutputs extends BaseTest {
 			status = sl.backNavigationFromPlayerScreen();
 			Assert.assertTrue(status, "Back navigation from playerscreen is failed");
 		} catch (Exception e) {
-			System.out.println("Exception is occureed");
+			System.out.println("Exception is occureed in SonyLiv testcase");
 			e.printStackTrace();
 		}
 	}
@@ -68,9 +68,9 @@ public class SonyLivPlayerScreenOutputs extends BaseTest {
 		Assert.assertFalse(true, "Intentionally failed testcase");
 	}
 
-	@AfterClass(alwaysRun = true)
-	public void navigateToHome() {
-		getDriver().pressKey(new KeyEvent(AndroidKey.HOME));
-	}
+//	@AfterClass(alwaysRun = true)
+//	public void navigateToHome() {
+//		getDriver().pressKey(new KeyEvent(AndroidKey.HOME));
+//	}
 
 }

@@ -24,6 +24,7 @@ import static AppsTesting.PlayerCommends.getVisionOutput;
 import Pages.JioHotstar;
 import Utilities.DataProviderClass;
 import io.appium.java_client.AppiumBy;
+import io.appium.java_client.android.AndroidDriver;
 import io.appium.java_client.android.nativekey.AndroidKey;
 import io.appium.java_client.android.nativekey.KeyEvent;
 
@@ -36,7 +37,7 @@ public class HotstarPlayerScreenOutputs extends BaseTest {
 	String deviceNameandVersion;
 	String appVersionName;
 	boolean status;
-	// , dataProvider="hotstarContentName",dataProviderClass=DataProviderClass.class
+	
 	@BeforeClass(alwaysRun=true)
 	public void setUp() {
 		try {
@@ -51,7 +52,7 @@ public class HotstarPlayerScreenOutputs extends BaseTest {
 			js.clickOnProfile();
 			js.selectMenuOption("Search");
 		} catch (Exception e) {
-			System.out.println("Exception occureed");
+			System.out.println("Exception occureed in hotstar setup");
 			e.printStackTrace();
 		}
 	}
@@ -73,7 +74,7 @@ public class HotstarPlayerScreenOutputs extends BaseTest {
 			status=js.backNavigattionFromPlayerScreen();
 			//Assert.assertTrue(status,"Back navigation is failed from player screen");
 		} catch (Exception e) {
-			System.out.println("Exception occurred");
+			System.out.println("Exception occurred in hotstar testcase");
 		
 		}
 
@@ -92,9 +93,9 @@ public class HotstarPlayerScreenOutputs extends BaseTest {
 	}
 	
 
-	@AfterClass(alwaysRun=true)
-	public void tearDownapp() {
-		getDriver().pressKey(new KeyEvent(AndroidKey.HOME));
-	}
+//	@AfterClass(alwaysRun=true)
+//	public void tearDownapp() {
+//		getDriver().pressKey(new KeyEvent(AndroidKey.HOME));
+//	}
 
 }

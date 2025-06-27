@@ -1,140 +1,102 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="7" passed="6" failed="1" skipped="0">
+<testng-results ignored="1" total="8" passed="7" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2025-06-24T17:30:54 IST" name="Default suite" finished-at="2025-06-24T17:37:15 IST" duration-ms="381316">
+  <suite started-at="2025-06-26T22:17:17 IST" name="Default suite" finished-at="2025-06-26T22:31:35 IST" duration-ms="857777">
     <groups>
     </groups>
-    <test started-at="2025-06-24T17:30:54 IST" name="Default test" finished-at="2025-06-24T17:37:15 IST" duration-ms="381316">
-      <class name="Tests.HotstarPlayerScreenOutputs">
-        <test-method is-config="true" signature="configTest()[pri:0, instance:Tests.HotstarPlayerScreenOutputs@68c9d179]" started-at="2025-06-24T17:30:54 IST" name="configTest" finished-at="2025-06-24T17:31:08 IST" duration-ms="13758" status="PASS">
+    <test started-at="2025-06-26T22:17:17 IST" name="Default test" finished-at="2025-06-26T22:31:35 IST" duration-ms="857777">
+      <class name="Tests.Zee5PlayerScreenOutput">
+        <test-method is-config="true" signature="configTest()[pri:0, instance:Tests.Zee5PlayerScreenOutput@5e7cd6cc]" started-at="2025-06-26T22:17:17 IST" name="configTest" finished-at="2025-06-26T22:17:33 IST" duration-ms="15853" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- configTest -->
-        <test-method is-config="true" signature="setUp()[pri:0, instance:Tests.HotstarPlayerScreenOutputs@68c9d179]" started-at="2025-06-24T17:31:08 IST" name="setUp" finished-at="2025-06-24T17:31:23 IST" duration-ms="14695" status="PASS">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:Tests.Zee5PlayerScreenOutput@5e7cd6cc]" started-at="2025-06-26T22:17:33 IST" name="setUp" finished-at="2025-06-26T22:17:40 IST" duration-ms="7287" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method signature="jioHotstarPlayreResult(java.lang.String)[pri:1, instance:Tests.HotstarPlayerScreenOutputs@68c9d179]" started-at="2025-06-24T17:31:23 IST" name="jioHotstarPlayreResult" description="Playing multiple contents" data-provider="hotstarContentName" finished-at="2025-06-24T17:32:23 IST" duration-ms="60001" status="PASS">
+        <test-method signature="zee5PlayerResults(java.lang.String)[pri:1, instance:Tests.Zee5PlayerScreenOutput@5e7cd6cc]" started-at="2025-06-26T22:17:40 IST" name="zee5PlayerResults" description="Zee5 player outputs" data-provider="Zee5ContentName" finished-at="2025-06-26T22:19:15 IST" duration-ms="94500" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[subham]]>
+                <![CDATA[Max]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- jioHotstarPlayreResult -->
-        <test-method signature="jioHotstarPlayreResult(java.lang.String)[pri:1, instance:Tests.HotstarPlayerScreenOutputs@68c9d179]" started-at="2025-06-24T17:32:23 IST" name="jioHotstarPlayreResult" description="Playing multiple contents" data-provider="hotstarContentName" finished-at="2025-06-24T17:33:21 IST" duration-ms="58824" status="PASS">
+        </test-method> <!-- zee5PlayerResults -->
+        <test-method signature="zee5PlayerResults(java.lang.String)[pri:1, instance:Tests.Zee5PlayerScreenOutput@5e7cd6cc]" started-at="2025-06-26T22:19:15 IST" name="zee5PlayerResults" description="Zee5 player outputs" data-provider="Zee5ContentName" finished-at="2025-06-26T22:21:10 IST" duration-ms="115565" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[Salaar]]>
+                <![CDATA[vimanam]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- jioHotstarPlayreResult -->
-        <test-method signature="jioHotstarPlayreResult(java.lang.String)[pri:1, instance:Tests.HotstarPlayerScreenOutputs@68c9d179]" started-at="2025-06-24T17:33:21 IST" name="jioHotstarPlayreResult" description="Playing multiple contents" data-provider="hotstarContentName" finished-at="2025-06-24T17:34:38 IST" duration-ms="76491" status="PASS">
+        </test-method> <!-- zee5PlayerResults -->
+        <test-method signature="zee5PlayerResults(java.lang.String)[pri:1, instance:Tests.Zee5PlayerScreenOutput@5e7cd6cc]" started-at="2025-06-26T22:21:10 IST" name="zee5PlayerResults" description="Zee5 player outputs" data-provider="Zee5ContentName" finished-at="2025-06-26T22:22:48 IST" duration-ms="97398" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[Bhagavanth Kesari]]>
+                <![CDATA[Ummadi Kutumbam]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- jioHotstarPlayreResult -->
-        <test-method signature="jioHotstarPlayreResult(java.lang.String)[pri:1, instance:Tests.HotstarPlayerScreenOutputs@68c9d179]" started-at="2025-06-24T17:34:38 IST" name="jioHotstarPlayreResult" description="Playing multiple contents" data-provider="hotstarContentName" finished-at="2025-06-24T17:35:37 IST" duration-ms="58559" status="PASS">
+        </test-method> <!-- zee5PlayerResults -->
+        <test-method signature="zee5PlayerResults(java.lang.String)[pri:1, instance:Tests.Zee5PlayerScreenOutput@5e7cd6cc]" started-at="2025-06-26T22:22:48 IST" name="zee5PlayerResults" description="Zee5 player outputs" data-provider="Zee5ContentName" finished-at="2025-06-26T22:24:36 IST" duration-ms="108820" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[Captain America Brave new world]]>
+                <![CDATA[Auto Shankar]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- jioHotstarPlayreResult -->
-        <test-method signature="jioHotstarPlayreResult(java.lang.String)[pri:1, instance:Tests.HotstarPlayerScreenOutputs@68c9d179]" started-at="2025-06-24T17:35:37 IST" name="jioHotstarPlayreResult" description="Playing multiple contents" data-provider="hotstarContentName" finished-at="2025-06-24T17:36:01 IST" duration-ms="24033" status="PASS">
+        </test-method> <!-- zee5PlayerResults -->
+        <test-method signature="zee5LiveChannelPlayerResults(java.lang.String)[pri:2, instance:Tests.Zee5PlayerScreenOutput@5e7cd6cc]" started-at="2025-06-26T22:24:36 IST" name="zee5LiveChannelPlayerResults" description="Live content playback" data-provider="Zee5LiveContentName" finished-at="2025-06-26T22:26:35 IST" duration-ms="118533" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[Tough me not]]>
+                <![CDATA[Zee Telugu HD]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- jioHotstarPlayreResult -->
-        <test-method signature="jioHotstarPlayreResult(java.lang.String)[pri:1, instance:Tests.HotstarPlayerScreenOutputs@68c9d179]" started-at="2025-06-24T17:36:01 IST" name="jioHotstarPlayreResult" description="Playing multiple contents" data-provider="hotstarContentName" finished-at="2025-06-24T17:37:09 IST" duration-ms="68856" status="PASS">
+        </test-method> <!-- zee5LiveChannelPlayerResults -->
+        <test-method signature="zee5LiveChannelPlayerResults(java.lang.String)[pri:2, instance:Tests.Zee5PlayerScreenOutput@5e7cd6cc]" started-at="2025-06-26T22:26:35 IST" name="zee5LiveChannelPlayerResults" description="Live content playback" data-provider="Zee5LiveContentName" finished-at="2025-06-26T22:29:00 IST" duration-ms="145296" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[Anupama]]>
+                <![CDATA[Zee Kannada HD]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- jioHotstarPlayreResult -->
-        <test-method signature="jioHotsterFailedTestCase()[pri:2, instance:Tests.HotstarPlayerScreenOutputs@68c9d179]" started-at="2025-06-24T17:37:09 IST" name="jioHotsterFailedTestCase" finished-at="2025-06-24T17:37:13 IST" duration-ms="3723" status="FAIL">
-          <exception class="java.lang.AssertionError">
-            <message>
-              <![CDATA[Intentionally failing the testcase expected [false] but found [true]]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[java.lang.AssertionError: Intentionally failing the testcase expected [false] but found [true]
-at org.testng.Assert.fail(Assert.java:111)
-at org.testng.Assert.failNotEquals(Assert.java:1590)
-at org.testng.Assert.assertFalse(Assert.java:79)
-at Tests.HotstarPlayerScreenOutputs.jioHotsterFailedTestCase(HotstarPlayerScreenOutputs.java:88)
-at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
-at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-at java.base/java.lang.reflect.Method.invoke(Method.java:566)
-at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
-at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:687)
-at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
-at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
-at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:995)
-at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
-at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
-at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
-at java.base/java.util.ArrayList.forEach(ArrayList.java:1540)
-at org.testng.TestRunner.privateRun(TestRunner.java:741)
-at org.testng.TestRunner.run(TestRunner.java:616)
-at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
-at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
-at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
-at org.testng.SuiteRunner.run(SuiteRunner.java:312)
-at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
-at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
-at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
-at org.testng.TestNG.runSuites(TestNG.java:1112)
-at org.testng.TestNG.run(TestNG.java:1079)
-at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
-at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
-]]>
-            </full-stacktrace>
-          </exception> <!-- java.lang.AssertionError -->
+        </test-method> <!-- zee5LiveChannelPlayerResults -->
+        <test-method signature="zee5LiveChannelPlayerResults(java.lang.String)[pri:2, instance:Tests.Zee5PlayerScreenOutput@5e7cd6cc]" started-at="2025-06-26T22:29:00 IST" name="zee5LiveChannelPlayerResults" description="Live content playback" data-provider="Zee5LiveContentName" finished-at="2025-06-26T22:31:25 IST" duration-ms="145048" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Zee Tamil HD]]>
+              </value>
+            </param>
+          </params>
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- jioHotsterFailedTestCase -->
-        <test-method is-config="true" signature="tearDownapp()[pri:0, instance:Tests.HotstarPlayerScreenOutputs@68c9d179]" started-at="2025-06-24T17:37:13 IST" name="tearDownapp" finished-at="2025-06-24T17:37:14 IST" duration-ms="630" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- tearDownapp -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:Tests.HotstarPlayerScreenOutputs@68c9d179]" started-at="2025-06-24T17:37:14 IST" name="tearDown" finished-at="2025-06-24T17:37:15 IST" duration-ms="1696" status="PASS">
+        </test-method> <!-- zee5LiveChannelPlayerResults -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:Tests.Zee5PlayerScreenOutput@5e7cd6cc]" started-at="2025-06-26T22:31:25 IST" name="tearDown" finished-at="2025-06-26T22:31:35 IST" duration-ms="9425" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-      </class> <!-- Tests.HotstarPlayerScreenOutputs -->
+      </class> <!-- Tests.Zee5PlayerScreenOutput -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>

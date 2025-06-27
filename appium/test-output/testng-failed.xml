@@ -3,15 +3,15 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="Tests.HotstarPlayerScreenOutputs">
+      <class name="Tests.Zee5PlayerScreenOutput">
         <methods>
-          <include name="tearDownapp"/>
           <include name="configTest"/>
-          <include name="jioHotsterFailedTestCase"/>
           <include name="setUp"/>
+          <include name="zee5PlayerResults" invocation-numbers="1 2 3"/>
+          <include name="zee5LiveChannelPlayerResults" invocation-numbers="0 1 2"/>
           <include name="tearDown"/>
         </methods>
-      </class> <!-- Tests.HotstarPlayerScreenOutputs -->
+      </class> <!-- Tests.Zee5PlayerScreenOutput -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

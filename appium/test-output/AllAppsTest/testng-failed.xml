@@ -11,8 +11,8 @@
           <include name="tearDownapp"/>
           <include name="configTest"/>
           <include name="setUp"/>
+          <include name="jioHotsterFailedTestCase"/>
           <include name="tearDown"/>
-          <include name="adScreen"/>
         </methods>
       </class> <!-- Tests.HotstarPlayerScreenOutputs -->
     </classes>

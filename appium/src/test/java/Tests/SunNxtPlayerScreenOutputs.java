@@ -29,7 +29,8 @@ public class SunNxtPlayerScreenOutputs extends BaseTest{
 	boolean status;
 	
 	@BeforeClass(alwaysRun=true)
-	public void config() {
+	public void setUp() {
+		try {
 		s = new String[6];
 		deviceNameandVersion = deviceName();
 		appVersionName = printAppNameAndVersion(appName);
@@ -39,6 +40,9 @@ public class SunNxtPlayerScreenOutputs extends BaseTest{
 		
 		boolean status=sn.selectMenuOption("Search");
 		Assert.assertTrue(status,"Unable to navigate search section");
+		}catch(Exception e) {
+			System.out.println("Exception occureed on SunNxt setUp method");
+		}
 		
 	}
 	

@@ -22,7 +22,6 @@ import static Utilities.AppiumUtils.*;
 public class JioHotstar {
 	AndroidDriver driver=BaseTest.getDriver();
 
-	
 	public void clickOnProfile() {
 		try {
 			WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(30));
