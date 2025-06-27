@@ -24,10 +24,10 @@ public class Zee5 {
 		boolean status = false;
 		WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(25));
 		try {
+			//com.zee5.aosp:id/collection_header_icon
 			WebElement menu = wait.until(ExpectedConditions
-					.visibilityOfElementLocated(AppiumBy.id("com.zee5.aosp:id/collection_header_icon")));
+					.visibilityOfElementLocated(AppiumBy.id("com.zee5.aosp:id/banner_image")));
 			driver.pressKey(new KeyEvent(AndroidKey.BACK));
-			Thread.sleep(1000);
 			List<WebElement> menuOptions = wait.until(ExpectedConditions.visibilityOfAllElementsLocatedBy(AppiumBy
 					.xpath("//android.widget.TextView[@resource-id='com.zee5.aosp:id/collection_header_label']")));
 			for (WebElement option : menuOptions) {

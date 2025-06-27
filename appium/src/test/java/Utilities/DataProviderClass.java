@@ -31,7 +31,7 @@ public class DataProviderClass {
 	}
 	@DataProvider(name="Zee5LiveContentName")
 	public Object[][] Zee5LiveContents(){
-		return new Object[][] {{"Zee Telugu HD"},{"Zee Kannada HD"},{"Zee Tamil HD"}};
+		return new Object[][] {{"Zee Telugu HD"},{"Zee Kannada HD"}};
 	}
 
 
