@@ -48,7 +48,7 @@ public class Zee5 {
 			WebElement profile = wait
 					.until(ExpectedConditions.visibilityOfElementLocated(AppiumBy.xpath("//android.widget.TextView[@resource-id='com.zee5.aosp:id/profile_name']")));
 			driver.pressKey(new KeyEvent(AndroidKey.DPAD_CENTER));
-			Thread.sleep(4000);
+			Thread.sleep(5000);
 			selectMenuOption(menuName);
 		}
 

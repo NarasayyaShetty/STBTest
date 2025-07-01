@@ -21,7 +21,8 @@ public class ExcelDataWrite {
 
         // Setup current date and output path
         String currentDate = new SimpleDateFormat("ddMMyyyy").format(Calendar.getInstance().getTime());
-        String sheetName = device + "_" + currentDate;
+      //  String sheetName = device + "_" + currentDate;
+        String sheetName = currentDate;
 
         String path = System.getProperty("user.dir") + File.separator + "Results" +
                       File.separator + "ExcelSheetsFolder" + File.separator + currentDate;
