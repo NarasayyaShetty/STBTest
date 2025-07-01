@@ -7,7 +7,7 @@ import java.util.ArrayList;
 public class AdbCommends {
 	public static void main(String[] args) {
 
-		String deviceIp = "192.168.1.23"; // ✅ Replace with your device's actual IP
+		String deviceIp = "192.168.29.3"; // ✅ Replace with your device's actual IP
 //	         String packageName="in.startv.hotstar";
 
 		// Step 1: Set device to TCP/IP mode

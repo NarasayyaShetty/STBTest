@@ -62,14 +62,14 @@ public class BaseTest {
                 .build();
         service.start();
 
-        // ✅ Step 4: Set desired capabilities
+        //  Step 4: Set desired capabilities
         UiAutomator2Options options = new UiAutomator2Options();
         options.setDeviceName(ip + ":5555");
         options.setUdid(ip + ":5555");
         options.setAutomationName("UIAutomator2");
         options.setMjpegServerPort(0); // Prevent port 8200 conflicts
 
-        // ✅ Step 5: Start driver with retries
+        // Step 5: Start driver with retries
         int retry = 0;
         while (retry < 3) {
             try {
