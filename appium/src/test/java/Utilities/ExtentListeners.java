@@ -6,7 +6,16 @@ import Tests.BaseTest;
 import io.appium.java_client.android.AndroidDriver;
 import org.testng.*;
 
+import java.io.File;
+import java.io.IOException;
 import java.lang.reflect.Field;
+import java.nio.file.Files;
+import java.nio.file.Path;
+import java.nio.file.Paths;
+import java.nio.file.StandardCopyOption;
+import java.text.SimpleDateFormat;
+import java.util.Calendar;
+import java.util.Comparator;
 import java.util.Map;
 
 import static AppsTesting.AdbCommendsClass.collectLogs;
@@ -86,6 +95,46 @@ public class ExtentListeners implements ITestListener {
 
     @Override
     public void onFinish(ITestContext context) {
+    	try {
+            // Define Excel report path
+            String currentDate = new SimpleDateFormat("ddMMyyyy").format(Calendar.getInstance().getTime());
+            String excelPath = System.getProperty("user.dir") + File.separator + "Results" +
+                               File.separator + "ExcelSheetsFolder" + File.separator + currentDate +
+                               File.separator + "ExcelResults.xlsx";
+
+            File excelFile = new File(excelPath);
+            if (excelFile.exists()) {
+                ExtentTest summaryTest = extent.createTest("Test Summary Excel Report");
+
+                summaryTest.info("Click below to download the Excel report:");
+                summaryTest.info("<a href='" + excelFile.getAbsolutePath() + "' target='_blank'>Download Excel Report</a>");
+            } else {
+                ExtentTest summaryTest = extent.createTest("Test Summary Excel Report");
+                summaryTest.warning("Excel Report not found at expected location: " + excelPath);
+            }
+         // ===== Add report path print and auto-open =====
+//            String reportPath = System.getProperty("user.dir") + File.separator + "reports" + File.separator + "ExtentReport.html";
+//            System.out.println("ExtentReport generated at: " + reportPath);
+            
+//            String reportPath = System.getProperty("user.dir") + File.separator + "Results" +
+//                    File.separator + "ExtentReports" + File.separator + currentDate +
+//                    File.separator + "index.html";
+//
+//            // Optional: Open report in default browser (only works on local machine, not CI)
+//            File reportFile = new File(reportPath);
+//            if (reportFile.exists()) {
+//                java.awt.Desktop.getDesktop().browse(reportFile.toURI());
+//            } else {
+//                System.err.println("ExtentReport.html file not found at: " + reportPath);
+//            }
+            
+           
+
+        } catch (Exception e) {
+            ExtentTest summaryTest = extent.createTest("Test Summary Excel Report");
+            summaryTest.warning("Exception while attaching Excel Report: " + e.getMessage());
+        }
+
         extent.flush();
     }
 }

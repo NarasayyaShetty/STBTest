@@ -15,6 +15,7 @@ public class DataProviderClass {
 	public Object[][] JioHotstarContents(){
 		return new Object[][]{{"subham"},{"Salaar"},{"Bhagavanth Kesari"},{"Captain America Brave new world"},{"ironheart"},{"Anupama"}};
 	}
+	//{"Salaar"},{"Bhagavanth Kesari"},{"Captain America Brave new world"},{"ironheart"},{"Anupama"}
 	
 	@DataProvider(name="sonyLivContentName")
 	public Object[][] sonyLivContents(){
