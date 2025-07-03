@@ -4,6 +4,8 @@ import com.aventstack.extentreports.*;
 import ExtentReport.ExtentReportNG;
 import Tests.BaseTest;
 import io.appium.java_client.android.AndroidDriver;
+
+import org.apache.commons.io.FileUtils;
 import org.testng.*;
 
 import java.io.File;
@@ -112,21 +114,46 @@ public class ExtentListeners implements ITestListener {
                 ExtentTest summaryTest = extent.createTest("Test Summary Excel Report");
                 summaryTest.warning("Excel Report not found at expected location: " + excelPath);
             }
-         // ===== Add report path print and auto-open =====
-//            String reportPath = System.getProperty("user.dir") + File.separator + "reports" + File.separator + "ExtentReport.html";
-//            System.out.println("ExtentReport generated at: " + reportPath);
             
-//            String reportPath = System.getProperty("user.dir") + File.separator + "Results" +
-//                    File.separator + "ExtentReports" + File.separator + currentDate +
-//                    File.separator + "index.html";
-//
-//            // Optional: Open report in default browser (only works on local machine, not CI)
-//            File reportFile = new File(reportPath);
-//            if (reportFile.exists()) {
-//                java.awt.Desktop.getDesktop().browse(reportFile.toURI());
-//            } else {
-//                System.err.println("ExtentReport.html file not found at: " + reportPath);
-//            }
+            String currentDate1 = new SimpleDateFormat("ddMMyyyy").format(Calendar.getInstance().getTime());
+            String sourcePath = System.getProperty("user.dir") + File.separator + "Results" +
+                               File.separator + "ExtentReports" + File.separator + currentDate1 +
+                               File.separator + "index.html";
+
+            String destDirPath = System.getProperty("user.dir") + File.separator + "Results" +
+                                File.separator + "Latest";
+
+            String destPath = destDirPath + File.separator + "index.html";
+
+            File sourceFile = new File(sourcePath);
+            File destDir = new File(destDirPath);
+            File destFile = new File(destDir, "index.html");
+
+            if (!destDir.exists()) {
+                destDir.mkdirs();  // create directory if not exists
+            }
+
+            if (sourceFile.exists()) {
+                Files.copy(sourceFile.toPath(), destFile.toPath(), StandardCopyOption.REPLACE_EXISTING);
+                System.out.println("Report copied to: " + destFile.getAbsolutePath());
+            } else {
+                System.err.println("Source Extent report not found at: " + sourceFile.getAbsolutePath());
+            }
+//         // ===== Add report path print and auto-open =====
+           String reportPath = System.getProperty("user.dir") + File.separator + "reports" + File.separator + "ExtentReport.html";
+           System.out.println("ExtentReport generated at: " + reportPath);
+            
+           String reportPath1 = System.getProperty("user.dir") + File.separator + "Results" +
+                   File.separator + "ExtentReports" + File.separator + currentDate +
+                   File.separator + "index.html";
+
+            // Optional: Open report in default browser (only works on local machine, not CI)
+          File reportFile = new File(reportPath1);
+           if (reportFile.exists()) {
+                java.awt.Desktop.getDesktop().browse(reportFile.toURI());
+            } else {
+                System.err.println("ExtentReport.html file not found at: " + reportPath1);
+            }
             
            
 
