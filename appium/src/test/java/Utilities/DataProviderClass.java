@@ -14,8 +14,16 @@ public class DataProviderClass {
 	@DataProvider(name="hotstarContentName")
 	public Object[][] JioHotstarContents(){
 		return new Object[][]{{"subham"},{"Salaar"},{"Bhagavanth Kesari"},{"Captain America Brave new world"},{"ironheart"},{"Anupama"}};
+		
 	}
-	//{"Salaar"},{"Bhagavanth Kesari"},{"Captain America Brave new world"},{"ironheart"},{"Anupama"}
+	//{"News18 india"},{"CNBC Awaaz"}
+	//{"subham"},{"Salaar"},{"Bhagavanth Kesari"},{"Captain America Brave new world"},{"ironheart"},{"Anupama"}
+	
+	@DataProvider(name="hotstarLiveContentName")
+	public Object[][] JioHotstarLiveContents(){
+		return new Object[][]{{"News18 india"},{"CNBC Awaaz"}};
+		
+	}
 	
 	@DataProvider(name="sonyLivContentName")
 	public Object[][] sonyLivContents(){

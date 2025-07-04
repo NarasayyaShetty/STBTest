@@ -132,6 +132,25 @@ public class JioHotstar {
 		return status;
 
 	}
+	
+	public boolean playLiveContent(String contentName) {
+		boolean status=false;
+		try {
+			WebDriverWait wait=new WebDriverWait(driver,Duration.ofSeconds(10));
+			WebElement searchResult = wait.until(ExpectedConditions.visibilityOfElementLocated(
+					AppiumBy.xpath("//android.widget.ImageView[@resource-id='in.startv.hotstar:id/hero_img']")));
+			searchResult.click();
+			driver.pressKey(new KeyEvent(AndroidKey.ENTER));
+			safeStaticWait(driver);
+			status=true;
+		}
+		catch(Exception e) {
+			status=false;
+			
+		}
+		return status;
+		
+	}
 
 	// it performs the back navigation from palyerscreen to search section
 

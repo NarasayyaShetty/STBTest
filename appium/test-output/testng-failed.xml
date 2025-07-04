@@ -1,48 +1,16 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
-<suite name="Failed suite [AllAppsTest]" guice-stage="DEVELOPMENT">
-  <listeners>
-    <listener class-name="Utilities.ExtentListeners"/>
-  </listeners>
-  <test thread-count="5" name="Test(failed)">
+<suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
+  <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="Tests.SunNxtPlayerScreenOutputs">
-        <methods>
-          <include name="setUp"/>
-          <include name="configTest"/>
-          <include name="sunNxtPlayerResults"/>
-          <include name="sunNxtFailTestcase"/>
-          <include name="tearDown"/>
-          <include name="navigateToHome"/>
-        </methods>
-      </class> <!-- Tests.SunNxtPlayerScreenOutputs -->
-      <class name="Tests.SonyLivPlayerScreenOutputs">
-        <methods>
-          <include name="sonyLivePlayerResults"/>
-          <include name="configTest"/>
-          <include name="setup"/>
-          <include name="sonyLivFailTestcase"/>
-          <include name="tearDown"/>
-        </methods>
-      </class> <!-- Tests.SonyLivPlayerScreenOutputs -->
       <class name="Tests.HotstarPlayerScreenOutputs">
         <methods>
           <include name="configTest"/>
           <include name="jioHotsterFailedTestCase"/>
           <include name="setUp"/>
           <include name="tearDown"/>
-          <include name="jioHotstarPlayreResult"/>
         </methods>
       </class> <!-- Tests.HotstarPlayerScreenOutputs -->
-      <class name="Tests.Zee5PlayerScreenOutput">
-        <methods>
-          <include name="configTest"/>
-          <include name="setUp"/>
-          <include name="zee5PlayerResults"/>
-          <include name="tearDown"/>
-          <include name="zee5LiveChannelPlayerResults"/>
-        </methods>
-      </class> <!-- Tests.Zee5PlayerScreenOutput -->
     </classes>
-  </test> <!-- Test(failed) -->
-</suite> <!-- Failed suite [AllAppsTest] -->
+  </test> <!-- Default test(failed) -->
+</suite> <!-- Failed suite [Default suite] -->

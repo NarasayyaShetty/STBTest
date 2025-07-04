@@ -28,27 +28,25 @@ import io.appium.java_client.android.AndroidDriver;
 import io.appium.java_client.android.nativekey.AndroidKey;
 import io.appium.java_client.android.nativekey.KeyEvent;
 
-
-
 public class HotstarPlayerScreenOutputs extends BaseTest {
 	JioHotstar js;
 	String[] s;
-	String appName="JioHotstar";
+	String appName = "JioHotstar";
 	String deviceNameandVersion;
 	String appVersionName;
 	boolean status;
-	
-	@BeforeClass(alwaysRun=true)
+
+	@BeforeClass(alwaysRun = true)
 	public void setUp() {
 		try {
-			
-			//currentFocus(driver);
+
+			// currentFocus(driver);
 			s = new String[6];
 			deviceNameandVersion = deviceName();
 			appVersionName = printAppNameAndVersion(appName);
 			js = new JioHotstar();
-			status=launchApp(appName);
-			Assert.assertTrue(status,"App launch is failed");
+			status = launchApp(appName);
+			Assert.assertTrue(status, "App launch is failed");
 			js.clickOnProfile();
 			js.selectMenuOption("Search");
 		} catch (Exception e) {
@@ -57,13 +55,13 @@ public class HotstarPlayerScreenOutputs extends BaseTest {
 		}
 	}
 
-	@Test(description = "Playing multiple contents", dataProvider = "hotstarContentName", dataProviderClass = DataProviderClass.class,priority=1,enabled=true)
+	@Test(description = "Playing multiple contents", dataProvider = "hotstarContentName", dataProviderClass = DataProviderClass.class, priority = 1, enabled = true)
 	public void jioHotstarPlayreResult(String contentName) {
 		try {
-			status=js.sendkeysOnSearchField(contentName);
-			Assert.assertTrue(status,"Unable to pass the content name on search field");
-			status=js.selectSearchedContent(contentName);
-			Assert.assertTrue(status,"Unable to select the searched content from search section");
+			status = js.sendkeysOnSearchField(contentName);
+			Assert.assertTrue(status, "Unable to pass the content name on search field");
+			status = js.selectSearchedContent(contentName);
+			Assert.assertTrue(status, "Unable to select the searched content from search section");
 			s[0] = deviceNameandVersion;
 			s[1] = appVersionName;
 			s[2] = contentName;
@@ -71,27 +69,48 @@ public class HotstarPlayerScreenOutputs extends BaseTest {
 			s[4] = getVisionOutput();
 			s[5] = getVideoResolution();
 			excelWrite(s);
-			status=js.backNavigattionFromPlayerScreen();
-			//Assert.assertTrue(status,"Back navigation is failed from player screen");
+			status = js.backNavigattionFromPlayerScreen();
+			// Assert.assertTrue(status,"Back navigation is failed from player screen");
 		} catch (Exception e) {
 			System.out.println("Exception occurred in hotstar testcase");
-		
+
 		}
 
 	}
-	
-	@Test(priority =2)
+
+	@Test(description = "Playing multiple live contents", dataProvider = "hotstarLiveContentName", dataProviderClass = DataProviderClass.class, priority = 2, enabled = true)
+	public void jioHotstarLivePlayreResult(String contentName) {
+		try {
+			status = js.sendkeysOnSearchField(contentName);
+			Assert.assertTrue(status, "Unable to pass the content name on search field");
+			status = js.playLiveContent(contentName);
+			Assert.assertTrue(status, "Unable to play the live contents from search section");
+			s[0] = deviceNameandVersion;
+			s[1] = appVersionName;
+			s[2] = contentName;
+			s[3] = getAudioOutput();
+			s[4] = getVisionOutput();
+			s[5] = getVideoResolution();
+			excelWrite(s);
+			getDriver().pressKey(new KeyEvent(AndroidKey.BACK));
+		} catch (Exception e) {
+			System.out.println("Exception occurred in hotstar live testcase");
+
+		}
+
+	}
+
+	@Test(priority = 3)
 	public void jioHotsterFailedTestCase() throws InterruptedException {
 		boolean status;
-		
-		 status=js.sendkeysOnSearchField("Snow White");
-		 //intentionally failing the testCase
-		 Assert.assertFalse(status,"Intentionally failing the testcase");
-		 status=js.selectSearchedContent("Snow White");
-		 Assert.assertTrue(status,"Unable to select the searched content");
-		
+
+		status = js.sendkeysOnSearchField("Snow White");
+		// intentionally failing the testCase
+		Assert.assertFalse(status, "Intentionally failing the testcase");
+		status = js.selectSearchedContent("Snow White");
+		Assert.assertTrue(status, "Unable to select the searched content");
+
 	}
-	
 
 //	@AfterClass(alwaysRun=true)
 //	public void tearDownapp() {

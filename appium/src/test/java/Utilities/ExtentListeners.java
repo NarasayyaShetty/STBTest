@@ -18,6 +18,7 @@ import java.nio.file.StandardCopyOption;
 import java.text.SimpleDateFormat;
 import java.util.Calendar;
 import java.util.Comparator;
+import java.util.Date;
 import java.util.Map;
 
 import static AppsTesting.AdbCommendsClass.collectLogs;
@@ -142,9 +143,10 @@ public class ExtentListeners implements ITestListener {
 //         // ===== Add report path print and auto-open =====
            String reportPath = System.getProperty("user.dir") + File.separator + "reports" + File.separator + "ExtentReport.html";
            System.out.println("ExtentReport generated at: " + reportPath);
-            
+           
+           String currentDate2 = new SimpleDateFormat("ddMMyyyy").format(new Date());
            String reportPath1 = System.getProperty("user.dir") + File.separator + "Results" +
-                   File.separator + "ExtentReports" + File.separator + currentDate +
+                   File.separator + "ExtentReports" + File.separator + currentDate2 +
                    File.separator + "index.html";
 
             // Optional: Open report in default browser (only works on local machine, not CI)
