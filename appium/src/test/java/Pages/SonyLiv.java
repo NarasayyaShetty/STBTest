@@ -27,7 +27,7 @@ public class SonyLiv {
 		try {
 			Thread.sleep(3000);
 			WebElement continueWatchingCarousel = driver.findElement(By.xpath(
-					"//android.widget.TextView[@resource-id='com.jiotv.sonyliv:id/row_header' and @text='Continue Watching']"));
+					"//android.widget.TextView[@resource-id='com.jiotv.sonyliv:id/row_header']"));
 			if (continueWatchingCarousel.isDisplayed()) {
 				driver.pressKey(new KeyEvent(AndroidKey.BACK));
 			}

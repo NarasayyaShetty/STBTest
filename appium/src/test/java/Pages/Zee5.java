@@ -27,9 +27,9 @@ public class Zee5 {
 			WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(25));
 			//com.zee5.aosp:id/collection_header_icon
 			WebElement menu = wait.until(ExpectedConditions
-					.visibilityOfElementLocated(AppiumBy.id("com.zee5.aosp:id/banner_image")));
+					.visibilityOfElementLocated(AppiumBy.id("com.zee5.aosp:id/focus_border")));
+			Thread.sleep(3000);
 			driver.pressKey(new KeyEvent(AndroidKey.BACK));
-			//Thread.sleep(3000);
 			List<WebElement> menuOptions = wait.until(ExpectedConditions.visibilityOfAllElementsLocatedBy(AppiumBy
 					.xpath("//android.widget.TextView[@resource-id='com.zee5.aosp:id/collection_header_label']")));
 			for (WebElement option : menuOptions) {
@@ -135,7 +135,10 @@ public class Zee5 {
 		try {
 			driver.pressKey(new KeyEvent(AndroidKey.BACK));
 			driver.findElement(AppiumBy.accessibilityId("Search")).isDisplayed();
-			selectMenuOption("Home");
+			//selectMenuOption("Home");
+			driver.pressKey(new KeyEvent(AndroidKey.BACK));
+			driver.pressKey(new KeyEvent(AndroidKey.DPAD_DOWN));
+			driver.pressKey(new KeyEvent(AndroidKey.DPAD_CENTER));
 			selectMenuOption("Search");
 			status = true;
 
@@ -156,7 +159,10 @@ public class Zee5 {
 					AppiumBy.xpath("//android.widget.ImageView[@resource-id='com.zee5.aosp:id/img_option']")));
 			driver.pressKey(new KeyEvent(AndroidKey.BACK));
 			driver.findElement(AppiumBy.accessibilityId("Search")).isDisplayed();
-			selectMenuOption("Home");
+			driver.pressKey(new KeyEvent(AndroidKey.BACK));
+			driver.pressKey(new KeyEvent(AndroidKey.DPAD_DOWN));
+			driver.pressKey(new KeyEvent(AndroidKey.DPAD_CENTER));
+			//selectMenuOption("Home");
 			selectMenuOption("Search");
 			status = true;
 
