@@ -41,8 +41,11 @@ public class SunNxt {
 			status = true;
 
 		} catch (Exception e) {
-			System.out.println("Exception is occureed while selecting menu option from sunNxt home page");
-			status = false;
+			WebDriverWait wait=new WebDriverWait(driver,Duration.ofSeconds(10));
+			wait.until(ExpectedConditions.visibilityOfElementLocated(AppiumBy.id("com.suntv.sunnxt:id/profile_top_layout")));
+			driver.pressKey(new KeyEvent(AndroidKey.DPAD_CENTER));
+			status = true;
+			selectMenuOption(menuOption);
 		}
 
 		return status;
