@@ -10,19 +10,19 @@ import java.io.IOException;
 import java.text.SimpleDateFormat;
 import java.util.Calendar;
 
-import static AppsTesting.AdbCommendsClass.deviceName;
+import static AppsTesting.AdbCommendsClass.*;
 
 public class ExcelDataWrite {
 
     public static void excelWrite(String[] values) {
         Workbook workbook = null;
         Sheet sheet;
-        String device = deviceName();  // Get device name dynamically
+        String device = onlyDeviceName();  // Get device name dynamically
 
         // Setup current date and output path
         String currentDate = new SimpleDateFormat("ddMMyyyy").format(Calendar.getInstance().getTime());
       //  String sheetName = device + "_" + currentDate;
-        String sheetName = currentDate;
+        String sheetName = device;
 
         String path = System.getProperty("user.dir") + File.separator + "Results" +
                       File.separator + "ExcelSheetsFolder" + File.separator + currentDate;

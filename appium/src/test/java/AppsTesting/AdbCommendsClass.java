@@ -95,6 +95,18 @@ public class AdbCommendsClass {
 		}
 		return packageName;
 	}
+	
+	public static String onlyDeviceName() {
+		String deviceName="";
+		try {
+			ArrayList<String> list=runAdbCommand("adb", "shell", "getprop", "ro.product.model");
+			deviceName+=list.get(0);
+		}catch(Exception e) {
+			System.out.println("Exception occureed while printing the device name");
+			e.printStackTrace();
+		}
+		return deviceName;
+	}
 					
 					
 	

@@ -7,7 +7,7 @@ import java.util.ArrayList;
 public class AdbCommends {
 	public static void main(String[] args) {
 
-		String deviceIp = "192.168.29.3"; // ✅ Replace with your device's actual IP
+		String deviceIp = "192.168.29.213"; // ✅ Replace with your device's actual IP
 //	         String packageName="in.startv.hotstar";
 
 		// Step 1: Set device to TCP/IP mode
@@ -29,8 +29,8 @@ public class AdbCommends {
 		// "start","-n","com.netflix.ninja/.MainActivity");
 		// adb shell dumpsys window | find "mCurrentFocus"
 		// runAdbCommand("adb","shell","dumpsys","window","|","grep","mCurrentFocus");
-		 runAdbCommand("adb","kill-server");
-		 runAdbCommand("adb","start-server");
+		// runAdbCommand("adb","kill-server");
+		// runAdbCommand("adb","start-server");
 		 //Home screen: mCurrentFocus=Window{fca8f21 u0 in.startv.hotstar/com.hotstar.MainActivity}
 		 
 		// runAdbCommand("adb", "shell", "dumpsys", "window"
@@ -56,6 +56,8 @@ public class AdbCommends {
 		//runAdbCommand("adb", "shell", "dumpsys", "package", "in.startv.hotstar", "|", "grep", "version");
 		// ArrayList<String> list=runAdbCommand( "adb", "shell", "getprop",
 		// "ro.build.fingerprint");
+		 runAdbCommand("adb", "shell", "getprop", "ro.product.model");
+		 
 //	      String fingerPrint=list.get(0);
 //	      String[] str=fingerPrint.split("/");
 //	      for(int i=0;i<str.length;i++) {

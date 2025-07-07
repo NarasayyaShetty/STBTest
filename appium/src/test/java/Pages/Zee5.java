@@ -1,5 +1,6 @@
 package Pages;
 
+import static AppsTesting.AdbCommendsClass.onlyDeviceName;
 import static Utilities.AppiumUtils.safeStaticWait;
 
 import java.time.Duration;
@@ -28,7 +29,7 @@ public class Zee5 {
 			//com.zee5.aosp:id/collection_header_icon
 			WebElement menu = wait.until(ExpectedConditions
 					.visibilityOfElementLocated(AppiumBy.id("com.zee5.aosp:id/focus_border")));
-			Thread.sleep(3000);
+		//	Thread.sleep(3000);
 			driver.pressKey(new KeyEvent(AndroidKey.BACK));
 			List<WebElement> menuOptions = wait.until(ExpectedConditions.visibilityOfAllElementsLocatedBy(AppiumBy
 					.xpath("//android.widget.TextView[@resource-id='com.zee5.aosp:id/collection_header_label']")));
@@ -48,8 +49,8 @@ public class Zee5 {
 			WebElement profile = wait
 					.until(ExpectedConditions.visibilityOfElementLocated(AppiumBy.xpath("//android.widget.TextView[@resource-id='com.zee5.aosp:id/profile_name']")));
 			driver.pressKey(new KeyEvent(AndroidKey.DPAD_CENTER));
-			Thread.sleep(4000);
 			selectMenuOption(menuName);
+			
 		}
 
 		return status;
@@ -57,14 +58,32 @@ public class Zee5 {
 
 	public boolean searchContent(String contentName) {
 		boolean status = false;
+		String device = onlyDeviceName();
 		try {
+			if(device.contains("JSTV")) {
+			WebDriverWait wait=new WebDriverWait(driver,Duration.ofSeconds(10));
 			WebElement searchField = driver.findElement(AppiumBy.id("com.zee5.aosp:id/searchQuery"));
 			searchField.clear();
 			searchField.sendKeys(contentName);
 			Thread.sleep(2000);
+			WebElement element=wait.until(ExpectedConditions.visibilityOfElementLocated(AppiumBy.accessibilityId("Back Space")));
+			element.click();
 			driver.pressKey(new KeyEvent(AndroidKey.DPAD_RIGHT));
-			driver.pressKey(new KeyEvent(AndroidKey.DPAD_RIGHT));
+			//driver.pressKey(new KeyEvent(AndroidKey.DPAD_RIGHT));
 			status = true;
+			}else {
+				WebDriverWait wait=new WebDriverWait(driver,Duration.ofSeconds(10));
+				WebElement searchField = driver.findElement(AppiumBy.id("com.zee5.aosp:id/searchQuery"));
+				searchField.clear();
+				searchField.sendKeys(contentName);
+				Thread.sleep(2000);
+				//WebElement element=wait.until(ExpectedConditions.visibilityOfElementLocated(AppiumBy.accessibilityId("Back Space")));
+				//element.click();
+				driver.pressKey(new KeyEvent(AndroidKey.DPAD_RIGHT));
+				driver.pressKey(new KeyEvent(AndroidKey.DPAD_RIGHT));
+				status = true;
+				
+			}
 
 		} catch (Exception e) {
 			System.out.println("Exception occureed while searching the content on Zee5 app");

@@ -7,9 +7,9 @@
         <methods>
           <include name="configTest"/>
           <include name="setUp"/>
-          <include name="zee5PlayerResults"/>
+          <include name="zee5PlayerResults" invocation-numbers="0 1 2 3"/>
           <include name="tearDown"/>
-          <include name="zee5LiveChannelPlayerResults"/>
+          <include name="zee5LiveChannelPlayerResults" invocation-numbers="0 1"/>
         </methods>
       </class> <!-- Tests.Zee5PlayerScreenOutput -->
     </classes>
