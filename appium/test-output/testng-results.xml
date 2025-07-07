@@ -1,91 +1,125 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="1" total="7" passed="6" failed="0" skipped="0">
+<testng-results ignored="0" total="6" passed="5" failed="1" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2025-07-07T15:21:03 IST" name="Default suite" finished-at="2025-07-07T15:31:03 IST" duration-ms="599548">
+  <suite started-at="2025-07-07T17:34:34 IST" name="Default suite" finished-at="2025-07-07T17:42:24 IST" duration-ms="469517">
     <groups>
     </groups>
-    <test started-at="2025-07-07T15:21:03 IST" name="Default test" finished-at="2025-07-07T15:31:03 IST" duration-ms="599548">
-      <class name="Tests.Zee5PlayerScreenOutput">
-        <test-method is-config="true" signature="configTest()[pri:0, instance:Tests.Zee5PlayerScreenOutput@50378a4]" started-at="2025-07-07T15:21:03 IST" name="configTest" finished-at="2025-07-07T15:21:15 IST" duration-ms="12108" status="PASS">
+    <test started-at="2025-07-07T17:34:34 IST" name="Default test" finished-at="2025-07-07T17:42:24 IST" duration-ms="469517">
+      <class name="Tests.SonyLivPlayerScreenOutputs">
+        <test-method is-config="true" signature="configTest()[pri:0, instance:Tests.SonyLivPlayerScreenOutputs@30f842ca]" started-at="2025-07-07T17:34:34 IST" name="configTest" finished-at="2025-07-07T17:34:49 IST" duration-ms="14587" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- configTest -->
-        <test-method is-config="true" signature="setUp()[pri:0, instance:Tests.Zee5PlayerScreenOutput@50378a4]" started-at="2025-07-07T15:21:15 IST" name="setUp" finished-at="2025-07-07T15:22:35 IST" duration-ms="79296" status="PASS">
+        <test-method is-config="true" signature="setup()[pri:0, instance:Tests.SonyLivPlayerScreenOutputs@30f842ca]" started-at="2025-07-07T17:34:49 IST" name="setup" finished-at="2025-07-07T17:35:01 IST" duration-ms="12132" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- setUp -->
-        <test-method signature="zee5PlayerResults(java.lang.String)[pri:1, instance:Tests.Zee5PlayerScreenOutput@50378a4]" started-at="2025-07-07T15:22:35 IST" name="zee5PlayerResults" description="Zee5 player outputs" data-provider="Zee5ContentName" finished-at="2025-07-07T15:24:01 IST" duration-ms="86852" status="PASS">
+        </test-method> <!-- setup -->
+        <test-method signature="sonyLivePlayerResults(java.lang.String)[pri:1, instance:Tests.SonyLivPlayerScreenOutputs@30f842ca]" started-at="2025-07-07T17:35:01 IST" name="sonyLivePlayerResults" description="Playing multiple contents" data-provider="sonyLivContentName" finished-at="2025-07-07T17:36:17 IST" duration-ms="75730" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[Max]]>
+                <![CDATA[pani]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- zee5PlayerResults -->
-        <test-method signature="zee5PlayerResults(java.lang.String)[pri:1, instance:Tests.Zee5PlayerScreenOutput@50378a4]" started-at="2025-07-07T15:24:01 IST" name="zee5PlayerResults" description="Zee5 player outputs" data-provider="Zee5ContentName" finished-at="2025-07-07T15:25:27 IST" duration-ms="85547" status="PASS">
+        </test-method> <!-- sonyLivePlayerResults -->
+        <test-method signature="sonyLivePlayerResults(java.lang.String)[pri:1, instance:Tests.SonyLivPlayerScreenOutputs@30f842ca]" started-at="2025-07-07T17:36:17 IST" name="sonyLivePlayerResults" description="Playing multiple contents" data-provider="sonyLivContentName" finished-at="2025-07-07T17:37:33 IST" duration-ms="75932" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[vimanam]]>
+                <![CDATA[Kankhajura]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- zee5PlayerResults -->
-        <test-method signature="zee5PlayerResults(java.lang.String)[pri:1, instance:Tests.Zee5PlayerScreenOutput@50378a4]" started-at="2025-07-07T15:25:27 IST" name="zee5PlayerResults" description="Zee5 player outputs" data-provider="Zee5ContentName" finished-at="2025-07-07T15:26:52 IST" duration-ms="85066" status="PASS">
+        </test-method> <!-- sonyLivePlayerResults -->
+        <test-method signature="sonyLivePlayerResults(java.lang.String)[pri:1, instance:Tests.SonyLivPlayerScreenOutputs@30f842ca]" started-at="2025-07-07T17:37:33 IST" name="sonyLivePlayerResults" description="Playing multiple contents" data-provider="sonyLivContentName" finished-at="2025-07-07T17:38:48 IST" duration-ms="75236" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[Ummadi Kutumbam]]>
+                <![CDATA[maharani]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- zee5PlayerResults -->
-        <test-method signature="zee5PlayerResults(java.lang.String)[pri:1, instance:Tests.Zee5PlayerScreenOutput@50378a4]" started-at="2025-07-07T15:26:52 IST" name="zee5PlayerResults" description="Zee5 player outputs" data-provider="Zee5ContentName" finished-at="2025-07-07T15:28:17 IST" duration-ms="85393" status="PASS">
+        </test-method> <!-- sonyLivePlayerResults -->
+        <test-method signature="sonyLivePlayerResults(java.lang.String)[pri:1, instance:Tests.SonyLivPlayerScreenOutputs@30f842ca]" started-at="2025-07-07T17:38:48 IST" name="sonyLivePlayerResults" description="Playing multiple contents" data-provider="sonyLivContentName" finished-at="2025-07-07T17:40:02 IST" duration-ms="74312" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[Auto Shankar]]>
+                <![CDATA[marco]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- zee5PlayerResults -->
-        <test-method signature="zee5LiveChannelPlayerResults(java.lang.String)[pri:2, instance:Tests.Zee5PlayerScreenOutput@50378a4]" started-at="2025-07-07T15:28:17 IST" name="zee5LiveChannelPlayerResults" description="Live content playback" data-provider="Zee5LiveContentName" finished-at="2025-07-07T15:29:38 IST" duration-ms="81029" status="PASS">
+        </test-method> <!-- sonyLivePlayerResults -->
+        <test-method signature="sonyLivePlayerResults(java.lang.String)[pri:1, instance:Tests.SonyLivPlayerScreenOutputs@30f842ca]" started-at="2025-07-07T17:40:02 IST" name="sonyLivePlayerResults" description="Playing multiple contents" data-provider="sonyLivContentName" finished-at="2025-07-07T17:41:16 IST" duration-ms="73531" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[Zee Telugu HD]]>
+                <![CDATA[piku]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- zee5LiveChannelPlayerResults -->
-        <test-method signature="zee5LiveChannelPlayerResults(java.lang.String)[pri:2, instance:Tests.Zee5PlayerScreenOutput@50378a4]" started-at="2025-07-07T15:29:38 IST" name="zee5LiveChannelPlayerResults" description="Live content playback" data-provider="Zee5LiveContentName" finished-at="2025-07-07T15:30:59 IST" duration-ms="80873" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[Zee Kannada HD]]>
-              </value>
-            </param>
-          </params>
+        </test-method> <!-- sonyLivePlayerResults -->
+        <test-method signature="sonyLivFailTestcase()[pri:2, instance:Tests.SonyLivPlayerScreenOutputs@30f842ca]" started-at="2025-07-07T17:41:16 IST" name="sonyLivFailTestcase" description="intentionally failed" finished-at="2025-07-07T17:42:23 IST" duration-ms="66871" status="FAIL">
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[Intentionally failed testcase expected [false] but found [true]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: Intentionally failed testcase expected [false] but found [true]
+at org.testng.Assert.fail(Assert.java:111)
+at org.testng.Assert.failNotEquals(Assert.java:1590)
+at org.testng.Assert.assertFalse(Assert.java:79)
+at Tests.SonyLivPlayerScreenOutputs.sonyLivFailTestcase(SonyLivPlayerScreenOutputs.java:68)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:687)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:995)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1540)
+at org.testng.TestRunner.privateRun(TestRunner.java:741)
+at org.testng.TestRunner.run(TestRunner.java:616)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
+at org.testng.SuiteRunner.run(SuiteRunner.java:312)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
+at org.testng.TestNG.runSuites(TestNG.java:1112)
+at org.testng.TestNG.run(TestNG.java:1079)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- zee5LiveChannelPlayerResults -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:Tests.Zee5PlayerScreenOutput@50378a4]" started-at="2025-07-07T15:30:59 IST" name="tearDown" finished-at="2025-07-07T15:31:03 IST" duration-ms="3327" status="PASS">
+        </test-method> <!-- sonyLivFailTestcase -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:Tests.SonyLivPlayerScreenOutputs@30f842ca]" started-at="2025-07-07T17:42:23 IST" name="tearDown" finished-at="2025-07-07T17:42:24 IST" duration-ms="1135" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-      </class> <!-- Tests.Zee5PlayerScreenOutput -->
+      </class> <!-- Tests.SonyLivPlayerScreenOutputs -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>

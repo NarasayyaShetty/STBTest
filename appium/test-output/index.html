@@ -25,7 +25,7 @@
       <span class="top-banner-title-font">Test results</span>
       <button id="button" class="button">Switch Retro Theme</button> <!-- button -->
       <br/>
-      <span class="top-banner-font-1">1 suite</span>
+      <span class="top-banner-font-1">1 suite, 1 failed test</span>
     </div> <!-- top-banner-root -->
     <div class="navigator-root">
       <div class="navigator-suite-header">
@@ -39,7 +39,7 @@
         <div class="rounded-window">
           <div class="suite-header light-rounded-window-top">
             <a href="#" panel-name="suite-Default_suite" class="navigator-link">
-              <span class="suite-name border-passed">Default suite</span>
+              <span class="suite-name border-failed">Default suite</span>
             </a> <!-- navigator-link -->
           </div> <!-- suite-header light-rounded-window-top -->
           <div class="navigator-suite-content">
@@ -50,7 +50,7 @@
               <ul>
                 <li>
                   <a href="#" panel-name="test-xml-Default_suite" class="navigator-link ">
-                    <span>C:\Users\User\AppData\Local\Temp\testng-eclipse--500037156\testng-customsuite.xml</span>
+                    <span>C:\Users\User\AppData\Local\Temp\testng-eclipse-1993164647\testng-customsuite.xml</span>
                   </a> <!-- navigator-link  -->
                 </li>
                 <li>
@@ -92,7 +92,21 @@
               <div class="suite-section-content">
                 <ul>
                   <li>
-                    <span class="method-stats">6 methods,   6 passed</span>
+                    <span class="method-stats">6 methods, 1 failed,   5 passed</span>
+                  </li>
+                  <li>
+                    <span class="method-list-title failed">Failed methods</span>
+                    <span class="show-or-hide-methods failed">
+                      <a href="#" panel-name="suite-Default_suite" class="hide-methods failed suite-Default_suite"> (hide)</a> <!-- hide-methods failed suite-Default_suite -->
+                      <a href="#" panel-name="suite-Default_suite" class="show-methods failed suite-Default_suite"> (show)</a> <!-- show-methods failed suite-Default_suite -->
+                    </span>
+                    <div class="method-list-content failed suite-Default_suite">
+                      <span>
+                        <img src="failed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Default_suite" title="Tests.SonyLivPlayerScreenOutputs" class="method navigator-link" hash-for-method="sonyLivFailTestcase">sonyLivFailTestcase</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                    </div> <!-- method-list-content failed suite-Default_suite -->
                   </li>
                   <li>
                     <span class="method-list-title passed">Passed methods</span>
@@ -103,32 +117,27 @@
                     <div class="method-list-content passed suite-Default_suite">
                       <span>
                         <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Default_suite" title="Tests.Zee5PlayerScreenOutput" class="method navigator-link" hash-for-method="zee5LiveChannelPlayerResults(Zee Telugu HD)">zee5LiveChannelPlayerResults(Zee Telugu HD)</a> <!-- method navigator-link -->
+                        <a href="#" panel-name="suite-Default_suite" title="Tests.SonyLivPlayerScreenOutputs" class="method navigator-link" hash-for-method="sonyLivePlayerResults(marco)">sonyLivePlayerResults(marco)</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                       <span>
                         <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Default_suite" title="Tests.Zee5PlayerScreenOutput" class="method navigator-link" hash-for-method="zee5LiveChannelPlayerResults(Zee Kannada HD)">zee5LiveChannelPlayerResults(Zee Kannada HD)</a> <!-- method navigator-link -->
+                        <a href="#" panel-name="suite-Default_suite" title="Tests.SonyLivPlayerScreenOutputs" class="method navigator-link" hash-for-method="sonyLivePlayerResults(Kankhajura)">sonyLivePlayerResults(Kankhajura)</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                       <span>
                         <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Default_suite" title="Tests.Zee5PlayerScreenOutput" class="method navigator-link" hash-for-method="zee5PlayerResults(Max)">zee5PlayerResults(Max)</a> <!-- method navigator-link -->
+                        <a href="#" panel-name="suite-Default_suite" title="Tests.SonyLivPlayerScreenOutputs" class="method navigator-link" hash-for-method="sonyLivePlayerResults(maharani)">sonyLivePlayerResults(maharani)</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                       <span>
                         <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Default_suite" title="Tests.Zee5PlayerScreenOutput" class="method navigator-link" hash-for-method="zee5PlayerResults(Ummadi Kutumbam)">zee5PlayerResults(Ummadi Kutumbam)</a> <!-- method navigator-link -->
+                        <a href="#" panel-name="suite-Default_suite" title="Tests.SonyLivPlayerScreenOutputs" class="method navigator-link" hash-for-method="sonyLivePlayerResults(piku)">sonyLivePlayerResults(piku)</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                       <span>
                         <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Default_suite" title="Tests.Zee5PlayerScreenOutput" class="method navigator-link" hash-for-method="zee5PlayerResults(vimanam)">zee5PlayerResults(vimanam)</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                      <span>
-                        <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Default_suite" title="Tests.Zee5PlayerScreenOutput" class="method navigator-link" hash-for-method="zee5PlayerResults(Auto Shankar)">zee5PlayerResults(Auto Shankar)</a> <!-- method navigator-link -->
+                        <a href="#" panel-name="suite-Default_suite" title="Tests.SonyLivPlayerScreenOutputs" class="method navigator-link" hash-for-method="sonyLivePlayerResults(pani)">sonyLivePlayerResults(pani)</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                     </div> <!-- method-list-content passed suite-Default_suite -->
@@ -143,70 +152,112 @@
     <div class="wrapper">
       <div class="main-panel-root">
         <div panel-name="suite-Default_suite" class="panel Default_suite">
-          <div class="suite-Default_suite-class-passed">
+          <div class="suite-Default_suite-class-failed">
             <div class="main-panel-header rounded-window-top">
-              <img src="passed.png"/>
-              <span class="class-name">Tests.Zee5PlayerScreenOutput</span>
+              <img src="failed.png"/>
+              <span class="class-name">Tests.SonyLivPlayerScreenOutputs</span>
             </div> <!-- main-panel-header rounded-window-top -->
             <div class="main-panel-content rounded-window-bottom">
               <div class="method">
                 <div class="method-content">
-                  <a name="zee5LiveChannelPlayerResults(Zee Telugu HD)">
-                  </a> <!-- zee5LiveChannelPlayerResults(Zee Telugu HD) -->
-                  <span class="method-name">zee5LiveChannelPlayerResults</span>
-                  <span class="parameters">(Zee Telugu HD)</span>
+                  <a name="sonyLivFailTestcase">
+                  </a> <!-- sonyLivFailTestcase -->
+                  <span class="method-name">sonyLivFailTestcase</span>
+                  <div class="stack-trace">java.lang.AssertionError: Intentionally failed testcase expected [false] but found [true]
+	at org.testng.Assert.fail(Assert.java:111)
+	at org.testng.Assert.failNotEquals(Assert.java:1590)
+	at org.testng.Assert.assertFalse(Assert.java:79)
+	at Tests.SonyLivPlayerScreenOutputs.sonyLivFailTestcase(SonyLivPlayerScreenOutputs.java:68)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:687)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:995)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1540)
+	at org.testng.TestRunner.privateRun(TestRunner.java:741)
+	at org.testng.TestRunner.run(TestRunner.java:616)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:312)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
+	at org.testng.TestNG.runSuites(TestNG.java:1112)
+	at org.testng.TestNG.run(TestNG.java:1079)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
+
+</div> <!-- stack-trace -->
                   <em>
-(Live content playback)                  </em>
+(intentionally failed)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Default_suite-class-failed -->
+          <div class="suite-Default_suite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">Tests.SonyLivPlayerScreenOutputs</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="sonyLivePlayerResults(marco)">
+                  </a> <!-- sonyLivePlayerResults(marco) -->
+                  <span class="method-name">sonyLivePlayerResults</span>
+                  <span class="parameters">(marco)</span>
+                  <em>
+(Playing multiple contents)                  </em>
                 </div> <!-- method-content -->
               </div> <!-- method -->
               <div class="method">
                 <div class="method-content">
-                  <a name="zee5LiveChannelPlayerResults(Zee Kannada HD)">
-                  </a> <!-- zee5LiveChannelPlayerResults(Zee Kannada HD) -->
-                  <span class="method-name">zee5LiveChannelPlayerResults</span>
-                  <span class="parameters">(Zee Kannada HD)</span>
+                  <a name="sonyLivePlayerResults(Kankhajura)">
+                  </a> <!-- sonyLivePlayerResults(Kankhajura) -->
+                  <span class="method-name">sonyLivePlayerResults</span>
+                  <span class="parameters">(Kankhajura)</span>
                   <em>
-(Live content playback)                  </em>
+(Playing multiple contents)                  </em>
                 </div> <!-- method-content -->
               </div> <!-- method -->
               <div class="method">
                 <div class="method-content">
-                  <a name="zee5PlayerResults(Max)">
-                  </a> <!-- zee5PlayerResults(Max) -->
-                  <span class="method-name">zee5PlayerResults</span>
-                  <span class="parameters">(Max)</span>
+                  <a name="sonyLivePlayerResults(maharani)">
+                  </a> <!-- sonyLivePlayerResults(maharani) -->
+                  <span class="method-name">sonyLivePlayerResults</span>
+                  <span class="parameters">(maharani)</span>
                   <em>
-(Zee5 player outputs)                  </em>
+(Playing multiple contents)                  </em>
                 </div> <!-- method-content -->
               </div> <!-- method -->
               <div class="method">
                 <div class="method-content">
-                  <a name="zee5PlayerResults(Ummadi Kutumbam)">
-                  </a> <!-- zee5PlayerResults(Ummadi Kutumbam) -->
-                  <span class="method-name">zee5PlayerResults</span>
-                  <span class="parameters">(Ummadi Kutumbam)</span>
+                  <a name="sonyLivePlayerResults(piku)">
+                  </a> <!-- sonyLivePlayerResults(piku) -->
+                  <span class="method-name">sonyLivePlayerResults</span>
+                  <span class="parameters">(piku)</span>
                   <em>
-(Zee5 player outputs)                  </em>
+(Playing multiple contents)                  </em>
                 </div> <!-- method-content -->
               </div> <!-- method -->
               <div class="method">
                 <div class="method-content">
-                  <a name="zee5PlayerResults(vimanam)">
-                  </a> <!-- zee5PlayerResults(vimanam) -->
-                  <span class="method-name">zee5PlayerResults</span>
-                  <span class="parameters">(vimanam)</span>
+                  <a name="sonyLivePlayerResults(pani)">
+                  </a> <!-- sonyLivePlayerResults(pani) -->
+                  <span class="method-name">sonyLivePlayerResults</span>
+                  <span class="parameters">(pani)</span>
                   <em>
-(Zee5 player outputs)                  </em>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-              <div class="method">
-                <div class="method-content">
-                  <a name="zee5PlayerResults(Auto Shankar)">
-                  </a> <!-- zee5PlayerResults(Auto Shankar) -->
-                  <span class="method-name">zee5PlayerResults</span>
-                  <span class="parameters">(Auto Shankar)</span>
-                  <em>
-(Zee5 player outputs)                  </em>
+(Playing multiple contents)                  </em>
                 </div> <!-- method-content -->
               </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
@@ -214,7 +265,7 @@
         </div> <!-- panel Default_suite -->
         <div panel-name="test-xml-Default_suite" class="panel">
           <div class="main-panel-header rounded-window-top">
-            <span class="header-content">C:\Users\User\AppData\Local\Temp\testng-eclipse--500037156\testng-customsuite.xml</span>
+            <span class="header-content">C:\Users\User\AppData\Local\Temp\testng-eclipse-1993164647\testng-customsuite.xml</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <pre>
@@ -223,7 +274,7 @@
 &lt;suite name=&quot;Default suite&quot; guice-stage=&quot;DEVELOPMENT&quot;&gt;
   &lt;test thread-count=&quot;5&quot; name=&quot;Default test&quot; verbose=&quot;2&quot;&gt;
     &lt;classes&gt;
-      &lt;class name=&quot;Tests.Zee5PlayerScreenOutput&quot;/&gt;
+      &lt;class name=&quot;Tests.SonyLivPlayerScreenOutputs&quot;/&gt;
     &lt;/classes&gt;
   &lt;/test&gt; &lt;!-- Default test --&gt;
 &lt;/suite&gt; &lt;!-- Default suite --&gt;
@@ -265,34 +316,34 @@ data.addColumn('string', 'Class');
 data.addColumn('number', 'Time (ms)');
 data.addRows(6);
 data.setCell(0, 0, 0)
-data.setCell(0, 1, 'zee5PlayerResults')
-data.setCell(0, 2, 'Tests.Zee5PlayerScreenOutput')
-data.setCell(0, 3, 86852);
+data.setCell(0, 1, 'sonyLivePlayerResults')
+data.setCell(0, 2, 'Tests.SonyLivPlayerScreenOutputs')
+data.setCell(0, 3, 75932);
 data.setCell(1, 0, 1)
-data.setCell(1, 1, 'zee5PlayerResults')
-data.setCell(1, 2, 'Tests.Zee5PlayerScreenOutput')
-data.setCell(1, 3, 85547);
+data.setCell(1, 1, 'sonyLivePlayerResults')
+data.setCell(1, 2, 'Tests.SonyLivPlayerScreenOutputs')
+data.setCell(1, 3, 75730);
 data.setCell(2, 0, 2)
-data.setCell(2, 1, 'zee5PlayerResults')
-data.setCell(2, 2, 'Tests.Zee5PlayerScreenOutput')
-data.setCell(2, 3, 85393);
+data.setCell(2, 1, 'sonyLivePlayerResults')
+data.setCell(2, 2, 'Tests.SonyLivPlayerScreenOutputs')
+data.setCell(2, 3, 75236);
 data.setCell(3, 0, 3)
-data.setCell(3, 1, 'zee5PlayerResults')
-data.setCell(3, 2, 'Tests.Zee5PlayerScreenOutput')
-data.setCell(3, 3, 85066);
+data.setCell(3, 1, 'sonyLivePlayerResults')
+data.setCell(3, 2, 'Tests.SonyLivPlayerScreenOutputs')
+data.setCell(3, 3, 74312);
 data.setCell(4, 0, 4)
-data.setCell(4, 1, 'zee5LiveChannelPlayerResults')
-data.setCell(4, 2, 'Tests.Zee5PlayerScreenOutput')
-data.setCell(4, 3, 81029);
+data.setCell(4, 1, 'sonyLivePlayerResults')
+data.setCell(4, 2, 'Tests.SonyLivPlayerScreenOutputs')
+data.setCell(4, 3, 73531);
 data.setCell(5, 0, 5)
-data.setCell(5, 1, 'zee5LiveChannelPlayerResults')
-data.setCell(5, 2, 'Tests.Zee5PlayerScreenOutput')
-data.setCell(5, 3, 80873);
+data.setCell(5, 1, 'sonyLivFailTestcase')
+data.setCell(5, 2, 'Tests.SonyLivPlayerScreenOutputs')
+data.setCell(5, 3, 66871);
 window.suiteTableData['Default_suite']= { tableData: data, tableDiv: 'times-div-Default_suite'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 8 minutes</span>
+              <span class="suite-total-time">Total running time: 7 minutes</span>
               <div id="times-div-Default_suite">
               </div> <!-- times-div-Default_suite -->
             </div> <!-- times-div -->
@@ -307,16 +358,9 @@ return data;
         </div> <!-- panel -->
         <div panel-name="ignored-methods-Default_suite" class="panel">
           <div class="main-panel-header rounded-window-top">
-            <span class="header-content">1 ignored method</span>
+            <span class="header-content">0 ignored methods</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
-            <div class="ignored-class-div">
-              <span class="ignored-class-name">Tests.Zee5PlayerScreenOutput</span>
-              <div class="ignored-methods-div">
-                <span class="ignored-method-name">zee5PlayerResults</span>
-                <br/>
-              </div> <!-- ignored-methods-div -->
-            </div> <!-- ignored-class-div -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
         <div panel-name="chronological-Default_suite" class="panel">
@@ -325,42 +369,44 @@ return data;
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <div class="chronological-class">
-              <div class="chronological-class-name">Tests.Zee5PlayerScreenOutput</div> <!-- chronological-class-name -->
+              <div class="chronological-class-name">Tests.SonyLivPlayerScreenOutputs</div> <!-- chronological-class-name -->
               <div class="configuration-class before">
                 <span class="method-name">configTest</span>
                 <span class="method-start">0 ms</span>
               </div> <!-- configuration-class before -->
               <div class="configuration-class before">
-                <span class="method-name">setUp</span>
-                <span class="method-start">12109 ms</span>
+                <span class="method-name">setup</span>
+                <span class="method-start">14587 ms</span>
               </div> <!-- configuration-class before -->
               <div class="test-method">
-                <span class="method-name">zee5PlayerResults(Max)</span>
-                <span class="method-start">91417 ms</span>
+                <span class="method-name">sonyLivePlayerResults(pani)</span>
+                <span class="method-start">26729 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
-                <span class="method-name">zee5PlayerResults(vimanam)</span>
-                <span class="method-start">178270 ms</span>
+                <span class="method-name">sonyLivePlayerResults(Kankhajura)</span>
+                <span class="method-start">102461 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
-                <span class="method-name">zee5PlayerResults(Ummadi Kutumbam)</span>
-                <span class="method-start">263818 ms</span>
+                <span class="method-name">sonyLivePlayerResults(maharani)</span>
+                <span class="method-start">178394 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
-                <span class="method-name">zee5PlayerResults(Auto Shankar)</span>
-                <span class="method-start">348887 ms</span>
+                <span class="method-name">sonyLivePlayerResults(marco)</span>
+                <span class="method-start">253631 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
-                <span class="method-name">zee5LiveChannelPlayerResults(Zee Telugu HD)</span>
-                <span class="method-start">434284 ms</span>
+                <span class="method-name">sonyLivePlayerResults(piku)</span>
+                <span class="method-start">327945 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
-                <span class="method-name">zee5LiveChannelPlayerResults(Zee Kannada HD)</span>
-                <span class="method-start">515315 ms</span>
+                <img src="failed.png">
+                </img>
+                <span class="method-name">sonyLivFailTestcase</span>
+                <span class="method-start">401479 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-class after">
                 <span class="method-name">tearDown</span>
-                <span class="method-start">596191 ms</span>
+                <span class="method-start">468352 ms</span>
               </div> <!-- configuration-class after -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->

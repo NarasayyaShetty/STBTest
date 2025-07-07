@@ -17,20 +17,18 @@ import static Utilities.AppiumUtils.*;
 
 public class SonyLiv {
 
-	AndroidDriver driver=BaseTest.getDriver();
-
-	
+	AndroidDriver driver = BaseTest.getDriver();
 
 	public boolean selctMenuOption(String optionName) throws InterruptedException {
 		boolean status = false;
 		WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(10));
 		try {
 			Thread.sleep(3000);
-			WebElement continueWatchingCarousel = driver.findElement(By.xpath(
-					"//android.widget.TextView[@resource-id='com.jiotv.sonyliv:id/row_header']"));
-			if (continueWatchingCarousel.isDisplayed()) {
-				driver.pressKey(new KeyEvent(AndroidKey.BACK));
-			}
+			WebElement anyCarousell = wait.until(ExpectedConditions.visibilityOfElementLocated(
+					AppiumBy.xpath("//android.widget.TextView[@resource-id='com.jiotv.sonyliv:id/row_header']")));
+
+			driver.pressKey(new KeyEvent(AndroidKey.BACK));
+
 			List<WebElement> options = wait.until(ExpectedConditions.visibilityOfAllElementsLocatedBy(
 					AppiumBy.xpath("//android.widget.TextView[@resource-id='com.jiotv.sonyliv:id/menu_text']")));
 			for (WebElement option : options) {
@@ -60,11 +58,11 @@ public class SonyLiv {
 	public boolean searchAndPlay(String contentName) {
 		boolean status = false;
 		contentName = contentName.toLowerCase();
-		
+
 		try {
 			WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(10));
-			WebElement searchField = wait
-					.until(ExpectedConditions.visibilityOfElementLocated(AppiumBy.id("com.jiotv.sonyliv:id/editSearch")));
+			WebElement searchField = wait.until(
+					ExpectedConditions.visibilityOfElementLocated(AppiumBy.id("com.jiotv.sonyliv:id/editSearch")));
 			searchField.clear();
 			searchField.sendKeys(contentName);
 //			List<WebElement> keys = driver.findElements(AppiumBy.xpath("//android.widget.TextView"));
@@ -102,7 +100,8 @@ public class SonyLiv {
 		try {
 			WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(10));
 			driver.pressKey(new KeyEvent(AndroidKey.BACK));
-			WebElement myListButton = wait.until(ExpectedConditions.visibilityOfElementLocated(AppiumBy.id("com.jiotv.sonyliv:id/btnIcon")));
+			WebElement myListButton = wait
+					.until(ExpectedConditions.visibilityOfElementLocated(AppiumBy.id("com.jiotv.sonyliv:id/btnIcon")));
 			if (myListButton.isDisplayed()) {
 				driver.pressKey(new KeyEvent(AndroidKey.BACK));
 			}

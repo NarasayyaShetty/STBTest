@@ -3,15 +3,14 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="Tests.Zee5PlayerScreenOutput">
+      <class name="Tests.SonyLivPlayerScreenOutputs">
         <methods>
           <include name="configTest"/>
-          <include name="setUp"/>
-          <include name="zee5PlayerResults" invocation-numbers="0 1 2 3"/>
+          <include name="setup"/>
+          <include name="sonyLivFailTestcase"/>
           <include name="tearDown"/>
-          <include name="zee5LiveChannelPlayerResults" invocation-numbers="0 1"/>
         </methods>
-      </class> <!-- Tests.Zee5PlayerScreenOutput -->
+      </class> <!-- Tests.SonyLivPlayerScreenOutputs -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->
