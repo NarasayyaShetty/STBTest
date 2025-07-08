@@ -112,7 +112,9 @@ public class JioHotstar {
 					break;
 				}
 			}
-			driver.pressKey(new KeyEvent(AndroidKey.DPAD_CENTER));
+			WebElement resumeButton=wait.until(ExpectedConditions.visibilityOfElementLocated(AppiumBy.xpath("//android.widget.TextView[@resource-id='in.startv.hotstar:id/iconStart' and @text='']")));
+			resumeButton.click();
+			//driver.pressKey(new KeyEvent(AndroidKey.DPAD_CENTER));
 			safeStaticWait(driver);
 			//selectAudioOption(driver);
 			status=true;
@@ -158,16 +160,21 @@ public class JioHotstar {
 		boolean status=false;
 		driver.pressKey(new KeyEvent(AndroidKey.BACK));
 		try {
-			WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(25));
+			WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(15));
 			WebElement watchMoreElement = wait.until(ExpectedConditions.visibilityOfElementLocated(AppiumBy.xpath(
-					"//android.widget.TextView[@resource-id='in.startv.hotstar:id/gtv_label' and @text='More Like This']")));
+					"//android.widget.TextView[@resource-id='in.startv.hotstar:id/iconStart' and @text='']")));
 			if (watchMoreElement.isDisplayed()) {
 				driver.pressKey(new KeyEvent(AndroidKey.BACK));
 			}
 			status=true;
 		} catch (Exception e) {
 			e.printStackTrace();
-			status=false;
+			WebDriverWait wait=new WebDriverWait(driver,Duration.ofSeconds(5));
+			wait.until(ExpectedConditions.visibilityOfElementLocated(AppiumBy.id("in.startv.hotstar:id/content_container")));
+			driver.pressKey(new KeyEvent(AndroidKey.BACK));
+			driver.pressKey(new KeyEvent(AndroidKey.BACK));
+			
+			status=true;
 		}
 		return status;
 	}
