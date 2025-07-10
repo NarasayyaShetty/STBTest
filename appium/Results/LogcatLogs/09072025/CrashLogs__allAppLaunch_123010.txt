@@ -1,0 +1,57 @@
+==== CRASH START ====
+07-09 12:29:48.206 E/AndroidRuntime(24153): FATAL EXCEPTION: Instr: androidx.test.runner.AndroidJUnitRunner
+07-09 12:29:48.206 E/AndroidRuntime(24153): Process: io.appium.uiautomator2.server, PID: 24153
+07-09 12:29:48.206 E/AndroidRuntime(24153): java.lang.IllegalStateException: UiAutomation not connected, UiAutomation@e433f81[id=-1, flags=0]
+07-09 12:29:48.206 E/AndroidRuntime(24153): 	at android.app.UiAutomation.throwIfNotConnectedLocked(UiAutomation.java:1239)
+07-09 12:29:48.206 E/AndroidRuntime(24153): 	at android.app.UiAutomation.disconnect(UiAutomation.java:296)
+07-09 12:29:48.206 E/AndroidRuntime(24153): 	at android.app.Instrumentation.finish(Instrumentation.java:249)
+07-09 12:29:48.206 E/AndroidRuntime(24153): 	at androidx.test.runner.MonitoringInstrumentation.finish(MonitoringInstrumentation.java:409)
+07-09 12:29:48.206 E/AndroidRuntime(24153): 	at androidx.test.runner.AndroidJUnitRunner.onStart(AndroidJUnitRunner.java:474)
+07-09 12:29:48.206 E/AndroidRuntime(24153): 	at android.app.Instrumentation$InstrumentationThread.run(Instrumentation.java:2205)
+07-09 12:29:48.219 W/[11255.212136@2]- RTW(    0): fill_default_txdesc(wlan0): SP Packet(0x0806) rate=0x4 SeqNum = 3549
+07-09 12:29:48.221 I/Process (24153): Sending signal. PID: 24153 SIG: 9
+07-09 12:29:29.578 I/chatty  ( 3843): uid=1000(system) android.bg identical 2 lines
+07-09 12:29:39.662 I/UsageStatsService( 3843): User[0] Flushing usage stats to disk
+07-09 12:29:48.221 I/DropBoxManagerService( 3843): add tag=data_app_crash isTagEnabled=true flags=0x2
+07-09 12:29:48.222 I/CriticalLoggingReceiver( 4920): onReceive(): com.iwedia.intent.action.CRITICAL_EVENT_INFO
+07-09 12:29:48.223 I/chatty  ( 5044): uid=1000(system) DCServiceClient expire 3 lines
+==== CRASH END ====
+
+==== CRASH START ====
+07-09 12:29:48.229 D/JioLauncher( 4998): header-onParameterCallback-parameterName-crash_happened_event-parameterValue-{"type":"crash_happened_event","value":{"process_name":"io.appium.uiautomator2.server","is_foreground_process":"No","crash_type":"Other subtype of crash","process_info":"FATAL EXCEPTION \nProcess: io.appium.uiautomator2.server\nPID: 24153\nUID: 10064\nFlags: 0x30a8be46\nPackage: io.appium.uiautomator2.server v218 (7.6.2)\nForeground: No\nProcess-Runtime: 7356919\nBuild: Jio\/UHDHybridSTB\/franklin:11\/11.2.48\/20250619:userdebug\/release-keys\n\n","stack_trace":"java.lang.IllegalStateException: UiAutomation not connected, UiAutomation@e433f81[id=-1, flags=0]\n\tat android.app.UiAutomation.throwIfNotConnectedLocked(UiAutomation.java:1239)\n\tat android.app.UiAutomation.disconnect(UiAutomation.java:296)\n\tat android.app.Instrumentation.finish(Instrumentation.java:249)\n\tat androidx.test.runner.MonitoringInstrumentation.finish(MonitoringInstrumentation.java:409)\n\tat androidx.test.runner.AndroidJUnitRunner.onStart(AndroidJUnitRunner.java:474)\n\tat android.app.Instrumentation$InstrumentationThread.run(Instrumentation.java:2205)\n"}}
+07-09 12:29:48.229 D/JioLauncher( 4998): header-onParameterCallback-exp-org.json.JSONObject cannot be cast to org.json.JSONArray
+07-09 12:29:48.234 I/CriticalEventReceiver( 4920):  Received event type: crash
+07-09 12:29:48.237 I/CriticalLog( 4920): Creating critical logs
+07-09 12:29:48.241 E/excluded event( 5883): 
+07-09 12:29:48.244 I/FaultManagementManager( 4920): No instance of reported alarm, registering new alarm
+07-09 12:29:48.244 I/FaultManagementManager( 4920): Updating Hash Maps for event type: Crash
+07-09 12:29:48.245 I/FaultManagementManager( 4920): Received alarm is disabled.
+07-09 12:29:48.247 D/standalone( 5883): XPSE9
+07-09 12:29:48.258 D/para    ( 5883): Parameters{external={"XPS2":"crash_happened_event","PS21":"io.appium.uiautomator2.server","PS22":"java.lang.IllegalStateException: UiAutomation not connected, UiAutomation@e433f81[id=-1, flags=0]\n\tat android.app.UiAutomation.throwIfNotConnectedLocked(UiAutomation.java:1239)\n\tat android.app.UiAutomation.disconnect(UiAutomation.java:296)\n\tat android.app.Instrumentation.finish(Instrumentation.java:249)\n\tat androidx.test.runner.MonitoringInstrumentation.finish(MonitoringInstrumentation.java:409)\n\tat androidx.test.runner.AndroidJUnitRunner.onStart(AndroidJUnitRunner.java:474)\n\tat android.app.Instrumentation$InstrumentationThread.run(Instrumentation.java:2205)\n","XPS46":"7.6.2","XPS47":"No","XPS911":"Other subtype of crash"}, internal={}}
+07-09 12:29:48.259 D/standalone( 5883): datawrite:XPSE9
+07-09 12:29:48.260 W/ContextImpl( 5883): Calling a method in the system process without a qualified user: android.app.ContextImpl.bindService:1748 android.content.ContextWrapper.bindService:756 com.jio.adc.core.b.d:56 com.jio.adc.core.b.b:13 com.jio.adc.core.b$c.run:7 
+07-09 12:29:48.270 D/JioLauncher( 4998): isInternetAvailable-method-response-204
+07-09 12:29:48.275 D/JioLauncher( 4998): isMulticastReceiver-Connected-to-5GHz-Wi-Fi-network
+07-09 12:29:48.282 D/Glide   ( 4998): Finished loading Bitmap from LOCAL for com.bumptech.glide.gifdecoder.StandardGifDecoder@81aaec2 with size [314x176] in 29.006916999999998 ms
+07-09 12:29:48.315 E/ocessService0:(11014): failed to create Unix domain socket: Operation not permitted
+==== CRASH END ====
+
+==== CRASH START ====
+07-09 12:29:48.367 D/JioSettings( 5071): onParameterNotification-DCDataCallbacks-Callback: name=alarm_reported_event and value={"type":"alarm_reported_event","value":{"ProcessName":"io.appium.uiautomator2.server","EventType":"Crash","Additionl_Info":"java.lang.IllegalStateException: UiAutomation not connected, UiAutomation@e433f81[id=-1, flags=0]\n\tat android.app.UiAutomation.throwIfNotConnectedLocked(UiAutomation.java:1239)\n\tat android.app.UiAutomation.disconnect(UiAutomation.java:296)\n\tat android.app.","AdditionalText":"FATAL EXCEPTION \nProcess: io.appium.uiautomator2.server\nPID: 24153\nUID: 10064\nFlags: 0x30a8be46\nPackage: io.appium.uiautomator2.server v218 (7.6.2)\nForeground: No\nProcess-Runtime: 7356919\nBuild: Jio\/UHDHybridSTB\/franklin:11\/11.2.48\/20250619:userdebug\/relea","AlarmIdentifier":"7010161d72e7c88772a5137a9ddc9160","ProbableCause":"Some app is crashed","XJAlaramCount":1,"NotificationType":"NewAlarm","Foreground":"No","Duration":0,"MonitoringInvervalInSec":3600}}
+07-09 12:29:48.368 D/JioSettings( 5071): RCUDataManager processServiceDataNotification alarm_reported_event : {"type":"alarm_reported_event","value":{"ProcessName":"io.appium.uiautomator2.server","EventType":"Crash","Additionl_Info":"java.lang.IllegalStateException: UiAutomation not connected, UiAutomation@e433f81[id=-1, flags=0]\n\tat android.app.UiAutomation.throwIfNotConnectedLocked(UiAutomation.java:1239)\n\tat android.app.UiAutomation.disconnect(UiAutomation.java:296)\n\tat android.app.","AdditionalText":"FATAL EXCEPTION \nProcess: io.appium.uiautomator2.server\nPID: 24153\nUID: 10064\nFlags: 0x30a8be46\nPackage: io.appium.uiautomator2.server v218 (7.6.2)\nForeground: No\nProcess-Runtime: 7356919\nBuild: Jio\/UHDHybridSTB\/franklin:11\/11.2.48\/20250619:userdebug\/relea","AlarmIdentifier":"7010161d72e7c88772a5137a9ddc9160","ProbableCause":"Some app is crashed","XJAlaramCount":1,"NotificationType":"NewAlarm","Foreground":"No","Duration":0,"MonitoringInvervalInSec":3600}}
+07-09 12:29:48.370 D/JioLauncher( 4998): header-onParameterCallback-parameterName-alarm_reported_event-parameterValue-{"type":"alarm_reported_event","value":{"ProcessName":"io.appium.uiautomator2.server","EventType":"Crash","Additionl_Info":"java.lang.IllegalStateException: UiAutomation not connected, UiAutomation@e433f81[id=-1, flags=0]\n\tat android.app.UiAutomation.throwIfNotConnectedLocked(UiAutomation.java:1239)\n\tat android.app.UiAutomation.disconnect(UiAutomation.java:296)\n\tat android.app.","AdditionalText":"FATAL EXCEPTION \nProcess: io.appium.uiautomator2.server\nPID: 24153\nUID: 10064\nFlags: 0x30a8be46\nPackage: io.appium.uiautomator2.server v218 (7.6.2)\nForeground: No\nProcess-Runtime: 7356919\nBuild: Jio\/UHDHybridSTB\/franklin:11\/11.2.48\/20250619:userdebug\/relea","AlarmIdentifier":"7010161d72e7c88772a5137a9ddc9160","ProbableCause":"Some app is crashed","XJAlaramCount":1,"NotificationType":"NewAlarm","Foreground":"No","Duration":0,"MonitoringInvervalInSec":3600}}
+07-09 12:29:48.370 I/Zygote  ( 3532): Process 24153 exited due to signal 9 (Killed)
+07-09 12:29:48.355 I/[11255.339696@0]- binder(    0): 3843:3883 transaction failed 29189/-22, size 88-0 line 3120
+07-09 12:29:48.371 D/JioLauncher( 4998): header-onParameterCallback-exp-org.json.JSONObject cannot be cast to org.json.JSONArray
+07-09 12:29:48.376 E/JioTR069( 5883): Callback: {"type":"alarm_reported_event","value":{"ProcessName":"io.appium.uiautomator2.server","EventType":"Crash","Additionl_Info":"java.lang.IllegalStateException: UiAutomation not connected, UiAutomation@e433f81[id=-1, flags=0]\n\tat android.app.UiAutomation.throwIfNotConnectedLocked(UiAutomation.java:1239)\n\tat android.app.UiAutomation.disconnect(UiAutomation.java:296)\n\tat android.app.","AdditionalText":"FATAL EXCEPTION \nProcess: io.appium.uiautomator2.server\nPID: 24153\nUID: 10064\nFlags: 0x30a8be46\nPackage: io.appium.uiautomator2.server v218 (7.6.2)\nForeground: No\nProcess-Runtime: 7356919\nBuild: Jio\/UHDHybridSTB\/franklin:11\/11.2.48\/20250619:userdebug\/relea","AlarmIdentifier":"7010161d72e7c88772a5137a9ddc9160","ProbableCause":"Some app is crashed","XJAlaramCount":1,"NotificationType":"NewAlarm","Foreground":"No","Duration":0,"MonitoringInvervalInSec":3600}}
+07-09 12:29:48.378 E/Fault   ( 5883): No fault
+07-09 12:29:48.380 D/Glide   ( 4998): Finished loading Bitmap from LOCAL for com.bumptech.glide.gifdecoder.StandardGifDecoder@81aaec2 with size [314x176] in 13.664665999999999 ms
+07-09 12:29:48.422 D/Glide   ( 4998): Finished loading Bitmap from LOCAL for com.bumptech.glide.gifdecoder.StandardGifDecoder@81aaec2 with size [314x176] in 15.767667 ms
+07-09 12:29:48.455 D/Glide   ( 4998): Finished loading Bitmap from LOCAL for com.bumptech.glide.gifdecoder.StandardGifDecoder@81aaec2 with size [314x176] in 8.838458 ms
+07-09 12:29:48.473 E/rtk_heartbeat( 3591): heartbeat_timed_out: @bbb heartbeatCmdCount = 11231, expected nextSeqNum = 11231
+07-09 12:29:48.474 I/rtk_heartbeat( 3591): rtkbt_heartbeat_cmpl_cback: @bbb Current SeqNum = 11231,should SeqNum=11231, status = 0
+07-09 12:29:48.506 D/Glide   ( 4998): Finished loading Bitmap from LOCAL for com.bumptech.glide.gifdecoder.StandardGifDecoder@81aaec2 with size [314x176] in 18.483916 ms
+07-09 12:29:48.518 I/ActivityManager( 3843): Force stopping io.appium.uiautomator2.server.test appid=10038 user=0: from pid 19882
+07-09 12:29:48.522 I/cmd     (19882): oneway function results will be dropped but finished with status OK and parcel size 4
+==== CRASH END ====
+

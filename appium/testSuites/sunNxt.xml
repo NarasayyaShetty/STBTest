@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="AllAppsTest">
+<listeners>
+<listener class-name="Utilities.ExtentListeners"></listener>
+</listeners>
+  <test thread-count="2" name="Test">
+    <classes>
+  
+     <class name="Tests.SunNxtPlayerScreenOutputs"/> 
+    
+    </classes>
+  </test> <!-- Test -->
+</suite> <!-- AllAppsTest -->

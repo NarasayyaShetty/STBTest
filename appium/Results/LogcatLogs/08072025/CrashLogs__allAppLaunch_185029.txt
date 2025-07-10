@@ -1,0 +1,57 @@
+==== CRASH START ====
+07-07 15:09:16.782 E/AndroidRuntime(32656): FATAL EXCEPTION: Instr: androidx.test.runner.AndroidJUnitRunner
+07-07 15:09:16.782 E/AndroidRuntime(32656): Process: io.appium.uiautomator2.server, PID: 32656
+07-07 15:09:16.782 E/AndroidRuntime(32656): java.lang.RuntimeException: Error while disconnecting UiAutomation@6c3848[id=-1, flags=0]
+07-07 15:09:16.782 E/AndroidRuntime(32656): 	at android.app.UiAutomation.disconnect(UiAutomation.java:397)
+07-07 15:09:16.782 E/AndroidRuntime(32656): 	at android.app.Instrumentation.finish(Instrumentation.java:267)
+07-07 15:09:16.782 E/AndroidRuntime(32656): 	at androidx.test.runner.MonitoringInstrumentation.finish(MonitoringInstrumentation.java:409)
+07-07 15:09:16.782 E/AndroidRuntime(32656): 	at androidx.test.runner.AndroidJUnitRunner.onStart(AndroidJUnitRunner.java:474)
+07-07 15:09:16.782 E/AndroidRuntime(32656): 	at android.app.Instrumentation$InstrumentationThread.run(Instrumentation.java:2322)
+07-07 15:09:16.782 E/AndroidRuntime(32656): Caused by: android.os.DeadObjectException
+07-07 15:09:16.782 E/AndroidRuntime(32656): 	at android.os.BinderProxy.transactNative(Native Method)
+07-07 15:09:16.782 E/AndroidRuntime(32656): 	at android.os.BinderProxy.transact(BinderProxy.java:584)
+07-07 15:09:16.782 E/AndroidRuntime(32656): 	at android.app.IUiAutomationConnection$Stub$Proxy.disconnect(IUiAutomationConnection.java:455)
+07-07 15:09:16.782 E/AndroidRuntime(32656): 	at android.app.UiAutomation.disconnect(UiAutomation.java:395)
+07-07 15:09:16.782 E/AndroidRuntime(32656): 	... 4 more
+07-07 15:14:55.859 E/AndroidRuntime( 2099): FATAL EXCEPTION: Instr: androidx.test.runner.AndroidJUnitRunner
+07-07 15:14:55.859 E/AndroidRuntime( 2099): Process: io.appium.uiautomator2.server, PID: 2099
+==== CRASH END ====
+
+==== CRASH START ====
+07-07 15:17:55.298 E/AndroidRuntime( 3630): FATAL EXCEPTION: Instr: androidx.test.runner.AndroidJUnitRunner
+07-07 15:17:55.298 E/AndroidRuntime( 3630): Process: io.appium.uiautomator2.server, PID: 3630
+07-07 15:17:55.298 E/AndroidRuntime( 3630): java.lang.RuntimeException: Error while disconnecting UiAutomation@6c3848[id=-1, flags=0]
+07-07 15:17:55.298 E/AndroidRuntime( 3630): 	at android.app.UiAutomation.disconnect(UiAutomation.java:397)
+07-07 15:17:55.298 E/AndroidRuntime( 3630): 	at android.app.Instrumentation.finish(Instrumentation.java:267)
+07-07 15:17:55.298 E/AndroidRuntime( 3630): 	at androidx.test.runner.MonitoringInstrumentation.finish(MonitoringInstrumentation.java:409)
+07-07 15:17:55.298 E/AndroidRuntime( 3630): 	at androidx.test.runner.AndroidJUnitRunner.onStart(AndroidJUnitRunner.java:474)
+07-07 15:17:55.298 E/AndroidRuntime( 3630): 	at android.app.Instrumentation$InstrumentationThread.run(Instrumentation.java:2322)
+07-07 15:17:55.298 E/AndroidRuntime( 3630): Caused by: android.os.DeadObjectException
+07-07 15:17:55.298 E/AndroidRuntime( 3630): 	at android.os.BinderProxy.transactNative(Native Method)
+07-07 15:17:55.298 E/AndroidRuntime( 3630): 	at android.os.BinderProxy.transact(BinderProxy.java:584)
+07-07 15:17:55.298 E/AndroidRuntime( 3630): 	at android.app.IUiAutomationConnection$Stub$Proxy.disconnect(IUiAutomationConnection.java:455)
+07-07 15:17:55.298 E/AndroidRuntime( 3630): 	at android.app.UiAutomation.disconnect(UiAutomation.java:395)
+07-07 15:17:55.298 E/AndroidRuntime( 3630): 	... 4 more
+07-07 16:36:19.289 E/AndroidRuntime(11066): FATAL EXCEPTION: Instr: androidx.test.runner.AndroidJUnitRunner
+07-07 16:36:19.289 E/AndroidRuntime(11066): Process: io.appium.uiautomator2.server, PID: 11066
+==== CRASH END ====
+
+==== CRASH START ====
+07-07 17:34:45.091 E/AndroidRuntime(31593): FATAL EXCEPTION: Instr: androidx.test.runner.AndroidJUnitRunner
+07-07 17:34:45.091 E/AndroidRuntime(31593): Process: io.appium.uiautomator2.server, PID: 31593
+07-07 17:34:45.091 E/AndroidRuntime(31593): java.lang.RuntimeException: Error while disconnecting UiAutomation@6c3848[id=-1, flags=0]
+07-07 17:34:45.091 E/AndroidRuntime(31593): 	at android.app.UiAutomation.disconnect(UiAutomation.java:397)
+07-07 17:34:45.091 E/AndroidRuntime(31593): 	at android.app.Instrumentation.finish(Instrumentation.java:267)
+07-07 17:34:45.091 E/AndroidRuntime(31593): 	at androidx.test.runner.MonitoringInstrumentation.finish(MonitoringInstrumentation.java:409)
+07-07 17:34:45.091 E/AndroidRuntime(31593): 	at androidx.test.runner.AndroidJUnitRunner.onStart(AndroidJUnitRunner.java:474)
+07-07 17:34:45.091 E/AndroidRuntime(31593): 	at android.app.Instrumentation$InstrumentationThread.run(Instrumentation.java:2322)
+07-07 17:34:45.091 E/AndroidRuntime(31593): Caused by: android.os.DeadObjectException
+07-07 17:34:45.091 E/AndroidRuntime(31593): 	at android.os.BinderProxy.transactNative(Native Method)
+07-07 17:34:45.091 E/AndroidRuntime(31593): 	at android.os.BinderProxy.transact(BinderProxy.java:584)
+07-07 17:34:45.091 E/AndroidRuntime(31593): 	at android.app.IUiAutomationConnection$Stub$Proxy.disconnect(IUiAutomationConnection.java:455)
+07-07 17:34:45.091 E/AndroidRuntime(31593): 	at android.app.UiAutomation.disconnect(UiAutomation.java:395)
+07-07 17:34:45.091 E/AndroidRuntime(31593): 	... 4 more
+--------- beginning of system
+07-07 18:53:37.125 V/ActivityTaskManager(  625): Sending Broadcast : Intent { act=com.jio.remote.action.applaunch flg=0x40000000 pkg=com.jio.remote.btserver (has extras) }
+==== CRASH END ====
+
